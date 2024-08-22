@@ -1,0 +1,618 @@
+;;;;
+;;;; Banking Example
+;;;;
+#{;;; 
+  ;;; Nodes
+  ;;;
+
+  {:el :person
+   :id :my-bank/corporate-customer
+   :external true
+   :name "Corporate Customer"
+   :desc "Corporate Customer of MyBank."}
+  {:el :person
+   :id :my-bank/personal-customer
+   :external true
+   :name "Personal Customer"
+   :desc "Personal Customer of MyBank."}
+  {:el :person
+   :id :my-bank/customer-service-stuff
+   :name "Customer Service Staff"
+   :desc "Customer service staff within the bank."}
+  {:el :person
+   :id :my-bank/backoffice-stuff
+   :name "Backoffice Staff"
+   :desc "Administration and support staff within the bank."}
+
+  {:el :enterprise-boundary
+   :id :my-bank/my-bank-plc
+   :name "My Bank"
+   :ct #{; Core Banking System
+         {:el :context-boundary
+          :id :my-bank/core-banking-context
+          :name "Core Banking System"
+          :desc "Manages customer accounts, transactions, and loans."
+          :ct #{{:el :system
+                 :id :my-bank.core-banking/account-management-system
+                 :name "Account Management"
+                 :desc "Handles customer accounts, deposits, and withdrawals."
+                 :tech "Java and Spring Boot"}
+                {:el :system
+                 :id :my-bank.core-banking/transaction-processing-system
+                 :name "Transaction Processing"
+                 :desc "Processes financial transactions in real-time."
+                 :tech "Java and Kafka"}
+                {:el :system
+                 :id :my-bank.core-banking/loan-management-system
+                 :name "Loan Management"
+                 :desc "Manages loan products, applications, and repayments."
+                 :tech "Java and Spring Boot"}}}
+
+          ; Digital Banking
+         {:el :context-boundary
+          :id :my-bank/digital-banking-context
+          :name "Digital Banking"
+          :desc "Enables online and mobile banking services for customers."
+          :ct #{{:el :system
+                 :id :my-bank.digital-banking/internet-banking-system
+                 :name "Internet Banking System"
+                 :desc "Allows customers to view information about their bank accounts and make payments."
+                 :ct #{{:el :container
+                        :id :my-bank.digital-banking/web-app
+                        :name "Web Application"
+                        :desc "Delivers the static content and the internet banking single-page application."
+                        :tech "Clojure and Luminus"}
+                       {:el :container
+                        :id :my-bank.digital-banking/single-page-app
+                        :name "Single-Page Application"
+                        :desc "Provides internet banking functionality to customers via their web browser."
+                        :tech "ClojureScript and Re-Frame"}
+                       {:el :container
+                        :id :my-bank.digital-banking/mobile-app
+                        :name "Mobile App"
+                        :desc "Provides limited internet banking functionality to customers via mobile devices."
+                        :tech "ClojureScript and Reagent"}
+                       {:el :container
+                        :id :my-bank.digital-banking/api-application
+                        :name "API Application"
+                        :desc "Provides internet banking functionality via a JSON/HTTPS API."
+                        :tech "Clojure and Liberator"
+                        :ct #{{:el :component
+                               :id :my-bank.digital-banking/sign-in-controller
+                               :name "Sign In Controller"
+                               :desc "Allows users to sign in to the banking system."
+                               :tech "Clojure namespace"}
+                              {:el :component
+                               :id :my-bank.digital-banking/security-component
+                               :name "Security Component"
+                               :desc "Handles authentication, password changes, etc."
+                               :tech "Clojure namespace"}
+                              {:el :component
+                               :id :my-bank.digital-banking/reset-password-controller
+                               :name "Reset Password Controller"
+                               :desc "Allows users to reset their passwords."
+                               :tech "Clojure namespace"}
+                              {:el :component
+                               :id :my-bank.digital-banking/email-component
+                               :name "E-mail Component"
+                               :desc "Sends e-mails to users."
+                               :tech "Clojure namespace"}
+                              {:el :component
+                               :id :my-bank.digital-banking/accounts-summary-controller
+                               :name "Accounts Summary Controller"
+                               :desc "Provides customers with a summary of their bank accounts."
+                               :tech "Clojure namespace"}
+                              {:el :component
+                               :id :my-bank.digital-banking/mainframe-banking-system-facade
+                               :name "Mainframe Banking System Facade"
+                               :desc "Facilitates interaction with the mainframe banking system."
+                               :tech "Clojure Namespace, http-client"}}}
+                       {:el :container
+                        :subtype :database
+                        :id :my-bank.digital-banking/database
+                        :name "Database"
+                        :desc "Stores user registration, authentication, and access logs."
+                        :tech "Datomic"}}}
+                {:el :system
+                 :id :my-bank.digital-banking/digital-wallets-system
+                 :name "Digital Wallets"
+                 :desc "Supports digital wallet integration and mobile payments."
+                 :tech "Node.js and Express"}}}
+
+         ; Payment Systems
+         {:el :context-boundary
+          :id :my-bank/payment-context
+          :name "Payment Systems"
+          :desc "Manages interbank payments, ACH, and SWIFT transactions."
+          :ct #{{:el :system
+                 :id :my-bank.payment/payment-gateway-system
+                 :name "Payment Gateway"
+                 :desc "Facilitates credit/debit card transactions."
+                 :tech "Java and Spring Boot"}
+                {:el :system
+                 :id :my-bank.payment/swift-rtgs-neft-system
+                 :name "SWIFT/RTGS/NEFT"
+                 :desc "Handles interbank transfers and settlements."
+                 :tech "Java and Camel"}
+                {:el :system
+                 :id :my-bank.payment/ach-system
+                 :name "ACH System"
+                 :desc "Processes ACH transactions for direct deposits and bill payments."
+                 :tech "Java and Spring Batch"}}}
+
+         ; Risk Management and Compliance
+         {:el :context-boundary
+          :id :my-bank/risk-management-context
+          :name "Risk Management and Compliance"
+          :desc "Detects and mitigates risks, ensuring regulatory compliance."
+          :ct #{{:el :system
+                 :id :my-bank.risk-management/aml-system
+                 :name "Anti-Money Laundering (AML) System"
+                 :desc "Monitors and prevents money laundering activities."
+                 :tech "Python and Scikit-learn"}
+                {:el :system
+                 :id :my-bank.risk-management/fraud-detection-system
+                 :name "Fraud Detection System"
+                 :desc "Detects and mitigates fraudulent activities."
+                 :tech "Python and TensorFlow"}
+                {:el :system
+                 :id :my-bank.risk-management/compliance-system
+                 :name "Compliance System"
+                 :desc "Ensures operations comply with regulations."
+                 :tech "Java and Spring Boot"}}}
+
+         ; Data Management and Analytics
+         {:el :context-boundary
+          :id :my-bank/data-management-context
+          :name "Data Management and Analytics"
+          :desc "Manages data storage, warehousing, and analytics."
+          :ct #{{:el :system
+                 :id :my-bank.data-management/data-warehouse-system
+                 :name "Data Warehouse"
+                 :desc "Central repository for storing large volumes of data."
+                 :tech "AWS Redshift"}
+                {:el :system
+                 :id :my-bank.data-management/business-intelligence-system
+                 :name "Business Intelligence (BI)"
+                 :desc "Provides tools for reporting and data analysis."
+                 :tech "Tableau and Python"}
+                {:el :system
+                 :id :my-bank.data-management/big-data-analytics-system
+                 :name "Big Data Analytics"
+                 :desc "Advanced analytics for predictive modeling."
+                 :tech "Hadoop and Spark"}}}
+
+         ; Security
+         {:el :context-boundary
+          :id :my-bank/security-context
+          :name "Security"
+          :desc "Ensures the security of systems and data."
+          :ct #{{:el :system
+                 :id :my-bank.security/identity-access-management-system
+                 :name "Identity and Access Management (IAM)"
+                 :desc "Manages secure access to systems and data."
+                 :tech "OAuth 2.0 and OpenID Connect"}
+                {:el :system
+                 :id :my-bank.security/cybersecurity-system
+                 :name "Cybersecurity"
+                 :desc "Protects against cyber threats."
+                 :tech "Snort and Suricata"}
+                {:el :system
+                 :id :my-bank.security/disaster-recovery-system
+                 :name "Disaster Recovery"
+                 :desc "Ensures business continuity in case of a disaster."
+                 :tech "AWS Backup and DRaaS"}}}
+
+         ; Infrastructure Management
+         {:el :context-boundary
+          :id :my-bank/infrastructure-management-context
+          :name "Infrastructure Management"
+          :desc "Manages IT infrastructure, cloud resources, and system monitoring."
+          :ct #{{:el :system
+                 :id :my-bank.infrastructure-management/it-infrastructure-system
+                 :name "IT Infrastructure"
+                 :desc "Hardware and software resources, including servers and networking."
+                 :tech "VMware and Cisco"}
+                {:el :system
+                 :id :my-bank.infrastructure-management/cloud-services-system
+                 :name "Cloud Services"
+                 :desc "Cloud computing resources for scalability and flexibility."
+                 :tech "AWS and Azure"}
+                {:el :system
+                 :id :my-bank.infrastructure-management/system-monitoring-system
+                 :name "System Monitoring"
+                 :desc "Monitors system performance and health."
+                 :tech "Nagios and Prometheus"}}}
+
+         ; Customer Channels
+         {:el :context-boundary
+          :id :my-bank/customer-channels-context
+          :name "Customer Channels"
+          :desc "Interfaces for customer interaction, including branch systems, ATMs, and call centers."
+          :ct #{{:el :system
+                 :id :my-bank.customer-channels/branch-systems
+                 :name "Branch Systems"
+                 :desc "Software and hardware for in-branch banking services."
+                 :tech "Java and Swing"}
+                {:el :system
+                 :id :my-bank.customer-channels/atm
+                 :name "ATM"
+                 :desc "Allows customers to withdraw cash."
+                 :tech "C++ and Java"}
+                {:el :system
+                 :id :my-bank.customer-channels/contact-center-system
+                 :name "Contact Center"
+                 :desc "Telephony and customer support systems for call centers."
+                 :tech "Genesys and Avaya"}}}
+
+         ; Integration and Middleware
+         {:el :context-boundary
+          :id :my-bank/integration-middleware-context
+          :name "Integration and Middleware"
+          :desc "Facilitates integration across systems."
+          :ct #{{:el :system
+                 :id :my-bank.integration-middleware/esb
+                 :name "Enterprise Service Bus (ESB)"
+                 :desc "Middleware for integrating various banking systems."
+                 :tech "MuleSoft"}
+                {:el :system
+                 :id :my-bank.integration-middleware/api-gateway
+                 :name "API Gateway"
+                 :desc "Manages APIs for third-party services and fintech apps."
+                 :tech "Kong"}
+                {:el :system
+                 :id :my-bank.integration-middleware/soa
+                 :name "Service-Oriented Architecture (SOA)"
+                 :desc "Framework for enabling seamless integration between services."
+                 :tech "Apache CXF"}}}
+
+         ; Financial Management
+         {:el :context-boundary
+          :id :my-bank/financial-management-context
+          :name "Financial Management"
+          :desc "Handles financial accounting, treasury, and expense management."
+          :ct #{{:el :system
+                 :id :my-bank.financial-management/general-ledger-system
+                 :name "General Ledger"
+                 :desc "Comprehensive financial accounting and reporting system."
+                 :tech "Oracle Financials"}
+                {:el :system
+                 :id :my-bank.financial-management/treasury-management-system
+                 :name "Treasury Management"
+                 :desc "Manages liquidity, investments, and risk in the treasury function."
+                 :tech "Kyriba"}
+                {:el :system
+                 :id :my-bank.financial-management/expense-management-system
+                 :name "Expense Management"
+                 :desc "Tracks and manages expenses."
+                 :tech "Concur"}}}
+
+         ; Human Resources Management
+         {:el :context-boundary
+          :id :my-bank/human-resources-context
+          :name "Human Resources Management"
+          :desc "Manages employee information, payroll, and talent management."
+          :ct #{{:el :system
+                 :id :my-bank.human-resources/hris
+                 :name "HR Information Systems (HRIS)"
+                 :desc "Manages employee data, payroll, and benefits."
+                 :tech "Workday"}
+                {:el :system
+                 :id :my-bank.human-resources/talent-management-system
+                 :name "Talent Management"
+                 :desc "Tools for recruitment, training, and performance management."
+                 :tech "SAP SuccessFactors"}}}
+
+         ; Project Management and Development
+         {:el :context-boundary
+          :id :my-bank/project-management-context
+          :name "Project Management and Development"
+          :desc "Tools for managing projects and software development."
+          :ct #{{:el :system
+                 :id :my-bank.project-management/project-management-tools
+                 :name "Project Management Tools"
+                 :desc "Platforms for planning, executing, and tracking projects."
+                 :tech "Jira"}
+                {:el :system
+                 :id :my-bank.project-management/dev-platforms
+                 :name "Development Platforms"
+                 :desc "Tools for software development, testing, and deployment."
+                 :tech "Jenkins and GitLab"}}}
+
+         ; External Systems
+         {:el :system
+          :id :my-bank/email-system
+          :external true
+          :name "E-mail System"
+          :desc "The internal Microsoft Exchange email system."}}}
+
+  ;;;
+  ;;; Relations
+  ;;;
+  ;;
+  ;; Context Level
+  ;;
+  {:el :request
+   :id :my-bank/personal-customer-uses-internet-banking-system
+   :from :my-bank/personal-customer
+   :to :my-bank/internet-banking-system
+   :name "views account balances and makes payments using"}
+
+  {:el :request
+   :id :my-bank/internet-banking-system-uses-email-system
+   :from :my-bank/internet-banking-system
+   :to :my-bank/email-system
+   :name "sends e-mail using"}
+
+  {:el :request
+   :id :my-bank/internet-banking-system-uses-mainframe-banking-system
+   :from :my-bank/internet-banking-system
+   :to :my-bank/mainframe-banking-system
+   :name "gets account information from, and makes payments using"}
+
+  {:el :send
+   :id :my-bank/email-system-sends-mail-to-personal-customer
+   :from :my-bank/email-system
+   :to :my-bank/personal-customer
+   :name "sends e-mail to"}
+
+  {:el :request
+   :id :my-bank/internet-banking-system-uses-loan-management-system
+   :from :my-bank/internet-banking-system
+   :to :my-bank/loan-management-system
+   :name "fetches loan details and payment status from"}
+
+  {:el :request
+   :id :my-bank/loan-management-system-uses-mainframe-banking-system
+   :from :my-bank/loan-management-system
+   :to :my-bank/mainframe-banking-system
+   :name "retrieves customer account information from"}
+
+  {:el :request
+   :id :my-bank/internet-banking-system-uses-payment-gateway
+   :from :my-bank/internet-banking-system
+   :to :my-bank/payment-gateway
+   :name "processes customer payments using"}
+
+  {:el :request
+   :id :my-bank/payment-gateway-uses-mainframe-banking-system
+   :from :my-bank/payment-gateway
+   :to :my-bank/mainframe-banking-system
+   :name "validates and processes payments using"}
+
+  {:el :request
+   :id :my-bank/risk-management-system-uses-mainframe-banking-system
+   :from :my-bank/risk-management-system
+   :to :my-bank/mainframe-banking-system
+   :name "fetches transaction history and customer data from"}
+
+  {:el :request
+   :id :my-bank/analytics-system-uses-mainframe-banking-system
+   :from :my-bank/analytics-system
+   :to :my-bank/mainframe-banking-system
+   :name "gathers data for analysis from"}
+
+  {:el :request
+   :id :my-bank/internet-banking-system-uses-analytics-system
+   :from :my-bank/internet-banking-system
+   :to :my-bank/analytics-system
+   :name "sends usage data for analysis using"}
+
+  {:el :request
+   :id :my-bank/risk-management-system-uses-analytics-system
+   :from :my-bank/risk-management-system
+   :to :my-bank/analytics-system
+   :name "analyzes data for risk assessment using"}
+
+  ;;
+  ;; Container level
+  ;;
+  {:el :request
+   :id :my-bank/personal-customer-uses-web-app
+   :from :my-bank/personal-customer
+   :to :my-bank/web-app
+   :name "visits bigbank.com/ib using"
+   :tech "HTTPS"}
+
+  {:el :request
+   :id :my-bank/personal-customer-uses-single-page-app
+   :from :my-bank/personal-customer
+   :to :my-bank/single-page-app
+   :name "views account balances and makes payments using"}
+
+  {:el :request
+   :id :my-bank/personal-customer-uses-mobile-app
+   :from :my-bank/personal-customer
+   :to :my-bank/mobile-app
+   :name "views account balances and makes payments using"}
+
+  {:el :request
+   :id :my-bank/mobile-app-calls-api-application
+   :from :my-bank/mobile-app
+   :to :my-bank/api-application
+   :name "makes API calls to"
+   :tech "Transit/HTTPS"}
+
+  {:el :request
+   :id :my-bank/api-application-uses-database
+   :from :my-bank/api-application
+   :to :my-bank/database
+   :name "reads from and writes to"
+   :tech "Datalog"}
+
+  {:el :request
+   :id :my-bank/api-application-uses-email-system
+   :from :my-bank/api-application
+   :to :my-bank/email-system
+   :name "sends e-mail using"}
+
+  {:el :request
+   :id :my-bank/api-application-uses-mainframe-banking-system
+   :from :my-bank/api-application
+   :to :my-bank/mainframe-banking-system
+   :name "makes API calls to"
+   :tech "XML/HTTPS"}
+
+  {:el :request
+   :id :my-bank/loan-management-system-uses-api-application
+   :from :my-bank/loan-management-system
+   :to :my-bank/api-application
+   :name "retrieves loan-related information via API calls"}
+
+  {:el :request
+   :id :my-bank/risk-management-system-uses-api-application
+   :from :my-bank/risk-management-system
+   :to :my-bank/api-application
+   :name "fetches transaction data via API calls"}
+
+  {:el :request
+   :id :my-bank/payment-gateway-uses-api-application
+   :from :my-bank/payment-gateway
+   :to :my-bank/api-application
+   :name "validates transactions via API calls"}
+
+  {:el :request
+   :id :my-bank/analytics-system-uses-database
+   :from :my-bank/analytics-system
+   :to :my-bank/database
+   :name "stores and retrieves analytical data using"
+   :tech "Datalog"}
+
+  ;;
+  ;; Component level
+  ;;
+  {:el :request
+   :id :my-bank/single-page-app-calls-sign-in-controller
+   :from :my-bank/single-page-app
+   :to :my-bank/sign-in-controller
+   :name "makes API calls to"
+   :tech "Transit/HTTPS"}
+
+  {:el :request
+   :id :my-bank/single-page-app-calls-reset-password-controller
+   :from :my-bank/single-page-app
+   :to :my-bank/reset-password-controller
+   :name "makes API calls to"
+   :tech "Transit/HTTPS"}
+
+  {:el :request
+   :id :my-bank/single-page-app-calls-accounts-summary-controller
+   :from :my-bank/single-page-app
+   :to :my-bank/accounts-summary-controller
+   :name "makes API calls to"
+   :tech "Transit/HTTPS"}
+
+  {:el :request
+   :id :my-bank/loan-management-system-calls-loan-controller
+   :from :my-bank/loan-management-system
+   :to :my-bank/loan-controller
+   :name "retrieves loan information using"}
+
+  {:el :request
+   :id :my-bank/risk-management-system-calls-risk-controller
+   :from :my-bank/risk-management-system
+   :to :my-bank/risk-controller
+   :name "assesses risk using"}
+
+  {:el :request
+   :id :my-bank/payment-gateway-calls-transaction-controller
+   :from :my-bank/payment-gateway
+   :to :my-bank/transaction-controller
+   :name "validates transactions using"}
+
+  {:el :request
+   :id :my-bank/analytics-system-calls-analytics-controller
+   :from :my-bank/analytics-system
+   :to :my-bank/analytics-controller
+   :name "fetches analytical data using"}
+
+  {:el :request
+   :id :my-bank/sign-in-controller-uses-security-component
+   :from :my-bank/sign-in-controller
+   :to :my-bank/security-component
+   :name "uses"}
+
+  {:el :request
+   :id :my-bank/reset-password-controller-uses-email-component
+   :from :my-bank/reset-password-controller
+   :to :my-bank/email-component
+   :name "uses for sending password reset emails"}
+
+  {:el :request
+   :id :my-bank/accounts-summary-controller-uses-mainframe-banking-system-facade
+   :from :my-bank/accounts-summary-controller
+   :to :my-bank/mainframe-banking-system-facade
+   :name "retrieves account data from"}
+
+
+  ;;
+  ;; System Landscape level
+  ;;
+  {:el :rel
+   :id :my-bank/personal-customer-uses-atm
+   :from :my-bank/personal-customer
+   :to :my-bank/atm
+   :name "withdraws cash using"}
+
+  {:el :rel
+   :id :my-bank/personal-customer-asks-customer-service-staff
+   :from :my-bank/personal-customer
+   :to :my-bank/customer-service-staff
+   :name "asks questions to"}
+
+  {:el :rel
+   :id :my-bank/atm-uses-mainframe-banking-system
+   :from :my-bank/atm
+   :to :my-bank/mainframe-banking-system
+   :name "retrieves account balance and validates transaction"}
+
+  {:el :rel
+   :id :my-bank/customer-service-staff-uses-mainframe-banking-system
+   :from :my-bank/customer-service-staff
+   :to :my-bank/mainframe-banking-system
+   :name "retrieves and updates customer information using"}
+
+  {:el :rel
+   :id :my-bank/backoffice-staff-uses-loan-management-system
+   :from :my-bank/backoffice-staff
+   :to :my-bank/loan-management-system
+   :name "processes loan applications and updates loan status using"}
+
+  {:el :rel
+   :id :my-bank/backoffice-staff-uses-risk-management-system
+   :from :my-bank/backoffice-staff
+   :to :my-bank/risk-management-system
+   :name "assesses customer risk for loan approval using"}
+
+  {:el :rel
+   :id :my-bank/backoffice-staff-uses-payment-gateway
+   :from :my-bank/backoffice-staff
+   :to :my-bank/payment-gateway
+   :name "validates and processes payments using"}
+
+  {:el :rel
+   :id :my-bank/backoffice-staff-uses-mainframe-banking-system
+   :from :my-bank/backoffice-staff
+   :to :my-bank/mainframe-banking-system
+   :name "manages accounts and transactions using"}
+
+  {:el :rel
+   :id :my-bank/customer-service-staff-uses-email-system
+   :from :my-bank/customer-service-staff
+   :to :my-bank/email-system
+   :name "sends and receives customer communication using"}
+
+  {:el :rel
+   :id :my-bank/customer-service-staff-uses-analytics-system
+   :from :my-bank/customer-service-staff
+   :to :my-bank/analytics-system
+   :name "retrieves customer interaction data for analysis using"}
+
+  {:el :rel
+   :id :my-bank/analytics-system-uses-mainframe-banking-system
+   :from :my-bank/analytics-system
+   :to :my-bank/mainframe-banking-system
+   :name "gathers data for analysis from"}
+
+  ;
+  }

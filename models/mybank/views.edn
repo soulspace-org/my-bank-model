@@ -1,0 +1,33 @@
+;;;;
+;;;; Views of the Banking Systems
+;;;;
+#{{:el :context-view
+   :id :mybank/context-view
+   :spec {:selection {:namespace-prefix "mybank"}
+          :plantuml {:sprite-libs [:awslib14 :azure :devicons]}}
+   :name "Context View"
+   :title "Context View of the MyBank Systems"
+   :desc "Context View of the MyBank Systems"}
+
+  {:el :container-view
+   :id :mybank/container-view
+   :spec {:selection {:namespace-prefix "mybank"}
+          :plantuml {:sprite-libs [:awslib14 :azure :devicons]}}
+   :name "Banking Container View"
+   :title "Container View of the MyBank Systems"
+   :desc "Container View of the MyBank Systems"}
+
+  {:el :deployment-view
+   :id :mybank/deployment-view
+   :spec {:selection {:namespace-prefix "mybank"}
+          :plantuml {:sprite-libs [:awslib14 :azure :devicons]}}
+   :name "Deployment View"
+   :title "Deployment View for the MyBank Systems"}
+
+  {:el :organization-structure-view
+   :id :mybank/container-view
+   :spec {:selection {:id :mybank/my-bank :external? false}}
+   :title "Organization Structure"}
+  
+  ;
+  }

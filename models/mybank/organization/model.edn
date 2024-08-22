@@ -1,0 +1,71 @@
+;;;;
+;;;; MyBank Organization Model
+;;;;
+#{{:el :organization
+   :id :mybank.organization/my-bank
+   :name "My Bank"
+   :desc "My Bank Company"
+   :ct [{:el :org-unit
+         :id :mybank.organization/personal-customers
+         :name "Personal Customers"
+         :desc ""
+         :ct [{:el :org-unit
+               :id :mybank.organization.personal-customers/internet-banking
+               :name "Internet Banking"}
+              {:el :org-unit
+               :id :mybank.organization.personal-customers/personal-loans
+               :name "Personal Loans"}
+              {:el :org-unit
+               :id :mybank.organization.personal-customers/mortgage
+               :name "Mortgage"
+               :desc ""}]}
+        {:el :org-unit
+         :id :mybank.organization/corporate-customers
+         :name "Corporate Customers"
+         :ct [{:el :org-unit
+               :id :mybank.organization.corporate-customers/loans
+               :name "Loans"
+               :desc ""
+               :ct [{:el :org-unit
+                     :id :mybank.organization.corporate-customers.loans/housing
+                     :name "Loans"
+                     :desc ""}
+                    ]}]}
+        {:el :org-unit
+         :id :mybank.organization/investments
+         :name "Investments"
+         :desc ""
+         :ct [{:el :org-unit
+               :id :mybank.organization.investments/asset-management
+               :name "Asset Management"
+               :desc ""}]}
+        {:el :org-unit
+         :id :mybank.organization/compliance
+         :name "Compliance"
+         :desc ""
+         :ct [{:el :org-unit
+               :id :mybank.organization.compliance/fraud
+               :name "Fraud"}
+              {:el :org-unit
+               :id :mybank.organization.compliance/regulations
+               :name "Regulations"}
+              {:el :org-unit
+               :id :mybank.organization.compliance/risk-management
+               :name "Risk Management"}]}
+        {:el :org-unit
+         :id :mybank.organization/marketing
+         :name "Marketing"
+         :desc ""}
+        {:el :org-unit
+         :id :mybank.organization/human-resources
+         :name "Human Resources"
+         :desc "Central management of human resources"
+         :ct [{:el :org-unit
+               :id :mybank.organization.hr/recruiting
+               :name "Recruiting"
+               :desc ""}]}
+        ;
+        ]}
+
+  ;
+  }
