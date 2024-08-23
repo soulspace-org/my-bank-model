@@ -1,0 +1,17 @@
+;;;;
+;;;; MyBank Human Resources Domain Model
+;;;;
+#{{:el :context-boundary
+   :id :mybank.human-resources/context-boundary
+   :name "Human Resources Management"
+   :desc "Manages employee information, payroll, and talent management."
+   :ct #{{:el :system
+          :id :mybank.human-resources/hris
+          :name "HR Information Systems (HRIS)"
+          :desc "Manages employee data, payroll, and benefits."
+          :tech "Workday"}
+         {:el :system
+          :id :mybank.human-resources/talent-management-system
+          :name "Talent Management"
+          :desc "Tools for recruitment, training, and performance management."
+          :tech "SAP SuccessFactors"}}}}

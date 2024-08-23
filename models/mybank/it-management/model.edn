@@ -1,0 +1,61 @@
+;;;;
+;;;; MyBank IT Management Domain Model
+;;;;
+#{{:el :context-boundary
+   :id :mybank.it-management/context-boundary
+   :name "IT Management"
+   :desc "Manages IT infrastructure, cloud resources, and system monitoring."
+   :ct #{{:el :system
+          :id :mybank.infrastructure-management/it-infrastructure-system
+          :name "IT Infrastructure"
+          :desc "Hardware and software resources, including servers and networking."
+          :tech "VMware and Cisco"}
+         {:el :system
+          :id :mybank.infrastructure-management/cloud-services-system
+          :name "Cloud Services"
+          :desc "Cloud computing resources for scalability and flexibility."
+          :tech "AWS and Azure"}
+         {:el :system
+          :id :mybank.infrastructure-management/system-monitoring-system
+          :name "System Monitoring"
+          :desc "Monitors system performance and health."
+          :tech "Nagios and Prometheus"}}}
+
+  {:el :node
+   :id :mybank.it-management/azure-tenant
+   :name "MyBank Azure Tenant"
+   :tech "Azure"
+   :desc "Azure Tenant for MyBank"
+   :ct #{{:el :node
+          :id :mybank.it-management/hub-subscription
+          :name "Hub Subscription"
+          :tech "Azure Subscription"
+          :desc "Subscription for the Hub Infrastructure"
+          :ct #{{:el :node
+                 :id :mybank.it-management/hub-vnet
+                 :name "Hub VNet"
+                 :tech "Azure Virtual Network"
+                 :desc "VNet for the Hub Infrastructure"
+                 :ct #{}}}}}}
+
+  {:el :node
+   :id :mybank.it-management/data-center
+   :name "MyBank On Premise Datacenter"
+   ;:tech "Azure"
+   :desc "Data Center of MyBank"}
+
+  {:el :link
+   :id :mybank.it-management/data-center-links-to-hub-vnet
+   :from :mybank.it-management/data-center
+   :to :mybank.it-management/hub-vnet
+   :name "network link"
+   :tech "Azure Express Route"
+   :desc "High Speed/Volume Link 100 Mb/s"}
+  
+  {:el :responsible-for
+   :id :mybank.organization.it-management/azure-unit-responsible-for-azure-tenant
+   :from :mybank.organization.it-management/azure-unit
+   :to :mybank.it-management/azure-tenant
+   :name "responsible for"}
+  ;
+  }

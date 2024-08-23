@@ -1,0 +1,25 @@
+;;;;
+;;;; MyBank Security Domain Model
+;;;;
+#{
+
+{:el :context-boundary
+ :id :mybank.security/context-boundary
+ :name "Security"
+ :desc "Ensures the security of systems and data."
+ :ct #{{:el :system
+        :id :mybank.security/identity-access-management-system
+        :name "Identity and Access Management (IAM)"
+        :desc "Manages secure access to systems and data."
+        :tech "OAuth 2.0 and OpenID Connect"}
+       {:el :system
+        :id :mybank.security/cybersecurity-system
+        :name "Cybersecurity"
+        :desc "Protects against cyber threats."
+        :tech "Snort and Suricata"}
+       {:el :system
+        :id :mybank.security/disaster-recovery-system
+        :name "Disaster Recovery"
+        :desc "Ensures business continuity in case of a disaster."
+        :tech "AWS Backup and DRaaS"}}}
+}

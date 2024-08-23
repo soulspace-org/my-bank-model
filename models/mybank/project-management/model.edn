@@ -1,0 +1,18 @@
+;;;;
+;;;; MyBank Project Management and Development Domain Model
+;;;;
+#{
+  {:el :context-boundary
+   :id :mybank.project-management/context-boundary
+   :name "Project Management and Development"
+   :desc "Tools for managing projects and software development."
+   :ct #{{:el :system
+          :id :mybank.project-management/project-management-tools
+          :name "Project Management Tools"
+          :desc "Platforms for planning, executing, and tracking projects."
+          :tech "Jira"}
+         {:el :system
+          :id :mybank.project-management/dev-platforms
+          :name "Development Platforms"
+          :desc "Tools for software development, testing, and deployment."
+          :tech "Jenkins and GitLab"}}}}

@@ -39,6 +39,15 @@
                :id :mybank.organization.investments/asset-management
                :name "Asset Management"
                :desc ""}]}
+
+        {:el :org-unit
+         :id :mybank.organization/it-management
+         :name "IT Management"
+         :ct #{{:el :org-unit
+                :id :mybank.organization.it-management/azure-unit
+                :name "Azure Department"
+                :desc "Responsible for the Azure infrastructure."}
+               }}
         {:el :org-unit
          :id :mybank.organization/compliance
          :name "Compliance"

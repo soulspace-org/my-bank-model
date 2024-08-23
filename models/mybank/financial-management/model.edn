@@ -1,0 +1,22 @@
+;;;;
+;;;; MyBank Financial Management Domain Model
+;;;;
+#{{:el :context-boundary
+   :id :mybank.financial-management/context-boundary
+   :name "Financial Management"
+   :desc "Handles financial accounting, treasury, and expense management."
+   :ct #{{:el :system
+          :id :mybank.financial-management/general-ledger-system
+          :name "General Ledger"
+          :desc "Comprehensive financial accounting and reporting system."
+          :tech "Oracle Financials"}
+         {:el :system
+          :id :mybank.financial-management/treasury-management-system
+          :name "Treasury Management"
+          :desc "Manages liquidity, investments, and risk in the treasury function."
+          :tech "Kyriba"}
+         {:el :system
+          :id :mybank.financial-management/expense-management-system
+          :name "Expense Management"
+          :desc "Tracks and manages expenses."
+          :tech "Concur"}}}}

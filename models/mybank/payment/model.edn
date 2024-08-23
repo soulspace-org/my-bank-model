@@ -1,0 +1,25 @@
+;;;;
+;;;; MyBank Payment Domain Model
+;;;;
+#{
+  {:el :context-boundary
+   :id :mybank.payment/context-boundary
+   :name "Payment Systems"
+   :desc "Manages interbank payments, ACH, and SWIFT transactions."
+   :ct #{{:el :system
+          :id :mybank.payment/payment-gateway-system
+          :name "Payment Gateway"
+          :desc "Facilitates credit/debit card transactions."
+          :tech "Java and Spring Boot"}
+         {:el :system
+          :id :mybank.payment/swift-rtgs-neft-system
+          :name "SWIFT/RTGS/NEFT"
+          :desc "Handles interbank transfers and settlements."
+          :tech "Java and Camel"}
+         {:el :system
+          :id :mybank.payment/ach-system
+          :name "ACH System"
+          :desc "Processes ACH transactions for direct deposits and bill payments."
+          :tech "Java and Spring Batch"}}}
+
+  }

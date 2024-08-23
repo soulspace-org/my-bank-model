@@ -1,0 +1,22 @@
+;;;;
+;;;; MyBank Core Banking Domain Model
+;;;;
+#{{:el :context-boundary
+   :id :mybank.core-banking/context-boundary
+   :name "Core Banking System"
+   :desc "Manages customer accounts, transactions, and loans."
+   :ct #{{:el :system
+          :id :mybank.core-banking/account-management-system
+          :name "Account Management"
+          :desc "Handles customer accounts, deposits, and withdrawals."
+          :tech "Java and Spring Boot"}
+         {:el :system
+          :id :mybank.core-banking/transaction-processing-system
+          :name "Transaction Processing"
+          :desc "Processes financial transactions in real-time."
+          :tech "Java and Kafka"}
+         {:el :system
+          :id :mybank.core-banking/loan-management-system
+          :name "Loan Management"
+          :desc "Manages loan products, applications, and repayments."
+          :tech "Java and Spring Boot"}}}}

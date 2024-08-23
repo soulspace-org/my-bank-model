@@ -1,0 +1,48 @@
+;;;;
+;;;; MyBank User Roles Example
+;;;;
+#{;;;
+  ;;; Nodes
+  ;;;
+  {:el :person
+   :id :mybank.user-role/corporate-customer
+   :external true
+   :name "Corporate Customer"
+   :desc "Corporate Customer of MyBank."}
+  {:el :person
+   :id :mybank.user-role/personal-customer
+   :external true
+   :name "Personal Customer"
+   :desc "Personal Customer of MyBank."}
+  {:el :person
+   :id :mybank.user-role/customer-service-stuff
+   :name "Customer Service Staff"
+   :desc "Customer service staff within the bank."}
+  {:el :person
+   :id :mybank.user-role/backoffice-stuff
+   :name "Backoffice Staff"
+   :desc "Administration and support staff within the bank."}
+
+  {:el :person
+   :id :mybank.user-role/risk-manager
+   :name "Risk Manager"
+   :desc "Responsible for managing the risks."}
+  
+  {:el :person
+   :id :mybank.user-role/compliance-manager
+   :name "Compliance Manager"
+   :desc "Responsible for the compliance of MyBank."}
+
+  {:el :person
+   :id :mybank.user-role/project-manager
+   :name "Project Manager"
+   :desc "Manages projects at MyBank."}
+
+  {:el :person
+   :id :mybank.user-role/devops-engineer
+   :name "DevOps Engineer"
+   :desc "Develops and operates software systems."}
+
+
+  ;
+  }

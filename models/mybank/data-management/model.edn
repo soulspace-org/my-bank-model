@@ -1,0 +1,22 @@
+;;;;
+;;;; MyBank Data Management Domain Model
+;;;;
+#{{:el :context-boundary
+   :id :mybank.data-management/context-boundary
+   :name "Data Management and Analytics"
+   :desc "Manages data storage, warehousing, and analytics."
+   :ct #{{:el :system
+          :id :mybank.data-management/data-warehouse-system
+          :name "Data Warehouse"
+          :desc "Central repository for storing large volumes of data."
+          :tech "AWS Redshift"}
+         {:el :system
+          :id :mybank.data-management/business-intelligence-system
+          :name "Business Intelligence (BI)"
+          :desc "Provides tools for reporting and data analysis."
+          :tech "Tableau and Python"}
+         {:el :system
+          :id :mybank.data-management/big-data-analytics-system
+          :name "Big Data Analytics"
+          :desc "Advanced analytics for predictive modeling."
+          :tech "Hadoop and Spark"}}}}
