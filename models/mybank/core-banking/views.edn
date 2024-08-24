@@ -1,3 +1,6 @@
+;;;;
+;;;; MyBank Core Banking Domain Views
+;;;;
 #{{:el :context-view
    :id :mybank.core-banking/context-view
    :spec {:selection {:namespace-prefix "mybank.core-banking"}

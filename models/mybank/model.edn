@@ -80,18 +80,6 @@
    :to :mybank/internet-banking-system
    :name "views account balances and makes payments using"}
 
-  {:el :request
-   :id :mybank/internet-banking-system-uses-email-system
-   :from :mybank/internet-banking-system
-   :to :mybank/email-system
-   :name "sends e-mail using"}
-
-  {:el :request
-   :id :mybank/internet-banking-system-uses-account-management-system
-   :from :mybank/internet-banking-system
-   :to :mybank.core-banking/account-management-system
-   :name "gets account information from, and makes payments using"}
-
   {:el :send
    :id :mybank/email-system-sends-mail-to-personal-customer
    :from :mybank/email-system
@@ -99,32 +87,26 @@
    :name "sends e-mail to"}
 
   {:el :request
-   :id :mybank/internet-banking-system-uses-loan-management-system
-   :from :mybank/internet-banking-system
-   :to :mybank.core-banking/loan-management-system
-   :name "fetches loan details and payment status from"}
-
-  {:el :request
-   :id :mybank/loan-management-system-uses-account-management-system
+   :id :mybank.core-banking/loan-management-system-uses-account-management-system
    :from :mybank.core-banking/loan-management-system
    :to :mybank.core-banking/account-management-system
    :name "retrieves customer account information from"}
 
   {:el :request
-   :id :mybank/internet-banking-system-uses-payment-gateway-system
-   :from :mybank/internet-banking-system
-   :to :mybank/payment-gateway-system
+   :id :mybank.digital-banking/internet-banking-system-uses-payment-gateway-system
+   :from :mybank.digital-banking/internet-banking-system
+   :to :mybank.payment/payment-gateway-system
    :name "processes customer payments using"}
 
   {:el :request
-   :id :mybank/payment-gateway-system-uses-transaction-processing-system
-   :from :mybank/payment-gateway-system
+   :id :mybank.payment/payment-gateway-system-uses-transaction-processing-system
+   :from :mybank.payment/payment-gateway-system
    :to :mybank.core-banking/transaction-processing-system
    :name "validates and processes payments using"}
 
   {:el :request
-   :id :mybank/risk-management-system-uses-transaction-processing-system
-   :from :mybank/risk-management-system
+   :id :mybank.risk-management/risk-management-system-uses-transaction-processing-system
+   :from :mybank.risk-management/risk-management-system
    :to :mybank.core-banking/transaction-processing-system
    :name "fetches transaction history and customer data from"}
 
@@ -165,7 +147,7 @@
   {:el :request
    :id :mybank.user-role/personal-customer-uses-single-page-app
    :from :mybank.user-role/personal-customer
-   :to :mybank/single-page-app
+   :to :mybank.digital-banking/single-page-app
    :name "views account balances and makes payments using"}
 
   {:el :request
@@ -175,48 +157,21 @@
    :name "views account balances and makes payments using"}
 
   {:el :request
-   :id :mybank/mobile-app-calls-api-application
-   :from :mybank/mobile-app
-   :to :mybank/api-application
-   :name "makes API calls to"
-   :tech "Transit/HTTPS"}
-
-  {:el :request
-   :id :mybank/api-application-uses-database
-   :from :mybank/api-application
-   :to :mybank/database
-   :name "reads from and writes to"
-   :tech "Datalog"}
-
-  {:el :request
-   :id :mybank/api-application-uses-email-system
-   :from :mybank/api-application
-   :to :mybank/email-system
-   :name "sends e-mail using"}
-
-  {:el :request
-   :id :mybank/api-application-uses-mainframe-banking-system
-   :from :mybank/api-application
-   :to :mybank/mainframe-banking-system
-   :name "makes API calls to"
-   :tech "XML/HTTPS"}
-
-  {:el :request
-   :id :mybank/loan-management-system-uses-api-application
-   :from :mybank/loan-management-system
-   :to :mybank/api-application
+   :id :mybank.core-banking/loan-management-system-uses-api-application
+   :from :mybank.core-banking/loan-management-system
+   :to :mybank.digital-banking/api-application
    :name "retrieves loan-related information via API calls"}
 
   {:el :request
    :id :mybank/risk-management-system-uses-api-application
    :from :mybank/risk-management-system
-   :to :mybank/api-application
+   :to :mybank.digital-banking/api-application
    :name "fetches transaction data via API calls"}
 
   {:el :request
    :id :mybank/payment-gateway-system-uses-api-application
    :from :mybank/payment-gateway-system
-   :to :mybank/api-application
+   :to :mybank.digital-banking/api-application
    :name "validates transactions via API calls"}
 
   {:el :request
@@ -230,29 +185,29 @@
   ;; Component level
   ;;
   {:el :request
-   :id :mybank/single-page-app-calls-sign-in-controller
-   :from :mybank/single-page-app
-   :to :mybank/sign-in-controller
+   :id :mybank.digital-banking/single-page-app-calls-sign-in-controller
+   :from :mybank.digital-banking/single-page-app
+   :to :mybank.digital-banking/sign-in-controller
    :name "makes API calls to"
    :tech "Transit/HTTPS"}
 
   {:el :request
-   :id :mybank/single-page-app-calls-reset-password-controller
-   :from :mybank/single-page-app
+   :id :mybank.digital-banking/single-page-app-calls-reset-password-controller
+   :from :mybank.digital-banking/single-page-app
    :to :mybank/reset-password-controller
    :name "makes API calls to"
    :tech "Transit/HTTPS"}
 
   {:el :request
-   :id :mybank/single-page-app-calls-accounts-summary-controller
-   :from :mybank/single-page-app
+   :id :mybank.digital-banking/single-page-app-calls-accounts-summary-controller
+   :from :mybank.digital-banking/single-page-app
    :to :mybank/accounts-summary-controller
    :name "makes API calls to"
    :tech "Transit/HTTPS"}
 
   {:el :request
-   :id :mybank/loan-management-system-calls-loan-controller
-   :from :mybank/loan-management-system
+   :id :mybank.core-banking/loan-management-system-calls-loan-controller
+   :from :mybank.core-banking/loan-management-system
    :to :mybank/loan-controller
    :name "retrieves loan information using"}
 
@@ -275,8 +230,8 @@
    :name "fetches analytical data using"}
 
   {:el :request
-   :id :mybank/sign-in-controller-uses-security-component
-   :from :mybank/sign-in-controller
+   :id :mybank.digital-banking/sign-in-controller-uses-security-component
+   :from :mybank.digital-banking/sign-in-controller
    :to :mybank/security-component
    :name "uses"}
 
@@ -323,7 +278,7 @@
   {:el :rel
    :id :mybank/backoffice-staff-uses-loan-management-system
    :from :mybank.user-role/backoffice-staff
-   :to :mybank/loan-management-system
+   :to :mybank.core-banking/loan-management-system
    :name "processes loan applications and updates loan status using"}
 
   {:el :rel

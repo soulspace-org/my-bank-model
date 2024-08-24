@@ -1,8 +1,11 @@
 ;;;;
 ;;;; MyBank Digital Banking Domain Model
 ;;;;
-#{
-  {:el :context-boundary
+#{;
+;;;
+;;; Nodes
+;;;
+{:el :context-boundary
    :id :mybank.digital-banking/context-boundary
    :name "Digital Banking"
    :desc "Enables online and mobile banking services for customers."
@@ -28,7 +31,7 @@
                 {:el :container
                  :id :mybank.digital-banking/api-application
                  :name "API Application"
-                 :desc "Provides internet banking functionality via a JSON/HTTPS API."
+                 :desc "Provides internet banking functionality via a RESTful JSON/HTTPS API."
                  :tech "Clojure and Liberator"
                  :ct #{{:el :component
                         :id :mybank.digital-banking/sign-in-controller
@@ -70,4 +73,55 @@
           :id :mybank.digital-banking/digital-wallets-system
           :name "Digital Wallets"
           :desc "Supports digital wallet integration and mobile payments."
-          :tech "Node.js and Express"}}}}
+          :tech "Node.js and Express"}}}
+
+;;;
+;;; Relations
+;;;  
+  {:el :request
+   :id :mybank.digital-banking/internet-banking-system-uses-email-system
+   :from :mybank.digital-banking/internet-banking-system
+   :to :mybank/email-system
+   :name "sends e-mail using"}
+
+  {:el :request
+   :id :mybank.digital-banking/internet-banking-system-uses-account-management-system
+   :from :mybank.digital-banking/internet-banking-system
+   :to :mybank.core-banking/account-management-system
+   :name "gets account information from, and makes payments using"}
+
+  {:el :request
+   :id :mybank.digital-banking/internet-banking-system-uses-loan-management-system
+   :from :mybank.digital-banking/internet-banking-system
+   :to :mybank.core-banking/loan-management-system
+   :name "fetches loan details and payment status from"}
+
+  {:el :request
+   :id :mybank/mobile-app-calls-api-application
+   :from :mybank/mobile-app
+   :to :mybank.digital-banking/api-application
+   :name "makes API calls to"
+   :tech "Transit/HTTPS"}
+
+  {:el :request
+   :id :mybank.digital-banking/api-application-uses-database
+   :from :mybank.digital-banking/api-application
+   :to :mybank.digital-banking/database
+   :name "reads from and writes to"
+   :tech "Datalog"}
+
+  {:el :request
+   :id :mybank.digital-banking/api-application-uses-email-system
+   :from :mybank.digital-banking/api-application
+   :to :mybank/email-system
+   :name "sends e-mail using"}
+
+  {:el :request
+   :id :mybank.digital-banking/api-application-uses-account-management-system
+   :from :mybank.digital-banking/api-application
+   :to :mybank.core-banking/account-management-system
+   :name "makes API calls to"
+   :tech "REST"}
+
+  ;          
+  }
