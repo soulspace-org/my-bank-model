@@ -22,4 +22,3 @@ find generated -type f -name "*.dot" | while read file; do
   mkdir -p "$target_dir"
   dot "$file" -Tpng -o "$target_dir/$(basename "$file" .dot).png"
 done
-
