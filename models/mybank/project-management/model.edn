@@ -1,7 +1,31 @@
 ;;;;
 ;;;; MyBank Project Management and Development Domain Model
 ;;;;
-#{
+#{;
+  ;;;
+  ;;; Organization
+  ;;;
+ {:el :org-unit
+  :id :mybank.project-management/projects-org
+  :name "Projects"
+  :desc "Responsible for MyBank Projects"}
+  
+  ;;;
+  ;;; Roles
+  ;;;
+  {:el :person
+   :id :mybank.project-management/project-manager
+   :name "Project Manager"
+   :desc "Manages projects at MyBank."}
+
+  {:el :person
+   :id :mybank.project-management/devops-engineer
+   :name "DevOps Engineer"
+   :desc "Develops and operates software systems."}
+
+  ;;;
+  ;;; System Architecture
+  ;;;
   {:el :context-boundary
    :id :mybank.project-management/context-boundary
    :name "Project Management and Development"

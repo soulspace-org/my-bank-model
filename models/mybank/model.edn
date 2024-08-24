@@ -17,7 +17,7 @@
          {:ref :mybank.payment/context-boundary}
 
          ; Risk Management and Compliance
-         {:ref :mybank.risk-management/context-boundary}
+         {:ref :mybank.compliance/context-boundary}
 
          ; Data Management and Analytics
          {:ref :mybank.data-management/context-boundary}
@@ -77,7 +77,7 @@
   {:el :request
    :id :mybank.user-role/personal-customer-uses-internet-banking-system
    :from :mybank.user-role/personal-customer
-   :to :mybank/internet-banking-system
+   :to :mybank.digital-banking/internet-banking-system
    :name "views account balances and makes payments using"}
 
   {:el :send
@@ -105,34 +105,10 @@
    :name "validates and processes payments using"}
 
   {:el :request
-   :id :mybank.risk-management/risk-management-system-uses-transaction-processing-system
-   :from :mybank.risk-management/risk-management-system
+   :id :mybank.compliance/risk-management-system-uses-transaction-processing-system
+   :from :mybank.compliance/risk-management-system
    :to :mybank.core-banking/transaction-processing-system
    :name "fetches transaction history and customer data from"}
-
-  {:el :request
-   :id :mybank/analytics-system-uses-transaction-processing-system
-   :from :mybank/analytics-system
-   :to :mybank.core-banking/transaction-processing-system
-   :name "gathers data for analysis from"}
-
-  {:el :request
-   :id :mybank/analytics-system-uses-account-management-system
-   :from :mybank/analytics-system
-   :to :mybank.core-banking/account-management-system
-   :name "gathers data for analysis from"}
-
-  {:el :request
-   :id :mybank/internet-banking-system-uses-analytics-system
-   :from :mybank/internet-banking-system
-   :to :mybank/analytics-system
-   :name "sends usage data for analysis using"}
-
-  {:el :request
-   :id :mybank/risk-management-system-uses-analytics-system
-   :from :mybank/risk-management-system
-   :to :mybank/analytics-system
-   :name "analyzes data for risk assessment using"}
 
   ;;
   ;; Container level
@@ -140,7 +116,7 @@
   {:el :request
    :id :mybank.user-role/personal-customer-uses-web-app
    :from :mybank.user-role/personal-customer
-   :to :mybank/web-app
+   :to :mybank.digital-banking/web-app
    :name "visits bigbank.com/ib using"
    :tech "HTTPS"}
 
@@ -153,33 +129,8 @@
   {:el :request
    :id :mybank.user-role/personal-customer-uses-mobile-app
    :from :mybank.user-role/personal-customer
-   :to :mybank/mobile-app
+   :to :mybank.digital-banking/mobile-app
    :name "views account balances and makes payments using"}
-
-  {:el :request
-   :id :mybank.core-banking/loan-management-system-uses-api-application
-   :from :mybank.core-banking/loan-management-system
-   :to :mybank.digital-banking/api-application
-   :name "retrieves loan-related information via API calls"}
-
-  {:el :request
-   :id :mybank/risk-management-system-uses-api-application
-   :from :mybank/risk-management-system
-   :to :mybank.digital-banking/api-application
-   :name "fetches transaction data via API calls"}
-
-  {:el :request
-   :id :mybank/payment-gateway-system-uses-api-application
-   :from :mybank/payment-gateway-system
-   :to :mybank.digital-banking/api-application
-   :name "validates transactions via API calls"}
-
-  {:el :request
-   :id :mybank/analytics-system-uses-database
-   :from :mybank/analytics-system
-   :to :mybank/database
-   :name "stores and retrieves analytical data using"
-   :tech "Datalog"}
 
   ;;
   ;; Component level
@@ -194,57 +145,33 @@
   {:el :request
    :id :mybank.digital-banking/single-page-app-calls-reset-password-controller
    :from :mybank.digital-banking/single-page-app
-   :to :mybank/reset-password-controller
+   :to :mybank.digital-banking/reset-password-controller
    :name "makes API calls to"
    :tech "Transit/HTTPS"}
 
   {:el :request
    :id :mybank.digital-banking/single-page-app-calls-accounts-summary-controller
    :from :mybank.digital-banking/single-page-app
-   :to :mybank/accounts-summary-controller
+   :to :mybank.digital-banking/accounts-summary-controller
    :name "makes API calls to"
    :tech "Transit/HTTPS"}
 
   {:el :request
-   :id :mybank.core-banking/loan-management-system-calls-loan-controller
-   :from :mybank.core-banking/loan-management-system
-   :to :mybank/loan-controller
-   :name "retrieves loan information using"}
-
-  {:el :request
-   :id :mybank/risk-management-system-calls-risk-controller
-   :from :mybank/risk-management-system
-   :to :mybank/risk-controller
-   :name "assesses risk using"}
-
-  {:el :request
-   :id :mybank/payment-gateway-calls-transaction-controller
-   :from :mybank/payment-gateway
-   :to :mybank/transaction-controller
-   :name "validates transactions using"}
-
-  {:el :request
-   :id :mybank/analytics-system-calls-analytics-controller
-   :from :mybank/analytics-system
-   :to :mybank/analytics-controller
-   :name "fetches analytical data using"}
-
-  {:el :request
    :id :mybank.digital-banking/sign-in-controller-uses-security-component
    :from :mybank.digital-banking/sign-in-controller
-   :to :mybank/security-component
+   :to :mybank.digital-banking/security-component
    :name "uses"}
 
   {:el :request
-   :id :mybank/reset-password-controller-uses-email-component
-   :from :mybank/reset-password-controller
-   :to :mybank/email-component
+   :id :mybank.digital-banking/reset-password-controller-uses-email-component
+   :from :mybank.digital-banking/reset-password-controller
+   :to :mybank.digital-banking/email-component
    :name "uses for sending password reset emails"}
 
   {:el :request
-   :id :mybank/accounts-summary-controller-uses-mainframe-banking-system-facade
-   :from :mybank/accounts-summary-controller
-   :to :mybank/mainframe-banking-system-facade
+   :id :mybank.digital-banking/accounts-summary-controller-uses-mainframe-banking-system-facade
+   :from :mybank.digital-banking/accounts-summary-controller
+   :to :mybank.digital-banking/core-banking-systems-facade
    :name "retrieves account data from"}
 
 
@@ -254,7 +181,7 @@
   {:el :rel
    :id :mybank.user-role/personal-customer-uses-atm
    :from :mybank.user-role/personal-customer
-   :to :mybank/atm
+   :to :mybank.customer-channels/atm
    :name "withdraws cash using"}
 
   {:el :rel
@@ -264,16 +191,16 @@
    :name "asks questions to"}
 
   {:el :rel
-   :id :mybank/atm-uses-mainframe-banking-system
-   :from :mybank/atm
-   :to :mybank/mainframe-banking-system
-   :name "retrieves account balance and validates transaction"}
+   :id :mybank.customer-channels/atm-uses-account-management-system
+   :from :mybank.customer-channels/atm
+   :to :mybank.core-banking/account-management-system
+   :name "retrieves account balance"}
 
   {:el :rel
-   :id :mybank/customer-service-staff-uses-mainframe-banking-system
-   :from :mybank.user-role/customer-service-staff
-   :to :mybank/mainframe-banking-system
-   :name "retrieves and updates customer information using"}
+   :id :mybank.customer-channels/atm-uses-transaction-processing-system
+   :from :mybank.customer-channels/atm
+   :to :mybank.core-banking/transaction-processing-system
+   :name "validates transaction"}
 
   {:el :rel
    :id :mybank/backoffice-staff-uses-loan-management-system
@@ -284,38 +211,19 @@
   {:el :rel
    :id :mybank/backoffice-staff-uses-risk-management-system
    :from :mybank.user-role/backoffice-staff
-   :to :mybank/risk-management-system
+   :to :mybank.compliance/compliance-system
    :name "assesses customer risk for loan approval using"}
 
   {:el :rel
    :id :mybank/backoffice-staff-uses-payment-gateway
    :from :mybank.user-role/backoffice-staff
-   :to :mybank/payment-gateway
+   :to :mybank.payment/payment-gateway-system
    :name "validates and processes payments using"}
-
-  {:el :rel
-   :id :mybank/backoffice-staff-uses-mainframe-banking-system
-   :from :mybank.user-role/backoffice-staff
-   :to :mybank/mainframe-banking-system
-   :name "manages accounts and transactions using"}
 
   {:el :rel
    :id :mybank/customer-service-staff-uses-email-system
    :from :mybank.user-role/customer-service-staff
    :to :mybank/email-system
    :name "sends and receives customer communication using"}
-
-  {:el :rel
-   :id :mybank/customer-service-staff-uses-analytics-system
-   :from :mybank.user-role/customer-service-staff
-   :to :mybank/analytics-system
-   :name "retrieves customer interaction data for analysis using"}
-
-  {:el :rel
-   :id :mybank/analytics-system-uses-mainframe-banking-system
-   :from :mybank/analytics-system
-   :to :mybank/mainframe-banking-system
-   :name "gathers data for analysis from"}
-
   ;
   }

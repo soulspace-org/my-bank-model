@@ -3,7 +3,7 @@
 ;;;;
 #{;
 ;;;
-;;; Nodes
+;;; Architecture
 ;;;
 {:el :context-boundary
    :id :mybank.digital-banking/context-boundary
@@ -59,9 +59,9 @@
                         :desc "Provides customers with a summary of their bank accounts."
                         :tech "Clojure namespace"}
                        {:el :component
-                        :id :mybank.digital-banking/mainframe-banking-system-facade
-                        :name "Mainframe Banking System Facade"
-                        :desc "Facilitates interaction with the mainframe banking system."
+                        :id :mybank.digital-banking/core-banking-systems-facade
+                        :name "Core Banking Systems Facade"
+                        :desc "Facilitates interaction with the core banking systems."
                         :tech "Clojure Namespace, http-client"}}}
                 {:el :container
                  :subtype :database
@@ -97,8 +97,8 @@
    :name "fetches loan details and payment status from"}
 
   {:el :request
-   :id :mybank/mobile-app-calls-api-application
-   :from :mybank/mobile-app
+   :id :mybank.digital-banking/mobile-app-calls-api-application
+   :from :mybank.digital-banking/mobile-app
    :to :mybank.digital-banking/api-application
    :name "makes API calls to"
    :tech "Transit/HTTPS"}

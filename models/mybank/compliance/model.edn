@@ -1,0 +1,54 @@
+;;;;
+;;;; MyBank Risk Management Domain Model
+;;;;
+#{;;;
+  ;;; Organization
+  ;;;
+  {:el :org-unit
+   :id :mybank.compliance/compliance-org
+   :name "Compliance & Risk Management"
+   :desc "Responsible for the compliance and risk management of MyBank"
+   :ct [{:el :org-unit
+         :id :mybank.compliance/fraud
+         :name "Fraud"}
+        {:el :org-unit
+         :id :mybank.compliance/regulations
+         :name "Regulations"}
+        {:el :org-unit
+         :id :mybank.compliance/risk-management
+         :name "Risk Management"}]}
+
+  ;;;
+  ;;; Roles
+  ;;;
+  {:el :person
+   :id :mybank.compliance/risk-manager
+   :name "Risk Manager"
+   :desc "Responsible for managing the risks."}
+  {:el :person
+   :id :mybank.compliance/compliance-manager
+   :name "Compliance Manager"
+   :desc "Responsible for the compliance of MyBank."}
+
+  ;;;
+  ;;; System Architecture
+  ;;;
+  {:el :context-boundary
+   :id :mybank.compliance/context-boundary
+   :name "Risk Management and Compliance"
+   :desc "Detects and mitigates risks, ensuring regulatory compliance."
+   :ct #{{:el :system
+          :id :mybank.compliance/aml-system
+          :name "Anti-Money Laundering (AML) System"
+          :desc "Monitors and prevents money laundering activities."
+          :tech "Python and Scikit-learn"}
+         {:el :system
+          :id :mybank.compliance/fraud-detection-system
+          :name "Fraud Detection System"
+          :desc "Detects and mitigates fraudulent activities."
+          :tech "Python and TensorFlow"}
+         {:el :system
+          :id :mybank.compliance/compliance-system
+          :name "Compliance System"
+          :desc "Ensures operations comply with regulations."
+          :tech "Java and Spring Boot"}}}}

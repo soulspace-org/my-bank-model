@@ -1,7 +1,40 @@
 ;;;;
 ;;;; MyBank IT Management Domain Model
 ;;;;
-#{{:el :context-boundary
+#{;;;
+  ;;; Orgnization
+  ;;;
+  {:el :org-unit
+   :id :mybank.it-management/it-management-org
+   :name "IT Management"
+   :desc "Responsible for the IT platform of MyBank"
+   :ct #{{:el :org-unit
+          :id :mybank.it-management/azure-unit
+          :name "Azure Department"
+          :desc "Responsible for the Azure infrastructure."}}}
+
+  ;;;
+  ;;; Roles
+  ;;;
+  {:el :person
+   :id :mybank.it-management/cloud-solution-architect
+   :name "Cloud Solution Architect"
+   :desc "Designs cloud solutions"}
+
+  {:el :person
+   :id :mybank.it-management/cloud-solution-architect
+   :name "Cloud Operations Specialist"
+   :desc "Operates cloud infrastructure"}
+
+  {:el :person
+   :id :mybank.it-management/cloud-solution-architect
+   :name "Cloud FinOps Specialist"
+   :desc "Operates cloud infrastructure and controls costs"}
+
+  ;;;
+  ;;; System Architecture
+  ;;;
+  {:el :context-boundary
    :id :mybank.it-management/context-boundary
    :name "IT Management"
    :desc "Manages IT infrastructure, cloud resources, and system monitoring."
@@ -22,40 +55,57 @@
           :tech "Nagios and Prometheus"}}}
 
   {:el :node
-   :id :mybank.it-management/azure-tenant
+   :id :mybank.it-management.azure/azure-tenant
    :name "MyBank Azure Tenant"
    :tech "Azure"
    :desc "Azure Tenant for MyBank"
+   :tags #{"platform" "cloud"}
    :ct #{{:el :node
-          :id :mybank.it-management/hub-subscription
+          :id :mybank.it-management.azure/hub-subscription
           :name "Hub Subscription"
           :tech "Azure Subscription"
           :desc "Subscription for the Hub Infrastructure"
+          :tags #{"platform" "cloud"}
           :ct #{{:el :node
-                 :id :mybank.it-management/hub-vnet
+                 :id :mybank.it-management.azure/hub-vnet
                  :name "Hub VNet"
                  :tech "Azure Virtual Network"
-                 :desc "VNet for the Hub Infrastructure"
+                 :desc "VNet for the hub infrastructure"
+                 :tags #{"platform" "cloud"}
+                 :ct #{{:el :node
+                        :id :mybank.it-management.azure/kafka-subnet
+                        :name "Kafka Subnet"
+                        :tech "Azure Subnet"
+                        :tags #{"platform" "cloud"}}}}
+                {:el :node
+                 :id :mybank.it-management.azure/spoke-vnet1
+                 :name "Spoke VNet 1"
+                 :tech "Azure Virtual Network"
+                 :desc "VNet for a spoke infrastructure"
+                 :tags #{"generic" "cloud"}
                  :ct #{}}}}}}
 
   {:el :node
-   :id :mybank.it-management/data-center
+   :id :mybank.it-management.onprem/data-center
    :name "MyBank On Premise Datacenter"
    ;:tech "Azure"
-   :desc "Data Center of MyBank"}
+   :desc "Data Center of MyBank"
+   :tags #{"platform" "onprem"}
+   :ct #{}}
 
   {:el :link
-   :id :mybank.it-management/data-center-links-to-hub-vnet
-   :from :mybank.it-management/data-center
-   :to :mybank.it-management/hub-vnet
+   :id :mybank.it-management.onprem/data-center-links-to-hub-vnet
+   :from :mybank.it-management.onprem/data-center
+   :to :mybank.it-management.azure/hub-vnet
    :name "network link"
    :tech "Azure Express Route"
-   :desc "High Speed/Volume Link 100 Mb/s"}
-  
+   :desc "High Speed/Volume Link 100 Mb/s"
+   :tags #{"platform" "cloud"}}
+
   {:el :responsible-for
-   :id :mybank.organization.it-management/azure-unit-responsible-for-azure-tenant
-   :from :mybank.organization.it-management/azure-unit
-   :to :mybank.it-management/azure-tenant
+   :id :mybank.it-management/azure-unit-responsible-for-azure-tenant
+   :from :mybank.it-management/azure-unit
+   :to :mybank.it-management.azure/azure-tenant
    :name "responsible for"}
   ;
   }

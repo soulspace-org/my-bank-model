@@ -9,14 +9,17 @@
           :id :mybank.core-banking/account-management-system
           :name "Account Management"
           :desc "Handles customer accounts, deposits, and withdrawals."
-          :tech "Java and Spring Boot"}
+          :tech "Java and Spring Boot"
+          :ct #{}}
          {:el :system
           :id :mybank.core-banking/transaction-processing-system
           :name "Transaction Processing"
           :desc "Processes financial transactions in real-time."
-          :tech "Java and Kafka"}
+          :tech "Java and Kafka"
+          :ct #{}}
          {:el :system
           :id :mybank.core-banking/loan-management-system
           :name "Loan Management"
           :desc "Manages loan products, applications, and repayments."
-          :tech "Java and Spring Boot"}}}}
+          :tech "Java and Spring Boot"
+          :ct #{}}}}}
