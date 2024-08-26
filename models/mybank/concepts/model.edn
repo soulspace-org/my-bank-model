@@ -1,0 +1,124 @@
+;;;;
+;;;; Banking Concept Model
+;;;;
+#{;
+  ;;;
+  ;;; Nodes
+  ;;; 
+  {:el :concept
+   :id :mybank.concepts/bank
+   :name "Bank"
+   :desc "Organization providing services around money"}
+  {:el :concept
+   :id :mybank.concepts/customer
+   :name "Customer"
+   :desc "Entity requesting services around money"}
+  {:el :concept
+   :id :mybank.concepts/personal-customer
+   :name "Personal Customer"
+   :desc "A person requesting services around money"}
+  {:el :concept
+   :id :mybank.concepts/corporate-customer
+   :name "Corporate Customer"
+   :desc "An organization requesting services around money"}
+  {:el :concept
+   :id :mybank.concepts/account
+   :name "Account"
+   :desc ""}
+  {:el :concept
+   :id :mybank.concepts/deposit
+   :name "Deposit"
+   :desc "Puts money on account"}
+  {:el :concept
+   :id :mybank.concepts/withdrawal
+   :name "Withdrawal"
+   :desc "Takes money from account"}
+  {:el :concept
+   :id :mybank.concepts/transfer
+   :name "Transfer"
+   :desc "Moves money from one account to another account"}
+  {:el :concept
+   :id :mybank.concepts/loan
+   :name "Loan"
+   :desc "Lending money from the bank to the customer"}
+  {:el :concept
+   :id :mybank.concepts/mortgage
+   :name "Mortgage"
+   :desc "A loan for a immobile, e.g. a house"}
+
+  ;;;
+  ;;; Relations
+  ;;;
+  {:el :has
+   :id :mybank.concepts/bank-has-customer
+   :from :mybank.concepts/bank
+   :to :mybank.concepts/customer
+   :name "has"}
+  {:el :has
+   :id :mybank.concepts/bank-has-account
+   :from :mybank.concepts/bank
+   :to :mybank.concepts/account
+   :name "provides"}
+  {:el :has
+   :id :mybank.concepts/bank-has-loan
+   :from :mybank.concepts/bank
+   :to :mybank.concepts/loan
+   :name "provides"}
+  {:el :is-a
+   :id :mybank.concepts/personal-customer-is-a-customer
+   :from :mybank.concepts/personal-customer
+   :to :mybank.concepts/customer
+   :name "is a"}
+  {:el :is-a
+   :id :mybank.concepts/corporate-customer-is-a-customer
+   :from :mybank.concepts/corporate-customer
+   :to :mybank.concepts/customer
+   :name "is a"}
+  {:el :has
+   :id :mybank.concepts/customer-has-account
+   :from :mybank.concepts/customer
+   :to :mybank.concepts/account
+   :name "has"}
+  {:el :rel
+   :id :mybank.concepts/customer-requests-loan
+   :from :mybank.concepts/customer
+   :to :mybank.concepts/loan
+   :name "requests"}
+  {:el :is-a
+   :id :mybank.concepts/mortgage-is-a-loan
+   :from :mybank.concepts/mortgage
+   :to :mybank.concepts/loan
+   :name "is a"}
+  {:el :rel
+   :id :mybank.concepts/customer-performs-deposit
+   :from :mybank.concepts/customer
+   :to :mybank.concepts/deposit
+   :name "performs"}
+  {:el :rel
+   :id :mybank.concepts/customer-performs-withdrawal
+   :from :mybank.concepts/customer
+   :to :mybank.concepts/withdrawal
+   :name "performs"}
+  {:el :rel
+   :id :mybank.concepts/customer-performs-transfer
+   :from :mybank.concepts/customer
+   :to :mybank.concepts/transfer
+   :name "performs"}
+  {:el :rel
+   :id :mybank.concepts/deposit-to-account
+   :from :mybank.concepts/deposit
+   :to :mybank.concepts/account
+   :name "to"}
+  {:el :rel
+   :id :mybank.concepts/withdrawal-from-account
+   :from :mybank.concepts/withdrawal
+   :to :mybank.concepts/account
+   :name "from"}
+  {:el :rel
+   :id :mybank.concepts/transfer-between-account
+   :from :mybank.concepts/transfer
+   :to :mybank.concepts/account
+   :name "between"}
+
+  ;
+  }

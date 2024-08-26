@@ -9,7 +9,7 @@
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Core Banking Context View"
    :title "Context View of the Core Banking Systems"
-   :desc "Shows the systems of the domain core banking and their relations."}
+   :desc "Shows the systems of the domain Core Banking and their relations."}
   
   {:el :container-view
    :id :mybank.core-banking/container-view
@@ -19,7 +19,7 @@
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Core Banking Container View"
    :title "Container View of the Core Banking Systems"
-   :desc "Shows the systems and containers of the domain core banking and their relations."}
+   :desc "Shows the systems and containers of the domain Core Banking and their relations."}
 
   ;
   }
