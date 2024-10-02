@@ -5,7 +5,7 @@
   ;;; Nodes
   ;;;
   {:el :enterprise-boundary
-   :id :mybank/my-bank-plc
+   :id :mybank/mybank-plc
    :name "My Bank"
    :ct #{; Core Banking System
          {:ref :mybank.core-banking/context-boundary}

@@ -27,5 +27,4 @@ bin/
 hs_err_pid*.log
 
 ## Project
-export/
 generated/
