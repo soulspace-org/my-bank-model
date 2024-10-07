@@ -51,4 +51,9 @@
           :id :mybank.compliance/compliance-system
           :name "Compliance System"
           :desc "Ensures operations comply with regulations."
+          :tech "Java and Spring Boot"}
+         {:el :system
+          :id :mybank.compliance/risk-management-system
+          :name "Risk Management System"
+          :desc "Detects risks and manages risk mitigation."
           :tech "Java and Spring Boot"}}}}

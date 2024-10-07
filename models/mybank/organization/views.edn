@@ -1,0 +1,5 @@
+#{{:el :organization-structure-view
+   :id :mybank.organization/organization-structure-view
+   :spec {:selection {:id :mybank.organization/my-bank-organization}}
+   :title "MyBank Organization Chart"
+   :desc "Shows the structure of the MyBank organization"}}
