@@ -19,7 +19,9 @@
 
   {:el :deployment-view
    :id :mybank/deployment-view
-   :spec {:selection {:namespace-prefix "mybank"}
+   :spec {:selection [{:namespace-prefix "mybank" :el :node}
+                      {:to-namespace-prefix "mybank" :els #{:link :deployed-on}}]
+          :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Deployment View"
    :title "Deployment View for the MyBank Systems"}

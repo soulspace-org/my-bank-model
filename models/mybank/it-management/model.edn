@@ -76,8 +76,14 @@
                         :id :mybank.it-management.azure/kafka-subnet
                         :name "Kafka Subnet"
                         :tech "Azure Subnet"
-                        :tags #{"platform" "cloud"}}}}
-                {:el :node
+                        :tags #{"platform" "cloud"}}}}}}
+         {:el :node
+          :id :mybank.it-management.azure/spoke1-subscription
+          :name "Spoke1 Subscription"
+          :tech "Azure Subscription"
+          :desc "Subscription for the Spoke1 Infrastructure"
+          :tags #{"platform" "cloud"}
+          :ct #{{:el :node
                  :id :mybank.it-management.azure/spoke-vnet1
                  :name "Spoke VNet 1"
                  :tech "Azure Virtual Network"
@@ -99,7 +105,16 @@
    :to :mybank.it-management.azure/hub-vnet
    :name "network link"
    :tech "Azure Express Route"
-   :desc "High Speed/Volume Link 100 Mb/s"
+   :desc "High speed/volume link 100 Mb/s"
+   :tags #{"platform" "cloud"}}
+
+  {:el :link
+   :id :mybank.it-management.azure/spoke-vnet1-peered-to-hub-vnet
+   :from :mybank.it-management.azure/spoke-vnet1
+   :to :mybank.it-management.azure/hub-vnet
+   :name "peered to"
+   :tech "Azure Virtual Network Peering"
+   :desc "Provides connectivity for the spoke"
    :tags #{"platform" "cloud"}}
 
   {:el :responsible-for

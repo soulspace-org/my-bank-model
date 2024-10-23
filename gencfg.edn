@@ -34,6 +34,22 @@
  ;;
  ;;  Markdown Generation for Model Elements
  ;;
+ {:selection {:el :concept}
+  :template "docs/concept.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:selection {:el :use-case}
+  :template "docs/use-cases.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:selection {:el :use-case}
+  :template "docs/use-cases.md.cmb"
+  :base-namespace "mybank"
+  :base-name "use-cases"
+  :extension "md"}
+
  {:selection {:el :technical-architecture-model-node}
   :template "docs/architecture-node.md.cmb"
   :per-element true
@@ -42,6 +58,22 @@
 
  {:selection {:els #{:organization :org-unit}}
   :template "docs/organization.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:selection {:namespace-prefix "mybank" :el :state}
+  :template "docs/state.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:namespace-prefix "mybank" :el :package}
+  :template "docs/package.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:selection {:namespace-prefix "mybank" :els #{:interface :class}}
+  :template "docs/code.md.cmb"
   :per-element true
   :id-as-name true
   :extension "md"}
@@ -56,16 +88,11 @@
   :base-namespace "mybank"
   :base-name "user-roles"
   :extension "md"}
- 
- {:selection {:el :use-case}
-  :template "docs/use-cases.md.cmb"
+
+ {:selection {:el :node}
+  :template "docs/deployment-node.md.cmb"
   :per-element true
   :id-as-name true
-  :extension "md"}
- {:selection {:el :use-case}
-  :template "docs/use-cases.md.cmb"
-  :base-namespace "mybank"
-  :base-name "use-cases"
   :extension "md"}
 
  ;;
@@ -153,7 +180,7 @@
  ;;;
  ;;; Exports
  ;;;
- {:selection {:namespace-prefix "banking"}
+ #_{:selection {:namespace-prefix "mybank"}
   :template "exports/model.edn.cmb"
   :per-namespace true
   :subdir "export/edn"
@@ -161,7 +188,7 @@
   :extension "edn"
   :debug true}
 
- {:view-selection {:namespace-prefix "banking"}
+ #_{:view-selection {:namespace-prefix "mybank"}
   :template "exports/views.edn.cmb"
   :per-namespace true
   :subdir "export/edn"
