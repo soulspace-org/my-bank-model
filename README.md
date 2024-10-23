@@ -26,6 +26,9 @@ images from the rendered views.
 The `overarch.sh` script in the root folder only calls Overarch to render views
 and template based artifacts. This script does not generate images.
 
+## Version
+0.1.0
+
 ## Copyright
 (c) 2024 Ludger Solbach
 
