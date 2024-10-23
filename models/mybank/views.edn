@@ -26,5 +26,19 @@
    :name "Deployment View"
    :title "Deployment View for the MyBank Systems"}
 
+  {:el :deployment-structure-view
+   :id :mybank/azure-deployment-structure-view
+   :spec {:selection {:id :mybank.it-management.azure/azure-tenant}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Deployment View" 
+   :title "Deployment View for the MyBank Systems"}
+
+  {:el :organization-structure-view
+   :id :mybank/organization-structure-view
+   :spec {:selection {:namespace-prefix "mybank" :el :organization}}
+   :name "Deployment Stucture View"
+   :title "Deployment Stucture View for the MyBank Systems"}
+
   ;
   }
