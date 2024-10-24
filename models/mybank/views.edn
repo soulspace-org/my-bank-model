@@ -37,8 +37,22 @@
   {:el :organization-structure-view
    :id :mybank/organization-structure-view
    :spec {:selection {:namespace-prefix "mybank" :el :organization}}
-   :name "Deployment Stucture View"
-   :title "Deployment Stucture View for the MyBank Systems"}
+   :name "Organisation Stucture View"
+   :title "Organisation Stucture View for the MyBank Systems"
+   :desc ""}
+
+  {:el :model-view
+   :id :mybank/model-view
+   :spec {:selection {}}
+   :name "Model View"
+   :title "Overview of the complete model"
+   :desc "shows the complete model graph"}
+  
+  {:el :glossary-view
+   :id :mybank/glossary
+   :spec {:selection {}}
+   :name "Glossary"
+   :desc "describes relevant elements"}
 
   ;
   }
