@@ -28,7 +28,7 @@
 
   {:el :deployment-structure-view
    :id :mybank/azure-deployment-structure-view
-   :spec {:selection {:id :mybank.it-management.azure/mytenant}
+   :spec {:selection {:id :mybank.it-management.azure/mybank-tenant}
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Deployment View" 

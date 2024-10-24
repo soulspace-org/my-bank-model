@@ -138,7 +138,7 @@
   {:el :responsible-for
    :id :mybank.it-management/azure-unit-responsible-for-azure-tenant
    :from :mybank.it-management/azure-unit
-   :to :mybank.it-management.azure/my-tenant
+   :to :mybank.it-management.azure/mybank-tenant
    :name "responsible for"}
   ;
   }
