@@ -55,41 +55,59 @@
           :tech "Nagios and Prometheus"}}}
 
   {:el :node
-   :id :mybank.it-management.azure/azure-tenant
+   :id :mybank.it-management.azure/mybank-tenant
    :name "MyBank Azure Tenant"
    :tech "Azure"
    :desc "Azure Tenant for MyBank"
    :tags #{"platform" "cloud"}
    :ct #{{:el :node
-          :id :mybank.it-management.azure/hub-subscription
-          :name "Hub Subscription"
-          :tech "Azure Subscription"
-          :desc "Subscription for the Hub Infrastructure"
-          :tags #{"platform" "cloud"}
+          :id :mybank.it-management.azure/platform-management-group
+          :name "Platform Management Group"
           :ct #{{:el :node
-                 :id :mybank.it-management.azure/hub-vnet
-                 :name "Hub VNet"
-                 :tech "Azure Virtual Network"
-                 :desc "VNet for the hub infrastructure"
+                 :id :mybank.it-management.azure/connectivity-subscription
+                 :name "Connectivity Subscription"
+                 :tech "Azure Subscription"
+                 :desc "Subscription for the Connectivity Infrastructure"
                  :tags #{"platform" "cloud"}
                  :ct #{{:el :node
-                        :id :mybank.it-management.azure/kafka-subnet
-                        :name "Kafka Subnet"
-                        :tech "Azure Subnet"
-                        :tags #{"platform" "cloud"}}}}}}
+                        :id :mybank.it-management.azure/hub-vnet
+                        :name "Hub VNet"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the hub infrastructure"
+                        :tags #{"platform" "cloud"}
+                        :ct #{{:el :node
+                               :id :mybank.it-management.azure/kafka-subnet
+                               :name "Kafka Subnet"
+                               :tech "Azure Subnet"
+                               :tags #{"platform" "cloud"}}}}}}
+                {:el :node
+                 :id :mybank.it-management.azure/identity-subscription
+                 :name "Identity Subscription"
+                 :tech "Azure Subscription"
+                 :desc "Subscription for the IAM Infrastructure"
+                 :tags #{"platform" "cloud"}}
+                {:el :node
+                 :id :mybank.it-management.azure/management-subscription
+                 :name "Management Subscription"
+                 :tech "Azure Subscription"
+                 :desc "Subscription for the Management Infrastructure"
+                 :tags #{"platform" "cloud"}}}}
          {:el :node
-          :id :mybank.it-management.azure/spoke1-subscription
-          :name "Spoke1 Subscription"
-          :tech "Azure Subscription"
-          :desc "Subscription for the Spoke1 Infrastructure"
-          :tags #{"platform" "cloud"}
+          :id :mybank.it-management.azure/landing-zone-management-group
+          :name "Landing Zone Management Group"
           :ct #{{:el :node
-                 :id :mybank.it-management.azure/spoke-vnet1
-                 :name "Spoke VNet 1"
-                 :tech "Azure Virtual Network"
-                 :desc "VNet for a spoke infrastructure"
-                 :tags #{"generic" "cloud"}
-                 :ct #{}}}}}}
+               :id :mybank.it-management.azure/lz1-subscription
+               :name "LZ1 Subscription"
+               :tech "Azure Subscription"
+               :desc "Subscription for the landing zone 1"
+               :tags #{"platform" "cloud"}
+               :ct #{{:el :node
+                      :id :mybank.it-management.azure/lz1-vnet1
+                      :name "VNet 1"
+                      :tech "Azure Virtual Network"
+                      :desc "VNet for a spoke infrastructure"
+                      :tags #{"generic" "cloud"}
+                      :ct #{}}}}}}}}
 
   {:el :node
    :id :mybank.it-management.onprem/data-center
@@ -110,7 +128,7 @@
 
   {:el :link
    :id :mybank.it-management.azure/spoke-vnet1-peered-to-hub-vnet
-   :from :mybank.it-management.azure/spoke-vnet1
+   :from :mybank.it-management.azure/lz1-vnet1
    :to :mybank.it-management.azure/hub-vnet
    :name "peered to"
    :tech "Azure Virtual Network Peering"
@@ -120,7 +138,7 @@
   {:el :responsible-for
    :id :mybank.it-management/azure-unit-responsible-for-azure-tenant
    :from :mybank.it-management/azure-unit
-   :to :mybank.it-management.azure/azure-tenant
+   :to :mybank.it-management.azure/my-tenant
    :name "responsible for"}
   ;
   }
