@@ -31,6 +31,15 @@
    :desc "Responsible for the compliance of MyBank."}
 
   ;;;
+  ;;; Role Assignments
+  ;;; 
+  {:el :role-in
+   :id :mybank.compliance/risk-manager-role-in-risk-management
+   :from :mybank.compliance/risk-manager
+   :to :mybank.compliance/risk-management
+   :name "function"}
+
+  ;;;
   ;;; System Architecture
   ;;;
   {:el :context-boundary

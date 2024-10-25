@@ -1,7 +1,7 @@
-# User Role Cloud FinOps Specialist
+# User Role Cloud Solution Architect
 
 ## Description
-Operates cloud infrastructure and controls costs
+Designs cloud solutions
 
 
 

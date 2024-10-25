@@ -1,5 +1,7 @@
 # Use Cases
 
+This is a list of the use cases.
+
 | Use Case | Level | Description |
 |---|---|---|
 

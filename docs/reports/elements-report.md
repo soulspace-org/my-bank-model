@@ -25,6 +25,8 @@
  :mybank.infrastructure-management/cloud-services-system | Cloud Services | :system |  | Cloud computing resources for scalability and flexibility. | AWS and Azure | 
  :mybank.payment/payment-gateway-system-uses-transaction-processing-system | validates and processes payments using | :request |  |  |  | 
  :mybank.project-management/dev-platforms | Development Platforms | :system |  | Tools for software development, testing, and deployment. | Jenkins and GitLab | 
+ :mybank.it-management/aws-unit | AWS Platform | :org-unit |  | Responsible for the AWS platform. |  | 
+ :mybank.it-management/cloud-operations-specialist-role-in-aws-unit | role in | :role-in |  | Operates the AWS platform |  | 
  :mybank.digital-banking/digital-wallets-system | Digital Wallets | :system |  | Supports digital wallet integration and mobile payments. | Node.js and Express | 
  :mybank.concepts/customer-performs-transfer | performs | :rel |  |  |  | 
  :mybank.digital-banking/context-boundary | Digital Banking | :context-boundary |  | Enables online and mobile banking services for customers. |  | 
@@ -44,7 +46,9 @@
  :mybank.project-management/projects-org-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.user-role/personal-customer-uses-atm | withdraws cash using | :rel |  |  |  | 
  :mybank.integration-middleware/soa | Service-Oriented Architecture (SOA) | :system |  | Framework for enabling seamless integration between services. | Apache CXF | 
+ :mybank.it-management/cloud-solution-architect-role-in-azure-unit | role in | :role-in |  | Architects solutions on the Azure platform |  | 
  :mybank.compliance/aml-system | Anti-Money Laundering (AML) System | :system |  | Monitors and prevents money laundering activities. | Python and Scikit-learn | 
+ :mybank.it-management/cloud-finops-specialist | Cloud FinOps Specialist | :person |  | Operates cloud infrastructure and controls costs |  | 
  :mybank/backoffice-staff-uses-risk-management-system | assesses customer risk for loan approval using | :rel |  |  |  | 
  :mybank.user-role/personal-customer | Personal Customer | :person |  | Personal Customer of MyBank. |  | 
  :mybank.payment/ach-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
@@ -63,6 +67,7 @@
  :mybank.payment/swift-rtgs-neft-system | SWIFT/RTGS/NEFT | :system |  | Handles interbank transfers and settlements. | Java and Camel | 
  :mybank.it-management.azure/management-subscription | Management Subscription | :node |  | Subscription for the Management Infrastructure | Azure Subscription | #{"cloud" "platform"}
  :mybank.organization/corporate-customers | Corporate Customers | :org-unit |  |  |  | 
+ :mybank.it-management/cloud-solution-architect-role-in-aws-unit | role in | :role-in |  | Architects solutions on the AWS platform |  | 
  :mybank.compliance/risk-manager | Risk Manager | :person |  | Responsible for managing the risks. |  | 
  :mybank.digital-banking/internet-banking-system-uses-account-management-system | gets account information from, and makes payments using | :request |  |  |  | 
  :mybank.organization.personal-customers/personal-loans-org | Personal Loans | :org-unit |  |  |  | 
@@ -103,13 +108,14 @@
  :mybank.security/identity-access-management-system | Identity and Access Management (IAM) | :system |  | Manages secure access to systems and data. | OAuth 2.0 and OpenID Connect | 
  :mybank.project-management/devops-engineer | DevOps Engineer | :person |  | Develops and operates software systems. |  | 
  :mybank.digital-banking/internet-banking-system-uses-loan-management-system | fetches loan details and payment status from | :request |  |  |  | 
+ :mybank.it-management/cloud-operations-specialist | Cloud Operations Specialist | :person |  | Operates cloud infrastructure |  | 
  :mybank.digital-banking/accounts-summary-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.core-banking/loan-management-system-uses-account-management-system | retrieves customer account information from | :request |  |  |  | 
- :mybank.it-management/azure-unit | Azure Department | :org-unit |  | Responsible for the Azure infrastructure. |  | 
  :mybank.it-management.azure/lz1-subscription | LZ1 Subscription | :node |  | Subscription for the landing zone 1 | Azure Subscription | #{"cloud" "platform"}
  :mybank.core-banking/account-management-system | Account Management | :system |  | Handles customer accounts, deposits, and withdrawals. | Java and Spring Boot | 
  :mybank.payment/payment-gateway-system | Payment Gateway | :system |  | Facilitates credit/debit card transactions. | Java and Spring Boot | 
  :mybank.it-management.azure/landing-zone-management-group-contained-in-mybank-tenant | contained-in | :contained-in |  |  |  | 
+ :mybank.it-management/cloud-operations-specialist-role-in-azure-unit | role in | :role-in |  | Operates the Azure platform |  | 
  :mybank.concepts/account | Account | :concept |  |  |  | 
  :mybank.digital-banking/sign-in-controller | Sign In Controller | :component |  | Allows users to sign in to the banking system. | Clojure namespace | 
  :mybank/backoffice-staff-uses-loan-management-system | processes loan applications and updates loan status using | :rel |  |  |  | 
@@ -138,6 +144,8 @@
  :mybank/integration-middleware-context | Integration and Middleware | :context-boundary |  | Facilitates integration across systems. |  | 
  :mybank.concepts/bank | Bank | :concept |  | Organization providing services around money |  | 
  :mybank.user-role/backoffice-staff | Backoffice Staff | :person |  | Administration and support staff within the bank. |  | 
+ :mybank.it-management/azure-unit | Azure Platform | :org-unit |  | Responsible for the Azure platform. |  | 
+ :mybank.it-management/it-management-org | IT Management | :org-unit |  | Responsible for the IT platform of MyBank |  | 
  :mybank.it-management.azure/identity-subscription-contained-in-platform-management-group | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/connectivity-subscription | Connectivity Subscription | :node |  | Subscription for the Connectivity Infrastructure | Azure Subscription | #{"cloud" "platform"}
  :mybank.investments/investments-org | Investments | :org-unit |  |  |  | 
@@ -152,6 +160,7 @@
  :mybank.infrastructure-management/system-monitoring-system | System Monitoring | :system |  | Monitors system performance and health. | Nagios and Prometheus | 
  :mybank.digital-banking/core-banking-systems-facade-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/landing-zone-management-group | Landing Zone Management Group | :node |  |  |  | 
+ :mybank.it-management/aws-unit-contained-in-it-management-org | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/security-component | Security Component | :component |  | Handles authentication, password changes, etc. | Clojure namespace | 
  :mybank.customer-channels/contact-center-system | Contact Center | :system |  | Telephony and customer support systems for call centers. | Genesys and Avaya | 
  :mybank.concepts/corporate-customer-is-a-customer | is a | :is-a |  |  |  | 
@@ -182,6 +191,7 @@
  :mybank.core-banking/loan-management-system | Loan Management | :system |  | Manages loan products, applications, and repayments. | Java and Spring Boot | 
  :mybank.integration-middleware/esb-contained-in-integration-middleware-context | contained-in | :contained-in |  |  |  | 
  :mybank.user-role/corporate-customer | Corporate Customer | :person |  | Corporate Customer of MyBank. |  | 
+ :mybank.compliance/risk-manager-role-in-risk-management | function | :role-in |  |  |  | 
  :mybank.concepts/corporate-customer | Corporate Customer | :concept |  | An organization requesting services around money |  | 
  :mybank.concepts/withdrawal-from-account | from | :rel |  |  |  | 
  :mybank.security/cybersecurity-system | Cybersecurity | :system |  | Protects against cyber threats. | Snort and Suricata | 
@@ -189,6 +199,7 @@
  :mybank.it-management.onprem/data-center | MyBank On Premise Datacenter | :node |  | Data Center of MyBank |  | #{"onprem" "platform"}
  :mybank.core-banking/context-boundary | Core Banking System | :context-boundary |  | Manages customer accounts, transactions, and loans. |  | 
  :mybank.human-resources/hris-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
+ :mybank.it-management/cloud-finops-specialist-role-in-aws-unit | role in | :role-in |  | Operations and cost control for the AWS platform |  | 
  :mybank.compliance/fraud-contained-in-compliance-org | contained-in | :contained-in |  |  |  | 
  :mybank.concepts/withdrawal | Withdrawal | :concept |  | Takes money from account |  | 
  :mybank.organization.personal-customers/personal-loans-org-contained-in-personal-customers | contained-in | :contained-in |  |  |  | 
@@ -202,6 +213,7 @@
  :mybank.concepts/bank-has-customer | has | :has |  |  |  | 
  :mybank.concepts/customer-performs-withdrawal | performs | :rel |  |  |  | 
  :mybank.payment/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
+ :mybank.it-management/cloud-finops-specialist-role-in-azure-unit | role in | :role-in |  | Operations and cost control for the Azure platform |  | 
  :mybank.concepts/bank-has-account | provides | :has |  |  |  | 
  :mybank.organization/human-resources-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank/customer-service-staff-uses-email-system | sends and receives customer communication using | :rel |  |  |  | 
@@ -209,7 +221,6 @@
  :mybank.digital-banking/email-component | E-mail Component | :component |  | Sends e-mails to users. | Clojure namespace | 
  :mybank.concepts/customer-requests-loan | requests | :rel |  |  |  | 
  :mybank.digital-banking/internet-banking-system-uses-payment-gateway-system | processes customer payments using | :request |  |  |  | 
- :mybank.it-management/cloud-solution-architect | Cloud Operations Specialist | :person |  | Operates cloud infrastructure |  | 
  :mybank.it-management.onprem/data-center-links-to-hub-vnet | network link | :link |  | High speed/volume link 100 Mb/s | Azure Express Route | #{"cloud" "platform"}
  :mybank.infrastructure-management/system-monitoring-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/single-page-app-calls-accounts-summary-controller | makes API calls to | :request |  |  | Transit/HTTPS | 
@@ -237,9 +248,7 @@
  :mybank.digital-banking/internet-banking-system | Internet Banking System | :system |  | Allows customers to view information about their bank accounts and make payments. |  | 
  :mybank.organization/marketing-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.human-resources/talent-management-system | Talent Management | :system |  | Tools for recruitment, training, and performance management. | SAP SuccessFactors | 
- :mybank.it-management/it-management-org | IT Management | :org-unit |  | Responsible for the IT platform of MyBank |  | 
  :mybank.user-role/personal-customer-uses-mobile-app | views account balances and makes payments using | :request |  |  |  | 
- :mybank.it-management/cloud-solution-architect | Cloud FinOps Specialist | :person |  | Operates cloud infrastructure and controls costs |  | 
  :mybank.compliance/fraud-detection-system | Fraud Detection System | :system |  | Detects and mitigates fraudulent activities. | Python and TensorFlow | 
  :mybank.project-management/project-management-tools-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.user-role/personal-customer-asks-customer-service-staff | asks questions to | :rel |  |  |  | 

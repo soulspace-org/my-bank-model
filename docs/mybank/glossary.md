@@ -28,10 +28,14 @@ Advanced analytics for predictive modeling.
 Software and hardware for in-branch banking services.
 ### [Business Intelligence (BI)](../mybank/data-management/business-intelligence-system.md)
 Provides tools for reporting and data analysis.
-### [Cloud FinOps Specialist](../mybank/it-management/cloud-solution-architect.md)
+### [Cloud FinOps Specialist](../mybank/it-management/cloud-finops-specialist.md)
 Operates cloud infrastructure and controls costs
+### [Cloud Operations Specialist](../mybank/it-management/cloud-operations-specialist.md)
+Operates cloud infrastructure
 ### [Cloud Services](../mybank/infrastructure-management/cloud-services-system.md)
 Cloud computing resources for scalability and flexibility.
+### [Cloud Solution Architect](../mybank/it-management/cloud-solution-architect.md)
+Designs cloud solutions
 ### [Compliance Manager](../mybank/compliance/compliance-manager.md)
 Responsible for the compliance of MyBank.
 ### [Compliance System](../mybank/compliance/compliance-system.md)
