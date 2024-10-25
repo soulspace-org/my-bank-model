@@ -1,0 +1,30 @@
+digraph "High Level Banking Concepts" {
+labelloc= "t"
+label="High Level Banking Concepts"
+
+
+mybank_concepts_account[label="Account", style="filled", fillcolor="#dddddd"];
+mybank_concepts_bank[label="Bank", style="filled", fillcolor="#dddddd"];
+mybank_concepts_corporateCustomer[label="Corporate Customer", style="filled", fillcolor="#dddddd"];
+mybank_concepts_customer[label="Customer", style="filled", fillcolor="#dddddd"];
+mybank_concepts_deposit[label="Deposit", style="filled", fillcolor="#dddddd"];
+mybank_concepts_loan[label="Loan", style="filled", fillcolor="#dddddd"];
+mybank_concepts_mortgage[label="Mortgage", style="filled", fillcolor="#dddddd"];
+mybank_concepts_personalCustomer[label="Personal Customer", style="filled", fillcolor="#dddddd"];
+mybank_concepts_transfer[label="Transfer", style="filled", fillcolor="#dddddd"];
+mybank_concepts_withdrawal[label="Withdrawal", style="filled", fillcolor="#dddddd"];
+mybank_concepts_bank -> mybank_concepts_account [label="provides"];
+mybank_concepts_bank -> mybank_concepts_customer [label="has"];
+mybank_concepts_bank -> mybank_concepts_loan [label="provides"];
+mybank_concepts_corporateCustomer -> mybank_concepts_customer [label="is a"];
+mybank_concepts_customer -> mybank_concepts_account [label="has"];
+mybank_concepts_customer -> mybank_concepts_deposit [label="performs"];
+mybank_concepts_customer -> mybank_concepts_transfer [label="performs"];
+mybank_concepts_customer -> mybank_concepts_withdrawal [label="performs"];
+mybank_concepts_customer -> mybank_concepts_loan [label="requests"];
+mybank_concepts_deposit -> mybank_concepts_account [label="to"];
+mybank_concepts_mortgage -> mybank_concepts_loan [label="is a"];
+mybank_concepts_personalCustomer -> mybank_concepts_customer [label="is a"];
+mybank_concepts_transfer -> mybank_concepts_account [label="between"];
+mybank_concepts_withdrawal -> mybank_concepts_account [label="from"];
+}

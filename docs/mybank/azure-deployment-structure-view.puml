@@ -1,0 +1,14 @@
+@startwbs
+* MyBank Azure Tenant
+** Landing Zone Management Group
+*** LZ1 Subscription
+**** VNet 1
+** Platform Management Group
+*** Connectivity Subscription
+**** Hub VNet
+***** Kafka Subnet
+*** Identity Subscription
+*** Management Subscription
+
+@endwbs
+

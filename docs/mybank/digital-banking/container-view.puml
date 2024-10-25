@@ -1,0 +1,29 @@
+@startuml container-view
+!include <C4/C4_Container.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Container View of the Digital Banking Systems
+Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
+  System_Boundary(mybank_digitalBanking_internetBankingSystem, "Internet Banking System") {
+    Container(mybank_digitalBanking_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
+    Container(mybank_digitalBanking_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
+    ContainerDb(mybank_digitalBanking_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
+    Container(mybank_digitalBanking_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
+    Container(mybank_digitalBanking_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
+  }
+  System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
+}
+Rel(mybank_digitalBanking_mobileApp, mybank_digitalBanking_apiApplication, "makes API calls to", $techn="Transit/HTTPS")
+Rel(mybank_digitalBanking_apiApplication, mybank_digitalBanking_database, "reads from and writes to", $techn="Datalog")
+SHOW_LEGEND()
+@enduml

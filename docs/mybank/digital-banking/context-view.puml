@@ -1,0 +1,21 @@
+@startuml context-view
+!include <C4/C4_Context.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Context View of the Digital Banking Systems
+Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
+  System(mybank_digitalBanking_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
+  System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
+}
+SHOW_LEGEND()
+@enduml
