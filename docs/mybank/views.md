@@ -36,7 +36,7 @@
 ## Organization Structure Views
 | Title | Description |
 |---|---|
-| [](../mybank/organization/organization-structure-view.md) | Shows the structure of the MyBank organization |
+| [MyBank Organization Chart](../mybank/organization/organization-structure-view.md) | Shows the structure of the MyBank organization |
 | [Organisation Stucture View](../mybank/organization-structure-view.md) | shows the hierarchical structure of the organization |
 ## Glossary Views
 | Title | Description |
