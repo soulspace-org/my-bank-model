@@ -118,6 +118,11 @@
   :per-element true
   :id-as-name true
   :extension "md"}
+ {:view-selection {:el :system-structure-view}
+  :template "docs/views/system-structure-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
  {:view-selection {:el :container-view}
   :template "docs/views/container-view.md.cmb"
   :per-element true
@@ -152,8 +157,12 @@
   :template "docs/views/deployment-view.md.cmb"
   :per-element true
   :id-as-name true
-  :extension "md"
-  :debug true}
+  :extension "md"}
+ {:view-selection {:namespace-prefix "banking" :el :deployment-structure-view}
+  :template "docs/views/deployment-structure-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
  {:view-selection {:el :glossary-view}
   :template "docs/views/glossary-view.md.cmb"
   :per-element true
