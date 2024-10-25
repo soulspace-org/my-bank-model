@@ -7,7 +7,7 @@
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Context View"
    :title "Context View of the MyBank Systems"
-   :desc "Context View of the MyBank Systems"}
+   :desc "shows the systems of MyBank"}
 
   {:el :container-view
    :id :mybank/container-view
@@ -15,7 +15,7 @@
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Banking Container View"
    :title "Container View of the MyBank Systems"
-   :desc "Container View of the MyBank Systems"}
+   :desc "shows the containers of the MyBank Systems"}
 
   {:el :deployment-view
    :id :mybank/deployment-view
@@ -24,22 +24,24 @@
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Deployment View"
-   :title "Deployment View for the MyBank Systems"}
+   :title "Deployment View for the MyBank Systems"
+   :desc "shows the deployment of the Azure platform"}
 
   {:el :deployment-structure-view
    :id :mybank/azure-deployment-structure-view
    :spec {:selection {:id :mybank.it-management.azure/mybank-tenant}
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
-   :name "Deployment View" 
-   :title "Deployment View for the MyBank Systems"}
+   :name "Azure Deployment Structure View" 
+   :title "Azure Deployment View for the MyBank Systems"
+   :desc "shows the hierarchical structure of the Azure platform deployment"}
 
   {:el :organization-structure-view
    :id :mybank/organization-structure-view
    :spec {:selection {:namespace-prefix "mybank" :el :organization}}
    :name "Organisation Stucture View"
    :title "Organisation Stucture View for the MyBank Systems"
-   :desc ""}
+   :desc "shows the hierarchical structure of the organization"}
 
   {:el :model-view
    :id :mybank/model-view
@@ -52,7 +54,7 @@
    :id :mybank/glossary
    :spec {:selection {}}
    :name "Glossary"
-   :desc "describes relevant elements"}
+   :desc "describes the relevant concepts of MyBank"}
 
   ;
   }
