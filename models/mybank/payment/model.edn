@@ -10,16 +10,16 @@
           :id :mybank.payment/payment-gateway-system
           :name "Payment Gateway"
           :desc "Facilitates credit/debit card transactions."
-          :tech "Java and Spring Boot"}
+          :tech "Java, Spring Boot"}
          {:el :system
           :id :mybank.payment/swift-rtgs-neft-system
           :name "SWIFT/RTGS/NEFT"
           :desc "Handles interbank transfers and settlements."
-          :tech "Java and Camel"}
+          :tech "Java, Apache Camel"}
          {:el :system
           :id :mybank.payment/ach-system
           :name "ACH System"
           :desc "Processes ACH transactions for direct deposits and bill payments."
-          :tech "Java and Spring Batch"}}}
+          :tech "Java, Spring Boot, Spring Batch"}}}
 
   }

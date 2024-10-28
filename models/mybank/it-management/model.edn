@@ -86,17 +86,17 @@
           :id :mybank.infrastructure-management/it-infrastructure-system
           :name "IT Infrastructure"
           :desc "Hardware and software resources, including servers and networking."
-          :tech "VMware and Cisco"}
+          :tech "VMware, Cisco"}
          {:el :system
           :id :mybank.infrastructure-management/cloud-services-system
           :name "Cloud Services"
           :desc "Cloud computing resources for scalability and flexibility."
-          :tech "AWS and Azure"}
+          :tech "AWS, Azure"}
          {:el :system
           :id :mybank.infrastructure-management/system-monitoring-system
           :name "System Monitoring"
           :desc "Monitors system performance and health."
-          :tech "Nagios and Prometheus"}}}
+          :tech "Nagios, Prometheus"}}}
 
   {:el :node
    :id :mybank.it-management.azure/mybank-tenant

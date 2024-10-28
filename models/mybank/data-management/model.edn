@@ -14,9 +14,9 @@
           :id :mybank.data-management/business-intelligence-system
           :name "Business Intelligence (BI)"
           :desc "Provides tools for reporting and data analysis."
-          :tech "Tableau and Python"}
+          :tech "Tableau, Python"}
          {:el :system
           :id :mybank.data-management/big-data-analytics-system
           :name "Big Data Analytics"
           :desc "Advanced analytics for predictive modeling."
-          :tech "Hadoop and Spark"}}}}
+          :tech "Java, Hadoop, Spark"}}}}

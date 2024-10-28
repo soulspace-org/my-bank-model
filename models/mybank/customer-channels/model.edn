@@ -9,14 +9,14 @@
           :id :mybank.customer-channels/branch-systems
           :name "Branch Systems"
           :desc "Software and hardware for in-branch banking services."
-          :tech "Java and Swing"}
+          :tech "Java, Swing"}
          {:el :system
           :id :mybank.customer-channels/atm
           :name "ATM"
           :desc "Allows customers to withdraw cash."
-          :tech "C++ and Java"}
+          :tech "C++, Java"}
          {:el :system
           :id :mybank.customer-channels/contact-center-system
           :name "Contact Center"
           :desc "Telephony and customer support systems for call centers."
-          :tech "Genesys and Avaya"}}}}
+          :tech "Genesys, Avaya"}}}}

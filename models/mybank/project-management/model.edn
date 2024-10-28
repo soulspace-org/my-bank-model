@@ -39,4 +39,4 @@
           :id :mybank.project-management/dev-platforms
           :name "Development Platforms"
           :desc "Tools for software development, testing, and deployment."
-          :tech "Jenkins and GitLab"}}}}
+          :tech "Jenkins, GitLab"}}}}
