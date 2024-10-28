@@ -29,6 +29,10 @@
    :id :mybank.compliance/compliance-manager
    :name "Compliance Manager"
    :desc "Responsible for the compliance of MyBank."}
+  {:el :person
+   :id :mybank.compliance/fraud-specialist
+   :name "Fraud specialist"
+   :desc "Responsible for the fraud detection and mitigation of MyBank."}
 
   ;;;
   ;;; Role Assignments
@@ -37,6 +41,16 @@
    :id :mybank.compliance/risk-manager-role-in-risk-management
    :from :mybank.compliance/risk-manager
    :to :mybank.compliance/risk-management
+   :name "function"}
+  {:el :role-in
+   :id :mybank.compliance/compliance-manager-role-in-regulations
+   :from :mybank.compliance/compliance-manager
+   :to :mybank.compliance/regulations
+   :name "function"}
+  {:el :role-in
+   :id :mybank.compliance/fraud-specialist-role-in-fraud
+   :from :mybank.compliance/fraud-specialist
+   :to :mybank.compliance/fraud
    :name "function"}
 
   ;;;

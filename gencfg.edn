@@ -34,6 +34,13 @@
  ;;
  ;;  Markdown Generation for Model Elements
  ;;
+ {:selection {}
+  :template "docs/index.md.cmb"
+  :per-element false
+  :title "MyBank Documentation Index"
+  :base-namespace "mybank"
+  :base-name "index"
+  :extension "md"}
  {:selection {:el :concept}
   :template "docs/concept.md.cmb"
   :per-element true

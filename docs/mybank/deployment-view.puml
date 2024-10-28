@@ -21,11 +21,10 @@ LAYOUT_TOP_DOWN()
 
 
 title Deployment View for the MyBank Systems
-Node(mybank_itManagement_onprem_dataCenterEurope, "MyBank On Premise Datacenter", $descr="Data Center of MyBank")
 Node(mybank_itManagement_azure_mybankTenant, "MyBank Azure Tenant", $descr="Azure Tenant for MyBank", $type="Azure", $sprite="Azure") {
   Node(mybank_itManagement_azure_landingZoneManagementGroup, "Landing Zone Management Group") {
-    Node(mybank_itManagement_azure_alz1Subscription, "LZ1 Subscription", $descr="Subscription for the landing zone 1", $type="Azure Subscription", $sprite="AzureSubscription") {
-      Node(mybank_itManagement_azure_alz1Vnet1, "VNet 1", $descr="VNet for a spoke infrastructure", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
+    Node(mybank_itManagement_azure_alz1Subscription, "LZ1 Subscription", $descr="Subscription for the landing zone of an application", $type="Azure Subscription", $sprite="AzureSubscription") {
+      Node(mybank_itManagement_azure_alz1VnetEurope, "VNet Europe", $descr="VNet for an application infrastructure in europe", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
     }
   }
   Node(mybank_itManagement_azure_platformManagementGroup, "Platform Management Group") {
@@ -41,11 +40,15 @@ Node(mybank_itManagement_azure_mybankTenant, "MyBank Azure Tenant", $descr="Azur
       Node(mybank_itManagement_azure_ddosProtection, "Azure DDoS", $descr="Protection against denial of service attacks", $type="Azure DDoS")
       Node(mybank_itManagement_azure_hubVnetEurope, "Hub VNet Europe", $descr="VNet for the hub infrastructure in europe", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
     }
-    Node(mybank_itManagement_azure_identitySubscription, "Identity Subscription", $descr="Subscription for the IAM Infrastructure", $type="Azure Subscription", $sprite="AzureSubscription")
+    Node(mybank_itManagement_azure_identitySubscription, "Identity Subscription", $descr="Subscription for the IAM Infrastructure", $type="Azure Subscription", $sprite="AzureSubscription") {
+      Node(mybank_itManagement_azure_identityVnetNorthAmerica, "Identity  VNet North America", $descr="VNet for the identity infrastructure in north america", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
+      Node(mybank_itManagement_azure_identityVnetEurope, "Identity VNet Europe", $descr="VNet for the identity infrastructure in europe", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
+    }
     Node(mybank_itManagement_azure_managementSubscription, "Management Subscription", $descr="Subscription for the Management Infrastructure", $type="Azure Subscription", $sprite="AzureSubscription")
   }
 }
-Rel(mybank_itManagement_azure_alz1Vnet1, mybank_itManagement_azure_hubVnetEurope, "peered to", $descr="Provides connectivity for the spoke", $techn="Azure Virtual Network Peering", $sprite="AzureVirtualNetworkPeering,scale=0.5")
+Node(mybank_itManagement_onprem_dataCenterEurope, "MyBank On Premise Datacenter", $descr="Data Center of MyBank")
+Rel(mybank_itManagement_azure_alz1VnetEurope, mybank_itManagement_azure_hubVnetEurope, "peered to", $descr="Provides connectivity for the spoke", $techn="Azure Virtual Network Peering", $sprite="AzureVirtualNetworkPeering,scale=0.5")
 Rel(mybank_itManagement_onprem_dataCenterEurope, mybank_itManagement_azure_hubVnetEurope, "network link", $descr="High speed/volume link 100 Mb/s", $techn="Azure Express Route", $sprite="AzureExpressRoute,scale=0.5")
 SHOW_LEGEND()
 @enduml

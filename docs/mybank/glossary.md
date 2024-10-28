@@ -84,6 +84,8 @@ Tracks and manages expenses.
 Handles financial accounting, treasury, and expense management.
 ### [Fraud Detection System](../mybank/compliance/fraud-detection-system.md)
 Detects and mitigates fraudulent activities.
+### [Fraud specialist](../mybank/compliance/fraud-specialist.md)
+Responsible for the fraud detection and mitigation of MyBank.
 ### [General Ledger](../mybank/financial-management/general-ledger-system.md)
 Comprehensive financial accounting and reporting system.
 ### [HR Information Systems (HRIS)](../mybank/human-resources/hris.md)

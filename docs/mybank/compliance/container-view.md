@@ -10,6 +10,8 @@ Shows the systems and containers of the domain Compliance & Risk Management and 
 | Name | Description |
 |---|---|
 | [Risk Manager](../../mybank/compliance/risk-manager.md) | Responsible for managing the risks. |
+| [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | Responsible for the fraud detection and mitigation of MyBank. |
+| [Compliance Manager](../../mybank/compliance/compliance-manager.md) | Responsible for the compliance of MyBank. |
 ## Systems
 | Name | Description |
 |---|---|

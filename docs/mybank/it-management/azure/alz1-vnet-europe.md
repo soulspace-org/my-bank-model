@@ -1,6 +1,6 @@
-# VNet 1
+# VNet Europe
 ## Description
-VNet for a spoke infrastructure
+VNet for an application infrastructure in europe
 
 # Linked from Nodes
 Name | Description

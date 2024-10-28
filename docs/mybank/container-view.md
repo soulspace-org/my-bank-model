@@ -15,6 +15,7 @@ shows the containers of the MyBank Systems
 | [Risk Manager](../mybank/compliance/risk-manager.md) | Responsible for managing the risks. |
 | [DevOps Engineer](../mybank/project-management/devops-engineer.md) | Develops and operates software systems. |
 | [Cloud Operations Specialist](../mybank/it-management/cloud-operations-specialist.md) | Operates cloud infrastructure |
+| [Fraud specialist](../mybank/compliance/fraud-specialist.md) | Responsible for the fraud detection and mitigation of MyBank. |
 | [Compliance Manager](../mybank/compliance/compliance-manager.md) | Responsible for the compliance of MyBank. |
 | [Backoffice Staff](../mybank/user-role/backoffice-staff.md) | Administration and support staff within the bank. |
 | [Cloud Solution Architect](../mybank/it-management/cloud-solution-architect.md) | Designs cloud solutions |

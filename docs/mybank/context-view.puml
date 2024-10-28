@@ -81,6 +81,7 @@ Person_Ext(mybank_userRole_personalCustomer, "Personal Customer", $descr="Person
 Person(mybank_compliance_riskManager, "Risk Manager", $descr="Responsible for managing the risks.")
 Person(mybank_projectManagement_devopsEngineer, "DevOps Engineer", $descr="Develops and operates software systems.")
 Person(mybank_itManagement_cloudOperationsSpecialist, "Cloud Operations Specialist", $descr="Operates cloud infrastructure")
+Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
 Person(mybank_compliance_complianceManager, "Compliance Manager", $descr="Responsible for the compliance of MyBank.")
 Person(mybank_userRole_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
 Person(mybank_itManagement_cloudSolutionArchitect, "Cloud Solution Architect", $descr="Designs cloud solutions")

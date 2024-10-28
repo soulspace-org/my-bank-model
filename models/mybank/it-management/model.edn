@@ -196,13 +196,13 @@
                  :id :mybank.it-management.azure/alz1-subscription
                  :name "LZ1 Subscription"
                  :tech "Azure Subscription"
-                 :desc "Subscription for the landing zone 1"
+                 :desc "Subscription for the landing zone of an application"
                  :tags #{"platform" "cloud"}
                  :ct #{{:el :node
-                        :id :mybank.it-management.azure/alz1-vnet1
-                        :name "VNet 1"
+                        :id :mybank.it-management.azure/alz1-vnet-europe
+                        :name "VNet Europe"
                         :tech "Azure Virtual Network"
-                        :desc "VNet for a spoke infrastructure"
+                        :desc "VNet for an application infrastructure in europe"
                         :tags #{"generic" "cloud"}
                         :ct #{}}}}}}}}
 
@@ -225,7 +225,7 @@
 
   {:el :link
    :id :mybank.it-management.azure/alz1-vnet1-peered-to-hub-vnet
-   :from :mybank.it-management.azure/alz1-vnet1
+   :from :mybank.it-management.azure/alz1-vnet-europe
    :to :mybank.it-management.azure/hub-vnet-europe
    :name "peered to"
    :tech "Azure Virtual Network Peering"
