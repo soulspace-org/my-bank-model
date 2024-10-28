@@ -7,6 +7,7 @@ Name | Description
 ---|---
 [Connectivity Subscription](../../../mybank/it-management/azure/connectivity-subscription.md) | Subscription for the Connectivity Infrastructure
 [Identity Subscription](../../../mybank/it-management/azure/identity-subscription.md) | Subscription for the IAM Infrastructure
+[LZ Kafka Subscription](../../../mybank/it-management/azure/lz-kafka-subscription.md) | Subscription for the central Kafka infrastructure
 [Management Subscription](../../../mybank/it-management/azure/management-subscription.md) | Subscription for the Management Infrastructure
 
 

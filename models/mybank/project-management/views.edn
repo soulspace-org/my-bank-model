@@ -1,0 +1,25 @@
+;;;;
+;;;; MyBank Project Management Domain Views
+;;;;
+#{{:el :context-view
+   :id :mybank.project-management/context-view
+   :spec {:selection {:namespace-prefix "mybank.project-management"
+                      :to-namespace-prefix "mybank.project-management"}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Project Management Context View"
+   :title "Context View of the Project Management Systems"
+   :desc "Shows the systems of the domain Project Management and their relations."}
+  
+  {:el :container-view
+   :id :mybank.project-management/container-view
+   :spec {:selection {:namespace-prefix "mybank.project-management"
+                      :to-namespace-prefix "mybank.project-management"}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Project Management Container View"
+   :title "Container View of the Project Management Systems"
+   :desc "Shows the systems and containers of the domain Project Management and their relations."}
+
+  ;
+  }

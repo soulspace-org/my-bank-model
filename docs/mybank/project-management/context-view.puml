@@ -1,0 +1,22 @@
+@startuml context-view
+!include <C4/C4_Context.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+!include <tupadr3/font-awesome-5/jira>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Context View of the Project Management Systems
+Boundary(mybank_projectManagement_contextBoundary, "Project Management and Development") {
+  System(mybank_projectManagement_devPlatforms, "Development Platforms", $descr="Tools for software development, testing, and deployment.", $type="Jenkins, GitLab")
+  System(mybank_projectManagement_projectManagementTools, "Project Management Tools", $descr="Platforms for planning, executing, and tracking projects.", $type="Jira", $sprite="jira")
+}
+SHOW_LEGEND()
+@enduml

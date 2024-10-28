@@ -27,11 +27,14 @@ Node(mybank_itManagement_azure_mybankTenant, "MyBank Azure Tenant", $descr="Azur
   }
   Node(mybank_itManagement_azure_platformManagementGroup, "Platform Management Group") {
     Node(mybank_itManagement_azure_connectivitySubscription, "Connectivity Subscription", $descr="Subscription for the Connectivity Infrastructure", $type="Azure Subscription", $sprite="AzureSubscription") {
-      Node(mybank_itManagement_azure_hubVnet, "Hub VNet", $descr="VNet for the hub infrastructure", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork") {
-        Node(mybank_itManagement_azure_kafkaSubnet, "Kafka Subnet", $type="Azure Subnet", $sprite="AzureSubnet")
-      }
+      Node(mybank_itManagement_azure_hubVnet, "Hub VNet", $descr="VNet for the hub infrastructure", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
     }
     Node(mybank_itManagement_azure_identitySubscription, "Identity Subscription", $descr="Subscription for the IAM Infrastructure", $type="Azure Subscription", $sprite="AzureSubscription")
+    Node(mybank_itManagement_azure_lzKafkaSubscription, "LZ Kafka Subscription", $descr="Subscription for the central Kafka infrastructure", $type="Azure Subscription", $sprite="AzureSubscription") {
+      Node(mybank_itManagement_azure_lzKafkaVnet, "LZ Kafka VNet", $descr="VNet for the Kafka infrastructure", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork") {
+        Node(mybank_itManagement_azure_lzKafkaSubnet, "Kafka Subnet", $type="Azure Subnet", $sprite="AzureSubnet")
+      }
+    }
     Node(mybank_itManagement_azure_managementSubscription, "Management Subscription", $descr="Subscription for the Management Infrastructure", $type="Azure Subscription", $sprite="AzureSubscription")
   }
 }

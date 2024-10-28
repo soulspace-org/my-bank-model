@@ -1,0 +1,25 @@
+;;;;
+;;;; MyBank Payment Domain Views
+;;;;
+#{{:el :context-view
+   :id :mybank.payment/context-view
+   :spec {:selection {:namespace-prefix "mybank.payment"
+                      :to-namespace-prefix "mybank.payment"}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Payment Context View"
+   :title "Context View of the Payment Systems"
+   :desc "Shows the systems of the domain Core Banking and their relations."}
+  
+  {:el :container-view
+   :id :mybank.payment/container-view
+   :spec {:selection {:namespace-prefix "mybank.payment"
+                      :to-namespace-prefix "mybank.payment"}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Payment Container View"
+   :title "Container View of the Payment Systems"
+   :desc "Shows the systems and containers of the domain Payment and their relations."}
+
+  ;
+  }

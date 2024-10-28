@@ -13,5 +13,8 @@ LAYOUT_TOP_DOWN()
 
 
 title Container View of the IT Management Systems
+Person(mybank_itManagement_cloudFinopsSpecialist, "Cloud FinOps Specialist", $descr="Operates cloud infrastructure and controls costs")
+Person(mybank_itManagement_cloudOperationsSpecialist, "Cloud Operations Specialist", $descr="Operates cloud infrastructure")
+Person(mybank_itManagement_cloudSolutionArchitect, "Cloud Solution Architect", $descr="Designs cloud solutions")
 SHOW_LEGEND()
 @enduml

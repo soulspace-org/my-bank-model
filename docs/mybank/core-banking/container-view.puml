@@ -13,6 +13,11 @@ LAYOUT_TOP_DOWN()
 
 
 title Container View of the Core Banking Systems
+Boundary(mybank_coreBanking_contextBoundary, "Core Banking System") {
+  System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
+  System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot")
+  System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
+}
 Rel(mybank_coreBanking_loanManagementSystem, mybank_coreBanking_accountManagementSystem, "retrieves customer account information from")
 SHOW_LEGEND()
 @enduml

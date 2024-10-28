@@ -17,5 +17,8 @@ Facilitates credit/debit card transactions.
 |---|---|---|---|
 | validates and processes payments using | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 
+## System Context View
+![Context View of the Payment Systems](../../mybank/payment/context-view.png)
+
 
 (generated with docs/architecture-node.md.cmb)

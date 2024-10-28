@@ -119,11 +119,7 @@
                         :tech "Azure Virtual Network"
                         :desc "VNet for the hub infrastructure"
                         :tags #{"platform" "cloud"}
-                        :ct #{{:el :node
-                               :id :mybank.it-management.azure/kafka-subnet
-                               :name "Kafka Subnet"
-                               :tech "Azure Subnet"
-                               :tags #{"platform" "cloud"}}}}}}
+                        :ct #{}}}}
                 {:el :node
                  :id :mybank.it-management.azure/identity-subscription
                  :name "Identity Subscription"
@@ -135,7 +131,25 @@
                  :name "Management Subscription"
                  :tech "Azure Subscription"
                  :desc "Subscription for the Management Infrastructure"
-                 :tags #{"platform" "cloud"}}}}
+                 :tags #{"platform" "cloud"}}
+                {:el :node
+                 :id :mybank.it-management.azure/lz-kafka-subscription
+                 :name "LZ Kafka Subscription"
+                 :tech "Azure Subscription"
+                 :desc "Subscription for the central Kafka infrastructure"
+                 :tags #{"platform" "cloud"}
+                 :ct #{{:el :node
+                        :id :mybank.it-management.azure/lz-kafka-vnet
+                        :name "LZ Kafka VNet"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the Kafka infrastructure"
+                        :tags #{"platform" "cloud"}
+                        :ct #{{:el :node
+                               :id :mybank.it-management.azure/lz-kafka-subnet
+                               :name "Kafka Subnet"
+                               :tech "Azure Subnet"
+                               :tags #{"platform" "cloud"}}}}}}
+                }}
          {:el :node
           :id :mybank.it-management.azure/landing-zone-management-group
           :name "Landing Zone Management Group"

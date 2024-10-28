@@ -5,7 +5,7 @@
    :id :mybank.compliance/context-view
    :spec {:selection {:namespace-prefix "mybank.compliance"
                       :to-namespace-prefix "mybank.compliance"}
-          :include :relations
+          :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Compliance & Risk Management Context View"
    :title "Context View of the Compliance and Risk Management Systems"
@@ -15,7 +15,7 @@
    :id :mybank.compliance/container-view
    :spec {:selection {:namespace-prefix "mybank.compliance"
                       :to-namespace-prefix "mybank.compliance"}
-          :include :relations
+          :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Compliance & Risk Management Container View"
    :title "Container View of the Compliance and Risk Management Systems"

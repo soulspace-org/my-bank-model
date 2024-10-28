@@ -1,0 +1,22 @@
+@startuml container-view
+!include <C4/C4_Container.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Container View of the Payment Systems
+Boundary(mybank_payment_contextBoundary, "Payment Systems") {
+  System(mybank_payment_achSystem, "ACH System", $descr="Processes ACH transactions for direct deposits and bill payments.", $type="Java, Spring Boot, Spring Batch")
+  System(mybank_payment_swiftRtgsNeftSystem, "SWIFT/RTGS/NEFT", $descr="Handles interbank transfers and settlements.", $type="Java, Apache Camel")
+  System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
+}
+SHOW_LEGEND()
+@enduml

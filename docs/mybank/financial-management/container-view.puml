@@ -1,0 +1,22 @@
+@startuml container-view
+!include <C4/C4_Container.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Container View of the Financial Management Systems
+Boundary(mybank_financialManagement_contextBoundary, "Financial Management") {
+  System(mybank_financialManagement_treasuryManagementSystem, "Treasury Management", $descr="Manages liquidity, investments, and risk in the treasury function.", $type="Kyriba")
+  System(mybank_financialManagement_expenseManagementSystem, "Expense Management", $descr="Tracks and manages expenses.", $type="Concur")
+  System(mybank_financialManagement_generalLedgerSystem, "General Ledger", $descr="Comprehensive financial accounting and reporting system.", $type="Oracle Financials")
+}
+SHOW_LEGEND()
+@enduml

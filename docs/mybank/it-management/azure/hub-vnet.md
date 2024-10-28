@@ -2,10 +2,6 @@
 ## Description
 VNet for the hub infrastructure
 
-# Contained Nodes
-Name | Description 
----|---
-[Kafka Subnet](../../../mybank/it-management/azure/kafka-subnet.md) | 
 # Links to Nodes
 Name | Description
 ---|---

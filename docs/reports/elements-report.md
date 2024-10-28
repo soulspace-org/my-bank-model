@@ -26,6 +26,7 @@
  :mybank.project-management/dev-platforms | Development Platforms | :system |  | Tools for software development, testing, and deployment. | Jenkins, GitLab | 
  :mybank.customer-channels/contact-center-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.payment/payment-gateway-system-uses-transaction-processing-system | validates and processes payments using | :request |  |  |  | 
+ :mybank.it-management.azure/hub-vnet | Hub VNet | :node |  | VNet for the hub infrastructure | Azure Virtual Network | #{"cloud" "platform"}
  :mybank.it-management/aws-unit | AWS Platform | :org-unit |  | Responsible for the AWS platform. |  | 
  :mybank.it-management/cloud-operations-specialist-role-in-aws-unit | role in | :role-in |  | Operates the AWS platform |  | 
  :mybank.digital-banking/digital-wallets-system | Digital Wallets | :system |  | Supports digital wallet integration and mobile payments. | Node.js and Express | 
@@ -92,9 +93,11 @@
  :mybank.organization/my-bank-organization | My Bank | :organization |  | My Bank Company |  | 
  :mybank.customer-channels/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.it-management/context-boundary | IT Management | :context-boundary |  | Manages IT infrastructure, cloud resources, and system monitoring. |  | 
+ :mybank.it-management.azure/lz-kafka-vnet | LZ Kafka VNet | :node |  | VNet for the Kafka infrastructure | Azure Virtual Network | #{"cloud" "platform"}
  :mybank/integration-middleware-context-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.it-management/azure-unit-responsible-for-azure-tenant | responsible for | :responsible-for |  |  |  | 
  :mybank.compliance/fraud | Fraud | :org-unit |  |  |  | 
+ :mybank.it-management.azure/lz-kafka-subscription | LZ Kafka Subscription | :node |  | Subscription for the central Kafka infrastructure | Azure Subscription | #{"cloud" "platform"}
  :mybank.integration-middleware/api-gateway-contained-in-integration-middleware-context | contained-in | :contained-in |  |  |  | 
  :mybank.infrastructure-management/system-monitoring-system | System Monitoring | :system |  | Monitors system performance and health. | Nagios, Prometheus | 
  :mybank.core-banking/transaction-processing-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
@@ -104,12 +107,12 @@
  :mybank.digital-banking/digital-wallets-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.investments/asset-management-org-contained-in-investments-org | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/reset-password-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
- :mybank.it-management.azure/kafka-subnet-contained-in-hub-vnet | contained-in | :contained-in |  |  |  | 
  :mybank.user-role/personal-customer-uses-internet-banking-system | views account balances and makes payments using | :request |  |  |  | 
  :mybank.human-resources/context-boundary | Human Resources Management | :context-boundary |  | Manages employee information, payroll, and talent management. |  | 
  :mybank.project-management/devops-engineer | DevOps Engineer | :person |  | Develops and operates software systems. |  | 
  :mybank.digital-banking/internet-banking-system-uses-loan-management-system | fetches loan details and payment status from | :request |  |  |  | 
  :mybank.it-management/cloud-operations-specialist | Cloud Operations Specialist | :person |  | Operates cloud infrastructure |  | 
+ :mybank.it-management.azure/lz-kafka-subnet-contained-in-lz-kafka-vnet | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/accounts-summary-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.core-banking/loan-management-system-uses-account-management-system | retrieves customer account information from | :request |  |  |  | 
  :mybank.it-management.azure/lz1-subscription | LZ1 Subscription | :node |  | Subscription for the landing zone 1 | Azure Subscription | #{"cloud" "platform"}
@@ -123,7 +126,6 @@
  :mybank.it-management.azure/identity-subscription | Identity Subscription | :node |  | Subscription for the IAM Infrastructure | Azure Subscription | #{"cloud" "platform"}
  :mybank.payment/payment-gateway-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/compliance-manager | Compliance Manager | :person |  | Responsible for the compliance of MyBank. |  | 
- :mybank.it-management.azure/kafka-subnet | Kafka Subnet | :node |  |  | Azure Subnet | #{"cloud" "platform"}
  :mybank.core-banking/loan-management-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.investments/investments-org-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.data-management/data-warehouse-system | Data Warehouse | :system |  | Central repository for storing large volumes of data. | AWS Redshift | 
@@ -133,6 +135,7 @@
  :mybank.organization/corporate-customers-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/sign-in-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
+ :mybank.it-management.azure/connectivity-subscription | Connectivity Subscription | :node |  | Subscription for the Connectivity Infrastructure | Azure Subscription | #{"cloud" "platform"}
  :mybank.digital-banking/single-page-app | Single-Page Application | :container |  | Provides internet banking functionality to customers via their web browser. | ClojureScript and Re-Frame | 
  :mybank.digital-banking/web-app | Web Application | :container |  | Delivers the static content and the internet banking single-page application. | Clojure and Luminus | 
  :mybank.customer-channels/atm-uses-transaction-processing-system | validates transaction | :rel |  |  |  | 
@@ -144,15 +147,14 @@
  :mybank.it-management/azure-unit | Azure Platform | :org-unit |  | Responsible for the Azure platform. |  | 
  :mybank.it-management/it-management-org | IT Management | :org-unit |  | Responsible for the IT platform of MyBank |  | 
  :mybank.it-management.azure/identity-subscription-contained-in-platform-management-group | contained-in | :contained-in |  |  |  | 
- :mybank.it-management.azure/connectivity-subscription | Connectivity Subscription | :node |  | Subscription for the Connectivity Infrastructure | Azure Subscription | #{"cloud" "platform"}
  :mybank.investments/investments-org | Investments | :org-unit |  |  |  | 
  :mybank.organization/human-resources | Human Resources | :org-unit |  | Central management of human resources |  | 
  :mybank.it-management/cloud-solution-architect | Cloud Solution Architect | :person |  | Designs cloud solutions |  | 
  :mybank.digital-banking/sign-in-controller-uses-security-component | uses | :request |  |  |  | 
+ :mybank.it-management.azure/mybank-tenant | MyBank Azure Tenant | :node |  | Azure Tenant for MyBank | Azure | #{"cloud" "platform"}
  :mybank.digital-banking/api-application-contained-in-internet-banking-system | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/spoke-vnet1-peered-to-hub-vnet | peered to | :link |  | Provides connectivity for the spoke | Azure Virtual Network Peering | #{"cloud" "platform"}
  :mybank.core-banking/account-management-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
- :mybank.it-management.azure/hub-vnet | Hub VNet | :node |  | VNet for the hub infrastructure | Azure Virtual Network | #{"cloud" "platform"}
  :mybank.it-management.azure/lz1-vnet1-contained-in-lz1-subscription | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/core-banking-systems-facade-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.data-management/context-boundary | Data Management and Analytics | :context-boundary |  | Manages data storage, warehousing, and analytics. |  | 
@@ -188,7 +190,7 @@
  :mybank.compliance/risk-manager-role-in-risk-management | function | :role-in |  |  |  | 
  :mybank.concepts/corporate-customer | Corporate Customer | :concept |  | An organization requesting services around money |  | 
  :mybank.concepts/withdrawal-from-account | from | :rel |  |  |  | 
- :mybank.it-management.azure/mybank-tenant | MyBank Azure Tenant | :node |  | Azure Tenant for MyBank | Azure | #{"cloud" "platform"}
+ :mybank.it-management.azure/lz-kafka-subscription-contained-in-platform-management-group | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.onprem/data-center | MyBank On Premise Datacenter | :node |  | Data Center of MyBank |  | #{"onprem" "platform"}
  :mybank.human-resources/hris-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.it-management/cloud-finops-specialist-role-in-aws-unit | role in | :role-in |  | Operations and cost control for the AWS platform |  | 
@@ -222,6 +224,7 @@
  :mybank.digital-banking/email-component-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.human-resources/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.security/context-boundary | Security | :context-boundary |  | Ensures the security of systems and data. |  | 
+ :mybank.it-management.azure/lz-kafka-subnet | Kafka Subnet | :node |  |  | Azure Subnet | #{"cloud" "platform"}
  :mybank.data-management/business-intelligence-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/management-subscription-contained-in-platform-management-group | contained-in | :contained-in |  |  |  | 
  :mybank.customer-channels/atm | ATM | :system |  | Allows customers to withdraw cash. | C++, Java | 
@@ -247,6 +250,7 @@
  :mybank.investments/asset-management-org | Asset Management | :org-unit |  |  |  | 
  :mybank.compliance/compliance-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/internet-banking-system | Internet Banking System | :system |  | Allows customers to view information about their bank accounts and make payments. |  | 
+ :mybank.it-management.azure/lz-kafka-vnet-contained-in-lz-kafka-subscription | contained-in | :contained-in |  |  |  | 
  :mybank.organization/marketing-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.human-resources/talent-management-system | Talent Management | :system |  | Tools for recruitment, training, and performance management. | SAP SuccessFactors | 
  :mybank.user-role/personal-customer-uses-mobile-app | views account balances and makes payments using | :request |  |  |  | 

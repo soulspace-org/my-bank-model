@@ -2,7 +2,7 @@
    :id :mybank.it-management/context-view
    :spec {:selection {:namespace-prefix "mybank.it-management"
                       :to-namespace-prefix "mybank.it-management"}
-          :include :relations
+          :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "IT Management Context View"
    :title "Context View of the IT Management Systems"
@@ -12,7 +12,7 @@
    :id :mybank.it-management/container-view
    :spec {:selection {:namespace-prefix "mybank.it-management"
                       :to-namespace-prefix "mybank.it-management"}
-          :include :relations
+          :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "IT Management Container View"
    :title "Container View of the IT Management Systems"
@@ -22,7 +22,7 @@
    :id :mybank.it-management/deployment-view
    :spec {:selection {:namespace-prefix "mybank.it-management"
                       :to-namespace-prefix "mybank.it-management"}
-          :include :relations
+          :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "IT Management Deployment View"
    :title "Deployment View of the IT Management Systems"

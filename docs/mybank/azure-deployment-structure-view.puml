@@ -6,8 +6,10 @@
 ** Platform Management Group
 *** Connectivity Subscription
 **** Hub VNet
-***** Kafka Subnet
 *** Identity Subscription
+*** LZ Kafka Subscription
+**** LZ Kafka VNet
+***** Kafka Subnet
 *** Management Subscription
 
 @endwbs

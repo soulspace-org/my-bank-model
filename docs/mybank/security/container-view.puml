@@ -1,0 +1,22 @@
+@startuml container-view
+!include <C4/C4_Container.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Container View of the Security Systems
+Boundary(mybank_security_contextBoundary, "Security") {
+  System(mybank_security_identityAccessManagementSystem, "Identity and Access Management (IAM)", $descr="Manages secure access to systems and data.", $type="OAuth 2.0, OpenID Connect")
+  System(mybank_security_cybersecuritySystem, "Cybersecurity", $descr="Protects against cyber threats.", $type="Snort, Suricata")
+  System(mybank_security_disasterRecoverySystem, "Disaster Recovery", $descr="Ensures business continuity in case of a disaster.", $type="AWS Backup, DRaaS")
+}
+SHOW_LEGEND()
+@enduml
