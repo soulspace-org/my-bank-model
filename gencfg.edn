@@ -185,7 +185,7 @@
   :extension "md"}
 
  {:selection {:namespace-prefix "mybank" :el :system}
-  :template "reports/node-report.md.cmb"
+  :template "reports/element-report.md.cmb"
   :title "Banking Systems Report"
   :base-namespace "reports"
   :base-name "banking-systems-report"
