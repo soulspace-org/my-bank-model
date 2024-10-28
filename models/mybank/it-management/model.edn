@@ -164,7 +164,7 @@
                         :tech "Azure Virtual Network"
                         :desc "VNet for the identity infrastructure in north america"
                         :tags #{"platform" "cloud"}
-                        :ct #{}}}
+                        :ct #{}}}}
                 {:el :node
                  :id :mybank.it-management.azure/management-subscription
                  :name "Management Subscription"
