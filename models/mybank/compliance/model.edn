@@ -50,19 +50,19 @@
           :id :mybank.compliance/aml-system
           :name "Anti-Money Laundering (AML) System"
           :desc "Monitors and prevents money laundering activities."
-          :tech "Python and Scikit-learn"}
+          :tech "Python, Scikit-learn"}
          {:el :system
           :id :mybank.compliance/fraud-detection-system
           :name "Fraud Detection System"
           :desc "Detects and mitigates fraudulent activities."
-          :tech "Python and TensorFlow"}
+          :tech "Python, TensorFlow"}
          {:el :system
           :id :mybank.compliance/compliance-system
           :name "Compliance System"
           :desc "Ensures operations comply with regulations."
-          :tech "Java and Spring Boot"}
+          :tech "Java, Spring Boot"}
          {:el :system
           :id :mybank.compliance/risk-management-system
           :name "Risk Management System"
           :desc "Detects risks and manages risk mitigation."
-          :tech "Java and Spring Boot"}}}}
+          :tech "Java, Spring Boot"}}}}
