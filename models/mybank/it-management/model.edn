@@ -114,18 +114,57 @@
                  :desc "Subscription for the Connectivity Infrastructure"
                  :tags #{"platform" "cloud"}
                  :ct #{{:el :node
-                        :id :mybank.it-management.azure/hub-vnet
-                        :name "Hub VNet"
+                        :id :mybank.it-management.azure/hub-vnet-europe
+                        :name "Hub VNet Europe"
                         :tech "Azure Virtual Network"
-                        :desc "VNet for the hub infrastructure"
+                        :desc "VNet for the hub infrastructure in europe"
                         :tags #{"platform" "cloud"}
-                        :ct #{}}}}
+                        :ct #{}}
+                       {:el :node
+                        :id :mybank.it-management.azure/hub-vnet-north-america
+                        :name "Hub VNet North America"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the hub infrastructure in north america"
+                        :tags #{"platform" "cloud"}
+                        :ct #{}}
+                       {:el :node
+                        :id :mybank.it-management.azure/dns
+                        :name "Azure DNS"
+                        :tech "Azure DNS"
+                        :desc "Domain Name Service"
+                        :tags #{"platform" "cloud"}}
+                       {:el :node
+                        :id :mybank.it-management.azure/ddos-protection
+                        :name "Azure DDoS"
+                        :tech "Azure DDoS"
+                        :desc "Protection against denial of service attacks"
+                        :tags #{"platform" "cloud"}}
+                       {:el :node
+                        :id :mybank.it-management.azure/firewall
+                        :name "Azure Firewall"
+                        :tech "Azure Firewall"
+                        :desc "Restrict network access/traffic"
+                        :tags #{"platform" "cloud"}}}}
                 {:el :node
                  :id :mybank.it-management.azure/identity-subscription
                  :name "Identity Subscription"
                  :tech "Azure Subscription"
                  :desc "Subscription for the IAM Infrastructure"
-                 :tags #{"platform" "cloud"}}
+                 :tags #{"platform" "cloud"}
+                 :ct #{{:el :node
+                        :id :mybank.it-management.azure/identity-vnet-europe
+                        :name "Identity VNet Europe"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the identity infrastructure in europe"
+                        :tags #{"platform" "cloud"}
+                        :ct #{}}
+                       {:el :node
+                        :id :mybank.it-management.azure/identity-vnet-north-america
+                        :name "Identity  VNet North America"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the identity infrastructure in north america"
+                        :tags #{"platform" "cloud"}
+                        :ct #{}}}
                 {:el :node
                  :id :mybank.it-management.azure/management-subscription
                  :name "Management Subscription"
@@ -133,19 +172,19 @@
                  :desc "Subscription for the Management Infrastructure"
                  :tags #{"platform" "cloud"}}
                 {:el :node
-                 :id :mybank.it-management.azure/lz-kafka-subscription
+                 :id :mybank.it-management.azure/plz-kafka-subscription
                  :name "LZ Kafka Subscription"
                  :tech "Azure Subscription"
                  :desc "Subscription for the central Kafka infrastructure"
                  :tags #{"platform" "cloud"}
                  :ct #{{:el :node
-                        :id :mybank.it-management.azure/lz-kafka-vnet
+                        :id :mybank.it-management.azure/plz-kafka-vnet
                         :name "LZ Kafka VNet"
                         :tech "Azure Virtual Network"
                         :desc "VNet for the Kafka infrastructure"
                         :tags #{"platform" "cloud"}
                         :ct #{{:el :node
-                               :id :mybank.it-management.azure/lz-kafka-subnet
+                               :id :mybank.it-management.azure/plz-kafka-subnet
                                :name "Kafka Subnet"
                                :tech "Azure Subnet"
                                :tags #{"platform" "cloud"}}}}}}
@@ -154,13 +193,13 @@
           :id :mybank.it-management.azure/landing-zone-management-group
           :name "Landing Zone Management Group"
           :ct #{{:el :node
-                 :id :mybank.it-management.azure/lz1-subscription
+                 :id :mybank.it-management.azure/alz1-subscription
                  :name "LZ1 Subscription"
                  :tech "Azure Subscription"
                  :desc "Subscription for the landing zone 1"
                  :tags #{"platform" "cloud"}
                  :ct #{{:el :node
-                        :id :mybank.it-management.azure/lz1-vnet1
+                        :id :mybank.it-management.azure/alz1-vnet1
                         :name "VNet 1"
                         :tech "Azure Virtual Network"
                         :desc "VNet for a spoke infrastructure"
@@ -168,7 +207,7 @@
                         :ct #{}}}}}}}}
 
   {:el :node
-   :id :mybank.it-management.onprem/data-center
+   :id :mybank.it-management.onprem/data-center-europe
    :name "MyBank On Premise Datacenter"
    ;:tech "Azure"
    :desc "Data Center of MyBank"
@@ -176,18 +215,18 @@
    :ct #{}}
 
   {:el :link
-   :id :mybank.it-management.onprem/data-center-links-to-hub-vnet
-   :from :mybank.it-management.onprem/data-center
-   :to :mybank.it-management.azure/hub-vnet
+   :id :mybank.it-management.onprem/data-center-europe-links-to-hub-vnet
+   :from :mybank.it-management.onprem/data-center-europe
+   :to :mybank.it-management.azure/hub-vnet-europe
    :name "network link"
    :tech "Azure Express Route"
    :desc "High speed/volume link 100 Mb/s"
    :tags #{"platform" "cloud"}}
 
   {:el :link
-   :id :mybank.it-management.azure/spoke-vnet1-peered-to-hub-vnet
-   :from :mybank.it-management.azure/lz1-vnet1
-   :to :mybank.it-management.azure/hub-vnet
+   :id :mybank.it-management.azure/alz1-vnet1-peered-to-hub-vnet
+   :from :mybank.it-management.azure/alz1-vnet1
+   :to :mybank.it-management.azure/hub-vnet-europe
    :name "peered to"
    :tech "Azure Virtual Network Peering"
    :desc "Provides connectivity for the spoke"

@@ -5,7 +5,7 @@ describes the relevant concepts of MyBank
 
 ## Entries
 ### [Account](../mybank/concepts/account.md)
-
+Records the financial transactions between a customer and a bank
 ### [Account Management](../mybank/core-banking/account-management-system.md)
 Handles customer accounts, deposits, and withdrawals.
 ### [ACH System](../mybank/payment/ach-system.md)

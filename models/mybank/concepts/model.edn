@@ -24,7 +24,7 @@
   {:el :concept
    :id :mybank.concepts/account
    :name "Account"
-   :desc ""}
+   :desc "Records the financial transactions between a customer and a bank"}
   {:el :concept
    :id :mybank.concepts/deposit
    :name "Deposit"

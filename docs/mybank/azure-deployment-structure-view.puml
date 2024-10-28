@@ -4,12 +4,16 @@
 *** LZ1 Subscription
 **** VNet 1
 ** Platform Management Group
-*** Connectivity Subscription
-**** Hub VNet
-*** Identity Subscription
 *** LZ Kafka Subscription
 **** LZ Kafka VNet
 ***** Kafka Subnet
+*** Connectivity Subscription
+**** Azure DNS
+**** Azure Firewall
+**** Hub VNet North America
+**** Azure DDoS
+**** Hub VNet Europe
+*** Identity Subscription
 *** Management Subscription
 
 @endwbs

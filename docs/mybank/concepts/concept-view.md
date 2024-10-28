@@ -8,7 +8,7 @@ Shows the high level concepts of banking and their relations
 
 ## Concepts
 ### [Account](../../mybank/concepts/account.md)
-
+Records the financial transactions between a customer and a bank
 
 ### [Bank](../../mybank/concepts/bank.md)
 Organization providing services around money

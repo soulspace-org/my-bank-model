@@ -9,7 +9,7 @@ Entity requesting services around money
 # Features
 | Name | Description |
 |---|---|
-| [Account](../../mybank/concepts/account.md) |  |
+| [Account](../../mybank/concepts/account.md) | Records the financial transactions between a customer and a bank |
 # Feature of
 | Name | Description |
 |---|---|

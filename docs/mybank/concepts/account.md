@@ -1,6 +1,6 @@
 # Concept Account
 ## Description
-
+Records the financial transactions between a customer and a bank
 # Feature of
 | Name | Description |
 |---|---|
