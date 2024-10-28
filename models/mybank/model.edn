@@ -75,6 +75,12 @@
   ;; Context Level
   ;;
   {:el :request
+   :id :mybank.user-role/personal-customer-uses-atm
+   :from :mybank.user-role/personal-customer
+   :to :mybank.customer-channels/atm
+   :name "uses atm for balance information and withdrawals"}
+
+  {:el :request
    :id :mybank.user-role/personal-customer-uses-internet-banking-system
    :from :mybank.user-role/personal-customer
    :to :mybank.digital-banking/internet-banking-system
@@ -117,7 +123,7 @@
    :id :mybank.user-role/personal-customer-uses-web-app
    :from :mybank.user-role/personal-customer
    :to :mybank.digital-banking/web-app
-   :name "visits bigbank.com/ib using"
+   :name "visits mybank.com via browser"
    :tech "HTTPS"}
 
   {:el :request
@@ -173,7 +179,6 @@
    :from :mybank.digital-banking/accounts-summary-controller
    :to :mybank.digital-banking/core-banking-systems-facade
    :name "retrieves account data from"}
-
 
   ;;
   ;; System Landscape level

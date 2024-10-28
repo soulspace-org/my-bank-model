@@ -58,6 +58,7 @@
  :mybank.digital-banking/mobile-app-calls-api-application | makes API calls to | :request |  |  | Transit/HTTPS | 
  :mybank.financial-management/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.payment/context-boundary | Payment Systems | :context-boundary |  | Manages interbank payments, ACH, and SWIFT transactions. |  | 
+ :mybank.user-role/personal-customer-uses-web-app | visits mybank.com via browser | :request |  |  | HTTPS | 
  :mybank.project-management/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/compliance-org-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.financial-management/treasury-management-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
@@ -230,7 +231,6 @@
  :mybank.customer-channels/atm | ATM | :system |  | Allows customers to withdraw cash. | C++, Java | 
  :mybank.customer-channels/contact-center-system | Contact Center | :system |  | Telephony and customer support systems for call centers. | Genesys, Avaya | 
  :mybank.security/cybersecurity-system | Cybersecurity | :system |  | Protects against cyber threats. | Snort, Suricata | 
- :mybank.user-role/personal-customer-uses-web-app | visits bigbank.com/ib using | :request |  |  | HTTPS | 
  :mybank.compliance/risk-management-system-uses-transaction-processing-system | fetches transaction history and customer data from | :request |  |  |  | 
  :mybank.compliance/aml-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/single-page-app-calls-reset-password-controller | makes API calls to | :request |  |  | Transit/HTTPS | 
@@ -257,6 +257,7 @@
  :mybank.project-management/project-management-tools-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.user-role/personal-customer-asks-customer-service-staff | asks questions to | :rel |  |  |  | 
  :mybank.user-role/personal-customer-uses-single-page-app | views account balances and makes payments using | :request |  |  |  | 
+ :mybank.user-role/personal-customer-uses-atm | uses atm for balance information and withdrawals | :request |  |  |  | 
  :mybank.organization.corporate-customers/loans-org | Loans | :org-unit |  |  |  | 
  :mybank.customer-channels/context-boundary | Customer Channels | :context-boundary |  | Interfaces for customer interaction, including branch systems, ATMs, and call centers. |  | 
  :mybank.compliance/regulations | Regulations | :org-unit |  |  |  | 

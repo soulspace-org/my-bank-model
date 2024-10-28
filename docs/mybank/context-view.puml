@@ -87,7 +87,6 @@ Person(mybank_itManagement_cloudSolutionArchitect, "Cloud Solution Architect", $
 Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manages projects at MyBank.")
 Person_Ext(mybank_userRole_corporateCustomer, "Corporate Customer", $descr="Corporate Customer of MyBank.")
 Rel(mybank_payment_paymentGatewaySystem, mybank_coreBanking_transactionProcessingSystem, "validates and processes payments using")
-Rel(mybank_userRole_personalCustomer, mybank_customerChannels_atm, "withdraws cash using")
 Rel(mybank_userRole_backofficeStaff, mybank_compliance_complianceSystem, "assesses customer risk for loan approval using")
 Rel(mybank_digitalBanking_internetBankingSystem, mybank_coreBanking_accountManagementSystem, "gets account information from, and makes payments using")
 Rel(mybank_userRole_backofficeStaff, mybank_payment_paymentGatewaySystem, "validates and processes payments using")
@@ -103,5 +102,6 @@ Rel(mybank_userRole_customerServiceStaff, mybank_emailSystem, "sends and receive
 Rel(mybank_digitalBanking_internetBankingSystem, mybank_payment_paymentGatewaySystem, "processes customer payments using")
 Rel(mybank_compliance_riskManagementSystem, mybank_coreBanking_transactionProcessingSystem, "fetches transaction history and customer data from")
 Rel(mybank_userRole_personalCustomer, mybank_userRole_customerServiceStaff, "asks questions to")
+Rel(mybank_userRole_personalCustomer, mybank_customerChannels_atm, "uses atm for balance information and withdrawals")
 SHOW_LEGEND()
 @enduml
