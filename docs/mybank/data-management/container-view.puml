@@ -1,0 +1,23 @@
+@startuml container-view
+!include <C4/C4_Container.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+!include <awslib14/Analytics/Redshift>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Container View of the Data Management Systems
+Boundary(mybank_dataManagement_contextBoundary, "Data Management and Analytics") {
+  System(mybank_dataManagement_bigDataAnalyticsSystem, "Big Data Analytics", $descr="Advanced analytics for predictive modeling.", $type="Java, Hadoop, Spark")
+  System(mybank_dataManagement_businessIntelligenceSystem, "Business Intelligence (BI)", $descr="Provides tools for reporting and data analysis.", $type="Tableau, Python")
+  System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
+}
+SHOW_LEGEND()
+@enduml

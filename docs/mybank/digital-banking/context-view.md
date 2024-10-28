@@ -4,7 +4,7 @@
 ![Context View of the Digital Banking Systems](../../mybank/digital-banking/context-view.png)
 
 ## Description
-Shows the systems of the domain digital banking and their relations.
+Shows the systems of the domain Digital Banking and their relations.
 ## Systems
 | Name | Description |
 |---|---|

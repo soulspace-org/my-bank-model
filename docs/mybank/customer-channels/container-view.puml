@@ -1,0 +1,22 @@
+@startuml container-view
+!include <C4/C4_Container.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Container View of the Customer Channels Systems
+Boundary(mybank_customerChannels_contextBoundary, "Customer Channels") {
+  System(mybank_customerChannels_contactCenterSystem, "Contact Center", $descr="Telephony and customer support systems for call centers.", $type="Genesys, Avaya")
+  System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java")
+  System(mybank_customerChannels_branchSystems, "Branch Systems", $descr="Software and hardware for in-branch banking services.", $type="Java, Swing")
+}
+SHOW_LEGEND()
+@enduml

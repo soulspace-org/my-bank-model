@@ -1,5 +1,5 @@
 ;;;;
-;;;; MyBank Core Banking Domain Views
+;;;; MyBank Compliance & Risk Management Domain Views
 ;;;;
 #{{:el :context-view
    :id :mybank.compliance/context-view

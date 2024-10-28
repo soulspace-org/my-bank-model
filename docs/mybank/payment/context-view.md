@@ -4,7 +4,7 @@
 ![Context View of the Payment Systems](../../mybank/payment/context-view.png)
 
 ## Description
-Shows the systems of the domain Core Banking and their relations.
+Shows the systems of the domain Payment and their relations.
 ## Systems
 | Name | Description |
 |---|---|

@@ -1,0 +1,21 @@
+@startuml container-view
+!include <C4/C4_Container.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Container View of the Human Resources Systems
+Boundary(mybank_humanResources_contextBoundary, "Human Resources Management") {
+  System(mybank_humanResources_hris, "HR Information Systems (HRIS)", $descr="Manages employee data, payroll, and benefits.", $type="Workday")
+  System(mybank_humanResources_talentManagementSystem, "Talent Management", $descr="Tools for recruitment, training, and performance management.", $type="SAP SuccessFactors")
+}
+SHOW_LEGEND()
+@enduml

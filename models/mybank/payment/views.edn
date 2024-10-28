@@ -9,7 +9,7 @@
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Payment Context View"
    :title "Context View of the Payment Systems"
-   :desc "Shows the systems of the domain Core Banking and their relations."}
+   :desc "Shows the systems of the domain Payment and their relations."}
   
   {:el :container-view
    :id :mybank.payment/container-view
