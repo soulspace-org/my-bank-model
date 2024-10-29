@@ -11,9 +11,9 @@ Responsible for the compliance and risk management of MyBank
 ## Sub Units
 | Name | Description |
 |---|---|
-| [Risk Management](../../mybank/compliance/risk-management.md) |  |
 | [Fraud](../../mybank/compliance/fraud.md) |  |
 | [Regulations](../../mybank/compliance/regulations.md) |  |
+| [Risk Management](../../mybank/compliance/risk-management.md) |  |
 
 
 (generated with docs/organization.md.cmb)

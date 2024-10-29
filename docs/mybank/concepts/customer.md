@@ -4,8 +4,8 @@ Entity requesting services around money
 # Subordinates
 | Name | Description |
 |---|---|
-| [Personal Customer](../../mybank/concepts/personal-customer.md) | A person requesting services around money |
 | [Corporate Customer](../../mybank/concepts/corporate-customer.md) | An organization requesting services around money |
+| [Personal Customer](../../mybank/concepts/personal-customer.md) | A person requesting services around money |
 # Features
 | Name | Description |
 |---|---|

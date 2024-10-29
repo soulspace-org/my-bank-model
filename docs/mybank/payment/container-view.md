@@ -8,8 +8,8 @@ Shows the systems and containers of the domain Payment and their relations.
 ## Systems
 | Name | Description |
 |---|---|
-| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | Facilitates credit/debit card transactions. |
 | [ACH System](../../mybank/payment/ach-system.md) | Processes ACH transactions for direct deposits and bill payments. |
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | Facilitates credit/debit card transactions. |
 | [SWIFT/RTGS/NEFT](../../mybank/payment/swift-rtgs-neft-system.md) | Handles interbank transfers and settlements. |
 
 
