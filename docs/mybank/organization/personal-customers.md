@@ -17,6 +17,7 @@
 
 ## Organization Structure
 ![MyBank Organization Chart](../../mybank/organization/organization-structure-view.png)
+[MyBank Organization Chart](../../mybank/organization/organization-structure-view.md)
 
 
 (generated with docs/organization.md.cmb)

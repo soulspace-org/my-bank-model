@@ -15,5 +15,7 @@ Stores user registration, authentication, and access logs.
 ## Container View
 ![Container View of the Digital Banking Systems](../../mybank/digital-banking/container-view.png)
 
+[Digital Banking Container View](../../mybank/digital-banking/container-view.md)
+
 
 (generated with docs/architecture-node.md.cmb)

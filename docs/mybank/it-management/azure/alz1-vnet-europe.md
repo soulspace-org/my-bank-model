@@ -2,7 +2,9 @@
 ## Description
 VNet for an application infrastructure in europe
 
-# Linked from Nodes
+## Parent Node
+[LZ1 Subscription](../../../mybank/it-management/azure/alz1-subscription.md)
+## Linked from Nodes
 Name | Description
 ---|---
 [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | VNet for the hub infrastructure in europe

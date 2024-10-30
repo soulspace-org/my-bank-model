@@ -5,11 +5,11 @@
   ;;;
   ;;; Organization
   ;;;
- {:el :org-unit
-  :id :mybank.project-management/projects-org
-  :name "Projects"
-  :desc "Responsible for MyBank Projects"}
-  
+  {:el :org-unit
+   :id :mybank.project-management/projects-org
+   :name "Projects"
+   :desc "Responsible for MyBank Projects"}
+
   ;;;
   ;;; Roles
   ;;;
@@ -22,6 +22,21 @@
    :id :mybank.project-management/devops-engineer
    :name "DevOps Engineer"
    :desc "Develops and operates software systems."}
+
+  {:el :capability
+   :id :mybank.project-management/manage-projects
+   :name "Manage Projects"
+   :desc ""}
+
+  {:el :process
+   :id :mybank.project-management/project-management
+   :name "Project Management"
+   :desc ""}
+
+  {:el :process
+   :id :mybank.project-management/requirements-management
+   :name "Requirements Management"
+   :desc ""}
 
   ;;;
   ;;; System Architecture

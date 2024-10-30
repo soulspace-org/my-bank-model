@@ -20,5 +20,7 @@ Provides customers with a summary of their bank accounts.
 ## Component View
 ![Component View of the Digital Banking Systems](../../mybank/digital-banking/component-view.png)
 
+[Digital Banking Component View](../../mybank/digital-banking/component-view.md)
+
 
 (generated with docs/architecture-node.md.cmb)

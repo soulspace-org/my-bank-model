@@ -4,6 +4,18 @@
 #{;;; 
   ;;; Nodes
   ;;;
+  {:el :person
+   :id :mybank/corporate-customer
+   :external true
+   :name "Corporate Customer"
+   :desc "Corporate Customer of MyBank."}
+
+  {:el :person
+   :id :mybank/personal-customer
+   :external true
+   :name "Personal Customer"
+   :desc "Personal Customer of MyBank."}
+  
   {:el :enterprise-boundary
    :id :mybank/mybank-plc
    :name "My Bank"
@@ -75,21 +87,21 @@
   ;; Context Level
   ;;
   {:el :request
-   :id :mybank.user-role/personal-customer-uses-atm
-   :from :mybank.user-role/personal-customer
+   :id :mybank/personal-customer-uses-atm
+   :from :mybank/personal-customer
    :to :mybank.customer-channels/atm
    :name "uses atm for balance information and withdrawals"}
 
   {:el :request
-   :id :mybank.user-role/personal-customer-uses-internet-banking-system
-   :from :mybank.user-role/personal-customer
+   :id :mybank/personal-customer-uses-internet-banking-system
+   :from :mybank/personal-customer
    :to :mybank.digital-banking/internet-banking-system
    :name "views account balances and makes payments using"}
 
   {:el :send
    :id :mybank/email-system-sends-mail-to-personal-customer
    :from :mybank/email-system
-   :to :mybank.user-role/personal-customer
+   :to :mybank/personal-customer
    :name "sends e-mail to"}
 
   {:el :request
@@ -120,21 +132,21 @@
   ;; Container level
   ;;
   {:el :request
-   :id :mybank.user-role/personal-customer-uses-web-app
-   :from :mybank.user-role/personal-customer
+   :id :mybank/personal-customer-uses-web-app
+   :from :mybank/personal-customer
    :to :mybank.digital-banking/web-app
    :name "visits mybank.com via browser"
    :tech "HTTPS"}
 
   {:el :request
-   :id :mybank.user-role/personal-customer-uses-single-page-app
-   :from :mybank.user-role/personal-customer
+   :id :mybank/personal-customer-uses-single-page-app
+   :from :mybank/personal-customer
    :to :mybank.digital-banking/single-page-app
    :name "views account balances and makes payments using"}
 
   {:el :request
-   :id :mybank.user-role/personal-customer-uses-mobile-app
-   :from :mybank.user-role/personal-customer
+   :id :mybank/personal-customer-uses-mobile-app
+   :from :mybank/personal-customer
    :to :mybank.digital-banking/mobile-app
    :name "views account balances and makes payments using"}
 
@@ -184,15 +196,15 @@
   ;; System Landscape level
   ;;
   {:el :rel
-   :id :mybank.user-role/personal-customer-uses-atm
-   :from :mybank.user-role/personal-customer
+   :id :mybank/personal-customer-uses-atm
+   :from :mybank/personal-customer
    :to :mybank.customer-channels/atm
    :name "withdraws cash using"}
 
   {:el :rel
-   :id :mybank.user-role/personal-customer-asks-customer-service-staff
-   :from :mybank.user-role/personal-customer
-   :to :mybank.user-role/customer-service-staff
+   :id :mybank/personal-customer-asks-customer-service-staff
+   :from :mybank/personal-customer
+   :to :mybank.customer-channels/customer-service-staff
    :name "asks questions to"}
 
   {:el :rel
@@ -209,25 +221,25 @@
 
   {:el :rel
    :id :mybank/backoffice-staff-uses-loan-management-system
-   :from :mybank.user-role/backoffice-staff
+   :from :mybank.core-banking/backoffice-staff
    :to :mybank.core-banking/loan-management-system
    :name "processes loan applications and updates loan status using"}
 
   {:el :rel
    :id :mybank/backoffice-staff-uses-risk-management-system
-   :from :mybank.user-role/backoffice-staff
+   :from :mybank.core-banking/backoffice-staff
    :to :mybank.compliance/compliance-system
    :name "assesses customer risk for loan approval using"}
 
   {:el :rel
    :id :mybank/backoffice-staff-uses-payment-gateway
-   :from :mybank.user-role/backoffice-staff
+   :from :mybank.core-banking/backoffice-staff
    :to :mybank.payment/payment-gateway-system
    :name "validates and processes payments using"}
 
   {:el :rel
    :id :mybank/customer-service-staff-uses-email-system
-   :from :mybank.user-role/customer-service-staff
+   :from :mybank.customer-channels/customer-service-staff
    :to :mybank/email-system
    :name "sends and receives customer communication using"}
   ;

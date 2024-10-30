@@ -20,5 +20,7 @@ Allows users to sign in to the banking system.
 ## Component View
 ![Component View of the Digital Banking Systems](../../mybank/digital-banking/component-view.png)
 
+[Digital Banking Component View](../../mybank/digital-banking/component-view.md)
+
 
 (generated with docs/architecture-node.md.cmb)

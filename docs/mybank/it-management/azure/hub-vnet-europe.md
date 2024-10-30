@@ -2,7 +2,9 @@
 ## Description
 VNet for the hub infrastructure in europe
 
-# Links to Nodes
+## Parent Node
+[Connectivity Subscription](../../../mybank/it-management/azure/connectivity-subscription.md)
+## Links to Nodes
 Name | Description
 ---|---
 [MyBank On Premise Datacenter](../../../mybank/it-management/onprem/data-center-europe.md) | Data Center of MyBank

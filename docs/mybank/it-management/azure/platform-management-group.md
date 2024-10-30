@@ -2,7 +2,9 @@
 ## Description
 
 
-# Contained Nodes
+## Parent Node
+[MyBank Azure Tenant](../../../mybank/it-management/azure/mybank-tenant.md)
+## Contained Nodes
 Name | Description 
 ---|---
 [Connectivity Subscription](../../../mybank/it-management/azure/connectivity-subscription.md) | Subscription for the Connectivity Infrastructure

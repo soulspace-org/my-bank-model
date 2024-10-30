@@ -2,7 +2,9 @@
 ## Description
 Subscription for the IAM Infrastructure
 
-# Contained Nodes
+## Parent Node
+[Platform Management Group](../../../mybank/it-management/azure/platform-management-group.md)
+## Contained Nodes
 Name | Description 
 ---|---
 [Identity  VNet North America](../../../mybank/it-management/azure/identity-vnet-north-america.md) | VNet for the identity infrastructure in north america

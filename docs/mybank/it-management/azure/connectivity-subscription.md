@@ -2,7 +2,9 @@
 ## Description
 Subscription for the Connectivity Infrastructure
 
-# Contained Nodes
+## Parent Node
+[Platform Management Group](../../../mybank/it-management/azure/platform-management-group.md)
+## Contained Nodes
 Name | Description 
 ---|---
 [Azure DDoS](../../../mybank/it-management/azure/ddos-protection.md) | Protection against denial of service attacks

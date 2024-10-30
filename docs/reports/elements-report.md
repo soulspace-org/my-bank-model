@@ -118,6 +118,7 @@
  :mybank.it-management/cloud-operations-specialist | Cloud Operations Specialist | :person |  | Operates cloud infrastructure |  | 
  :mybank.digital-banking/accounts-summary-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.core-banking/loan-management-system-uses-account-management-system | retrieves customer account information from | :request |  |  |  | 
+ :mybank.project-management/project-management | Project Management | :process |  |  |  | 
  :mybank.it-management.azure/firewall-contained-in-connectivity-subscription | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/fraud-specialist | Fraud specialist | :person |  | Responsible for the fraud detection and mitigation of MyBank. |  | 
  :mybank.it-management.azure/plz-kafka-subnet-contained-in-plz-kafka-vnet | contained-in | :contained-in |  |  |  | 
@@ -149,6 +150,7 @@
  :mybank.customer-channels/atm-uses-transaction-processing-system | validates transaction | :rel |  |  |  | 
  :mybank.infrastructure-management/cloud-services-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/api-application | API Application | :container |  | Provides internet banking functionality via a RESTful JSON/HTTPS API. | Clojure and Liberator | 
+ :mybank.project-management/manage-projects | Manage Projects | :capability |  |  |  | 
  :mybank/integration-middleware-context | Integration and Middleware | :context-boundary |  | Facilitates integration across systems. |  | 
  :mybank.concepts/bank | Bank | :concept |  | Organization providing services around money |  | 
  :mybank.user-role/backoffice-staff | Backoffice Staff | :person |  | Administration and support staff within the bank. |  | 
@@ -164,6 +166,7 @@
  :mybank.core-banking/account-management-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/core-banking-systems-facade-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.data-management/context-boundary | Data Management and Analytics | :context-boundary |  | Manages data storage, warehousing, and analytics. |  | 
+ :mybank.project-management/requirements-management | Requirements Management | :process |  |  |  | 
  :mybank.it-management/aws-unit-contained-in-it-management-org | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/alz1-subscription-contained-in-landing-zone-management-group | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/identity-vnet-europe | Identity VNet Europe | :node |  | VNet for the identity infrastructure in europe | Azure Virtual Network | #{"cloud" "platform"}

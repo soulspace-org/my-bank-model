@@ -1,7 +1,12 @@
 ;;;;
 ;;;; MyBank Customer Channels Domain Model
 ;;;;
-#{{:el :context-boundary
+#{{:el :person
+   :id :mybank.customer-channels/customer-service-staff
+   :name "Customer Service Staff"
+   :desc "Customer service staff within the bank."} 
+
+  {:el :context-boundary
    :id :mybank.customer-channels/context-boundary
    :name "Customer Channels"
    :desc "Interfaces for customer interaction, including branch systems, ATMs, and call centers."

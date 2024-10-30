@@ -2,7 +2,9 @@
 ## Description
 Subscription for the central Kafka infrastructure
 
-# Contained Nodes
+## Parent Node
+[Platform Management Group](../../../mybank/it-management/azure/platform-management-group.md)
+## Contained Nodes
 Name | Description 
 ---|---
 [LZ Kafka VNet](../../../mybank/it-management/azure/plz-kafka-vnet.md) | VNet for the Kafka infrastructure

@@ -10,5 +10,9 @@ Lending money from the bank to the customer
 |---|---|
 | [Bank](../../mybank/concepts/bank.md) | Organization providing services around money |
 
+## Concept Map
+![High Level Banking Concepts](../../mybank/concepts/concept-view.png)
+[High Level Concept Map](../../mybank/concepts/concept-view.md)
+
 
 (generated with docs/concept.md.cmb)

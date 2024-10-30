@@ -17,5 +17,7 @@ Handles customer accounts, deposits, and withdrawals.
 ## System Context View
 ![Context View of the Core Banking Systems](../../mybank/core-banking/context-view.png)
 
+[Core Banking Context View](../../mybank/core-banking/context-view.md)
+
 
 (generated with docs/architecture-node.md.cmb)

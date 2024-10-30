@@ -1,7 +1,13 @@
 ;;;;
 ;;;; MyBank Core Banking Domain Model
 ;;;;
-#{{:el :context-boundary
+
+#{{:el :person
+   :id :mybank.core-banking/backoffice-staff
+   :name "Backoffice Staff"
+   :desc "Administration and support staff within the bank."}
+
+  {:el :context-boundary
    :id :mybank.core-banking/context-boundary
    :name "Core Banking System"
    :desc "Manages customer accounts, transactions, and loans."

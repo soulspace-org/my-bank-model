@@ -2,7 +2,9 @@
 ## Description
 VNet for the Kafka infrastructure
 
-# Contained Nodes
+## Parent Node
+[LZ Kafka Subscription](../../../mybank/it-management/azure/plz-kafka-subscription.md)
+## Contained Nodes
 Name | Description 
 ---|---
 [Kafka Subnet](../../../mybank/it-management/azure/plz-kafka-subnet.md) | 

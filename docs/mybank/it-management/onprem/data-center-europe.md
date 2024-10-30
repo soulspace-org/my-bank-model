@@ -2,7 +2,7 @@
 ## Description
 Data Center of MyBank
 
-# Linked from Nodes
+## Linked from Nodes
 Name | Description
 ---|---
 [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | VNet for the hub infrastructure in europe
