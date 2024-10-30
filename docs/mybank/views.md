@@ -15,7 +15,7 @@
 | [Financial Management Context View](../mybank/financial-management/context-view.md) | Shows the systems of the domain Financial Management and their relations. |
 | [Human Resources Context View](../mybank/human-resources/context-view.md) | Shows the systems of the domain Human Resources and their relations. |
 | [IT Management Context View](../mybank/it-management/context-view.md) | Shows the systems of the domain IT management and their relations. |
-| [Context View](../mybank/context-view.md) | shows the systems of MyBank |
+| [Context View](../mybank/context-view.md) | Shows the systems of MyBank |
 | [Payment Context View](../mybank/payment/context-view.md) | Shows the systems of the domain Payment and their relations. |
 | [Project Management Context View](../mybank/project-management/context-view.md) | Shows the systems of the domain Project Management and their relations. |
 | [Security Context View](../mybank/security/context-view.md) | Shows the systems of the domain Security and their relations. |
@@ -30,7 +30,7 @@
 | [Financial Management Container View](../mybank/financial-management/container-view.md) | Shows the systems and containers of the domain Financial Management and their relations. |
 | [Human Resources Container View](../mybank/human-resources/container-view.md) | Shows the systems and containers of the domain Human Resources and their relations. |
 | [IT Management Container View](../mybank/it-management/container-view.md) | Shows the systems and containers of the domain IT management and their relations. |
-| [Banking Container View](../mybank/container-view.md) | shows the containers of the MyBank Systems |
+| [Banking Container View](../mybank/container-view.md) | Shows the containers of the MyBank Systems |
 | [Payment Container View](../mybank/payment/container-view.md) | Shows the systems and containers of the domain Payment and their relations. |
 | [Project Management Container View](../mybank/project-management/container-view.md) | Shows the systems and containers of the domain Project Management and their relations. |
 | [Security Container View](../mybank/security/container-view.md) | Shows the systems and containers of the domain Security and their relations. |
@@ -41,25 +41,25 @@
 ## Deployment Views
 | Title | Description |
 |---|---|
-| [Deployment View](../mybank/deployment-view.md) | shows the deployment of the Azure platform |
+| [Deployment View](../mybank/deployment-view.md) | Shows the deployment of the Azure platform |
 | [IT Management Deployment View](../mybank/it-management/deployment-view.md) | Shows the nodes and containers of the domain IT management infrastructure. |
 ## Deployment Structure Views
 | Title | Description |
 |---|---|
-| [Azure Deployment Structure View](../mybank/azure-deployment-structure-view.md) | shows the hierarchical structure of the Azure platform deployment |
+| [Azure Deployment Structure View](../mybank/azure-deployment-structure-view.md) | Shows the hierarchical structure of the Azure platform deployment |
 ## Organization Structure Views
 | Title | Description |
 |---|---|
 | [MyBank Organization Chart](../mybank/organization/organization-structure-view.md) | Shows the structure of the MyBank organization |
-| [Organisation Stucture View](../mybank/organization-structure-view.md) | shows the hierarchical structure of the organization |
+| [Organisation Stucture View](../mybank/organization-structure-view.md) | Shows the hierarchical structure of the organization |
 ## Glossary Views
 | Title | Description |
 |---|---|
-| [Glossary](../mybank/glossary.md) | describes the relevant concepts of MyBank |
+| [Glossary](../mybank/glossary.md) | Describes the relevant concepts of MyBank |
 ## Model Views
 | Title | Description |
 |---|---|
-| [Model View](../mybank/model-view.md) | shows the complete model graph |
+| [Model View](../mybank/model-view.md) | Shows the complete model graph |
 
 
 (generated with docs/views/views.md.cmb)

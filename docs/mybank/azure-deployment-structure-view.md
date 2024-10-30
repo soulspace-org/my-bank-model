@@ -4,7 +4,7 @@
 ![Azure Deployment View for the MyBank Systems](../mybank/azure-deployment-structure-view.png)
 
 ## Description
-shows the hierarchical structure of the Azure platform deployment
+Shows the hierarchical structure of the Azure platform deployment
 
 ## Nodes
 | Name | Technology | Description |

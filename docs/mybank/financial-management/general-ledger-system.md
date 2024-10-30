@@ -2,6 +2,9 @@
 ## Description
 Comprehensive financial accounting and reporting system.
 
+## Technology
+Oracle Financials
+
 
 ## Interfaces
 

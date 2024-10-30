@@ -2,6 +2,9 @@
 ## Description
 Framework for enabling seamless integration between services.
 
+## Technology
+Apache CXF
+
 
 ## Interfaces
 

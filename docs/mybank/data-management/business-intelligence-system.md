@@ -2,6 +2,9 @@
 ## Description
 Provides tools for reporting and data analysis.
 
+## Technology
+Tableau, Python
+
 
 ## Interfaces
 

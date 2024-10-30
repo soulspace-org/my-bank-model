@@ -2,6 +2,9 @@
 ## Description
 Facilitates interaction with the core banking systems.
 
+## Technology
+Clojure Namespace, http-client
+
 
 ## Interfaces
 

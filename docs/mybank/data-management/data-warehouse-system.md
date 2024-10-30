@@ -2,6 +2,9 @@
 ## Description
 Central repository for storing large volumes of data.
 
+## Technology
+AWS Redshift
+
 
 ## Interfaces
 

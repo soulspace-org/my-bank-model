@@ -2,6 +2,9 @@
 ## Description
 Domain Name Service
 
+## Technology
+Azure DNS
+
 ## Parent Node
 [Connectivity Subscription](../../../mybank/it-management/azure/connectivity-subscription.md)
 

@@ -2,6 +2,9 @@
 ## Description
 Processes ACH transactions for direct deposits and bill payments.
 
+## Technology
+Java, Spring Boot, Spring Batch
+
 
 ## Interfaces
 

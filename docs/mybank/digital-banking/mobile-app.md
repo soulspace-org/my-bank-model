@@ -2,6 +2,9 @@
 ## Description
 Provides limited internet banking functionality to customers via mobile devices.
 
+## Technology
+ClojureScript and Reagent
+
 
 ## Interfaces
 
@@ -10,7 +13,7 @@ Provides limited internet banking functionality to customers via mobile devices.
 #### Service
 | Name | Called From | Technology | Description |
 |---|---|---|---|
-| views account balances and makes payments using | [Personal Customer](../../mybank/user-role/personal-customer.md) |  |  |
+| views account balances and makes payments using | [Personal Customer](../../mybank/personal-customer.md) |  |  |
 
 #### Client
 | Name | Provided By | Technology | Description |

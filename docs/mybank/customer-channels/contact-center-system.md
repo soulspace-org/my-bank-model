@@ -2,6 +2,9 @@
 ## Description
 Telephony and customer support systems for call centers.
 
+## Technology
+Genesys, Avaya
+
 
 ## Interfaces
 

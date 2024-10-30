@@ -2,6 +2,9 @@
 ## Description
 Provides internet banking functionality via a RESTful JSON/HTTPS API.
 
+## Technology
+Clojure and Liberator
+
 ## Components
 These components show the internal structure of the API Application container.
 

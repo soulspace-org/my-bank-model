@@ -2,6 +2,9 @@
 ## Description
 Subscription for the landing zone of an application
 
+## Technology
+Azure Subscription
+
 ## Parent Node
 [Landing Zone Management Group](../../../mybank/it-management/azure/landing-zone-management-group.md)
 ## Contained Nodes

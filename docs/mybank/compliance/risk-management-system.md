@@ -2,6 +2,9 @@
 ## Description
 Detects risks and manages risk mitigation.
 
+## Technology
+Java, Spring Boot
+
 
 ## Interfaces
 

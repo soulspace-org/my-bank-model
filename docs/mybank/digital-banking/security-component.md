@@ -2,6 +2,9 @@
 ## Description
 Handles authentication, password changes, etc.
 
+## Technology
+Clojure namespace
+
 
 ## Interfaces
 

@@ -2,6 +2,9 @@
 ## Description
 Subscription for the Management Infrastructure
 
+## Technology
+Azure Subscription
+
 ## Parent Node
 [Platform Management Group](../../../mybank/it-management/azure/platform-management-group.md)
 

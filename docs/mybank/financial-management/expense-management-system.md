@@ -2,6 +2,9 @@
 ## Description
 Tracks and manages expenses.
 
+## Technology
+Concur
+
 
 ## Interfaces
 

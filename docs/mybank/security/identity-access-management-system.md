@@ -2,6 +2,9 @@
 ## Description
 Manages secure access to systems and data.
 
+## Technology
+OAuth 2.0, OpenID Connect
+
 
 ## Interfaces
 

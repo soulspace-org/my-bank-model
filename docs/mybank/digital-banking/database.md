@@ -2,6 +2,9 @@
 ## Description
 Stores user registration, authentication, and access logs.
 
+## Technology
+Datomic
+
 
 ## Interfaces
 

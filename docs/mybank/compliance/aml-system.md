@@ -2,6 +2,9 @@
 ## Description
 Monitors and prevents money laundering activities.
 
+## Technology
+Python, Scikit-learn
+
 
 ## Interfaces
 

@@ -2,6 +2,9 @@
 ## Description
 Supports digital wallet integration and mobile payments.
 
+## Technology
+Node.js and Express
+
 
 ## Interfaces
 

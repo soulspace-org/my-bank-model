@@ -2,6 +2,9 @@
 ## Description
 VNet for the identity infrastructure in north america
 
+## Technology
+Azure Virtual Network
+
 ## Parent Node
 [Identity Subscription](../../../mybank/it-management/azure/identity-subscription.md)
 

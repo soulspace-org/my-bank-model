@@ -2,6 +2,9 @@
 ## Description
 Facilitates credit/debit card transactions.
 
+## Technology
+Java, Spring Boot
+
 
 ## Interfaces
 

@@ -2,6 +2,9 @@
 ## Description
 Tools for software development, testing, and deployment.
 
+## Technology
+Jenkins, GitLab
+
 
 ## Interfaces
 

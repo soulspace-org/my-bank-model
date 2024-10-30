@@ -2,6 +2,9 @@
 ## Description
 Allows users to reset their passwords.
 
+## Technology
+Clojure namespace
+
 
 ## Interfaces
 

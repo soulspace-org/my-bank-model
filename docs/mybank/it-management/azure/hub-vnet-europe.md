@@ -2,6 +2,9 @@
 ## Description
 VNet for the hub infrastructure in europe
 
+## Technology
+Azure Virtual Network
+
 ## Parent Node
 [Connectivity Subscription](../../../mybank/it-management/azure/connectivity-subscription.md)
 ## Links to Nodes
