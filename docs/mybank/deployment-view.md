@@ -4,7 +4,7 @@
 ![Deployment View for the MyBank Systems](../mybank/deployment-view.png)
 
 ## Description
-shows the deployment of the Azure platform
+Shows the deployment of the Azure platform
 
 ## Nodes
 | Name | Technology | Description |

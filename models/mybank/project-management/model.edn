@@ -38,6 +38,31 @@
    :name "Requirements Management"
    :desc ""}
 
+  {:el :process
+   :id :mybank.project-management/software-development
+   :name "Software Development"
+   :desc ""}
+
+  {:el :process
+   :id :mybank.project-management/test-management
+   :name "Test Management"
+   :desc ""}
+
+  {:el :process
+   :id :mybank.project-management/config-management
+   :name "Config Management"
+   :desc ""}
+
+  {:el :process
+   :id :mybank.project-management/release-management
+   :name "Release Management"
+   :desc ""}
+
+  {:el :process
+   :id :mybank.project-management/operations
+   :name "Operations"
+   :desc ""}
+
   ;;;
   ;;; System Architecture
   ;;;

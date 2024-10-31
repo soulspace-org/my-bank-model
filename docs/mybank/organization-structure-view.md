@@ -4,7 +4,7 @@
 ![Organisation Stucture View for the MyBank Systems](../mybank/organization-structure-view.png)
 
 ## Description
-shows the hierarchical structure of the organization
+Shows the hierarchical structure of the organization
 
 ## Organizations
 | Name | Description |

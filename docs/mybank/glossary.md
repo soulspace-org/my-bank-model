@@ -1,7 +1,7 @@
 # 
 
 ## Description
-describes the relevant concepts of MyBank
+Describes the relevant concepts of MyBank
 
 ## Entries
 ### [Account](../mybank/concepts/account.md)
@@ -18,7 +18,7 @@ Provides internet banking functionality via a RESTful JSON/HTTPS API.
 Manages APIs for third-party services and fintech apps.
 ### [ATM](../mybank/customer-channels/atm.md)
 Allows customers to withdraw cash.
-### [Backoffice Staff](../mybank/user-role/backoffice-staff.md)
+### [Backoffice Staff](../mybank/core-banking/backoffice-staff.md)
 Administration and support staff within the bank.
 ### [Bank](../mybank/concepts/bank.md)
 Organization providing services around money
@@ -44,15 +44,15 @@ Ensures operations comply with regulations.
 Telephony and customer support systems for call centers.
 ### [Core Banking System](../mybank/core-banking/context-boundary.md)
 Manages customer accounts, transactions, and loans.
-### [Corporate Customer](../mybank/user-role/corporate-customer.md)
-Corporate Customer of MyBank.
 ### [Corporate Customer](../mybank/concepts/corporate-customer.md)
 An organization requesting services around money
+### [Corporate Customer](../mybank/corporate-customer.md)
+Corporate Customer of MyBank.
 ### [Customer](../mybank/concepts/customer.md)
 Entity requesting services around money
 ### [Customer Channels](../mybank/customer-channels/context-boundary.md)
 Interfaces for customer interaction, including branch systems, ATMs, and call centers.
-### [Customer Service Staff](../mybank/user-role/customer-service-staff.md)
+### [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md)
 Customer service staff within the bank.
 ### [Cybersecurity](../mybank/security/cybersecurity-system.md)
 Protects against cyber threats.
@@ -116,10 +116,10 @@ A loan for a immobile, e.g. a house
 Facilitates credit/debit card transactions.
 ### [Payment Systems](../mybank/payment/context-boundary.md)
 Manages interbank payments, ACH, and SWIFT transactions.
-### [Personal Customer](../mybank/user-role/personal-customer.md)
-Personal Customer of MyBank.
 ### [Personal Customer](../mybank/concepts/personal-customer.md)
 A person requesting services around money
+### [Personal Customer](../mybank/personal-customer.md)
+Personal Customer of MyBank.
 ### [Project Management and Development](../mybank/project-management/context-boundary.md)
 Tools for managing projects and software development.
 ### [Project Management Tools](../mybank/project-management/project-management-tools.md)

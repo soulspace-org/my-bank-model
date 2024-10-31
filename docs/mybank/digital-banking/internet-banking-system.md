@@ -20,7 +20,7 @@ These containers are the main processes of the Internet Banking System system.
 #### Service
 | Name | Called From | Technology | Description |
 |---|---|---|---|
-| views account balances and makes payments using | [Personal Customer](../../mybank/user-role/personal-customer.md) |  |  |
+| views account balances and makes payments using | [Personal Customer](../../mybank/personal-customer.md) |  |  |
 
 #### Client
 | Name | Provided By | Technology | Description |

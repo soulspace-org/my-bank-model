@@ -4,21 +4,21 @@
 ![Container View of the MyBank Systems](../mybank/container-view.png)
 
 ## Description
-shows the containers of the MyBank Systems
+Shows the containers of the MyBank Systems
 
 ## User Roles
 | Name | Description |
 |---|---|
-| [Backoffice Staff](../mybank/user-role/backoffice-staff.md) | Administration and support staff within the bank. |
+| [Backoffice Staff](../mybank/core-banking/backoffice-staff.md) | Administration and support staff within the bank. |
 | [Cloud FinOps Specialist](../mybank/it-management/cloud-finops-specialist.md) | Operates cloud infrastructure and controls costs |
 | [Cloud Operations Specialist](../mybank/it-management/cloud-operations-specialist.md) | Operates cloud infrastructure |
 | [Cloud Solution Architect](../mybank/it-management/cloud-solution-architect.md) | Designs cloud solutions |
 | [Compliance Manager](../mybank/compliance/compliance-manager.md) | Responsible for the compliance of MyBank. |
-| [Corporate Customer](../mybank/user-role/corporate-customer.md) | Corporate Customer of MyBank. |
-| [Customer Service Staff](../mybank/user-role/customer-service-staff.md) | Customer service staff within the bank. |
+| [Corporate Customer](../mybank/corporate-customer.md) | Corporate Customer of MyBank. |
+| [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) | Customer service staff within the bank. |
 | [DevOps Engineer](../mybank/project-management/devops-engineer.md) | Develops and operates software systems. |
 | [Fraud specialist](../mybank/compliance/fraud-specialist.md) | Responsible for the fraud detection and mitigation of MyBank. |
-| [Personal Customer](../mybank/user-role/personal-customer.md) | Personal Customer of MyBank. |
+| [Personal Customer](../mybank/personal-customer.md) | Personal Customer of MyBank. |
 | [Project Manager](../mybank/project-management/project-manager.md) | Manages projects at MyBank. |
 | [Risk Manager](../mybank/compliance/risk-manager.md) | Responsible for managing the risks. |
 ## Systems
