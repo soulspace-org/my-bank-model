@@ -2,6 +2,9 @@
 ## Description
 Manages employee data, payroll, and benefits.
 
+## Technology
+Workday
+
 
 ## Interfaces
 

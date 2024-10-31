@@ -2,6 +2,9 @@
 ## Description
 Handles interbank transfers and settlements.
 
+## Technology
+Java, Apache Camel
+
 
 ## Interfaces
 

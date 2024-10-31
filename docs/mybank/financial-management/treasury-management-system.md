@@ -2,6 +2,9 @@
 ## Description
 Manages liquidity, investments, and risk in the treasury function.
 
+## Technology
+Kyriba
+
 
 ## Interfaces
 

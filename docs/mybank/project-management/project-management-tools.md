@@ -2,6 +2,9 @@
 ## Description
 Platforms for planning, executing, and tracking projects.
 
+## Technology
+Jira
+
 
 ## Interfaces
 

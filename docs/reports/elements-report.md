@@ -29,6 +29,7 @@
  :mybank.organization.personal-customers/mortgage-org | Mortgage | :org-unit |  |  |  | 
  :mybank.project-management/dev-platforms | Development Platforms | :system |  | Tools for software development, testing, and deployment. | Jenkins, GitLab | 
  :mybank.customer-channels/contact-center-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
+ :mybank.project-management/requirements-management | Requirements Management | :process |  | Process to manage requirements for projects |  | 
  :mybank.payment/payment-gateway-system-uses-transaction-processing-system | validates and processes payments using | :request |  |  |  | 
  :mybank.it-management/aws-unit | AWS Platform | :org-unit |  | Responsible for the AWS platform. |  | 
  :mybank.it-management/cloud-operations-specialist-role-in-aws-unit | role in | :role-in |  | Operates the AWS platform |  | 
@@ -52,6 +53,10 @@
  :mybank.compliance/compliance-org | Compliance & Risk Management | :org-unit |  | Responsible for the compliance and risk management of MyBank |  | 
  :mybank.digital-banking/reset-password-controller | Reset Password Controller | :component |  | Allows users to reset their passwords. | Clojure namespace | 
  :mybank.project-management/projects-org-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
+<<<<<<< HEAD
+=======
+ :mybank.project-management/project-management | Project Management | :process |  | Process to manage projects |  | 
+>>>>>>> 136530afa9ed9516ed79a46d305e6b88f1b5cc52
  :mybank.integration-middleware/soa | Service-Oriented Architecture (SOA) | :system |  | Framework for enabling seamless integration between services. | Apache CXF | 
  :mybank.it-management/cloud-solution-architect-role-in-azure-unit | role in | :role-in |  | Architects solutions on the Azure platform |  | 
  :mybank.it-management/cloud-finops-specialist | Cloud FinOps Specialist | :person |  | Operates cloud infrastructure and controls costs |  | 
@@ -88,6 +93,7 @@
  :mybank.it-management/it-management-org-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.human-resources/hris | HR Information Systems (HRIS) | :system |  | Manages employee data, payroll, and benefits. | Workday | 
  :mybank.concepts/customer-performs-deposit | performs | :rel |  |  |  | 
+ :mybank.project-management/manage-projects | Manage Projects | :capability |  | Capability to manage projects for the organization |  | 
  :mybank.customer-channels/atm-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/accounts-summary-controller-uses-mainframe-banking-system-facade | retrieves account data from | :request |  |  |  | 
  :mybank.compliance/risk-management | Risk Management | :org-unit |  |  |  | 
@@ -116,7 +122,6 @@
  :mybank.it-management/cloud-operations-specialist | Cloud Operations Specialist | :person |  | Operates cloud infrastructure |  | 
  :mybank.digital-banking/accounts-summary-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.core-banking/loan-management-system-uses-account-management-system | retrieves customer account information from | :request |  |  |  | 
- :mybank.project-management/project-management | Project Management | :process |  |  |  | 
  :mybank.it-management.azure/firewall-contained-in-connectivity-subscription | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/fraud-specialist | Fraud specialist | :person |  | Responsible for the fraud detection and mitigation of MyBank. |  | 
  :mybank.it-management.azure/plz-kafka-subnet-contained-in-plz-kafka-vnet | contained-in | :contained-in |  |  |  | 
@@ -136,6 +141,7 @@
  :mybank.concepts/transfer | Transfer | :concept |  | Moves money from one account to another account |  | 
  :mybank.concepts/personal-customer | Personal Customer | :concept |  | A person requesting services around money |  | 
  :mybank.integration-middleware/esb | Enterprise Service Bus (ESB) | :system |  | Middleware for integrating various banking systems. | MuleSoft | 
+ :mybank.project-management/project-manager-has-role-in-project-management | role in | :role-in |  |  |  | 
  :mybank.it-management.azure/alz1-vnet1-peered-to-hub-vnet | peered to | :link |  | Provides connectivity for the spoke | Azure Virtual Network Peering | #{"cloud" "platform"}
  :mybank.it-management.azure/mybank-tenant | MyBank Azure Tenant | :node |  | Azure Tenant for MyBank | Azure | #{"cloud" "platform"}
  :mybank.organization/corporate-customers-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
@@ -149,7 +155,6 @@
  :mybank.customer-channels/atm-uses-transaction-processing-system | validates transaction | :rel |  |  |  | 
  :mybank.infrastructure-management/cloud-services-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking/api-application | API Application | :container |  | Provides internet banking functionality via a RESTful JSON/HTTPS API. | Clojure and Liberator | 
- :mybank.project-management/manage-projects | Manage Projects | :capability |  |  |  | 
  :mybank/integration-middleware-context | Integration and Middleware | :context-boundary |  | Facilitates integration across systems. |  | 
  :mybank.concepts/bank | Bank | :concept |  | Organization providing services around money |  | 
  :mybank.it-management/azure-unit | Azure Platform | :org-unit |  | Responsible for the Azure platform. |  | 
@@ -167,7 +172,10 @@
  :mybank/personal-customer | Personal Customer | :person |  | Personal Customer of MyBank. |  | 
  :mybank.data-management/context-boundary | Data Management and Analytics | :context-boundary |  | Manages data storage, warehousing, and analytics. |  | 
  :mybank/personal-customer-asks-customer-service-staff | asks questions to | :rel |  |  |  | 
+<<<<<<< HEAD
  :mybank.project-management/requirements-management | Requirements Management | :process |  |  |  | 
+=======
+>>>>>>> 136530afa9ed9516ed79a46d305e6b88f1b5cc52
  :mybank.it-management/aws-unit-contained-in-it-management-org | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/alz1-subscription-contained-in-landing-zone-management-group | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/identity-vnet-europe | Identity VNet Europe | :node |  | VNet for the identity infrastructure in europe | Azure Virtual Network | #{"cloud" "platform"}

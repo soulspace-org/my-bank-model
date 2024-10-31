@@ -2,6 +2,9 @@
 ## Description
 Handles customer accounts, deposits, and withdrawals.
 
+## Technology
+Java, Spring Boot
+
 
 ## Interfaces
 

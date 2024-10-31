@@ -2,6 +2,9 @@
 ## Description
 Middleware for integrating various banking systems.
 
+## Technology
+MuleSoft
+
 
 ## Interfaces
 

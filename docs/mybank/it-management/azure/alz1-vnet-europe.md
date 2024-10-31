@@ -2,6 +2,9 @@
 ## Description
 VNet for an application infrastructure in europe
 
+## Technology
+Azure Virtual Network
+
 ## Parent Node
 [LZ1 Subscription](../../../mybank/it-management/azure/alz1-subscription.md)
 ## Linked from Nodes

@@ -2,6 +2,9 @@
 ## Description
 Allows users to sign in to the banking system.
 
+## Technology
+Clojure namespace
+
 
 ## Interfaces
 

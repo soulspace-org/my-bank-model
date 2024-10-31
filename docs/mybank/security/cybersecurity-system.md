@@ -2,6 +2,9 @@
 ## Description
 Protects against cyber threats.
 
+## Technology
+Snort, Suricata
+
 
 ## Interfaces
 

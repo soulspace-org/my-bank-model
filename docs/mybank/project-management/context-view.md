@@ -5,6 +5,10 @@
 
 ## Description
 Shows the systems of the domain Project Management and their relations.
+## User Roles
+| Name | Description |
+|---|---|
+| [Project Manager](../../mybank/project-management/project-manager.md) | Manages projects at MyBank. |
 ## Systems
 | Name | Description |
 |---|---|

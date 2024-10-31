@@ -2,6 +2,9 @@
 ## Description
 Delivers the static content and the internet banking single-page application.
 
+## Technology
+Clojure and Luminus
+
 
 ## Interfaces
 

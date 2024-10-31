@@ -2,6 +2,9 @@
 ## Description
 Ensures business continuity in case of a disaster.
 
+## Technology
+AWS Backup, DRaaS
+
 
 ## Interfaces
 

@@ -2,6 +2,9 @@
 ## Description
 Ensures operations comply with regulations.
 
+## Technology
+Java, Spring Boot
+
 
 ## Interfaces
 

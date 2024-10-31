@@ -2,6 +2,9 @@
 ## Description
 Hardware and software resources, including servers and networking.
 
+## Technology
+VMware, Cisco
+
 
 ## Interfaces
 

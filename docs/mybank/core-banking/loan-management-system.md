@@ -2,6 +2,9 @@
 ## Description
 Manages loan products, applications, and repayments.
 
+## Technology
+Java, Spring Boot
+
 
 ## Interfaces
 

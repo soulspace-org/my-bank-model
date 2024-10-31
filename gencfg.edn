@@ -68,6 +68,11 @@
   :per-element true
   :id-as-name true
   :extension "md"}
+ {:selection {:namespace-prefix "mybank" :el :process}
+  :template "docs/process.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
  {:selection {:namespace-prefix "mybank" :el :state}
   :template "docs/state.md.cmb"
   :per-element true

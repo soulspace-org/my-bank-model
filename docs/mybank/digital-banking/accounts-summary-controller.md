@@ -2,6 +2,9 @@
 ## Description
 Provides customers with a summary of their bank accounts.
 
+## Technology
+Clojure namespace
+
 
 ## Interfaces
 

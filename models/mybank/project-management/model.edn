@@ -26,16 +26,23 @@
   {:el :capability
    :id :mybank.project-management/manage-projects
    :name "Manage Projects"
-   :desc ""}
+   :desc "Capability to manage projects for the organization"}
 
   {:el :process
    :id :mybank.project-management/project-management
    :name "Project Management"
-   :desc ""}
+   :desc "Process to manage projects"}
 
   {:el :process
    :id :mybank.project-management/requirements-management
    :name "Requirements Management"
+   :desc "Process to manage requirements for projects"}
+
+  {:el :role-in
+   :id :mybank.project-management/project-manager-has-role-in-project-management
+   :from :mybank.project-management/project-manager
+   :to :mybank.project-management/project-management
+   :name "role in"
    :desc ""}
 
   {:el :process

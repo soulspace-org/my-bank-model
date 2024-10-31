@@ -2,6 +2,9 @@
 ## Description
 Azure Tenant for MyBank
 
+## Technology
+Azure
+
 ## Contained Nodes
 Name | Description 
 ---|---

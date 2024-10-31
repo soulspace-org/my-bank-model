@@ -2,6 +2,9 @@
 ## Description
 Provides limited internet banking functionality to customers via mobile devices.
 
+## Technology
+ClojureScript and Reagent
+
 
 ## Interfaces
 

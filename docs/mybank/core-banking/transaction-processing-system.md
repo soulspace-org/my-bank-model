@@ -2,6 +2,9 @@
 ## Description
 Processes financial transactions in real-time.
 
+## Technology
+Java, Kafka
+
 
 ## Interfaces
 

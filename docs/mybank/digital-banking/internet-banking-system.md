@@ -2,6 +2,9 @@
 ## Description
 Allows customers to view information about their bank accounts and make payments.
 
+## Technology
+
+
 ## Containers
 These containers are the main processes of the Internet Banking System system.
 

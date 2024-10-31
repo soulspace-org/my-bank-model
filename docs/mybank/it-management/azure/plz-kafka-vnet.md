@@ -2,6 +2,9 @@
 ## Description
 VNet for the Kafka infrastructure
 
+## Technology
+Azure Virtual Network
+
 ## Parent Node
 [LZ Kafka Subscription](../../../mybank/it-management/azure/plz-kafka-subscription.md)
 ## Contained Nodes

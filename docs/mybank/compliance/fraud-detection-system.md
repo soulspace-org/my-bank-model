@@ -2,6 +2,9 @@
 ## Description
 Detects and mitigates fraudulent activities.
 
+## Technology
+Python, TensorFlow
+
 
 ## Interfaces
 

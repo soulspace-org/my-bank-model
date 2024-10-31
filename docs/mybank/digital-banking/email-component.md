@@ -2,6 +2,9 @@
 ## Description
 Sends e-mails to users.
 
+## Technology
+Clojure namespace
+
 
 ## Interfaces
 

@@ -2,6 +2,9 @@
 ## Description
 Software and hardware for in-branch banking services.
 
+## Technology
+Java, Swing
+
 
 ## Interfaces
 

@@ -2,6 +2,9 @@
 ## Description
 Advanced analytics for predictive modeling.
 
+## Technology
+Java, Hadoop, Spark
+
 
 ## Interfaces
 
