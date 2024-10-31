@@ -14,6 +14,7 @@ LAYOUT_TOP_DOWN()
 
 
 title Context View of the Project Management Systems
+Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manages projects at MyBank.")
 Boundary(mybank_projectManagement_contextBoundary, "Project Management and Development") {
   System(mybank_projectManagement_devPlatforms, "Development Platforms", $descr="Tools for software development, testing, and deployment.", $type="Jenkins, GitLab")
   System(mybank_projectManagement_projectManagementTools, "Project Management Tools", $descr="Platforms for planning, executing, and tracking projects.", $type="Jira", $sprite="jira")
