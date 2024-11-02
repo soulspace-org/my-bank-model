@@ -17,9 +17,6 @@ model.
 ## Prerequisites
 To generate diagrams and documentation for this model, you need to have Java 11+ and Graphviz installed.
 
-For the Overarch templates, you need to check out the [Overarch repository](https://github.com/soulspace-org/overarch)
-beside this project. 
-
 ## Generation
 The project provides the JAR files for Overarch and PlantUML in the `tools` folder.
 
