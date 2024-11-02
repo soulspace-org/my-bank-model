@@ -1,4 +1,4 @@
-# User Role Personal Customer
+# Personal Customer (Person)
 
 ## Description
 Personal Customer of MyBank.

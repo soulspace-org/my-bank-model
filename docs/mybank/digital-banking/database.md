@@ -1,4 +1,4 @@
-# Database
+# Database (Container)
 ## Description
 Stores user registration, authentication, and access logs.
 

@@ -1,6 +1,6 @@
 # Container View of the Digital Banking Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Digital Banking Systems](../../mybank/digital-banking/container-view.png)
 
 ## Description

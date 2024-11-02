@@ -1,4 +1,4 @@
-# IT Infrastructure
+# IT Infrastructure (System)
 ## Description
 Hardware and software resources, including servers and networking.
 

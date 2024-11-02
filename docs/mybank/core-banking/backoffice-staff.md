@@ -1,4 +1,4 @@
-# User Role Backoffice Staff
+# Backoffice Staff (Person)
 
 ## Description
 Administration and support staff within the bank.

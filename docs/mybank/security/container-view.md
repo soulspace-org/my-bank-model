@@ -1,6 +1,6 @@
 # Container View of the Security Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Security Systems](../../mybank/security/container-view.png)
 
 ## Description

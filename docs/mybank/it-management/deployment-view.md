@@ -1,6 +1,6 @@
 # Deployment View of the IT Management Systems
 
-## Diagramm
+## Diagram
 ![Deployment View of the IT Management Systems](../../mybank/it-management/deployment-view.png)
 
 ## Description

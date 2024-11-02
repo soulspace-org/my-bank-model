@@ -1,6 +1,6 @@
 # Context View of the MyBank Systems
 
-## Diagramm
+## Diagram
 ![Context View of the MyBank Systems](../mybank/context-view.png)
 
 ## Description

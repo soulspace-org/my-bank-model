@@ -1,4 +1,4 @@
-# Loan Management
+# Loan Management (System)
 ## Description
 Manages loan products, applications, and repayments.
 

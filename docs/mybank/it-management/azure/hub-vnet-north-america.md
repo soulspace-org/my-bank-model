@@ -1,4 +1,4 @@
-# Hub VNet North America
+# Hub VNet North America (Node)
 ## Description
 VNet for the hub infrastructure in north america
 

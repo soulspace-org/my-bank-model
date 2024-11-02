@@ -1,4 +1,4 @@
-# Expense Management
+# Expense Management (System)
 ## Description
 Tracks and manages expenses.
 

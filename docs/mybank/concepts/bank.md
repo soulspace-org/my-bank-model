@@ -1,4 +1,4 @@
-# Concept Bank
+#Bank (Concept)
 ## Description
 Organization providing services around money
 # Features

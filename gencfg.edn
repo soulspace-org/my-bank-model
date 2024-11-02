@@ -46,8 +46,45 @@
   :per-element true
   :id-as-name true
   :extension "md"}
+
+ {:selection {:els #{:organization :org-unit}}
+  :template "docs/organization.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:el :capability}
+  :template "docs/capability.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:el :process}
+  :template "docs/process.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:el :artifact}
+  :template "docs/artifact.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:el :requirement}
+  :template "docs/requirement.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:el :decision}
+  :template "docs/decision.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
  {:selection {:el :use-case}
-  :template "docs/use-cases.md.cmb"
+  :template "docs/use-case.md.cmb"
   :per-element true
   :id-as-name true
   :extension "md"}
@@ -63,16 +100,6 @@
   :id-as-name true
   :extension "md"}
 
- {:selection {:els #{:organization :org-unit}}
-  :template "docs/organization.md.cmb"
-  :per-element true
-  :id-as-name true
-  :extension "md"}
- {:selection {:namespace-prefix "mybank" :el :process}
-  :template "docs/process.md.cmb"
-  :per-element true
-  :id-as-name true
-  :extension "md"}
  {:selection {:namespace-prefix "mybank" :el :state}
   :template "docs/state.md.cmb"
   :per-element true
@@ -207,20 +234,20 @@
  ;;; Exports
  ;;;
  #_{:selection {:namespace-prefix "mybank"}
-  :template "exports/model.edn.cmb"
-  :per-namespace true
-  :subdir "export/edn"
-  :base-name "model"
-  :extension "edn"
-  :debug true}
+    :template "exports/model.edn.cmb"
+    :per-namespace true
+    :subdir "export/edn"
+    :base-name "model"
+    :extension "edn"
+    :debug true}
 
  #_{:view-selection {:namespace-prefix "mybank"}
-  :template "exports/views.edn.cmb"
-  :per-namespace true
-  :subdir "export/edn"
-  :base-name "views"
-  :extension "edn"
-  :debug true}
+    :template "exports/views.edn.cmb"
+    :per-namespace true
+    :subdir "export/edn"
+    :base-name "views"
+    :extension "edn"
+    :debug true}
 
  ;
  ]

@@ -1,6 +1,6 @@
 # Container View of the Project Management Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Project Management Systems](../../mybank/project-management/container-view.png)
 
 ## Description

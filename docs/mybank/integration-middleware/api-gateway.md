@@ -1,4 +1,4 @@
-# API Gateway
+# API Gateway (System)
 ## Description
 Manages APIs for third-party services and fintech apps.
 

@@ -1,6 +1,6 @@
 # Context View of the IT Management Systems
 
-## Diagramm
+## Diagram
 ![Context View of the IT Management Systems](../../mybank/it-management/context-view.png)
 
 ## Description

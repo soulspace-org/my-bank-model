@@ -1,6 +1,6 @@
 # Container View of the Payment Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Payment Systems](../../mybank/payment/container-view.png)
 
 ## Description

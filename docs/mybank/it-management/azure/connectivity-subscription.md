@@ -1,4 +1,4 @@
-# Connectivity Subscription
+# Connectivity Subscription (Node)
 ## Description
 Subscription for the Connectivity Infrastructure
 

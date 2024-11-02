@@ -1,4 +1,4 @@
-# LZ1 Subscription
+# LZ1 Subscription (Node)
 ## Description
 Subscription for the landing zone of an application
 

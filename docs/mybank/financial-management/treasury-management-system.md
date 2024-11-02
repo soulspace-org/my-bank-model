@@ -1,4 +1,4 @@
-# Treasury Management
+# Treasury Management (System)
 ## Description
 Manages liquidity, investments, and risk in the treasury function.
 

@@ -1,4 +1,4 @@
-# Management Subscription
+# Management Subscription (Node)
 ## Description
 Subscription for the Management Infrastructure
 

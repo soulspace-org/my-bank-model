@@ -1,4 +1,4 @@
-# Reset Password Controller
+# Reset Password Controller (Component)
 ## Description
 Allows users to reset their passwords.
 

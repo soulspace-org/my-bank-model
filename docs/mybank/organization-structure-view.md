@@ -1,6 +1,6 @@
 # Organisation Stucture View for the MyBank Systems
 
-## Diagramm
+## Diagram
 ![Organisation Stucture View for the MyBank Systems](../mybank/organization-structure-view.png)
 
 ## Description

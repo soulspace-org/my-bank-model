@@ -1,4 +1,4 @@
-# LZ Kafka VNet
+# LZ Kafka VNet (Node)
 ## Description
 VNet for the Kafka infrastructure
 

@@ -1,4 +1,4 @@
-# Internet Banking System
+# Internet Banking System (System)
 ## Description
 Allows customers to view information about their bank accounts and make payments.
 

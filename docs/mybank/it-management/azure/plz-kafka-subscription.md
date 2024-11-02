@@ -1,4 +1,4 @@
-# LZ Kafka Subscription
+# LZ Kafka Subscription (Node)
 ## Description
 Subscription for the central Kafka infrastructure
 

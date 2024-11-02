@@ -1,4 +1,4 @@
-# User Role Compliance Manager
+# Compliance Manager (Person)
 
 ## Description
 Responsible for the compliance of MyBank.

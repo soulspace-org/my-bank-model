@@ -1,4 +1,4 @@
-# Concept Deposit
+#Deposit (Concept)
 ## Description
 Puts money on account
 

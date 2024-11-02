@@ -1,4 +1,4 @@
-# Concept Loan
+#Loan (Concept)
 ## Description
 Lending money from the bank to the customer
 # Subordinates

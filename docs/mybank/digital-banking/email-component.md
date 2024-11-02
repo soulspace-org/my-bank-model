@@ -1,4 +1,4 @@
-# E-mail Component
+# E-mail Component (Component)
 ## Description
 Sends e-mails to users.
 

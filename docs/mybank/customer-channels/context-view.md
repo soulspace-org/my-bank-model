@@ -1,6 +1,6 @@
 # Context View of the Customer Channels Systems
 
-## Diagramm
+## Diagram
 ![Context View of the Customer Channels Systems](../../mybank/customer-channels/context-view.png)
 
 ## Description

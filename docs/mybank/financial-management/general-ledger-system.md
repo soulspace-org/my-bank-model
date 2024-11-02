@@ -1,4 +1,4 @@
-# General Ledger
+# General Ledger (System)
 ## Description
 Comprehensive financial accounting and reporting system.
 

@@ -1,6 +1,6 @@
 # Component View of the Digital Banking Systems
 
-## Diagramm
+## Diagram
 ![Component View of the Digital Banking Systems](../../mybank/digital-banking/component-view.png)
 
 ## Description

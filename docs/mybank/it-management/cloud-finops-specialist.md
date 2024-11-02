@@ -1,4 +1,4 @@
-# User Role Cloud FinOps Specialist
+# Cloud FinOps Specialist (Person)
 
 ## Description
 Operates cloud infrastructure and controls costs

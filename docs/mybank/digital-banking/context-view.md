@@ -1,6 +1,6 @@
 # Context View of the Digital Banking Systems
 
-## Diagramm
+## Diagram
 ![Context View of the Digital Banking Systems](../../mybank/digital-banking/context-view.png)
 
 ## Description

@@ -1,6 +1,6 @@
 # Container View of the Customer Channels Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Customer Channels Systems](../../mybank/customer-channels/container-view.png)
 
 ## Description

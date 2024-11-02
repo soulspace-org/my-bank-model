@@ -1,4 +1,4 @@
-# User Role Corporate Customer
+# Corporate Customer (Person)
 
 ## Description
 Corporate Customer of MyBank.

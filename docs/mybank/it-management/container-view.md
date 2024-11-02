@@ -1,6 +1,6 @@
 # Container View of the IT Management Systems
 
-## Diagramm
+## Diagram
 ![Container View of the IT Management Systems](../../mybank/it-management/container-view.png)
 
 ## Description

@@ -1,6 +1,6 @@
 # Context View of the Human Resources Systems
 
-## Diagramm
+## Diagram
 ![Context View of the Human Resources Systems](../../mybank/human-resources/context-view.png)
 
 ## Description

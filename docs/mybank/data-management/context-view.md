@@ -1,6 +1,6 @@
 # Context View of the Data Management Systems
 
-## Diagramm
+## Diagram
 ![Context View of the Data Management Systems](../../mybank/data-management/context-view.png)
 
 ## Description

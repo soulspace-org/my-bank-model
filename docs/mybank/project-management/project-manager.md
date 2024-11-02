@@ -1,4 +1,4 @@
-# User Role Project Manager
+# Project Manager (Person)
 
 ## Description
 Manages projects at MyBank.

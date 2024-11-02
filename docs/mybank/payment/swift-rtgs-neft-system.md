@@ -1,4 +1,4 @@
-# SWIFT/RTGS/NEFT
+# SWIFT/RTGS/NEFT (System)
 ## Description
 Handles interbank transfers and settlements.
 

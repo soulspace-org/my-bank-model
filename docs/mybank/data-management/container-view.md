@@ -1,6 +1,6 @@
 # Container View of the Data Management Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Data Management Systems](../../mybank/data-management/container-view.png)
 
 ## Description

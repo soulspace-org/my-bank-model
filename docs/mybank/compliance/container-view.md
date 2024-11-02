@@ -1,6 +1,6 @@
 # Container View of the Compliance and Risk Management Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Compliance and Risk Management Systems](../../mybank/compliance/container-view.png)
 
 ## Description

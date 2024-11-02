@@ -1,6 +1,6 @@
 # Context View of the Project Management Systems
 
-## Diagramm
+## Diagram
 ![Context View of the Project Management Systems](../../mybank/project-management/context-view.png)
 
 ## Description

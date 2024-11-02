@@ -1,4 +1,4 @@
-# Web Application
+# Web Application (Container)
 ## Description
 Delivers the static content and the internet banking single-page application.
 

@@ -1,4 +1,4 @@
-# Data Warehouse
+# Data Warehouse (System)
 ## Description
 Central repository for storing large volumes of data.
 

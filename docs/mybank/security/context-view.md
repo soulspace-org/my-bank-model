@@ -1,6 +1,6 @@
 # Context View of the Security Systems
 
-## Diagramm
+## Diagram
 ![Context View of the Security Systems](../../mybank/security/context-view.png)
 
 ## Description

@@ -1,4 +1,4 @@
-# Sign In Controller
+# Sign In Controller (Component)
 ## Description
 Allows users to sign in to the banking system.
 

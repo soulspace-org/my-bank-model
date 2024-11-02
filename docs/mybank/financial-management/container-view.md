@@ -1,6 +1,6 @@
 # Container View of the Financial Management Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Financial Management Systems](../../mybank/financial-management/container-view.png)
 
 ## Description

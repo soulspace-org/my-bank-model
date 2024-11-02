@@ -1,4 +1,4 @@
-# Payment Gateway
+# Payment Gateway (System)
 ## Description
 Facilitates credit/debit card transactions.
 

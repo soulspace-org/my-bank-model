@@ -1,4 +1,4 @@
-# Security Component
+# Security Component (Component)
 ## Description
 Handles authentication, password changes, etc.
 

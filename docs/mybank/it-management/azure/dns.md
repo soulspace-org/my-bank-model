@@ -1,4 +1,4 @@
-# Azure DNS
+# Azure DNS (Node)
 ## Description
 Domain Name Service
 

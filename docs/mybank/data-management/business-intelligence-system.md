@@ -1,4 +1,4 @@
-# Business Intelligence (BI)
+# Business Intelligence (BI) (System)
 ## Description
 Provides tools for reporting and data analysis.
 

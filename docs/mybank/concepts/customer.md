@@ -1,4 +1,4 @@
-# Concept Customer
+#Customer (Concept)
 ## Description
 Entity requesting services around money
 # Subordinates

@@ -1,4 +1,4 @@
-# ATM
+# ATM (System)
 ## Description
 Allows customers to withdraw cash.
 

@@ -1,4 +1,4 @@
-# Azure Firewall
+# Azure Firewall (Node)
 ## Description
 Restrict network access/traffic
 

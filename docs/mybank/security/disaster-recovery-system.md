@@ -1,4 +1,4 @@
-# Disaster Recovery
+# Disaster Recovery (System)
 ## Description
 Ensures business continuity in case of a disaster.
 

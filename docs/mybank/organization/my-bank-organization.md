@@ -1,4 +1,4 @@
-# My Bank
+# My Bank (Organization)
 ## Description
 My Bank Company
 

@@ -1,6 +1,6 @@
 # Container View of the Core Banking Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Core Banking Systems](../../mybank/core-banking/container-view.png)
 
 ## Description

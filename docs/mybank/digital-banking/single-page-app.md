@@ -1,4 +1,4 @@
-# Single-Page Application
+# Single-Page Application (Container)
 ## Description
 Provides internet banking functionality to customers via their web browser.
 

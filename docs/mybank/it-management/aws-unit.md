@@ -1,4 +1,4 @@
-# AWS Platform
+# AWS Platform (Org-unit)
 ## Description
 Responsible for the AWS platform.
 

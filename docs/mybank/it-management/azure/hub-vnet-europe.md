@@ -1,4 +1,4 @@
-# Hub VNet Europe
+# Hub VNet Europe (Node)
 ## Description
 VNet for the hub infrastructure in europe
 

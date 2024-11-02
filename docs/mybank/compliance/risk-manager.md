@@ -1,4 +1,4 @@
-# User Role Risk Manager
+# Risk Manager (Person)
 
 ## Description
 Responsible for managing the risks.

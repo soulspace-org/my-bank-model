@@ -1,6 +1,6 @@
 # Container View of the MyBank Systems
 
-## Diagramm
+## Diagram
 ![Container View of the MyBank Systems](../mybank/container-view.png)
 
 ## Description

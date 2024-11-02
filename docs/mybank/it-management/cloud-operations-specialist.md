@@ -1,4 +1,4 @@
-# User Role Cloud Operations Specialist
+# Cloud Operations Specialist (Person)
 
 ## Description
 Operates cloud infrastructure

@@ -1,6 +1,6 @@
 # Context View of the Financial Management Systems
 
-## Diagramm
+## Diagram
 ![Context View of the Financial Management Systems](../../mybank/financial-management/context-view.png)
 
 ## Description

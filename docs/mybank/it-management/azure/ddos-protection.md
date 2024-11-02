@@ -1,4 +1,4 @@
-# Azure DDoS
+# Azure DDoS (Node)
 ## Description
 Protection against denial of service attacks
 

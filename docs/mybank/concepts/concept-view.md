@@ -1,6 +1,6 @@
 # High Level Banking Concepts
 
-## Diagramm
+## Diagram
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)
 
 ## Description

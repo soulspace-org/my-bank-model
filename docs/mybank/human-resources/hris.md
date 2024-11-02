@@ -1,4 +1,4 @@
-# HR Information Systems (HRIS)
+# HR Information Systems (HRIS) (System)
 ## Description
 Manages employee data, payroll, and benefits.
 

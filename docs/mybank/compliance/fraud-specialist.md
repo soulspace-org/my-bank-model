@@ -1,4 +1,4 @@
-# User Role Fraud specialist
+# Fraud specialist (Person)
 
 ## Description
 Responsible for the fraud detection and mitigation of MyBank.

@@ -1,4 +1,4 @@
-# Concept Mortgage
+#Mortgage (Concept)
 ## Description
 A loan for a immobile, e.g. a house
 # Superordinates

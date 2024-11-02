@@ -1,6 +1,6 @@
 # Context View of the Core Banking Systems
 
-## Diagramm
+## Diagram
 ![Context View of the Core Banking Systems](../../mybank/core-banking/context-view.png)
 
 ## Description

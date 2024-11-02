@@ -1,6 +1,6 @@
 # Container View of the Human Resources Systems
 
-## Diagramm
+## Diagram
 ![Container View of the Human Resources Systems](../../mybank/human-resources/container-view.png)
 
 ## Description

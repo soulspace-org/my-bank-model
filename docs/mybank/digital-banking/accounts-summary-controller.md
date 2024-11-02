@@ -1,4 +1,4 @@
-# Accounts Summary Controller
+# Accounts Summary Controller (Component)
 ## Description
 Provides customers with a summary of their bank accounts.
 

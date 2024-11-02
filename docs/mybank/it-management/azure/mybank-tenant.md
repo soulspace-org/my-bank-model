@@ -1,4 +1,4 @@
-# MyBank Azure Tenant
+# MyBank Azure Tenant (Node)
 ## Description
 Azure Tenant for MyBank
 

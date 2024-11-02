@@ -1,4 +1,4 @@
-# Risk Management System
+# Risk Management System (System)
 ## Description
 Detects risks and manages risk mitigation.
 

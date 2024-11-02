@@ -1,4 +1,4 @@
-# Fraud Detection System
+# Fraud Detection System (System)
 ## Description
 Detects and mitigates fraudulent activities.
 

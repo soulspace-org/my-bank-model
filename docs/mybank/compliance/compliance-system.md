@@ -1,4 +1,4 @@
-# Compliance System
+# Compliance System (System)
 ## Description
 Ensures operations comply with regulations.
 

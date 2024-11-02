@@ -1,4 +1,4 @@
-# Concept Personal Customer
+#Personal Customer (Concept)
 ## Description
 A person requesting services around money
 # Superordinates

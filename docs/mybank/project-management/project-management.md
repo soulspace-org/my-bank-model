@@ -1,4 +1,4 @@
-# Project Management
+# Project Management (Process)
 ## Description
 Process to manage projects
 
@@ -7,3 +7,6 @@ Process to manage projects
 | Name | Description |
 |---|---|
 | [Project Manager](../../mybank/project-management/project-manager.md) | Manages projects at MyBank. |
+
+
+(generated with docs/process.md.cmb)

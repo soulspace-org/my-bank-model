@@ -1,6 +1,6 @@
 # Deployment View for the MyBank Systems
 
-## Diagramm
+## Diagram
 ![Deployment View for the MyBank Systems](../mybank/deployment-view.png)
 
 ## Description

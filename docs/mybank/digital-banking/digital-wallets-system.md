@@ -1,4 +1,4 @@
-# Digital Wallets
+# Digital Wallets (System)
 ## Description
 Supports digital wallet integration and mobile payments.
 

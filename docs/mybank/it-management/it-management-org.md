@@ -1,4 +1,4 @@
-# IT Management
+# IT Management (Org-unit)
 ## Description
 Responsible for the IT platform of MyBank
 

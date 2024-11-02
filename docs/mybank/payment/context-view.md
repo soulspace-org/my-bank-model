@@ -1,6 +1,6 @@
 # Context View of the Payment Systems
 
-## Diagramm
+## Diagram
 ![Context View of the Payment Systems](../../mybank/payment/context-view.png)
 
 ## Description

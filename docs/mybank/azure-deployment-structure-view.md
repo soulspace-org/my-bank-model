@@ -1,6 +1,6 @@
 # Azure Deployment View for the MyBank Systems
 
-## Diagramm
+## Diagram
 ![Azure Deployment View for the MyBank Systems](../mybank/azure-deployment-structure-view.png)
 
 ## Description

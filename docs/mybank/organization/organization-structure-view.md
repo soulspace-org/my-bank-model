@@ -1,6 +1,6 @@
 # MyBank Organization Chart
 
-## Diagramm
+## Diagram
 ![MyBank Organization Chart](../../mybank/organization/organization-structure-view.png)
 
 ## Description

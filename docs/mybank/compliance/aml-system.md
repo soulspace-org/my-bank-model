@@ -1,4 +1,4 @@
-# Anti-Money Laundering (AML) System
+# Anti-Money Laundering (AML) System (System)
 ## Description
 Monitors and prevents money laundering activities.
 

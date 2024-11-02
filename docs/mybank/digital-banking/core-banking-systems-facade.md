@@ -1,4 +1,4 @@
-# Core Banking Systems Facade
+# Core Banking Systems Facade (Component)
 ## Description
 Facilitates interaction with the core banking systems.
 
