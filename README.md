@@ -11,8 +11,7 @@ model.
 *Disclaimer: The purpose of this model is to show features of Overarch, not to show a meaningful enterprise architecture for any bank.*
 
 ## Documentation generated from the model
-* [List of Views](docs/mybank/views.md)
-* [Glossary](docs/mybank/glossary.md)
+* [List of Views](docs/views.md)
 
 ## Prerequisites
 To generate diagrams and documentation for this model, you need to have Java 11+ and Graphviz installed.
