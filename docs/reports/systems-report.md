@@ -1,7 +1,7 @@
-# Banking Systems Report
+# Systems Report
 
 ## Selection
-{:namespace-prefix "mybank", :el :system}
+{:el :system}
 
 
 ## Nodes
@@ -14,6 +14,7 @@
  :mybank.customer-channels/branch-systems | Branch Systems | :system |  | Software and hardware for in-branch banking services. | Java, Swing | 
  :mybank.compliance/fraud-detection-system | Fraud Detection System | :system |  | Detects and mitigates fraudulent activities. | Python, TensorFlow | 
  :mybank.project-management/dev-platforms | Development Platforms | :system |  | Tools for software development, testing, and deployment. | Jenkins, GitLab | 
+ :mybank.digital-banking/internet-banking-system | Internet Banking System | :system |  | Allows customers to view information about their bank accounts and make payments. |  | 
  :mybank.digital-banking/digital-wallets-system | Digital Wallets | :system |  | Supports digital wallet integration and mobile payments. | Node.js and Express | 
  :mybank.security/identity-access-management-system | Identity and Access Management (IAM) | :system |  | Manages secure access to systems and data. | OAuth 2.0, OpenID Connect | 
  :mybank.compliance/risk-management-system | Risk Management System | :system |  | Detects risks and manages risk mitigation. | Java, Spring Boot | 
@@ -40,7 +41,6 @@
  :mybank.financial-management/treasury-management-system | Treasury Management | :system |  | Manages liquidity, investments, and risk in the treasury function. | Kyriba | 
  :mybank.core-banking/account-management-system | Account Management | :system |  | Handles customer accounts, deposits, and withdrawals. | Java, Spring Boot | 
  :mybank.core-banking/transaction-processing-system | Transaction Processing | :system |  | Processes financial transactions in real-time. | Java, Kafka | 
- :mybank.digital-banking/internet-banking-system | Internet Banking System | :system |  | Allows customers to view information about their bank accounts and make payments. |  | 
  :mybank.human-resources/talent-management-system | Talent Management | :system |  | Tools for recruitment, training, and performance management. | SAP SuccessFactors | 
 
 

@@ -1,0 +1,36 @@
+;;;;
+;;;; MyBank Internet Banking System Model
+;;;;
+#{
+  
+  {:el :context-view
+   :id :mybank.digital-banking.internet-banking-system/context-view
+   :spec {:selection {:namespace-prefix "mybank.digital-banking.internet-banking-system"
+                      :to-namespace-prefix "mybank.digital-banking.internet-banking-system"}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Internet Banking System Context View"
+   :title "Context View of the Internet Banking System"
+   :desc "Shows the Internet Banking System and its relations."}
+  
+  {:el :container-view
+   :id :mybank.digital-banking.internet-banking-system/container-view
+   :spec {:selection {:namespace-prefix "mybank.digital-banking.internet-banking-system"
+                      :to-namespace-prefix "mybank.digital-banking.internet-banking-system"}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Internet Banking System Container View"
+   :title "Container View of the Internet Banking System"
+   :desc "Shows the containers of the Internet Banking System and their relations."}
+  
+  {:el :component-view
+   :id :mybank.digital-banking.internet-banking-system/component-view
+   :spec {:selection {:namespace-prefix "mybank.digital-banking.internet-banking-system"
+                      :to-namespace-prefix "mybank.digital-banking.internet-banking-system"}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Internet Banking System Component View"
+   :title "Component View of the Internet Banking System"
+   :desc "Shows the containers and components of the domain Internet Banking System and their relations."}
+  
+}

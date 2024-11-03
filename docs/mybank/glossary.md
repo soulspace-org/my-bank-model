@@ -12,7 +12,7 @@ Handles customer accounts, deposits, and withdrawals.
 Processes ACH transactions for direct deposits and bill payments.
 ### [Anti-Money Laundering (AML) System](../mybank/compliance/aml-system.md)
 Monitors and prevents money laundering activities.
-### [API Application](../mybank/digital-banking/api-application.md)
+### [API Application](../mybank/digital-banking/internet-banking-system/api-application.md)
 Provides internet banking functionality via a RESTful JSON/HTTPS API.
 ### [API Gateway](../mybank/integration-middleware/api-gateway.md)
 Manages APIs for third-party services and fintech apps.
@@ -60,7 +60,7 @@ Protects against cyber threats.
 Manages data storage, warehousing, and analytics.
 ### [Data Warehouse](../mybank/data-management/data-warehouse-system.md)
 Central repository for storing large volumes of data.
-### [Database](../mybank/digital-banking/database.md)
+### [Database](../mybank/digital-banking/internet-banking-system/database.md)
 Stores user registration, authentication, and access logs.
 ### [Deposit](../mybank/concepts/deposit.md)
 Puts money on account
@@ -106,7 +106,7 @@ Manages IT infrastructure, cloud resources, and system monitoring.
 Lending money from the bank to the customer
 ### [Loan Management](../mybank/core-banking/loan-management-system.md)
 Manages loan products, applications, and repayments.
-### [Mobile App](../mybank/digital-banking/mobile-app.md)
+### [Mobile App](../mybank/digital-banking/internet-banking-system/mobile-app.md)
 Provides limited internet banking functionality to customers via mobile devices.
 ### [Mortgage](../mybank/concepts/mortgage.md)
 A loan for a immobile, e.g. a house
@@ -136,7 +136,7 @@ Responsible for managing the risks.
 Ensures the security of systems and data.
 ### [Service-Oriented Architecture (SOA)](../mybank/integration-middleware/soa.md)
 Framework for enabling seamless integration between services.
-### [Single-Page Application](../mybank/digital-banking/single-page-app.md)
+### [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md)
 Provides internet banking functionality to customers via their web browser.
 ### [SWIFT/RTGS/NEFT](../mybank/payment/swift-rtgs-neft-system.md)
 Handles interbank transfers and settlements.
@@ -150,7 +150,7 @@ Processes financial transactions in real-time.
 Moves money from one account to another account
 ### [Treasury Management](../mybank/financial-management/treasury-management-system.md)
 Manages liquidity, investments, and risk in the treasury function.
-### [Web Application](../mybank/digital-banking/web-app.md)
+### [Web Application](../mybank/digital-banking/internet-banking-system/web-app.md)
 Delivers the static content and the internet banking single-page application.
 ### [Withdrawal](../mybank/concepts/withdrawal.md)
 Takes money from account

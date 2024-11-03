@@ -13,115 +13,12 @@
           :id :mybank.digital-banking/internet-banking-system
           :name "Internet Banking System"
           :desc "Allows customers to view information about their bank accounts and make payments."
-          :ct #{{:el :container
-                 :id :mybank.digital-banking/web-app
-                 :name "Web Application"
-                 :desc "Delivers the static content and the internet banking single-page application."
-                 :tech "Clojure and Luminus"}
-                {:el :container
-                 :id :mybank.digital-banking/single-page-app
-                 :name "Single-Page Application"
-                 :desc "Provides internet banking functionality to customers via their web browser."
-                 :tech "ClojureScript and Re-Frame"}
-                {:el :container
-                 :id :mybank.digital-banking/mobile-app
-                 :name "Mobile App"
-                 :desc "Provides limited internet banking functionality to customers via mobile devices."
-                 :tech "ClojureScript and Reagent"}
-                {:el :container
-                 :id :mybank.digital-banking/api-application
-                 :name "API Application"
-                 :desc "Provides internet banking functionality via a RESTful JSON/HTTPS API."
-                 :tech "Clojure and Liberator"
-                 :ct #{{:el :component
-                        :id :mybank.digital-banking/sign-in-controller
-                        :name "Sign In Controller"
-                        :desc "Allows users to sign in to the banking system."
-                        :tech "Clojure namespace"}
-                       {:el :component
-                        :id :mybank.digital-banking/security-component
-                        :name "Security Component"
-                        :desc "Handles authentication, password changes, etc."
-                        :tech "Clojure namespace"}
-                       {:el :component
-                        :id :mybank.digital-banking/reset-password-controller
-                        :name "Reset Password Controller"
-                        :desc "Allows users to reset their passwords."
-                        :tech "Clojure namespace"}
-                       {:el :component
-                        :id :mybank.digital-banking/email-component
-                        :name "E-mail Component"
-                        :desc "Sends e-mails to users."
-                        :tech "Clojure namespace"}
-                       {:el :component
-                        :id :mybank.digital-banking/accounts-summary-controller
-                        :name "Accounts Summary Controller"
-                        :desc "Provides customers with a summary of their bank accounts."
-                        :tech "Clojure namespace"}
-                       {:el :component
-                        :id :mybank.digital-banking/core-banking-systems-facade
-                        :name "Core Banking Systems Facade"
-                        :desc "Facilitates interaction with the core banking systems."
-                        :tech "Clojure Namespace, http-client"}}}
-                {:el :container
-                 :subtype :database
-                 :id :mybank.digital-banking/database
-                 :name "Database"
-                 :desc "Stores user registration, authentication, and access logs."
-                 :tech "Datomic"}}}
+          :ct #{}}
          {:el :system
           :id :mybank.digital-banking/digital-wallets-system
           :name "Digital Wallets"
           :desc "Supports digital wallet integration and mobile payments."
           :tech "Node.js and Express"}}}
-
-;;;
-;;; Relations
-;;;  
-  {:el :request
-   :id :mybank.digital-banking/internet-banking-system-uses-email-system
-   :from :mybank.digital-banking/internet-banking-system
-   :to :mybank/email-system
-   :name "sends e-mail using"}
-
-  {:el :request
-   :id :mybank.digital-banking/internet-banking-system-uses-account-management-system
-   :from :mybank.digital-banking/internet-banking-system
-   :to :mybank.core-banking/account-management-system
-   :name "gets account information from, and makes payments using"}
-
-  {:el :request
-   :id :mybank.digital-banking/internet-banking-system-uses-loan-management-system
-   :from :mybank.digital-banking/internet-banking-system
-   :to :mybank.core-banking/loan-management-system
-   :name "fetches loan details and payment status from"}
-
-  {:el :request
-   :id :mybank.digital-banking/mobile-app-calls-api-application
-   :from :mybank.digital-banking/mobile-app
-   :to :mybank.digital-banking/api-application
-   :name "makes API calls to"
-   :tech "Transit/HTTPS"}
-
-  {:el :request
-   :id :mybank.digital-banking/api-application-uses-database
-   :from :mybank.digital-banking/api-application
-   :to :mybank.digital-banking/database
-   :name "reads from and writes to"
-   :tech "Datalog"}
-
-  {:el :request
-   :id :mybank.digital-banking/api-application-uses-email-system
-   :from :mybank.digital-banking/api-application
-   :to :mybank/email-system
-   :name "sends e-mail using"}
-
-  {:el :request
-   :id :mybank.digital-banking/api-application-uses-account-management-system
-   :from :mybank.digital-banking/api-application
-   :to :mybank.core-banking/account-management-system
-   :name "makes API calls to"
-   :tech "REST"}
 
   ;          
   }

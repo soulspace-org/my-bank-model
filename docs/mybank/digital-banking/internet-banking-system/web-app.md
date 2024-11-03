@@ -13,12 +13,12 @@ Clojure and Luminus
 #### Service
 | Name | Called From | Technology | Description |
 |---|---|---|---|
-| visits mybank.com via browser | [Personal Customer](../../mybank/personal-customer.md) | HTTPS |  |
+| visits mybank.com via browser | [Personal Customer](../../../mybank/personal-customer.md) | HTTPS |  |
 
 ## Container View
-![Container View of the Digital Banking Systems](../../mybank/digital-banking/container-view.png)
+![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)
 
-[Digital Banking Container View](../../mybank/digital-banking/container-view.md)
+[Internet Banking System Container View](../../../mybank/digital-banking/internet-banking-system/container-view.md)
 
 
 (generated with docs/architecture-node.md.cmb)

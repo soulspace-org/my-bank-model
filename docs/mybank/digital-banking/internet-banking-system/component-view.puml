@@ -1,0 +1,34 @@
+@startuml component-view
+!include <C4/C4_Component.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Component View of the Internet Banking System
+Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
+Container_Boundary(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application") {
+  Component(mybank_digitalBanking_internetBankingSystem_securityComponent, "Security Component", $descr="Handles authentication, password changes, etc.", $techn="Clojure namespace")
+  Component(mybank_digitalBanking_internetBankingSystem_resetPasswordController, "Reset Password Controller", $descr="Allows users to reset their passwords.", $techn="Clojure namespace")
+  Component(mybank_digitalBanking_internetBankingSystem_emailComponent, "E-mail Component", $descr="Sends e-mails to users.", $techn="Clojure namespace")
+  Component(mybank_digitalBanking_internetBankingSystem_coreBankingSystemsFacade, "Core Banking Systems Facade", $descr="Facilitates interaction with the core banking systems.", $techn="Clojure Namespace, http-client")
+  Component(mybank_digitalBanking_internetBankingSystem_accountsSummaryController, "Accounts Summary Controller", $descr="Provides customers with a summary of their bank accounts.", $techn="Clojure namespace")
+  Component(mybank_digitalBanking_internetBankingSystem_signInController, "Sign In Controller", $descr="Allows users to sign in to the banking system.", $techn="Clojure namespace")
+}
+Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
+ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
+Rel(mybank_digitalBanking_internetBankingSystem_accountsSummaryController, mybank_digitalBanking_internetBankingSystem_coreBankingSystemsFacade, "retrieves account data from")
+Rel(mybank_digitalBanking_internetBankingSystem_resetPasswordController, mybank_digitalBanking_internetBankingSystem_emailComponent, "uses for sending password reset emails")
+Rel(mybank_digitalBanking_internetBankingSystem_singlePageApp, mybank_digitalBanking_internetBankingSystem_signInController, "makes API calls to", $techn="Transit/HTTPS")
+Rel(mybank_digitalBanking_internetBankingSystem_singlePageApp, mybank_digitalBanking_internetBankingSystem_resetPasswordController, "makes API calls to", $techn="Transit/HTTPS")
+Rel(mybank_digitalBanking_internetBankingSystem_signInController, mybank_digitalBanking_internetBankingSystem_securityComponent, "uses")
+Rel(mybank_digitalBanking_internetBankingSystem_singlePageApp, mybank_digitalBanking_internetBankingSystem_accountsSummaryController, "makes API calls to", $techn="Transit/HTTPS")
+SHOW_LEGEND()
+@enduml

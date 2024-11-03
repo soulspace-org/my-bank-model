@@ -15,6 +15,7 @@
 | [Financial Management Context View](../mybank/financial-management/context-view.md) | Shows the systems of the domain Financial Management and their relations. |
 | [Human Resources Context View](../mybank/human-resources/context-view.md) | Shows the systems of the domain Human Resources and their relations. |
 | [IT Management Context View](../mybank/it-management/context-view.md) | Shows the systems of the domain IT management and their relations. |
+| [Internet Banking System Context View](../mybank/digital-banking/internet-banking-system/context-view.md) | Shows the Internet Banking System and its relations. |
 | [Context View](../mybank/context-view.md) | Shows the systems of MyBank |
 | [Payment Context View](../mybank/payment/context-view.md) | Shows the systems of the domain Payment and their relations. |
 | [Project Management Context View](../mybank/project-management/context-view.md) | Shows the systems of the domain Project Management and their relations. |
@@ -30,6 +31,7 @@
 | [Financial Management Container View](../mybank/financial-management/container-view.md) | Shows the systems and containers of the domain Financial Management and their relations. |
 | [Human Resources Container View](../mybank/human-resources/container-view.md) | Shows the systems and containers of the domain Human Resources and their relations. |
 | [IT Management Container View](../mybank/it-management/container-view.md) | Shows the systems and containers of the domain IT management and their relations. |
+| [Internet Banking System Container View](../mybank/digital-banking/internet-banking-system/container-view.md) | Shows the containers of the Internet Banking System and their relations. |
 | [Banking Container View](../mybank/container-view.md) | Shows the containers of the MyBank Systems |
 | [Payment Container View](../mybank/payment/container-view.md) | Shows the systems and containers of the domain Payment and their relations. |
 | [Project Management Container View](../mybank/project-management/container-view.md) | Shows the systems and containers of the domain Project Management and their relations. |
@@ -37,7 +39,7 @@
 ## Component Views
 | Title | Description |
 |---|---|
-| [Digital Banking Component View](../mybank/digital-banking/component-view.md) | Shows the systems, containers and components of the domain Digital Banking and their relations. |
+| [Internet Banking System Component View](../mybank/digital-banking/internet-banking-system/component-view.md) | Shows the containers and components of the domain Internet Banking System and their relations. |
 ## Deployment Views
 | Title | Description |
 |---|---|
