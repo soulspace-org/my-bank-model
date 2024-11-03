@@ -117,6 +117,8 @@
  :mybank.it-management.azure/firewall-contained-in-connectivity-subscription | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/fraud-specialist | Fraud specialist | :person |  | Responsible for the fraud detection and mitigation of MyBank. |  | 
  :mybank.it-management.azure/plz-kafka-subnet-contained-in-plz-kafka-vnet | contained-in | :contained-in |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/view-account | view account | :use-case |  | view the details of an account |  | 
+ :mybank/personal-customer-wants-to-view-account | wants to | :uses |  |  |  | 
  :mybank.project-management/release-management | Release Management | :process |  |  |  | 
  :mybank/backoffice-staff-uses-payment-gateway | validates and processes payments using | :rel |  |  |  | 
  :mybank.digital-banking.internet-banking-system/email-component-contained-in-api-application | contained-in | :contained-in |  |  |  | 
@@ -178,6 +180,7 @@
  :mybank.customer-channels/branch-systems-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank/email-system-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.payment/payment-gateway-system | Payment Gateway | :system |  | Facilitates credit/debit card transactions. | Java, Spring Boot | 
+ :mybank.digital-banking.internet-banking-system/transfer-money | transfer money | :use-case |  | transfer money from one account to another |  | 
  :mybank/personal-customer-uses-internet-banking-system | views account balances and makes payments using | :request |  |  |  | 
  :mybank.it-management.azure/platform-management-group | Platform Management Group | :node |  |  |  | 
  :mybank.it-management.onprem/data-center-europe | MyBank On Premise Datacenter | :node |  | Data Center of MyBank |  | #{"onprem" "platform"}
@@ -221,6 +224,7 @@
  :mybank.it-management.azure/plz-kafka-vnet | LZ Kafka VNet | :node |  | VNet for the Kafka infrastructure | Azure Virtual Network | #{"cloud" "platform"}
  :mybank.compliance/aml-system | Anti-Money Laundering (AML) System | :system |  | Monitors and prevents money laundering activities. | Python, Scikit-learn | 
  :mybank.project-management/context-boundary | Project Management and Development | :context-boundary |  | Tools for managing projects and software development. |  | 
+ :mybank/personal-customer-wants-to-transfer-money | wants to | :uses |  |  |  | 
  :mybank.security/cybersecurity-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/fraud-specialist-role-in-fraud | function | :role-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/security-component | Security Component | :component |  | Handles authentication, password changes, etc. | Clojure namespace | 

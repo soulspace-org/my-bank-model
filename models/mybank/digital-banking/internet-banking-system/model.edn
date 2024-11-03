@@ -3,6 +3,31 @@
 ;;;;
 #{;
   ;;;
+  ;;; Use Cases
+  ;;;
+  {:el :use-case
+   :id :mybank.digital-banking.internet-banking-system/view-account
+   :level :user-goal
+   :name "view account"
+   :desc "view the details of an account"}
+  {:el :use-case
+   :id :mybank.digital-banking.internet-banking-system/transfer-money
+   :level :user-goal
+   :name "transfer money"
+   :desc "transfer money from one account to another"}
+  
+  {:el :uses
+   :id :mybank/personal-customer-wants-to-view-account
+   :from :mybank/personal-customer
+   :to :mybank.digital-banking.internet-banking-system/view-account
+   :name "wants to"}
+  {:el :uses
+   :id :mybank/personal-customer-wants-to-transfer-money
+   :from :mybank/personal-customer
+   :to :mybank.digital-banking.internet-banking-system/transfer-money
+   :name "wants to"}
+  
+  ;;;
   ;;; Architecture
   ;;;
   {:el :system
