@@ -4,6 +4,10 @@
 | Title | Description |
 |---|---|
 | [High Level Concept Map](./mybank/concepts/concept-view.md) | Shows the high level concepts of banking and their relations |
+## Use Case Views
+| Title | Description |
+|---|---|
+| [Internet Banking System Use Case View](./mybank/digital-banking/internet-banking-system/use-case-view.md) | Shows the use cases and actors of the Internet Banking System. |
 ## System Context Views
 | Title | Description |
 |---|---|

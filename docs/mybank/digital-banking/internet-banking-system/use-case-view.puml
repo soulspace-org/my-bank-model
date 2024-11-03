@@ -1,0 +1,17 @@
+@startuml use-case-view
+
+
+
+
+
+
+title Use Case View of the Internet Banking System
+
+usecase "view account" as (mybank_digitalBanking_internetBankingSystem_viewAccount) #BBBBFF
+actor "Personal Customer" as mybank_personalCustomer
+usecase "transfer money" as (mybank_digitalBanking_internetBankingSystem_transferMoney) #BBBBFF
+usecase "place order" as (mybank_digitalBanking_internetBankingSystem_placeOrder) #BBBBFF
+mybank_personalCustomer --> mybank_digitalBanking_internetBankingSystem_placeOrder
+mybank_personalCustomer --> mybank_digitalBanking_internetBankingSystem_viewAccount
+mybank_personalCustomer --> mybank_digitalBanking_internetBankingSystem_transferMoney
+@enduml

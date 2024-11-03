@@ -15,7 +15,12 @@
    :level :user-goal
    :name "transfer money"
    :desc "transfer money from one account to another"}
-  
+  {:el :use-case
+   :id :mybank.digital-banking.internet-banking-system/place-order
+   :level :user-goal
+   :name "place order"
+   :desc "place an order for an account"}
+
   {:el :uses
    :id :mybank/personal-customer-wants-to-view-account
    :from :mybank/personal-customer
@@ -26,7 +31,12 @@
    :from :mybank/personal-customer
    :to :mybank.digital-banking.internet-banking-system/transfer-money
    :name "wants to"}
-  
+  {:el :uses
+   :id :mybank/personal-customer-wants-to-place-order
+   :from :mybank/personal-customer
+   :to :mybank.digital-banking.internet-banking-system/place-order
+   :name "wants to"}
+
   ;;;
   ;;; Architecture
   ;;;
@@ -99,6 +109,22 @@
    :from :mybank.digital-banking.internet-banking-system/internet-banking-system
    :to :mybank.digital-banking/context-boundary
    :name "contained in"}
+
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-place-order
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/place-order
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-transfer-money
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/transfer-money
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-view-account
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/view-account
+   :name "implements"}
 
   {:el :request
    :id :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-email-system

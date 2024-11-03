@@ -1,9 +1,9 @@
-# transfer money (Use-case)
+# place order (Use-case)
 ## Level
 User-goal
 
 ## Description
-transfer money from one account to another
+place an order for an account
 ## Actors
 | Name | Type | Description |
 |---|---|---|

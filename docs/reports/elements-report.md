@@ -10,6 +10,7 @@
  :mybank.data-management/big-data-analytics-system | Big Data Analytics | :system |  | Advanced analytics for predictive modeling. | Java, Hadoop, Spark | 
  :mybank.data-management/big-data-analytics-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank/personal-customer-uses-web-app | visits mybank.com via browser | :request |  |  | HTTPS | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-transfer-money | implements | :implements |  |  |  | 
  :mybank.it-management.azure/plz-kafka-subscription-contained-in-platform-management-group | contained-in | :contained-in |  |  |  | 
  :mybank.organization.hr/recruiting-contained-in-human-resources | contained-in | :contained-in |  |  |  | 
  :mybank.security/disaster-recovery-system | Disaster Recovery | :system |  | Ensures business continuity in case of a disaster. | AWS Backup, DRaaS | 
@@ -51,6 +52,7 @@
  :mybank.integration-middleware/soa | Service-Oriented Architecture (SOA) | :system |  | Framework for enabling seamless integration between services. | Apache CXF | 
  :mybank.it-management/cloud-solution-architect-role-in-azure-unit | role in | :role-in |  | Architects solutions on the Azure platform |  | 
  :mybank.it-management/cloud-finops-specialist | Cloud FinOps Specialist | :person |  | Operates cloud infrastructure and controls costs |  | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-view-account | implements | :implements |  |  |  | 
  :mybank.core-banking/context-boundary | Core Banking System | :context-boundary |  | Manages customer accounts, transactions, and loans. |  | 
  :mybank.payment/ach-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-email-system | sends e-mail using | :request |  |  |  | 
@@ -111,6 +113,7 @@
  :mybank.digital-banking.internet-banking-system/reset-password-controller-uses-email-component | uses for sending password reset emails | :request |  |  |  | 
  :mybank.human-resources/context-boundary | Human Resources Management | :context-boundary |  | Manages employee information, payroll, and talent management. |  | 
  :mybank.project-management/devops-engineer | DevOps Engineer | :person |  | Develops and operates software systems. |  | 
+ :mybank/personal-customer-wants-to-place-order | wants to | :uses |  |  |  | 
  :mybank.it-management/cloud-operations-specialist | Cloud Operations Specialist | :person |  | Operates cloud infrastructure |  | 
  :mybank.core-banking/loan-management-system-uses-account-management-system | retrieves customer account information from | :request |  |  |  | 
  :mybank.digital-banking.internet-banking-system/reset-password-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
@@ -125,6 +128,7 @@
  :mybank.it-management.azure/landing-zone-management-group-contained-in-mybank-tenant | contained-in | :contained-in |  |  |  | 
  :mybank.it-management/cloud-operations-specialist-role-in-azure-unit | role in | :role-in |  | Operates the Azure platform |  | 
  :mybank.digital-banking.internet-banking-system/internet-banking-system | Internet Banking System | :system |  | Allows customers to view information about their bank accounts and make payments. |  | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-place-order | implements | :implements |  |  |  | 
  :mybank.compliance/compliance-system | Compliance System | :system |  | Ensures operations comply with regulations. | Java, Spring Boot | 
  :mybank.it-management/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/single-page-app-contained-in-internet-banking-system | contained-in | :contained-in |  |  |  | 
@@ -283,6 +287,7 @@
  :mybank.digital-banking.internet-banking-system/api-application-uses-database | reads from and writes to | :request |  |  | Datalog | 
  :mybank.it-management.azure/hub-vnet-europe-contained-in-connectivity-subscription | contained-in | :contained-in |  |  |  | 
  :mybank.project-management/project-management-tools-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/place-order | place order | :use-case |  | place an order for an account |  | 
  :mybank.digital-banking.internet-banking-system/database | Database | :container | :database | Stores user registration, authentication, and access logs. | Datomic | 
  :mybank.digital-banking.internet-banking-system/sign-in-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.organization.corporate-customers/loans-org | Loans | :org-unit |  |  |  | 
