@@ -22,14 +22,21 @@ Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
     System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
   }
   Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
-    System_Boundary(mybank_digitalBanking_internetBankingSystem, "Internet Banking System") {
-      Container(mybank_digitalBanking_internetBankingSystem_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
+    System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
+    System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System") {
       Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
       Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
+      Container(mybank_digitalBanking_internetBankingSystem_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
       Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
       ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
     }
-    System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
+    System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System") {
+      Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
+      Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
+      Container(mybank_digitalBanking_internetBankingSystem_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
+      Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
+      ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
+    }
   }
   Boundary(mybank_financialManagement_contextBoundary, "Financial Management") {
     System(mybank_financialManagement_treasuryManagementSystem, "Treasury Management", $descr="Manages liquidity, investments, and risk in the treasury function.", $type="Kyriba")
@@ -83,21 +90,16 @@ Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
   }
 }
 Person(mybank_itManagement_cloudFinopsSpecialist, "Cloud FinOps Specialist", $descr="Operates cloud infrastructure and controls costs")
-Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
-Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
 Person(mybank_compliance_riskManager, "Risk Manager", $descr="Responsible for managing the risks.")
 Person(mybank_projectManagement_devopsEngineer, "DevOps Engineer", $descr="Develops and operates software systems.")
 Person(mybank_itManagement_cloudOperationsSpecialist, "Cloud Operations Specialist", $descr="Operates cloud infrastructure")
 Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
 Person(mybank_compliance_complianceManager, "Compliance Manager", $descr="Responsible for the compliance of MyBank.")
-Container(mybank_digitalBanking_internetBankingSystem_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
 Person(mybank_itManagement_cloudSolutionArchitect, "Cloud Solution Architect", $descr="Designs cloud solutions")
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
-Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
 Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manages projects at MyBank.")
 Person_Ext(mybank_corporateCustomer, "Corporate Customer", $descr="Corporate Customer of MyBank.")
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
-ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
 Rel(mybank_payment_paymentGatewaySystem, mybank_coreBanking_transactionProcessingSystem, "validates and processes payments using")
 Rel(mybank_customerChannels_atm, mybank_coreBanking_accountManagementSystem, "retrieves account balance")

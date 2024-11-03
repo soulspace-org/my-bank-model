@@ -95,7 +95,7 @@
   {:el :request
    :id :mybank/personal-customer-uses-internet-banking-system
    :from :mybank/personal-customer
-   :to :mybank.digital-banking/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/internet-banking-system
    :name "views account balances and makes payments using"}
 
   {:el :send
@@ -111,8 +111,8 @@
    :name "retrieves customer account information from"}
 
   {:el :request
-   :id :mybank.digital-banking/internet-banking-system-uses-payment-gateway-system
-   :from :mybank.digital-banking/internet-banking-system
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-payment-gateway-system
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
    :to :mybank.payment/payment-gateway-system
    :name "processes customer payments using"}
 

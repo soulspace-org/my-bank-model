@@ -13,5 +13,6 @@ LAYOUT_TOP_DOWN()
 
 
 title Context View of the Internet Banking System
+System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
 SHOW_LEGEND()
 @enduml

@@ -48,7 +48,7 @@ Shows the containers of the MyBank Systems
 | [HR Information Systems (HRIS)](../mybank/human-resources/hris.md) | Manages employee data, payroll, and benefits. |
 | [IT Infrastructure](../mybank/infrastructure-management/it-infrastructure-system.md) | Hardware and software resources, including servers and networking. |
 | [Identity and Access Management (IAM)](../mybank/security/identity-access-management-system.md) | Manages secure access to systems and data. |
-| [Internet Banking System](../mybank/digital-banking/internet-banking-system.md) | Allows customers to view information about their bank accounts and make payments. |
+| [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | Allows customers to view information about their bank accounts and make payments. |
 | [Loan Management](../mybank/core-banking/loan-management-system.md) | Manages loan products, applications, and repayments. |
 | [Payment Gateway](../mybank/payment/payment-gateway-system.md) | Facilitates credit/debit card transactions. |
 | [Project Management Tools](../mybank/project-management/project-management-tools.md) | Platforms for planning, executing, and tracking projects. |

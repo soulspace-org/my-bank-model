@@ -27,7 +27,6 @@
  :mybank.customer-channels/contact-center-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/security-component-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.project-management/requirements-management | Requirements Management | :process |  | Process to manage requirements for projects |  | 
- :mybank.digital-banking/internet-banking-system | Internet Banking System | :system |  | Allows customers to view information about their bank accounts and make payments. |  | 
  :mybank.payment/payment-gateway-system-uses-transaction-processing-system | validates and processes payments using | :request |  |  |  | 
  :mybank.it-management/aws-unit | AWS Platform | :org-unit |  | Responsible for the AWS platform. |  | 
  :mybank.it-management/cloud-operations-specialist-role-in-aws-unit | role in | :role-in |  | Operates the AWS platform |  | 
@@ -44,16 +43,17 @@
  :mybank.it-management/azure-unit-contained-in-it-management-org | contained-in | :contained-in |  |  |  | 
  :mybank.project-management/projects-org | Projects | :org-unit |  | Responsible for MyBank Projects |  | 
  :mybank.organization.hr/recruiting | Recruiting | :org-unit |  |  |  | 
- :mybank.digital-banking/context-boundary | Digital Banking | :context-boundary |  | Enables online and mobile banking services for customers. |  | 
  :mybank.digital-banking/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/compliance-org | Compliance & Risk Management | :org-unit |  | Responsible for the compliance and risk management of MyBank |  | 
  :mybank.project-management/projects-org-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/api-application-contained-in-internet-banking-system | contained-in | :contained-in |  |  |  | 
  :mybank.project-management/project-management | Project Management | :process |  | Process to manage projects |  | 
  :mybank.integration-middleware/soa | Service-Oriented Architecture (SOA) | :system |  | Framework for enabling seamless integration between services. | Apache CXF | 
  :mybank.it-management/cloud-solution-architect-role-in-azure-unit | role in | :role-in |  | Architects solutions on the Azure platform |  | 
  :mybank.it-management/cloud-finops-specialist | Cloud FinOps Specialist | :person |  | Operates cloud infrastructure and controls costs |  | 
  :mybank.core-banking/context-boundary | Core Banking System | :context-boundary |  | Manages customer accounts, transactions, and loans. |  | 
  :mybank.payment/ach-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-email-system | sends e-mail using | :request |  |  |  | 
  :mybank.financial-management/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.payment/context-boundary | Payment Systems | :context-boundary |  | Manages interbank payments, ACH, and SWIFT transactions. |  | 
  :mybank.digital-banking.internet-banking-system/mobile-app | Mobile App | :container |  | Provides limited internet banking functionality to customers via mobile devices. | ClojureScript and Reagent | 
@@ -69,15 +69,12 @@
  :mybank.concepts/transfer-between-account | between | :rel |  |  |  | 
  :mybank.concepts/customer-has-account | has | :has |  |  |  | 
  :mybank.it-management.azure/dns-contained-in-connectivity-subscription | contained-in | :contained-in |  |  |  | 
- :mybank.digital-banking.internet-banking-system/web-app-contained-in-internet-banking-system | contained in | :contained-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/api-application | API Application | :container |  | Provides internet banking functionality via a RESTful JSON/HTTPS API. | Clojure and Liberator | 
  :mybank.it-management.azure/management-subscription | Management Subscription | :node |  | Subscription for the Management Infrastructure | Azure Subscription | #{"cloud" "platform"}
  :mybank/personal-customer-uses-atm | withdraws cash using | :rel |  |  |  | 
  :mybank.organization/corporate-customers | Corporate Customers | :org-unit |  |  |  | 
- :mybank.digital-banking.internet-banking-system/api-application-contained-in-internet-banking-system | contained in | :contained-in |  |  |  | 
  :mybank.it-management/cloud-solution-architect-role-in-aws-unit | role in | :role-in |  | Architects solutions on the AWS platform |  | 
  :mybank.compliance/risk-manager | Risk Manager | :person |  | Responsible for managing the risks. |  | 
- :mybank.digital-banking/internet-banking-system-uses-account-management-system | gets account information from, and makes payments using | :request |  |  |  | 
  :mybank.organization.personal-customers/personal-loans-org | Personal Loans | :org-unit |  |  |  | 
  :mybank.integration-middleware/soa-contained-in-integration-middleware-context | contained-in | :contained-in |  |  |  | 
  :mybank.organization.personal-customers/mortgage-org-contained-in-personal-customers | contained-in | :contained-in |  |  |  | 
@@ -107,7 +104,6 @@
  :mybank/backoffice-staff-uses-risk-management-system | assesses customer risk for loan approval using | :rel |  |  |  | 
  :mybank.concepts/mortgage | Mortgage | :concept |  | A loan for a immobile, e.g. a house |  | 
  :mybank.organization.personal-customers/internet-banking | Internet Banking | :org-unit |  |  |  | 
- :mybank.digital-banking/internet-banking-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/landing-zone-management-group | Landing Zone Management Group | :node |  |  |  | 
  :mybank.digital-banking/digital-wallets-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.investments/asset-management-org-contained-in-investments-org | contained-in | :contained-in |  |  |  | 
@@ -115,7 +111,6 @@
  :mybank.digital-banking.internet-banking-system/reset-password-controller-uses-email-component | uses for sending password reset emails | :request |  |  |  | 
  :mybank.human-resources/context-boundary | Human Resources Management | :context-boundary |  | Manages employee information, payroll, and talent management. |  | 
  :mybank.project-management/devops-engineer | DevOps Engineer | :person |  | Develops and operates software systems. |  | 
- :mybank.digital-banking/internet-banking-system-uses-loan-management-system | fetches loan details and payment status from | :request |  |  |  | 
  :mybank.it-management/cloud-operations-specialist | Cloud Operations Specialist | :person |  | Operates cloud infrastructure |  | 
  :mybank.core-banking/loan-management-system-uses-account-management-system | retrieves customer account information from | :request |  |  |  | 
  :mybank.digital-banking.internet-banking-system/reset-password-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
@@ -127,12 +122,14 @@
  :mybank.digital-banking.internet-banking-system/email-component-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/landing-zone-management-group-contained-in-mybank-tenant | contained-in | :contained-in |  |  |  | 
  :mybank.it-management/cloud-operations-specialist-role-in-azure-unit | role in | :role-in |  | Operates the Azure platform |  | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system | Internet Banking System | :system |  | Allows customers to view information about their bank accounts and make payments. |  | 
  :mybank.compliance/compliance-system | Compliance System | :system |  | Ensures operations comply with regulations. | Java, Spring Boot | 
  :mybank.it-management/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/single-page-app-contained-in-internet-banking-system | contained-in | :contained-in |  |  |  | 
  :mybank.payment/payment-gateway-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/identity-vnet-north-america-contained-in-identity-subscription | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/compliance-manager | Compliance Manager | :person |  | Responsible for the compliance of MyBank. |  | 
- :mybank.digital-banking.internet-banking-system/single-page-app-contained-in-internet-banking-system | contained in | :contained-in |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system-contained-in-context-boundary | contained in | :contained-in |  |  |  | 
  :mybank.it-management.azure/identity-vnet-north-america | Identity  VNet North America | :node |  | VNet for the identity infrastructure in north america | Azure Virtual Network | #{"cloud" "platform"}
  :mybank.core-banking/loan-management-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.investments/investments-org-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
@@ -146,7 +143,6 @@
  :mybank.it-management.azure/mybank-tenant | MyBank Azure Tenant | :node |  | Azure Tenant for MyBank | Azure | #{"cloud" "platform"}
  :mybank.organization/corporate-customers-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
- :mybank.digital-banking.internet-banking-system/mobile-app-contained-in-internet-banking-system | contained in | :contained-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/mobile-app-calls-api-application | makes API calls to | :request |  |  | Transit/HTTPS | 
  :mybank/email-system-sends-mail-to-personal-customer | sends e-mail to | :send |  |  |  | 
  :mybank.project-management/config-management | Config Management | :process |  |  |  | 
@@ -158,6 +154,7 @@
  :mybank.digital-banking.internet-banking-system/single-page-app-calls-sign-in-controller | makes API calls to | :request |  |  | Transit/HTTPS | 
  :mybank/integration-middleware-context | Integration and Middleware | :context-boundary |  | Facilitates integration across systems. |  | 
  :mybank.concepts/bank | Bank | :concept |  | Organization providing services around money |  | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-loan-management-system | fetches loan details and payment status from | :request |  |  |  | 
  :mybank.it-management/azure-unit | Azure Platform | :org-unit |  | Responsible for the Azure platform. |  | 
  :mybank.it-management/it-management-org | IT Management | :org-unit |  | Responsible for the IT platform of MyBank |  | 
  :mybank.it-management.azure/ddos-protection | Azure DDoS | :node |  | Protection against denial of service attacks | Azure DDoS | #{"cloud" "platform"}
@@ -168,7 +165,6 @@
  :mybank.digital-banking.internet-banking-system/web-app | Web Application | :container |  | Delivers the static content and the internet banking single-page application. | Clojure and Luminus | 
  :mybank.it-management/cloud-solution-architect | Cloud Solution Architect | :person |  | Designs cloud solutions |  | 
  :mybank.core-banking/account-management-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
- :mybank.digital-banking.internet-banking-system/database-contained-in-internet-banking-system | contained in | :contained-in |  |  |  | 
  :mybank/personal-customer | Personal Customer | :person |  | Personal Customer of MyBank. |  | 
  :mybank.data-management/context-boundary | Data Management and Analytics | :context-boundary |  | Manages data storage, warehousing, and analytics. |  | 
  :mybank.digital-banking.internet-banking-system/single-page-app | Single-Page Application | :container |  | Provides internet banking functionality to customers via their web browser. | ClojureScript and Re-Frame | 
@@ -182,22 +178,22 @@
  :mybank.customer-channels/branch-systems-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank/email-system-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.payment/payment-gateway-system | Payment Gateway | :system |  | Facilitates credit/debit card transactions. | Java, Spring Boot | 
+ :mybank/personal-customer-uses-internet-banking-system | views account balances and makes payments using | :request |  |  |  | 
  :mybank.it-management.azure/platform-management-group | Platform Management Group | :node |  |  |  | 
  :mybank.it-management.onprem/data-center-europe | MyBank On Premise Datacenter | :node |  | Data Center of MyBank |  | #{"onprem" "platform"}
  :mybank.financial-management/general-ledger-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/core-banking-systems-facade-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank.organization/marketing | Marketing | :org-unit |  |  |  | 
  :mybank.concepts/personal-customer-is-a-customer | is a | :is-a |  |  |  | 
- :mybank/personal-customer-uses-internet-banking-system | views account balances and makes payments using | :request |  |  |  | 
  :mybank.digital-banking.internet-banking-system/single-page-app-calls-reset-password-controller | makes API calls to | :request |  |  | Transit/HTTPS | 
  :mybank.concepts/customer | Customer | :concept |  | Entity requesting services around money |  | 
  :mybank.integration-middleware/api-gateway | API Gateway | :system |  | Manages APIs for third-party services and fintech apps. | Kong | 
  :mybank.infrastructure-management/it-infrastructure-system | IT Infrastructure | :system |  | Hardware and software resources, including servers and networking. | VMware, Cisco | 
+ :mybank.digital-banking.internet-banking-system/web-app-contained-in-internet-banking-system | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/reset-password-controller | Reset Password Controller | :component |  | Allows users to reset their passwords. | Clojure namespace | 
  :mybank.security/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.project-management/project-management-tools | Project Management Tools | :system |  | Platforms for planning, executing, and tracking projects. | Jira | 
  :mybank.it-management.azure/identity-vnet-europe-contained-in-identity-subscription | contained-in | :contained-in |  |  |  | 
- :mybank.digital-banking/internet-banking-system-uses-email-system | sends e-mail using | :request |  |  |  | 
  :mybank.financial-management/context-boundary | Financial Management | :context-boundary |  | Handles financial accounting, treasury, and expense management. |  | 
  :mybank.digital-banking.internet-banking-system/sign-in-controller-uses-security-component | uses | :request |  |  |  | 
  :mybank.it-management.azure/ddos-protection-contained-in-connectivity-subscription | contained-in | :contained-in |  |  |  | 
@@ -229,7 +225,9 @@
  :mybank.compliance/fraud-specialist-role-in-fraud | function | :role-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/security-component | Security Component | :component |  | Handles authentication, password changes, etc. | Clojure namespace | 
  :mybank.concepts/bank-has-customer | has | :has |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.concepts/customer-performs-withdrawal | performs | :rel |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-account-management-system | gets account information from, and makes payments using | :request |  |  |  | 
  :mybank.payment/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/firewall | Azure Firewall | :node |  | Restrict network access/traffic | Azure Firewall | #{"cloud" "platform"}
  :mybank.it-management/cloud-finops-specialist-role-in-azure-unit | role in | :role-in |  | Operations and cost control for the Azure platform |  | 
@@ -239,8 +237,8 @@
  :mybank.organization/human-resources-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/dns | Azure DNS | :node |  | Domain Name Service | Azure DNS | #{"cloud" "platform"}
  :mybank.core-banking/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/mobile-app-contained-in-internet-banking-system | contained-in | :contained-in |  |  |  | 
  :mybank.concepts/customer-requests-loan | requests | :rel |  |  |  | 
- :mybank.digital-banking/internet-banking-system-uses-payment-gateway-system | processes customer payments using | :request |  |  |  | 
  :mybank.it-management.azure/alz1-subscription | LZ1 Subscription | :node |  | Subscription for the landing zone of an application | Azure Subscription | #{"cloud" "platform"}
  :mybank.infrastructure-management/system-monitoring-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.human-resources/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
@@ -270,8 +268,10 @@
  :mybank.core-banking/account-management-system | Account Management | :system |  | Handles customer accounts, deposits, and withdrawals. | Java, Spring Boot | 
  :mybank.core-banking/transaction-processing-system | Transaction Processing | :system |  | Processes financial transactions in real-time. | Java, Kafka | 
  :mybank.investments/asset-management-org | Asset Management | :org-unit |  |  |  | 
+ :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-payment-gateway-system | processes customer payments using | :request |  |  |  | 
  :mybank.compliance/compliance-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank/personal-customer-uses-mobile-app | views account balances and makes payments using | :request |  |  |  | 
+ :mybank.digital-banking/context-boundary | Digital Banking | :context-boundary |  | Enables online and mobile banking services for customers. |  | 
  :mybank.organization/marketing-contained-in-my-bank-organization | contained-in | :contained-in |  |  |  | 
  :mybank.human-resources/talent-management-system | Talent Management | :system |  | Tools for recruitment, training, and performance management. | SAP SuccessFactors | 
  :mybank.project-management/test-management | Test Management | :process |  |  |  | 
@@ -286,4 +286,5 @@
  :mybank.compliance/regulations | Regulations | :org-unit |  |  |  | 
  :mybank.compliance/regulations-contained-in-compliance-org | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.onprem/data-center-europe-links-to-hub-vnet | network link | :link |  | High speed/volume link 100 Mb/s | Azure Express Route | #{"cloud" "platform"}
+ :mybank.digital-banking.internet-banking-system/database-contained-in-internet-banking-system | contained-in | :contained-in |  |  |  | 
 

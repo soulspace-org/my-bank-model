@@ -9,11 +9,7 @@
    :id :mybank.digital-banking/context-boundary
    :name "Digital Banking"
    :desc "Enables online and mobile banking services for customers."
-   :ct #{{:el :system
-          :id :mybank.digital-banking/internet-banking-system
-          :name "Internet Banking System"
-          :desc "Allows customers to view information about their bank accounts and make payments."
-          :ct #{}}
+   :ct #{{:ref :mybank.digital-banking.internet-banking-system/internet-banking-system}
          {:el :system
           :id :mybank.digital-banking/digital-wallets-system
           :name "Digital Wallets"

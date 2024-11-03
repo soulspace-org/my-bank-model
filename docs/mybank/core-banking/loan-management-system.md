@@ -13,7 +13,7 @@ Java, Spring Boot
 #### Service
 | Name | Called From | Technology | Description |
 |---|---|---|---|
-| fetches loan details and payment status from | [Internet Banking System](../../mybank/digital-banking/internet-banking-system.md) |  |  |
+| fetches loan details and payment status from | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 
 #### Client
 | Name | Provided By | Technology | Description |

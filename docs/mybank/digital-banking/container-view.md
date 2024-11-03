@@ -9,7 +9,7 @@ Shows the systems and containers of the domain digital banking and their relatio
 | Name | Description |
 |---|---|
 | [Digital Wallets](../../mybank/digital-banking/digital-wallets-system.md) | Supports digital wallet integration and mobile payments. |
-| [Internet Banking System](../../mybank/digital-banking/internet-banking-system.md) | Allows customers to view information about their bank accounts and make payments. |
+| [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | Allows customers to view information about their bank accounts and make payments. |
 ## Containers
 | Name | Description |
 |---|---|

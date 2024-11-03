@@ -96,7 +96,7 @@ Manages employee information, payroll, and talent management.
 Manages secure access to systems and data.
 ### [Integration and Middleware](../mybank/integration-middleware-context.md)
 Facilitates integration across systems.
-### [Internet Banking System](../mybank/digital-banking/internet-banking-system.md)
+### [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md)
 Allows customers to view information about their bank accounts and make payments.
 ### [IT Infrastructure](../mybank/infrastructure-management/it-infrastructure-system.md)
 Hardware and software resources, including servers and networking.

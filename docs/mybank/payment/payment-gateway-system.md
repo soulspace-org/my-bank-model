@@ -13,7 +13,7 @@ Java, Spring Boot
 #### Service
 | Name | Called From | Technology | Description |
 |---|---|---|---|
-| processes customer payments using | [Internet Banking System](../../mybank/digital-banking/internet-banking-system.md) |  |  |
+| processes customer payments using | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 
 #### Client
 | Name | Provided By | Technology | Description |
