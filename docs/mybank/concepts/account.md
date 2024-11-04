@@ -1,4 +1,4 @@
-#Account (Concept)
+# Account (Concept)
 ## Description
 Records the financial transactions between a customer and a bank
 # Feature of

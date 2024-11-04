@@ -1,4 +1,4 @@
-#Corporate Customer (Concept)
+# Corporate Customer (Concept)
 ## Description
 An organization requesting services around money
 # Superordinates
