@@ -30,7 +30,7 @@
 | Name | Description |
 |---|---|
 <%
-    (doseq [package (sort-by :name package)]
+    (doseq [package (sort-by :name packages)]
 %>|<%= (md/relative-element-link e package) %>|<%= (t/single-line (:desc package)) %>|
 <%
     )
