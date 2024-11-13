@@ -1,9 +1,9 @@
-# Project Management Tools (System)
+# Development Platform (System)
 ## Description
-Platforms for planning, executing, and tracking projects.
+Tools for software development, testing, and deployment.
 
 ## Technology
-Jira
+GitLab
 
 
 ## Interfaces

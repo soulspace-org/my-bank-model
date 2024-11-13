@@ -15,6 +15,7 @@ LAYOUT_TOP_DOWN()
 
 title Container View of the MyBank Systems
 Person(mybank_customerChannels_customerServiceStaff, "Customer Service Staff", $descr="Customer service staff within the bank.")
+Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manages projects at MyBank")
 Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
   Boundary(mybank_dataManagement_contextBoundary, "Data Management and Analytics") {
     System(mybank_dataManagement_bigDataAnalyticsSystem, "Big Data Analytics", $descr="Advanced analytics for predictive modeling.", $type="Java, Hadoop, Spark")
@@ -44,8 +45,9 @@ Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
     System(mybank_financialManagement_generalLedgerSystem, "General Ledger", $descr="Comprehensive financial accounting and reporting system.", $type="Oracle Financials")
   }
   Boundary(mybank_projectManagement_contextBoundary, "Project Management and Development") {
-    System(mybank_projectManagement_devPlatforms, "Development Platforms", $descr="Tools for software development, testing, and deployment.", $type="Jenkins, GitLab")
-    System(mybank_projectManagement_projectManagementTools, "Project Management Tools", $descr="Platforms for planning, executing, and tracking projects.", $type="Jira", $sprite="jira")
+    System(mybank_projectManagement_confluence, "Projects Wiki", $descr="Platform for documenting projects.", $type="Confluence", $sprite="confluence")
+    System(mybank_projectManagement_gitlab, "Development Platform", $descr="Tools for software development, testing, and deployment.", $type="GitLab")
+    System(mybank_projectManagement_jira, "Project Management Tool", $descr="Platform for planning, executing, and tracking projects.", $type="Jira", $sprite="jira")
   }
   Boundary(mybank_customerChannels_contextBoundary, "Customer Channels") {
     System(mybank_customerChannels_contactCenterSystem, "Contact Center", $descr="Telephony and customer support systems for call centers.", $type="Genesys, Avaya")
@@ -89,15 +91,15 @@ Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
     System(mybank_humanResources_talentManagementSystem, "Talent Management", $descr="Tools for recruitment, training, and performance management.", $type="SAP SuccessFactors")
   }
 }
+Person(mybank_projectManagement_devopsEngineer, "DevOps Engineer", $descr="Develops and operates software systems")
 Person(mybank_itManagement_cloudFinopsSpecialist, "Cloud FinOps Specialist", $descr="Operates cloud infrastructure and controls costs")
 Person(mybank_compliance_riskManager, "Risk Manager", $descr="Responsible for managing the risks.")
-Person(mybank_projectManagement_devopsEngineer, "DevOps Engineer", $descr="Develops and operates software systems.")
 Person(mybank_itManagement_cloudOperationsSpecialist, "Cloud Operations Specialist", $descr="Operates cloud infrastructure")
 Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
 Person(mybank_compliance_complianceManager, "Compliance Manager", $descr="Responsible for the compliance of MyBank.")
 Person(mybank_itManagement_cloudSolutionArchitect, "Cloud Solution Architect", $descr="Designs cloud solutions")
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
-Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manages projects at MyBank.")
+Person(mybank_projectManagement_agilityMaster, "Agility Master", $descr="Facilitates agile practices")
 Person_Ext(mybank_corporateCustomer, "Corporate Customer", $descr="Corporate Customer of MyBank.")
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")

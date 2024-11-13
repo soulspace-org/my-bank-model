@@ -1,6 +1,6 @@
 # Release Management (Process)
 ## Description
-
+Process to manage software releases
 
 
 

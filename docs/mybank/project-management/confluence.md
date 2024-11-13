@@ -1,9 +1,9 @@
-# Development Platforms (System)
+# Projects Wiki (System)
 ## Description
-Tools for software development, testing, and deployment.
+Platform for documenting projects.
 
 ## Technology
-Jenkins, GitLab
+Confluence
 
 
 ## Interfaces

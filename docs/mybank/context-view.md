@@ -8,6 +8,7 @@ Shows the systems of MyBank
 ## User Roles
 | Name | Description |
 |---|---|
+| [Agility Master](../mybank/project-management/agility-master.md) | Facilitates agile practices |
 | [Backoffice Staff](../mybank/core-banking/backoffice-staff.md) | Administration and support staff within the bank. |
 | [Cloud FinOps Specialist](../mybank/it-management/cloud-finops-specialist.md) | Operates cloud infrastructure and controls costs |
 | [Cloud Operations Specialist](../mybank/it-management/cloud-operations-specialist.md) | Operates cloud infrastructure |
@@ -15,10 +16,10 @@ Shows the systems of MyBank
 | [Compliance Manager](../mybank/compliance/compliance-manager.md) | Responsible for the compliance of MyBank. |
 | [Corporate Customer](../mybank/corporate-customer.md) | Corporate Customer of MyBank. |
 | [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) | Customer service staff within the bank. |
-| [DevOps Engineer](../mybank/project-management/devops-engineer.md) | Develops and operates software systems. |
+| [DevOps Engineer](../mybank/project-management/devops-engineer.md) | Develops and operates software systems |
 | [Fraud specialist](../mybank/compliance/fraud-specialist.md) | Responsible for the fraud detection and mitigation of MyBank. |
 | [Personal Customer](../mybank/personal-customer.md) | Personal Customer of MyBank. |
-| [Project Manager](../mybank/project-management/project-manager.md) | Manages projects at MyBank. |
+| [Project Manager](../mybank/project-management/project-manager.md) | Manages projects at MyBank |
 | [Risk Manager](../mybank/compliance/risk-manager.md) | Responsible for managing the risks. |
 ## Systems
 | Name | Description |
@@ -36,7 +37,7 @@ Shows the systems of MyBank
 | [Contact Center](../mybank/customer-channels/contact-center-system.md) | Telephony and customer support systems for call centers. |
 | [Cybersecurity](../mybank/security/cybersecurity-system.md) | Protects against cyber threats. |
 | [Data Warehouse](../mybank/data-management/data-warehouse-system.md) | Central repository for storing large volumes of data. |
-| [Development Platforms](../mybank/project-management/dev-platforms.md) | Tools for software development, testing, and deployment. |
+| [Development Platform](../mybank/project-management/gitlab.md) | Tools for software development, testing, and deployment. |
 | [Digital Wallets](../mybank/digital-banking/digital-wallets-system.md) | Supports digital wallet integration and mobile payments. |
 | [Disaster Recovery](../mybank/security/disaster-recovery-system.md) | Ensures business continuity in case of a disaster. |
 | [E-mail System](../mybank/email-system.md) | The internal Microsoft Exchange email system. |
@@ -50,7 +51,8 @@ Shows the systems of MyBank
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | Allows customers to view information about their bank accounts and make payments. |
 | [Loan Management](../mybank/core-banking/loan-management-system.md) | Manages loan products, applications, and repayments. |
 | [Payment Gateway](../mybank/payment/payment-gateway-system.md) | Facilitates credit/debit card transactions. |
-| [Project Management Tools](../mybank/project-management/project-management-tools.md) | Platforms for planning, executing, and tracking projects. |
+| [Project Management Tool](../mybank/project-management/jira.md) | Platform for planning, executing, and tracking projects. |
+| [Projects Wiki](../mybank/project-management/confluence.md) | Platform for documenting projects. |
 | [Risk Management System](../mybank/compliance/risk-management-system.md) | Detects risks and manages risk mitigation. |
 | [SWIFT/RTGS/NEFT](../mybank/payment/swift-rtgs-neft-system.md) | Handles interbank transfers and settlements. |
 | [Service-Oriented Architecture (SOA)](../mybank/integration-middleware/soa.md) | Framework for enabling seamless integration between services. |

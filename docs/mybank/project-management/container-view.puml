@@ -6,6 +6,7 @@
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/jira>
+!include <tupadr3/font-awesome-5/confluence>
 
 
 LAYOUT_TOP_DOWN()
@@ -14,10 +15,13 @@ LAYOUT_TOP_DOWN()
 
 
 title Container View of the Project Management Systems
-Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manages projects at MyBank.")
 Boundary(mybank_projectManagement_contextBoundary, "Project Management and Development") {
-  System(mybank_projectManagement_devPlatforms, "Development Platforms", $descr="Tools for software development, testing, and deployment.", $type="Jenkins, GitLab")
-  System(mybank_projectManagement_projectManagementTools, "Project Management Tools", $descr="Platforms for planning, executing, and tracking projects.", $type="Jira", $sprite="jira")
+  System(mybank_projectManagement_confluence, "Projects Wiki", $descr="Platform for documenting projects.", $type="Confluence", $sprite="confluence")
+  System(mybank_projectManagement_gitlab, "Development Platform", $descr="Tools for software development, testing, and deployment.", $type="GitLab")
+  System(mybank_projectManagement_jira, "Project Management Tool", $descr="Platform for planning, executing, and tracking projects.", $type="Jira", $sprite="jira")
 }
+Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manages projects at MyBank")
+Person(mybank_projectManagement_devopsEngineer, "DevOps Engineer", $descr="Develops and operates software systems")
+Person(mybank_projectManagement_agilityMaster, "Agility Master", $descr="Facilitates agile practices")
 SHOW_LEGEND()
 @enduml

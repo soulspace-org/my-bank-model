@@ -10,6 +10,8 @@ Records the financial transactions between a customer and a bank
 Handles customer accounts, deposits, and withdrawals.
 ### [ACH System](../mybank/payment/ach-system.md)
 Processes ACH transactions for direct deposits and bill payments.
+### [Agility Master](../mybank/project-management/agility-master.md)
+Facilitates agile practices
 ### [Anti-Money Laundering (AML) System](../mybank/compliance/aml-system.md)
 Monitors and prevents money laundering activities.
 ### [API Application](../mybank/digital-banking/internet-banking-system/api-application.md)
@@ -64,10 +66,10 @@ Central repository for storing large volumes of data.
 Stores user registration, authentication, and access logs.
 ### [Deposit](../mybank/concepts/deposit.md)
 Puts money on account
-### [Development Platforms](../mybank/project-management/dev-platforms.md)
+### [Development Platform](../mybank/project-management/gitlab.md)
 Tools for software development, testing, and deployment.
 ### [DevOps Engineer](../mybank/project-management/devops-engineer.md)
-Develops and operates software systems.
+Develops and operates software systems
 ### [Digital Banking](../mybank/digital-banking/context-boundary.md)
 Enables online and mobile banking services for customers.
 ### [Digital Wallets](../mybank/digital-banking/digital-wallets-system.md)
@@ -122,10 +124,12 @@ A person requesting services around money
 Personal Customer of MyBank.
 ### [Project Management and Development](../mybank/project-management/context-boundary.md)
 Tools for managing projects and software development.
-### [Project Management Tools](../mybank/project-management/project-management-tools.md)
-Platforms for planning, executing, and tracking projects.
+### [Project Management Tool](../mybank/project-management/jira.md)
+Platform for planning, executing, and tracking projects.
 ### [Project Manager](../mybank/project-management/project-manager.md)
-Manages projects at MyBank.
+Manages projects at MyBank
+### [Projects Wiki](../mybank/project-management/confluence.md)
+Platform for documenting projects.
 ### [Risk Management and Compliance](../mybank/compliance/context-boundary.md)
 Detects and mitigates risks, ensuring regulatory compliance.
 ### [Risk Management System](../mybank/compliance/risk-management-system.md)

@@ -63,6 +63,7 @@
    :dasc "Develops software"}
 
   {:el :role-in
+   :id :mybank.project-management/agility-master-has-role-in-software-development
    :from :mybank.project-management/agility-master
    :to :mybank.project-management/software-development
    :name "role in"
@@ -79,6 +80,7 @@
    :desc "Process to manage configurations and baselines"}
 
   {:el :role-in
+   :id :mybank.project-management/devops-engineer-has-role-in-config-management
    :from :mybank.project-management/devops-engineer
    :to :mybank.project-management/config-management
    :name "role in"
@@ -95,6 +97,30 @@
    :desc "Process to manage incidents"}
 
   ;;;
+  ;;; Use Cases
+  ;;;
+  {:el :use-case
+   :id :mybank.project-management/document-project
+   :name "Document Project"
+   :desc "Document a project"}
+  {:el :use-case
+   :id :mybank.project-management/manage-backlog
+   :level :summary
+   :name "Manage Backlog"
+   :desc "Manage the backlog of user stories"}
+  {:el :use-case
+   :id :mybank.project-management/manage-sprints
+   :name "Manage Sprints"
+   :desc "Manage sprints for software development"}
+
+  {:el :uses
+   :id :mybank.project-management/agility-master-uses-manage-sprints
+   :from :mybank.project-management/agility-master
+   :to :mybank.project-management/manage-sprints
+   :name "uses"
+   :desc ""}
+
+  ;;;
   ;;; System Architecture
   ;;;
   {:el :context-boundary
@@ -102,12 +128,21 @@
    :name "Project Management and Development"
    :desc "Tools for managing projects and software development."
    :ct #{{:el :system
-          :id :mybank.project-management/project-management-tools
-          :name "Project Management Tools"
-          :desc "Platforms for planning, executing, and tracking projects."
+          :id :mybank.project-management/jira
+          :name "Project Management Tool"
+          :desc "Platform for planning, executing, and tracking projects."
           :tech "Jira"}
          {:el :system
-          :id :mybank.project-management/dev-platforms
-          :name "Development Platforms"
+          :id :mybank.project-management/confluence
+          :name "Projects Wiki"
+          :desc "Platform for documenting projects."
+          :tech "Confluence"}
+         {:el :system
+          :id :mybank.project-management/gitlab
+          :name "Development Platform"
           :desc "Tools for software development, testing, and deployment."
-          :tech "Jenkins, GitLab"}}}}
+          :tech "GitLab"}}}
+  
+  ;
+  }
+
