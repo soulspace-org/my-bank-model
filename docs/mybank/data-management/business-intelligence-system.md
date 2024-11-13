@@ -14,4 +14,7 @@ Tableau, Python
 [Data Management Context View](../../mybank/data-management/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

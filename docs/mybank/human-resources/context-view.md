@@ -12,4 +12,7 @@ Shows the systems of the domain Human Resources and their relations.
 | [Talent Management](../../mybank/human-resources/talent-management-system.md) | Tools for recruitment, training, and performance management. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/context-view.md.cmb)

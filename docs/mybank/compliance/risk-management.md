@@ -14,4 +14,7 @@
 | [Risk Manager](../../mybank/compliance/risk-manager.md) | Responsible for managing the risks. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/organization.md.cmb)

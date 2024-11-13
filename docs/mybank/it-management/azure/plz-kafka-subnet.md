@@ -9,4 +9,7 @@ Azure Subnet
 [LZ Kafka VNet](../../../mybank/it-management/azure/plz-kafka-vnet.md)
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/deployment-node.md.cmb)

@@ -16,4 +16,7 @@ Name | Description
 [Management Subscription](../../../mybank/it-management/azure/management-subscription.md) | Subscription for the Management Infrastructure
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/deployment-node.md.cmb)

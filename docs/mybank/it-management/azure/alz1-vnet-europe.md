@@ -13,4 +13,7 @@ Name | Description
 [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | VNet for the hub infrastructure in europe
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/deployment-node.md.cmb)

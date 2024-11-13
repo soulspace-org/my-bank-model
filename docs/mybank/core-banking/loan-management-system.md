@@ -26,4 +26,7 @@ Java, Spring Boot
 [Core Banking Context View](../../mybank/core-banking/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

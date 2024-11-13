@@ -21,4 +21,7 @@ Shows the systems and containers of the domain Compliance & Risk Management and 
 | [Risk Management System](../../mybank/compliance/risk-management-system.md) | Detects risks and manages risk mitigation. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/container-view.md.cmb)

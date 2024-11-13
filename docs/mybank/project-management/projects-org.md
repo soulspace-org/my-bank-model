@@ -9,4 +9,7 @@ Responsible for MyBank Projects
 | [My Bank](../../mybank/organization/my-bank-organization.md) | My Bank Company |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/organization.md.cmb)

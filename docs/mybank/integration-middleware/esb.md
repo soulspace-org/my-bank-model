@@ -9,4 +9,7 @@ MuleSoft
 ## Interfaces
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

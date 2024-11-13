@@ -19,4 +19,7 @@ This is a list of the user roles.
 | [Risk Manager](mybank/compliance/risk-manager.md) | Responsible for managing the risks. |  
 
 
+## Navigation
+[List of Views](./views.md)
+
 (generated with docs/user-roles.md.cmb)

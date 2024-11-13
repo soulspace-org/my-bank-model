@@ -11,4 +11,7 @@ The Project Manager is a role in the following organizational units.
 | [Project Management](../../mybank/project-management/project-management.md) | Process to manage projects |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/user-role.md.cmb)

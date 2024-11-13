@@ -39,4 +39,7 @@ These containers are the main processes of the Internet Banking System system.
 [Internet Banking System Context View](../../../mybank/digital-banking/internet-banking-system/context-view.md)
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

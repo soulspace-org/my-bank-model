@@ -1,6 +1,7 @@
 # Customer (Concept)
 ## Description
 Entity requesting services around money
+
 # Subordinates
 | Name | Description |
 |---|---|
@@ -19,5 +20,8 @@ Entity requesting services around money
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)
 [High Level Concept Map](../../mybank/concepts/concept-view.md)
 
+
+## Navigation
+[List of Views](../../views.md)
 
 (generated with docs/concept.md.cmb)

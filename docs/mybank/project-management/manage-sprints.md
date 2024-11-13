@@ -10,4 +10,7 @@ Manage sprints for software development
 | [Agility Master](../../mybank/project-management/agility-master.md) | :person | Facilitates agile practices |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/use-case.md.cmb)

@@ -12,4 +12,7 @@ The DevOps Engineer is a role in the following organizational units.
 | [Software Development](../../mybank/project-management/software-development.md) | Process to develop software |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/user-role.md.cmb)

@@ -11,4 +11,7 @@ The Risk Manager is a role in the following organizational units.
 | [Risk Management](../../mybank/compliance/risk-management.md) |  |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/user-role.md.cmb)

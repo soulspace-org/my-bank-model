@@ -14,4 +14,7 @@ SAP SuccessFactors
 [Human Resources Context View](../../mybank/human-resources/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

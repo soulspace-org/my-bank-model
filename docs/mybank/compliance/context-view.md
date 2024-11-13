@@ -20,4 +20,7 @@ Shows the systems of the domain Compliance & Risk Management and their relations
 | [Risk Management System](../../mybank/compliance/risk-management-system.md) | Detects risks and manages risk mitigation. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/context-view.md.cmb)

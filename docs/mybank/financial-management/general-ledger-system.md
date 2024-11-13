@@ -14,4 +14,7 @@ Oracle Financials
 [Financial Management Context View](../../mybank/financial-management/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

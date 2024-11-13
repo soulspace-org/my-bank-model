@@ -20,4 +20,7 @@ My Bank Company
 [MyBank Organization Chart](../../mybank/organization/organization-structure-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/organization.md.cmb)

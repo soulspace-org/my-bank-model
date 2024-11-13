@@ -9,4 +9,7 @@ Azure Firewall
 [Connectivity Subscription](../../../mybank/it-management/azure/connectivity-subscription.md)
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/deployment-node.md.cmb)

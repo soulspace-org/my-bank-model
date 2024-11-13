@@ -13,4 +13,7 @@ Name | Description
 [Kafka Subnet](../../../mybank/it-management/azure/plz-kafka-subnet.md) | 
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/deployment-node.md.cmb)

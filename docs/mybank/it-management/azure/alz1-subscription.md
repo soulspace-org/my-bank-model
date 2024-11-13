@@ -13,4 +13,7 @@ Name | Description
 [VNet Europe](../../../mybank/it-management/azure/alz1-vnet-europe.md) | VNet for an application infrastructure in europe
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/deployment-node.md.cmb)

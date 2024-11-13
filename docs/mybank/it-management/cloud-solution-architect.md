@@ -12,4 +12,7 @@ The Cloud Solution Architect is a role in the following organizational units.
 | [Azure Platform](../../mybank/it-management/azure-unit.md) | Responsible for the Azure platform. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/user-role.md.cmb)

@@ -14,4 +14,7 @@
 | [Compliance Manager](../../mybank/compliance/compliance-manager.md) | Responsible for the compliance of MyBank. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/organization.md.cmb)

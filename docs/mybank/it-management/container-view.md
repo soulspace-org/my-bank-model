@@ -14,4 +14,7 @@ Shows the systems and containers of the domain IT management and their relations
 | [Cloud Solution Architect](../../mybank/it-management/cloud-solution-architect.md) | Designs cloud solutions |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/container-view.md.cmb)

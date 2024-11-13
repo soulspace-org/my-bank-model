@@ -12,4 +12,7 @@ Shows the hierarchical structure of the Azure platform deployment
 | [MyBank Azure Tenant](../mybank/it-management/azure/mybank-tenant.md) | Azure | Azure Tenant for MyBank |
 
 
+## Navigation
+[List of Views](../views.md)
+
 (generated with docs/views/deployment-structure-view.md.cmb)

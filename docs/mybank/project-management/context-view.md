@@ -19,4 +19,7 @@ Shows the systems of the domain Project Management and their relations.
 | [Projects Wiki](../../mybank/project-management/confluence.md) | Platform for documenting projects. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/context-view.md.cmb)

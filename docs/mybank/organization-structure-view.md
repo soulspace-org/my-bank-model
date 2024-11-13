@@ -12,4 +12,7 @@ Shows the hierarchical structure of the organization
 | [My Bank](../mybank/organization/my-bank-organization.md) | My Bank Company |
 
 
+## Navigation
+[List of Views](../views.md)
+
 (generated with docs/views/organization-structure-view.md.cmb)

@@ -13,4 +13,7 @@ The Personal Customer is an actor in these use cases.
 | [view account](../mybank/digital-banking/internet-banking-system/view-account.md) | User-goal | view the details of an account |
 
 
+## Navigation
+[List of Views](../views.md)
+
 (generated with docs/user-role.md.cmb)

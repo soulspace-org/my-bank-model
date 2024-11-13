@@ -15,4 +15,7 @@ view the details of an account
 [Internet Banking System Use Case View](../../../mybank/digital-banking/internet-banking-system/use-case-view.md)
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/use-case.md.cmb)

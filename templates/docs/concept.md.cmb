@@ -19,6 +19,7 @@
 %># <%= (:name e) %> (<%= (m/element-type e) %>)
 ## Description
 <%= (:desc e) %>
+
 <%
   (when (:doc e)
 %>## Documentation
@@ -107,5 +108,8 @@
   )
 )
 %>
+
+## Navigation
+<%= (md/relative-file-link e "views.md" "List of Views") %>
 
 (generated with <%= (:template ctx) %>)

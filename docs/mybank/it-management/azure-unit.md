@@ -21,4 +21,7 @@ Responsible for the Azure platform.
 | [MyBank Azure Tenant](../../mybank/it-management/azure/mybank-tenant.md) | Azure Tenant for MyBank |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/organization.md.cmb)

@@ -16,4 +16,7 @@ Responsible for the AWS platform.
 | [Cloud Solution Architect](../../mybank/it-management/cloud-solution-architect.md) | Designs cloud solutions |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/organization.md.cmb)

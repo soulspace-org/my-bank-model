@@ -36,4 +36,7 @@ Shows the deployment of the Azure platform
 | peered to | VNet Europe | Hub VNet Europe | Azure Virtual Network Peering | Provides connectivity for the spoke |
 
 
+## Navigation
+[List of Views](../views.md)
+
 (generated with docs/views/deployment-view.md.cmb)

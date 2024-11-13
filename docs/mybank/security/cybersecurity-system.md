@@ -14,4 +14,7 @@ Snort, Suricata
 [Security Context View](../../mybank/security/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

@@ -14,4 +14,7 @@ Java, Spring Boot, Spring Batch
 [Payment Context View](../../mybank/payment/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

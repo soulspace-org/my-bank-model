@@ -13,4 +13,7 @@ Shows the systems of the domain Payment and their relations.
 | [SWIFT/RTGS/NEFT](../../mybank/payment/swift-rtgs-neft-system.md) | Handles interbank transfers and settlements. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/context-view.md.cmb)

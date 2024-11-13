@@ -13,4 +13,7 @@ Shows the systems of the domain Security and their relations.
 | [Identity and Access Management (IAM)](../../mybank/security/identity-access-management-system.md) | Manages secure access to systems and data. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/context-view.md.cmb)

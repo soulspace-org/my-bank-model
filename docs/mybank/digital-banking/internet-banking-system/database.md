@@ -21,4 +21,7 @@ Datomic
 [Internet Banking System Container View](../../../mybank/digital-banking/internet-banking-system/container-view.md)
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

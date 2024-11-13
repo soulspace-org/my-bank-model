@@ -9,4 +9,7 @@ Process to manage projects
 | [Project Manager](../../mybank/project-management/project-manager.md) | Manages projects at MyBank |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/process.md.cmb)

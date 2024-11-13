@@ -17,4 +17,7 @@ The Agility Master is an actor in these use cases.
 | [Manage Sprints](../../mybank/project-management/manage-sprints.md) | --- | Manage sprints for software development |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/user-role.md.cmb)

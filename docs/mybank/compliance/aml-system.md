@@ -14,4 +14,7 @@ Python, Scikit-learn
 [Compliance & Risk Management Context View](../../mybank/compliance/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

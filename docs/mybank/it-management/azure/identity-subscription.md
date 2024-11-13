@@ -14,4 +14,7 @@ Name | Description
 [Identity VNet Europe](../../../mybank/it-management/azure/identity-vnet-europe.md) | VNet for the identity infrastructure in europe
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/deployment-node.md.cmb)

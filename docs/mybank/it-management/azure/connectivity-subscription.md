@@ -17,4 +17,7 @@ Name | Description
 [Hub VNet North America](../../../mybank/it-management/azure/hub-vnet-north-america.md) | VNet for the hub infrastructure in north america
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/deployment-node.md.cmb)

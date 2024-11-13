@@ -20,4 +20,7 @@ Shows the systems and containers of the domain Project Management and their rela
 | [Projects Wiki](../../mybank/project-management/confluence.md) | Platform for documenting projects. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/container-view.md.cmb)

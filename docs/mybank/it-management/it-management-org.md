@@ -15,4 +15,7 @@ Responsible for the IT platform of MyBank
 | [Azure Platform](../../mybank/it-management/azure-unit.md) | Responsible for the Azure platform. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/organization.md.cmb)

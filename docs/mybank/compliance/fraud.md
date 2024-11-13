@@ -14,4 +14,7 @@
 | [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | Responsible for the fraud detection and mitigation of MyBank. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/organization.md.cmb)

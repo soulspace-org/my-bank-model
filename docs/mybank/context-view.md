@@ -62,4 +62,7 @@ Shows the systems of MyBank
 | [Treasury Management](../mybank/financial-management/treasury-management-system.md) | Manages liquidity, investments, and risk in the treasury function. |
 
 
+## Navigation
+[List of Views](../views.md)
+
 (generated with docs/views/context-view.md.cmb)

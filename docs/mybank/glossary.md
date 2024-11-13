@@ -160,4 +160,7 @@ Delivers the static content and the internet banking single-page application.
 Takes money from account
 
 
+## Navigation
+[List of Views](../views.md)
+
 (generated with docs/views/glossary-view.md.cmb)

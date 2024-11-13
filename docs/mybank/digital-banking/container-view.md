@@ -20,4 +20,7 @@ Shows the systems and containers of the domain digital banking and their relatio
 | [Web Application](../../mybank/digital-banking/internet-banking-system/web-app.md) | Delivers the static content and the internet banking single-page application. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/container-view.md.cmb)

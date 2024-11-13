@@ -14,4 +14,7 @@ Confluence
 [Project Management Context View](../../mybank/project-management/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

@@ -13,4 +13,7 @@ Shows the systems of the domain Financial Management and their relations.
 | [Treasury Management](../../mybank/financial-management/treasury-management-system.md) | Manages liquidity, investments, and risk in the treasury function. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/context-view.md.cmb)

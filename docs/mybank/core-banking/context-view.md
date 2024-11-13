@@ -13,4 +13,7 @@ Shows the systems of the domain Core Banking and their relations.
 | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) | Processes financial transactions in real-time. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/context-view.md.cmb)

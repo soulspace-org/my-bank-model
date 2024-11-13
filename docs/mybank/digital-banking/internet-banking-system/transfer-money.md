@@ -15,4 +15,7 @@ transfer money from one account to another
 [Internet Banking System Use Case View](../../../mybank/digital-banking/internet-banking-system/use-case-view.md)
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/use-case.md.cmb)

@@ -14,4 +14,7 @@
 | [Asset Management](../../mybank/investments/asset-management-org.md) |  |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/organization.md.cmb)

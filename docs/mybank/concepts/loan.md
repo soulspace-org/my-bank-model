@@ -1,6 +1,7 @@
 # Loan (Concept)
 ## Description
 Lending money from the bank to the customer
+
 # Subordinates
 | Name | Description |
 |---|---|
@@ -14,5 +15,8 @@ Lending money from the bank to the customer
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)
 [High Level Concept Map](../../mybank/concepts/concept-view.md)
 
+
+## Navigation
+[List of Views](../../views.md)
 
 (generated with docs/concept.md.cmb)

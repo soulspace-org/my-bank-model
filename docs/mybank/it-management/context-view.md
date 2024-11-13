@@ -13,4 +13,7 @@ Shows the systems of the domain IT management and their relations.
 | [Cloud Solution Architect](../../mybank/it-management/cloud-solution-architect.md) | Designs cloud solutions |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/context-view.md.cmb)

@@ -36,4 +36,7 @@ Shows the nodes and containers of the domain IT management infrastructure.
 | peered to | VNet Europe | Hub VNet Europe | Azure Virtual Network Peering | Provides connectivity for the spoke |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/deployment-view.md.cmb)

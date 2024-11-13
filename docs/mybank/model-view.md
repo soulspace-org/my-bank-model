@@ -6,3 +6,8 @@
 ## Description
 Shows the complete model graph
 
+
+## Navigation
+[List of Views](../views.md)
+
+(generated with docs/views/model-view.md.cmb)

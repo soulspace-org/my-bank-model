@@ -39,5 +39,8 @@ Takes money from account
 
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/concept-view.md.cmb)
 

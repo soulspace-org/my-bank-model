@@ -13,4 +13,7 @@ Shows the systems of the domain Data Management and their relations.
 | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | Central repository for storing large volumes of data. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/context-view.md.cmb)

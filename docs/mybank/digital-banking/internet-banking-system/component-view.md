@@ -28,4 +28,7 @@ Shows the containers and components of the domain Internet Banking System and th
 | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Allows users to sign in to the banking system. |
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/views/component-view.md.cmb)

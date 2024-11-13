@@ -14,4 +14,7 @@ Genesys, Avaya
 [Customer Channels Context View](../../mybank/customer-channels/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

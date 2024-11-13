@@ -22,4 +22,7 @@ The internal Microsoft Exchange email system.
 [Context View](../mybank/context-view.md)
 
 
+## Navigation
+[List of Views](../views.md)
+
 (generated with docs/architecture-node.md.cmb)

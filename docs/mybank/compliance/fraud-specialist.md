@@ -11,4 +11,7 @@ The Fraud specialist is a role in the following organizational units.
 | [Fraud](../../mybank/compliance/fraud.md) |  |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/user-role.md.cmb)

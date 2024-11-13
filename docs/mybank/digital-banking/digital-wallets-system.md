@@ -14,4 +14,7 @@ Node.js and Express
 [Digital Banking Context View](../../mybank/digital-banking/context-view.md)
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

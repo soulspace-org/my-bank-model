@@ -9,4 +9,7 @@ Azure Virtual Network
 [Identity Subscription](../../../mybank/it-management/azure/identity-subscription.md)
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/deployment-node.md.cmb)

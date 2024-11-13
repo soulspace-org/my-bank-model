@@ -26,4 +26,7 @@ Clojure namespace
 [Internet Banking System Component View](../../../mybank/digital-banking/internet-banking-system/component-view.md)
 
 
+## Navigation
+[List of Views](../../../views.md)
+
 (generated with docs/architecture-node.md.cmb)

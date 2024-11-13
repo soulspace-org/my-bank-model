@@ -11,4 +11,7 @@ The Compliance Manager is a role in the following organizational units.
 | [Regulations](../../mybank/compliance/regulations.md) |  |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/user-role.md.cmb)

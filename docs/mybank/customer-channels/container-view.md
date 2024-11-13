@@ -13,4 +13,7 @@ Shows the systems and containers of the domain Customer Channels and their relat
 | [Contact Center](../../mybank/customer-channels/contact-center-system.md) | Telephony and customer support systems for call centers. |
 
 
+## Navigation
+[List of Views](../../views.md)
+
 (generated with docs/views/container-view.md.cmb)
