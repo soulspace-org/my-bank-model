@@ -13,6 +13,7 @@ Shows the structure of the MyBank organization
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/views/organization-structure-view.md.cmb)

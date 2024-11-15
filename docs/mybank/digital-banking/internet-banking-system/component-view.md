@@ -29,6 +29,7 @@ Shows the containers and components of the domain Internet Banking System and th
 
 
 ## Navigation
-[List of Views](../../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../../views.md)
 
 (generated with docs/views/component-view.md.cmb)

@@ -5,6 +5,7 @@ Process to manage software releases
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/process.md.cmb)

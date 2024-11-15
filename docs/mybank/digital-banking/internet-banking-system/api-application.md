@@ -40,6 +40,7 @@ These components show the internal structure of the API Application container.
 
 
 ## Navigation
-[List of Views](../../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../../views.md)
 
 (generated with docs/architecture-node.md.cmb)

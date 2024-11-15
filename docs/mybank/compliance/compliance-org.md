@@ -17,6 +17,7 @@ Responsible for the compliance and risk management of MyBank
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/organization.md.cmb)

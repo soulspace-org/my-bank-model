@@ -22,6 +22,7 @@ Shows the systems and containers of the domain Compliance & Risk Management and 
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/views/container-view.md.cmb)

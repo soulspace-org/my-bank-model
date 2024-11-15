@@ -15,6 +15,7 @@ Confluence
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/architecture-node.md.cmb)

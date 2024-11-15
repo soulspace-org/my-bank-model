@@ -16,6 +16,7 @@ place an order for an account
 
 
 ## Navigation
-[List of Views](../../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../../views.md)
 
 (generated with docs/use-case.md.cmb)

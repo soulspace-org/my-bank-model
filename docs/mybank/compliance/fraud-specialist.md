@@ -12,6 +12,7 @@ The Fraud specialist is a role in the following organizational units.
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/user-role.md.cmb)

@@ -16,6 +16,7 @@ Responsible for the IT platform of MyBank
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/organization.md.cmb)

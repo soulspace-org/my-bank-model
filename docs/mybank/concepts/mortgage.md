@@ -13,6 +13,7 @@ A loan for a immobile, e.g. a house
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/concept.md.cmb)

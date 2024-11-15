@@ -17,6 +17,7 @@ Lending money from the bank to the customer
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/concept.md.cmb)

@@ -72,6 +72,7 @@ Shows the containers of the MyBank Systems
 
 
 ## Navigation
-[List of Views](../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/views/container-view.md.cmb)

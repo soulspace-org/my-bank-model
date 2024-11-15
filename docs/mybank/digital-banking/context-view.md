@@ -13,6 +13,7 @@ Shows the systems of the domain Digital Banking and their relations.
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/views/context-view.md.cmb)

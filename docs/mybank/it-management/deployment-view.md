@@ -37,6 +37,7 @@ Shows the nodes and containers of the domain IT management infrastructure.
 
 
 ## Navigation
-[List of Views](../../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
 
 (generated with docs/views/deployment-view.md.cmb)

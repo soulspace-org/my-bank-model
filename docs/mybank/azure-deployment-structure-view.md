@@ -13,6 +13,7 @@ Shows the hierarchical structure of the Azure platform deployment
 
 
 ## Navigation
-[List of Views](../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/views/deployment-structure-view.md.cmb)

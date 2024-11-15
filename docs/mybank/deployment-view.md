@@ -37,6 +37,7 @@ Shows the deployment of the Azure platform
 
 
 ## Navigation
-[List of Views](../views.md)
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/views/deployment-view.md.cmb)
