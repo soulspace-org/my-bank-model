@@ -1,0 +1,17 @@
+@startuml deployment-view
+!include <C4/C4_Deployment.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Deployment View of the IT Management On Premise Datacenter
+SHOW_LEGEND()
+@enduml

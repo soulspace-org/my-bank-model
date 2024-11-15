@@ -6,7 +6,7 @@
 
 
 ## Parent Node
-[MyBank Azure Tenant](../../../mybank/it-management/azure/mybank-tenant.md)
+[MyBank Azure Tenant](../../../mybank/it-management/azure/mybank-azure-tenant.md)
 ## Contained Nodes
 Name | Description 
 ---|---

@@ -1,0 +1,9 @@
+#{;
+
+  {:el :org-unit
+   :id :mybank.marketing/marketing-unit
+   :name "Marketing"
+   :desc "Responsible for the marketing of MyBank"}
+
+  ;
+  }

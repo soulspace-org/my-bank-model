@@ -1,7 +1,23 @@
 ;;;;
 ;;;; MyBank Human Resources Domain Model
 ;;;;
-#{{:el :context-boundary
+#{;
+
+  {:el :org-unit
+   :id :mybank.organization/human-resources-unit
+   :name "Human Resources"
+   :desc "Central management of human resources"
+   :ct [{:el :org-unit
+         :id :mybank.organization.hr/recruiting
+         :name "Recruiting"
+         :desc "Responsible for recruiting new employees"}]}
+  {:el :contained-in
+   :from :mybank.organization/human-resources-unit
+   :to :mybank/my-bank-organization
+   :name "unit of"
+   :desc "Human Resources is a unit of My Bank."}
+
+  {:el :context-boundary
    :id :mybank.human-resources/context-boundary
    :name "Human Resources Management"
    :desc "Manages employee information, payroll, and talent management."

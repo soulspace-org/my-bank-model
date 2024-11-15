@@ -1,0 +1,28 @@
+;;;;
+;;;; Model for MyBank AWS IT Management
+;;;;
+#{;
+  {:el :node
+   :id :mybank.it-management.aws/mybank-aws-organization
+   :name "MyBank AWS Organization"
+   :tech "AWS"
+   :desc "AWS Organization for MyBank"
+   :tags #{"platform" "cloud"}
+   :ct #{{:el :node
+          :id :mybank.it-management.aws/platform-management-account
+          :tech "AWS Account"
+          :name "Management Account"
+          :desc "Account for managing the AWS platform"}
+         {:el :node
+          :id :mybank.it-management.aws/log-archive-account
+          :tech "AWS Account"
+          :name "Log Archive Account"
+          :desc "Account for archiving logs"}
+         {:el :node
+          :id :mybank.it-management.aws/audit-account
+          :tech "AWS Account"
+          :name "Audit Account"
+          :desc "Account for auditing the AWS platform"}}}
+
+  ;
+  }

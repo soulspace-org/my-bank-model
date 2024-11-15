@@ -36,7 +36,6 @@
 | [Human Resources Container View](./mybank/human-resources/container-view.md) | Shows the systems and containers of the domain Human Resources and their relations. |
 | [IT Management Container View](./mybank/it-management/container-view.md) | Shows the systems and containers of the domain IT management and their relations. |
 | [Internet Banking System Container View](./mybank/digital-banking/internet-banking-system/container-view.md) | Shows the containers of the Internet Banking System and their relations. |
-| [Banking Container View](./mybank/container-view.md) | Shows the containers of the MyBank Systems |
 | [Payment Container View](./mybank/payment/container-view.md) | Shows the systems and containers of the domain Payment and their relations. |
 | [Project Management Container View](./mybank/project-management/container-view.md) | Shows the systems and containers of the domain Project Management and their relations. |
 | [Security Container View](./mybank/security/container-view.md) | Shows the systems and containers of the domain Security and their relations. |
@@ -47,17 +46,20 @@
 ## Deployment Views
 | Title | Description |
 |---|---|
-| [Deployment View](./mybank/deployment-view.md) | Shows the deployment of the Azure platform |
+| [AWS Deployment View](./mybank/it-management/aws/deployment-view.md) | Shows the nodes and containers of the IT management AWS cloud infrastructure. |
+| [Azure Deployment View](./mybank/it-management/azure/deployment-view.md) | Shows the nodes and containers of the IT management Azure cloud infrastructure. |
+| [Azure Deployment View](./mybank/it-management/onprem/deployment-view.md) | Shows the nodes and containers of the IT management on premise datacenter infrastructure. |
 | [IT Management Deployment View](./mybank/it-management/deployment-view.md) | Shows the nodes and containers of the domain IT management infrastructure. |
 ## Deployment Structure Views
 | Title | Description |
 |---|---|
-| [Azure Deployment Structure View](./mybank/azure-deployment-structure-view.md) | Shows the hierarchical structure of the Azure platform deployment |
+| [AWS Deployment Structure View](./mybank/it-management/aws/aws-deployment-structure-view.md) | Shows the hierarchical structure of the AWS platform deployment |
+| [Azure Deployment Structure View](./mybank/it-management/azure/azure-deployment-structure-view.md) | Shows the hierarchical structure of the Azure platform deployment |
+| [Onpremise Deployment Structure View](./mybank/it-management/onprem/onprem-deployment-structure-view.md) | Shows the hierarchical structure of the onpremise detacenter deployment |
 ## Organization Structure Views
 | Title | Description |
 |---|---|
-| [MyBank Organization Chart](./mybank/organization/organization-structure-view.md) | Shows the structure of the MyBank organization |
-| [Organisation Stucture View](./mybank/organization-structure-view.md) | Shows the hierarchical structure of the organization |
+| [MyBank Organization Chart](./mybank/organization/organization-structure-view.md) | Shows the hierarchical structure of the MyBank organization |
 ## Glossary Views
 | Title | Description |
 |---|---|

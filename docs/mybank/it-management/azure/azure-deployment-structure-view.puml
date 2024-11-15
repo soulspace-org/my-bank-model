@@ -1,8 +1,5 @@
 @startwbs
 * MyBank Azure Tenant
-** Landing Zone Management Group
-*** LZ1 Subscription
-**** VNet Europe
 ** Platform Management Group
 *** LZ Kafka Subscription
 **** LZ Kafka VNet
@@ -17,6 +14,9 @@
 **** Identity  VNet North America
 **** Identity VNet Europe
 *** Management Subscription
+** Landing Zone Management Group
+*** LZ1 Subscription
+**** VNet Europe
 
 @endwbs
 

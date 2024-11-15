@@ -1,0 +1,25 @@
+;;;;
+;;;; Model for MyBank Onpremise Datacenter IT Management
+;;;;
+#{;
+
+  {:el :node
+   :id :mybank.it-management.onprem/data-center-europe
+   :name "MyBank On Premise Datacenter"
+   ;:tech "Azure"
+   :desc "Data Center of MyBank"
+   :tags #{"platform" "onprem"}
+   :ct #{}}
+
+  {:el :link
+   :id :mybank.it-management.onprem/data-center-europe-links-to-hub-vnet
+   :from :mybank.it-management.onprem/data-center-europe
+   :to :mybank.it-management.azure/hub-vnet-europe
+   :name "network link"
+   :tech "Azure Express Route"
+   :desc "High speed/volume link 100 Mb/s"
+   :tags #{"platform" "cloud"}}
+  
+
+  ; 
+  }

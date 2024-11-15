@@ -5,7 +5,7 @@
   ;;; Organization
   ;;;
   {:el :org-unit
-   :id :mybank.compliance/compliance-org
+   :id :mybank.compliance/compliance-unit
    :name "Compliance & Risk Management"
    :desc "Responsible for the compliance and risk management of MyBank"
    :ct [{:el :org-unit
@@ -17,6 +17,13 @@
         {:el :org-unit
          :id :mybank.compliance/risk-management
          :name "Risk Management"}]}
+
+  {:el :contained-in
+   :id :mybank.compliance/compliance-unit-contained-in-my-bank-organization
+   :from :mybank.compliance/compliance-unit
+   :to :mybank/my-bank-organization
+   :name "unit of"
+   :desc "Compliance and Risk Management unit is part of MyBank."}
 
   ;;;
   ;;; Roles

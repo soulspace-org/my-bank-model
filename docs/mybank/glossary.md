@@ -64,6 +64,8 @@ Manages data storage, warehousing, and analytics.
 Central repository for storing large volumes of data.
 ### [Database](../mybank/digital-banking/internet-banking-system/database.md)
 Stores user registration, authentication, and access logs.
+### [Database Administrator](../mybank/it-management/database-administrator.md)
+Manages databases
 ### [Deposit](../mybank/concepts/deposit.md)
 Puts money on account
 ### [Development Platform](../mybank/project-management/gitlab.md)
@@ -104,6 +106,8 @@ Allows customers to view information about their bank accounts and make payments
 Hardware and software resources, including servers and networking.
 ### [IT Management](../mybank/it-management/context-boundary.md)
 Manages IT infrastructure, cloud resources, and system monitoring.
+### [IT Manager](../mybank/it-management/it-manager.md)
+Manages the IT platform
 ### [Loan](../mybank/concepts/loan.md)
 Lending money from the bank to the customer
 ### [Loan Management](../mybank/core-banking/loan-management-system.md)
@@ -114,6 +118,8 @@ Provides limited internet banking functionality to customers via mobile devices.
 A loan for a immobile, e.g. a house
 ### [My Bank](../mybank/mybank-plc.md)
 
+### [Network Engineer](../mybank/it-management/network-engineer.md)
+Designs and operates network infrastructure
 ### [Payment Gateway](../mybank/payment/payment-gateway-system.md)
 Facilitates credit/debit card transactions.
 ### [Payment Systems](../mybank/payment/context-boundary.md)
@@ -138,6 +144,8 @@ Detects risks and manages risk mitigation.
 Responsible for managing the risks.
 ### [Security](../mybank/security/context-boundary.md)
 Ensures the security of systems and data.
+### [Security Engineer](../mybank/it-management/security-engineer.md)
+Designs and operates security infrastructure
 ### [Service-Oriented Architecture (SOA)](../mybank/integration-middleware/soa.md)
 Framework for enabling seamless integration between services.
 ### [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md)

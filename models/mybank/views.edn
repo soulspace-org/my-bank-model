@@ -1,7 +1,15 @@
 ;;;;
 ;;;; Views of the MyBank Model
 ;;;;
-#{{:el :context-view
+#{;
+  {:el :organization-structure-view
+   :id :mybank.organization/organization-structure-view
+   :spec {:selection {:id :mybank/my-bank-organization}}
+   :name "MyBank Organization Chart"
+   :title "MyBank Organization Chart"
+   :desc "Shows the hierarchical structure of the MyBank organization"}
+  
+  {:el :context-view
    :id :mybank/context-view
    :spec {:selection {:namespace-prefix "mybank"}
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
@@ -9,39 +17,13 @@
    :title "Context View of the MyBank Systems"
    :desc "Shows the systems of MyBank"}
 
-  {:el :container-view
+  #_{:el :container-view
    :id :mybank/container-view
    :spec {:selection {:namespace-prefix "mybank"}
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Banking Container View"
    :title "Container View of the MyBank Systems"
    :desc "Shows the containers of the MyBank Systems"}
-
-  {:el :deployment-view
-   :id :mybank/deployment-view
-   :spec {:selection [{:namespace-prefix "mybank" :el :node}
-                      {:to-namespace-prefix "mybank" :els #{:link :deployed-on}}]
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
-   :name "Deployment View"
-   :title "Deployment View for the MyBank Systems"
-   :desc "Shows the deployment of the Azure platform"}
-
-  {:el :deployment-structure-view
-   :id :mybank/azure-deployment-structure-view
-   :spec {:selection {:id :mybank.it-management.azure/mybank-tenant}
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
-   :name "Azure Deployment Structure View" 
-   :title "Azure Deployment View for the MyBank Systems"
-   :desc "Shows the hierarchical structure of the Azure platform deployment"}
-
-  {:el :organization-structure-view
-   :id :mybank/organization-structure-view
-   :spec {:selection {:namespace-prefix "mybank" :el :organization}}
-   :name "Organisation Stucture View"
-   :title "Organisation Stucture View for the MyBank Systems"
-   :desc "Shows the hierarchical structure of the organization"}
 
   {:el :model-view
    :id :mybank/model-view

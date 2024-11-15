@@ -1,12 +1,12 @@
 # Recruiting (Org-unit)
 ## Description
-
+Responsible for recruiting new employees
 
 
 ## Parent Unit
 | Name | Description |
 |---|---|
-| [Human Resources](../../../mybank/organization/human-resources.md) | Central management of human resources |
+| [Human Resources](../../../mybank/organization/human-resources-unit.md) | Central management of human resources |
 
 
 ## Navigation

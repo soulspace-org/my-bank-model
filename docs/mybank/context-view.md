@@ -16,11 +16,15 @@ Shows the systems of MyBank
 | [Compliance Manager](../mybank/compliance/compliance-manager.md) | Responsible for the compliance of MyBank. |
 | [Corporate Customer](../mybank/corporate-customer.md) | Corporate Customer of MyBank. |
 | [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) | Customer service staff within the bank. |
+| [Database Administrator](../mybank/it-management/database-administrator.md) | Manages databases |
 | [DevOps Engineer](../mybank/project-management/devops-engineer.md) | Develops and operates software systems |
 | [Fraud specialist](../mybank/compliance/fraud-specialist.md) | Responsible for the fraud detection and mitigation of MyBank. |
+| [IT Manager](../mybank/it-management/it-manager.md) | Manages the IT platform |
+| [Network Engineer](../mybank/it-management/network-engineer.md) | Designs and operates network infrastructure |
 | [Personal Customer](../mybank/personal-customer.md) | Personal Customer of MyBank. |
 | [Project Manager](../mybank/project-management/project-manager.md) | Manages projects at MyBank |
 | [Risk Manager](../mybank/compliance/risk-manager.md) | Responsible for managing the risks. |
+| [Security Engineer](../mybank/it-management/security-engineer.md) | Designs and operates security infrastructure |
 ## Systems
 | Name | Description |
 |---|---|

@@ -5,17 +5,28 @@
   ;;; Orgnization
   ;;;
   {:el :org-unit
-   :id :mybank.it-management/it-management-org
+   :id :mybank.it-management/it-management-unit
    :name "IT Management"
    :desc "Responsible for the IT platform of MyBank"
    :ct #{{:el :org-unit
           :id :mybank.it-management/azure-unit
           :name "Azure Platform"
-          :desc "Responsible for the Azure platform."}
+          :desc "Responsible for the Azure cloud platform."}
          {:el :org-unit
           :id :mybank.it-management/aws-unit
           :name "AWS Platform"
-          :desc "Responsible for the AWS platform."}}}
+          :desc "Responsible for the AWS cloud platform."}
+         {:el :org-unit
+          :id :mybank.it-management/onprem-unit
+          :name "On Premise Datacenter"
+          :desc "Responsible for the On Premise Datacenter."}}}
+
+  {:el :contained-in
+   :id :mybank.it-management/it-management-unit-contained-in-my-bank-organization
+   :from :mybank.it-management/it-management-unit
+   :to :mybank/my-bank-organization
+   :name "unit of"
+   :desc "IT Management unit is part of MyBank."}
 
   ;;;
   ;;; Roles
@@ -34,6 +45,24 @@
    :id :mybank.it-management/cloud-finops-specialist
    :name "Cloud FinOps Specialist"
    :desc "Operates cloud infrastructure and controls costs"}
+
+  {:el :person
+   :id :mybank.it-management/it-manager
+   :name "IT Manager"
+   :desc "Manages the IT platform"}
+
+  {:el :person
+   :id :mybank.it-management/network-engineer
+   :name "Network Engineer"
+   :desc "Designs and operates network infrastructure"}
+  {:el :person
+   :id :mybank.it-management/security-engineer
+   :name "Security Engineer"
+   :desc "Designs and operates security infrastructure"}
+  {:el :person
+   :id :mybank.it-management/database-administrator
+   :name "Database Administrator"
+   :desc "Manages databases"}
 
   ;;;
   ;;; Role Assignments
@@ -75,6 +104,25 @@
    :name "role in"
    :desc "Operations and cost control for the AWS platform"}
 
+  {:el :role-in
+   :id :mybank.it-management/network-engineer-role-in-onprem-unit
+   :from :mybank.it-management/network-engineer
+   :to :mybank.it-management/onprem-unit
+   :name "role in"
+   :desc "Designs and operates network infrastructure in the On Premise Datacenter"}
+  {:el :role-in
+   :id :mybank.it-management/security-engineer-role-in-onprem-unit
+   :from :mybank.it-management/security-engineer
+   :to :mybank.it-management/onprem-unit
+   :name "role in"
+   :desc "Designs and operates security infrastructure in the On Premise Datacenter"}
+  {:el :role-in
+   :id :mybank.it-management/database-administrator-role-in-onprem-unit
+   :from :mybank.it-management/database-administrator
+   :to :mybank.it-management/onprem-unit
+   :name "role in"
+   :desc "Manages databases in the On Premise Datacenter"}
+
   ;;;
   ;;; System Architecture
   ;;;
@@ -98,131 +146,6 @@
           :desc "Monitors system performance and health."
           :tech "Nagios, Prometheus"}}}
 
-  {:el :node
-   :id :mybank.it-management.azure/mybank-tenant
-   :name "MyBank Azure Tenant"
-   :tech "Azure"
-   :desc "Azure Tenant for MyBank"
-   :tags #{"platform" "cloud"}
-   :ct #{{:el :node
-          :id :mybank.it-management.azure/platform-management-group
-          :name "Platform Management Group"
-          :ct #{{:el :node
-                 :id :mybank.it-management.azure/connectivity-subscription
-                 :name "Connectivity Subscription"
-                 :tech "Azure Subscription"
-                 :desc "Subscription for the Connectivity Infrastructure"
-                 :tags #{"platform" "cloud"}
-                 :ct #{{:el :node
-                        :id :mybank.it-management.azure/hub-vnet-europe
-                        :name "Hub VNet Europe"
-                        :tech "Azure Virtual Network"
-                        :desc "VNet for the hub infrastructure in europe"
-                        :tags #{"platform" "cloud"}
-                        :ct #{}}
-                       {:el :node
-                        :id :mybank.it-management.azure/hub-vnet-north-america
-                        :name "Hub VNet North America"
-                        :tech "Azure Virtual Network"
-                        :desc "VNet for the hub infrastructure in north america"
-                        :tags #{"platform" "cloud"}
-                        :ct #{}}
-                       {:el :node
-                        :id :mybank.it-management.azure/dns
-                        :name "Azure DNS"
-                        :tech "Azure DNS"
-                        :desc "Domain Name Service"
-                        :tags #{"platform" "cloud"}}
-                       {:el :node
-                        :id :mybank.it-management.azure/ddos-protection
-                        :name "Azure DDoS"
-                        :tech "Azure DDoS"
-                        :desc "Protection against denial of service attacks"
-                        :tags #{"platform" "cloud"}}
-                       {:el :node
-                        :id :mybank.it-management.azure/firewall
-                        :name "Azure Firewall"
-                        :tech "Azure Firewall"
-                        :desc "Restrict network access/traffic"
-                        :tags #{"platform" "cloud"}}}}
-                {:el :node
-                 :id :mybank.it-management.azure/identity-subscription
-                 :name "Identity Subscription"
-                 :tech "Azure Subscription"
-                 :desc "Subscription for the IAM Infrastructure"
-                 :tags #{"platform" "cloud"}
-                 :ct #{{:el :node
-                        :id :mybank.it-management.azure/identity-vnet-europe
-                        :name "Identity VNet Europe"
-                        :tech "Azure Virtual Network"
-                        :desc "VNet for the identity infrastructure in europe"
-                        :tags #{"platform" "cloud"}
-                        :ct #{}}
-                       {:el :node
-                        :id :mybank.it-management.azure/identity-vnet-north-america
-                        :name "Identity  VNet North America"
-                        :tech "Azure Virtual Network"
-                        :desc "VNet for the identity infrastructure in north america"
-                        :tags #{"platform" "cloud"}
-                        :ct #{}}}}
-                {:el :node
-                 :id :mybank.it-management.azure/management-subscription
-                 :name "Management Subscription"
-                 :tech "Azure Subscription"
-                 :desc "Subscription for the Management Infrastructure"
-                 :tags #{"platform" "cloud"}}
-                {:el :node
-                 :id :mybank.it-management.azure/plz-kafka-subscription
-                 :name "LZ Kafka Subscription"
-                 :tech "Azure Subscription"
-                 :desc "Subscription for the central Kafka infrastructure"
-                 :tags #{"platform" "cloud"}
-                 :ct #{{:el :node
-                        :id :mybank.it-management.azure/plz-kafka-vnet
-                        :name "LZ Kafka VNet"
-                        :tech "Azure Virtual Network"
-                        :desc "VNet for the Kafka infrastructure"
-                        :tags #{"platform" "cloud"}
-                        :ct #{{:el :node
-                               :id :mybank.it-management.azure/plz-kafka-subnet
-                               :name "Kafka Subnet"
-                               :tech "Azure Subnet"
-                               :tags #{"platform" "cloud"}}}}}}
-                }}
-         {:el :node
-          :id :mybank.it-management.azure/landing-zone-management-group
-          :name "Landing Zone Management Group"
-          :ct #{{:el :node
-                 :id :mybank.it-management.azure/alz1-subscription
-                 :name "LZ1 Subscription"
-                 :tech "Azure Subscription"
-                 :desc "Subscription for the landing zone of an application"
-                 :tags #{"platform" "cloud"}
-                 :ct #{{:el :node
-                        :id :mybank.it-management.azure/alz1-vnet-europe
-                        :name "VNet Europe"
-                        :tech "Azure Virtual Network"
-                        :desc "VNet for an application infrastructure in europe"
-                        :tags #{"generic" "cloud"}
-                        :ct #{}}}}}}}}
-
-  {:el :node
-   :id :mybank.it-management.onprem/data-center-europe
-   :name "MyBank On Premise Datacenter"
-   ;:tech "Azure"
-   :desc "Data Center of MyBank"
-   :tags #{"platform" "onprem"}
-   :ct #{}}
-
-  {:el :link
-   :id :mybank.it-management.onprem/data-center-europe-links-to-hub-vnet
-   :from :mybank.it-management.onprem/data-center-europe
-   :to :mybank.it-management.azure/hub-vnet-europe
-   :name "network link"
-   :tech "Azure Express Route"
-   :desc "High speed/volume link 100 Mb/s"
-   :tags #{"platform" "cloud"}}
-
   {:el :link
    :id :mybank.it-management.azure/alz1-vnet1-peered-to-hub-vnet
    :from :mybank.it-management.azure/alz1-vnet-europe
@@ -235,7 +158,7 @@
   {:el :responsible-for
    :id :mybank.it-management/azure-unit-responsible-for-azure-tenant
    :from :mybank.it-management/azure-unit
-   :to :mybank.it-management.azure/mybank-tenant
+   :to :mybank.it-management.azure/mybank-azure-tenant
    :name "responsible for"}
   ;
   }

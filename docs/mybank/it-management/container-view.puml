@@ -16,5 +16,8 @@ title Container View of the IT Management Systems
 Person(mybank_itManagement_cloudFinopsSpecialist, "Cloud FinOps Specialist", $descr="Operates cloud infrastructure and controls costs")
 Person(mybank_itManagement_cloudOperationsSpecialist, "Cloud Operations Specialist", $descr="Operates cloud infrastructure")
 Person(mybank_itManagement_cloudSolutionArchitect, "Cloud Solution Architect", $descr="Designs cloud solutions")
+Person(mybank_itManagement_databaseAdministrator, "Database Administrator", $descr="Manages databases")
+Person(mybank_itManagement_securityEngineer, "Security Engineer", $descr="Designs and operates security infrastructure")
+Person(mybank_itManagement_networkEngineer, "Network Engineer", $descr="Designs and operates network infrastructure")
 SHOW_LEGEND()
 @enduml

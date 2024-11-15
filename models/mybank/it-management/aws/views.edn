@@ -1,0 +1,26 @@
+;;;;
+;;;; Views for the AWS IT Management
+;;;;
+#{;
+
+  {:el :deployment-view
+   :id :mybank.it-management.aws/deployment-view
+   :spec {:selection {:namespace-prefix "mybank.it-management.aws"
+                      :to-namespace-prefix "mybank.it-management.aws"}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "AWS Deployment View"
+   :title "Deployment View of the IT Management AWS Cloud"
+   :desc "Shows the nodes and containers of the IT management AWS cloud infrastructure."}
+
+  {:el :deployment-structure-view
+   :id :mybank.it-management.aws/aws-deployment-structure-view
+   :spec {:selection {:id :mybank.it-management.aws/mybank-aws-organization}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "AWS Deployment Structure View"
+   :title "AWS Deployment View for the MyBank Systems"
+   :desc "Shows the hierarchical structure of the AWS platform deployment"}
+
+;
+  }

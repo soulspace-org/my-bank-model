@@ -1,61 +1,6 @@
 ;;;;
 ;;;; MyBank Organization Model
 ;;;;
-#{{:el :organization
-   :id :mybank.organization/my-bank-organization
-   :name "My Bank"
-   :desc "My Bank Company"
-   :ct [{:el :org-unit
-         :id :mybank.organization/personal-customers
-         :name "Personal Customers"
-         :desc ""
-         :ct [{:el :org-unit
-               :id :mybank.organization.personal-customers/internet-banking
-               :name "Internet Banking"}
-              {:el :org-unit
-               :id :mybank.organization.personal-customers/personal-loans-org
-               :name "Personal Loans"}
-              {:el :org-unit
-               :id :mybank.organization.personal-customers/mortgage-org
-               :name "Mortgage"
-               :desc ""}]}
-        {:el :org-unit
-         :id :mybank.organization/corporate-customers
-         :name "Corporate Customers"
-         :ct [{:el :org-unit
-               :id :mybank.organization.corporate-customers/loans-org
-               :name "Loans"
-               :desc ""
-               :ct []}]}
-        {:el :org-unit
-         :id :mybank.investments/investments-org
-         :name "Investments"
-         :desc ""
-         :ct [{:el :org-unit
-               :id :mybank.investments/asset-management-org
-               :name "Asset Management"
-               :desc ""}]}
-
-        {:ref :mybank.it-management/it-management-org}
-
-        {:ref :mybank.compliance/compliance-org}
-
-        {:ref :mybank.project-management/projects-org}
-
-        {:el :org-unit
-         :id :mybank.organization/marketing
-         :name "Marketing"
-         :desc ""}
-        {:el :org-unit
-         :id :mybank.organization/human-resources
-         :name "Human Resources"
-         :desc "Central management of human resources"
-         :ct [{:el :org-unit
-               :id :mybank.organization.hr/recruiting
-               :name "Recruiting"
-               :desc ""}]}
-        ;
-        ]}
-
+#{
   ;
   }

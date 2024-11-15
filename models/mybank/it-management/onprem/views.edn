@@ -1,0 +1,26 @@
+;;;;
+;;;; Views for the Onpremise Datacenter IT Management
+;;;;
+#{;
+  
+  {:el :deployment-view
+   :id :mybank.it-management.onprem/deployment-view
+   :spec {:selection {:namespace-prefix "mybank.it-management.onprem"
+                      :to-namespace-prefix "mybank.it-management.onprem"}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Azure Deployment View"
+   :title "Deployment View of the IT Management On Premise Datacenter"
+   :desc "Shows the nodes and containers of the IT management on premise datacenter infrastructure."}
+
+  {:el :deployment-structure-view
+   :id :mybank.it-management.onprem/onprem-deployment-structure-view
+   :spec {:selection {:id :mybank.it-management.onprem/data-center-europe}
+          :include :related
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Onpremise Deployment Structure View"
+   :title "Deployment View for the MyBank Onpremise Datacenters"
+   :desc "Shows the hierarchical structure of the onpremise detacenter deployment"}
+  
+  ;
+  }

@@ -1,12 +1,12 @@
 # AWS Platform (Org-unit)
 ## Description
-Responsible for the AWS platform.
+Responsible for the AWS cloud platform.
 
 
 ## Parent Unit
 | Name | Description |
 |---|---|
-| [IT Management](../../mybank/it-management/it-management-org.md) | Responsible for the IT platform of MyBank |
+| [IT Management](../../mybank/it-management/it-management-unit.md) | Responsible for the IT platform of MyBank |
 
 ## Roles
 | Name | Description |

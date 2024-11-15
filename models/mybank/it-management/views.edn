@@ -7,7 +7,7 @@
    :name "IT Management Context View"
    :title "Context View of the IT Management Systems"
    :desc "Shows the systems of the domain IT management and their relations."}
-  
+
   {:el :container-view
    :id :mybank.it-management/container-view
    :spec {:selection {:namespace-prefix "mybank.it-management"

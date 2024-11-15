@@ -1,0 +1,113 @@
+;;;;
+;;;; Model for MyBank Azure IT Management
+#{;
+  
+  {:el :node
+   :id :mybank.it-management.azure/mybank-azure-tenant
+   :name "MyBank Azure Tenant"
+   :tech "Azure"
+   :desc "Azure Tenant for MyBank"
+   :tags #{"platform" "cloud"}
+   :ct #{{:el :node
+          :id :mybank.it-management.azure/platform-management-group
+          :name "Platform Management Group"
+          :ct #{{:el :node
+                 :id :mybank.it-management.azure/connectivity-subscription
+                 :name "Connectivity Subscription"
+                 :tech "Azure Subscription"
+                 :desc "Subscription for the Connectivity Infrastructure"
+                 :tags #{"platform" "cloud"}
+                 :ct #{{:el :node
+                        :id :mybank.it-management.azure/hub-vnet-europe
+                        :name "Hub VNet Europe"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the hub infrastructure in europe"
+                        :tags #{"platform" "cloud"}
+                        :ct #{}}
+                       {:el :node
+                        :id :mybank.it-management.azure/hub-vnet-north-america
+                        :name "Hub VNet North America"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the hub infrastructure in north america"
+                        :tags #{"platform" "cloud"}
+                        :ct #{}}
+                       {:el :node
+                        :id :mybank.it-management.azure/dns
+                        :name "Azure DNS"
+                        :tech "Azure DNS"
+                        :desc "Domain Name Service"
+                        :tags #{"platform" "cloud"}}
+                       {:el :node
+                        :id :mybank.it-management.azure/ddos-protection
+                        :name "Azure DDoS"
+                        :tech "Azure DDoS"
+                        :desc "Protection against denial of service attacks"
+                        :tags #{"platform" "cloud"}}
+                       {:el :node
+                        :id :mybank.it-management.azure/firewall
+                        :name "Azure Firewall"
+                        :tech "Azure Firewall"
+                        :desc "Restrict network access/traffic"
+                        :tags #{"platform" "cloud"}}}}
+                {:el :node
+                 :id :mybank.it-management.azure/identity-subscription
+                 :name "Identity Subscription"
+                 :tech "Azure Subscription"
+                 :desc "Subscription for the IAM Infrastructure"
+                 :tags #{"platform" "cloud"}
+                 :ct #{{:el :node
+                        :id :mybank.it-management.azure/identity-vnet-europe
+                        :name "Identity VNet Europe"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the identity infrastructure in europe"
+                        :tags #{"platform" "cloud"}
+                        :ct #{}}
+                       {:el :node
+                        :id :mybank.it-management.azure/identity-vnet-north-america
+                        :name "Identity  VNet North America"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the identity infrastructure in north america"
+                        :tags #{"platform" "cloud"}
+                        :ct #{}}}}
+                {:el :node
+                 :id :mybank.it-management.azure/management-subscription
+                 :name "Management Subscription"
+                 :tech "Azure Subscription"
+                 :desc "Subscription for the Management Infrastructure"
+                 :tags #{"platform" "cloud"}}
+                {:el :node
+                 :id :mybank.it-management.azure/plz-kafka-subscription
+                 :name "LZ Kafka Subscription"
+                 :tech "Azure Subscription"
+                 :desc "Subscription for the central Kafka infrastructure"
+                 :tags #{"platform" "cloud"}
+                 :ct #{{:el :node
+                        :id :mybank.it-management.azure/plz-kafka-vnet
+                        :name "LZ Kafka VNet"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for the Kafka infrastructure"
+                        :tags #{"platform" "cloud"}
+                        :ct #{{:el :node
+                               :id :mybank.it-management.azure/plz-kafka-subnet
+                               :name "Kafka Subnet"
+                               :tech "Azure Subnet"
+                               :tags #{"platform" "cloud"}}}}}}}}
+         {:el :node
+          :id :mybank.it-management.azure/landing-zone-management-group
+          :name "Landing Zone Management Group"
+          :ct #{{:el :node
+                 :id :mybank.it-management.azure/alz1-subscription
+                 :name "LZ1 Subscription"
+                 :tech "Azure Subscription"
+                 :desc "Subscription for the landing zone of an application"
+                 :tags #{"platform" "cloud"}
+                 :ct #{{:el :node
+                        :id :mybank.it-management.azure/alz1-vnet-europe
+                        :name "VNet Europe"
+                        :tech "Azure Virtual Network"
+                        :desc "VNet for an application infrastructure in europe"
+                        :tags #{"generic" "cloud"}
+                        :ct #{}}}}}}}}
+
+  ;
+  }

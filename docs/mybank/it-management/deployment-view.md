@@ -9,6 +9,7 @@ Shows the nodes and containers of the domain IT management infrastructure.
 ## Nodes
 | Name | Technology | Description |
 |---|---|---|
+| [Audit Account](../../mybank/it-management/aws/audit-account.md) | AWS Account | Account for auditing the AWS platform |
 | [Azure DDoS](../../mybank/it-management/azure/ddos-protection.md) | Azure DDoS | Protection against denial of service attacks |
 | [Azure DNS](../../mybank/it-management/azure/dns.md) | Azure DNS | Domain Name Service |
 | [Azure Firewall](../../mybank/it-management/azure/firewall.md) | Azure Firewall | Restrict network access/traffic |
@@ -20,11 +21,14 @@ Shows the nodes and containers of the domain IT management infrastructure.
 | [Identity VNet Europe](../../mybank/it-management/azure/identity-vnet-europe.md) | Azure Virtual Network | VNet for the identity infrastructure in europe |
 | [Kafka Subnet](../../mybank/it-management/azure/plz-kafka-subnet.md) | Azure Subnet |  |
 | [Landing Zone Management Group](../../mybank/it-management/azure/landing-zone-management-group.md) |  |  |
+| [Log Archive Account](../../mybank/it-management/aws/log-archive-account.md) | AWS Account | Account for archiving logs |
 | [LZ Kafka Subscription](../../mybank/it-management/azure/plz-kafka-subscription.md) | Azure Subscription | Subscription for the central Kafka infrastructure |
 | [LZ Kafka VNet](../../mybank/it-management/azure/plz-kafka-vnet.md) | Azure Virtual Network | VNet for the Kafka infrastructure |
 | [LZ1 Subscription](../../mybank/it-management/azure/alz1-subscription.md) | Azure Subscription | Subscription for the landing zone of an application |
+| [Management Account](../../mybank/it-management/aws/platform-management-account.md) | AWS Account | Account for managing the AWS platform |
 | [Management Subscription](../../mybank/it-management/azure/management-subscription.md) | Azure Subscription | Subscription for the Management Infrastructure |
-| [MyBank Azure Tenant](../../mybank/it-management/azure/mybank-tenant.md) | Azure | Azure Tenant for MyBank |
+| [MyBank AWS Organization](../../mybank/it-management/aws/mybank-aws-organization.md) | AWS | AWS Organization for MyBank |
+| [MyBank Azure Tenant](../../mybank/it-management/azure/mybank-azure-tenant.md) | Azure | Azure Tenant for MyBank |
 | [MyBank On Premise Datacenter](../../mybank/it-management/onprem/data-center-europe.md) |  | Data Center of MyBank |
 | [Platform Management Group](../../mybank/it-management/azure/platform-management-group.md) |  |  |
 | [VNet Europe](../../mybank/it-management/azure/alz1-vnet-europe.md) | Azure Virtual Network | VNet for an application infrastructure in europe |

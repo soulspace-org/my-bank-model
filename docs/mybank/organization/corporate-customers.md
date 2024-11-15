@@ -6,7 +6,7 @@
 ## Parent Unit
 | Name | Description |
 |---|---|
-| [My Bank](../../mybank/organization/my-bank-organization.md) | My Bank Company |
+| [My Bank](../../mybank/my-bank-organization.md) | My Bank Company |
 
 ## Sub Units
 | Name | Description |

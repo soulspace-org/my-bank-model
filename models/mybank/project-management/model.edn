@@ -6,9 +6,16 @@
   ;;; Organization
   ;;;
   {:el :org-unit
-   :id :mybank.project-management/projects-org
+   :id :mybank.project-management/project-management-unit
    :name "Projects"
    :desc "Responsible for MyBank Projects"}
+
+  {:el :contained-in
+   :id :mybank.project-management/project-management-unit-contained-in-my-bank-organization
+   :from :mybank.project-management/project-management-unit
+   :to :mybank/my-bank-organization
+   :name "unit of"
+   :desc "Project Management unit is part of MyBank."}
 
   ;;;
   ;;; Roles

@@ -1,0 +1,24 @@
+@startuml deployment-view
+!include <C4/C4_Deployment.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+!include <tupadr3/font-awesome-5/aws>
+!include <awslib14/Groups/AWSAccount>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Deployment View of the IT Management AWS Cloud
+Node(mybank_itManagement_aws_mybankAwsOrganization, "MyBank AWS Organization", $descr="AWS Organization for MyBank", $type="AWS", $sprite="aws") {
+  Node(mybank_itManagement_aws_logArchiveAccount, "Log Archive Account", $descr="Account for archiving logs", $type="AWS Account", $sprite="AWSAccount")
+  Node(mybank_itManagement_aws_platformManagementAccount, "Management Account", $descr="Account for managing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
+  Node(mybank_itManagement_aws_auditAccount, "Audit Account", $descr="Account for auditing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
+}
+SHOW_LEGEND()
+@enduml

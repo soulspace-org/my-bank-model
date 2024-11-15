@@ -1,7 +1,8 @@
 ;;;;
-;;;; Banking Example
+;;;; Banking Example Model
 ;;;;
-#{;;; 
+#{;
+  ;;; 
   ;;; Nodes
   ;;;
   {:el :person
@@ -15,6 +16,44 @@
    :external true
    :name "Personal Customer"
    :desc "Personal Customer of MyBank."}
+
+  {:el :organization
+   :id :mybank/my-bank-organization
+   :name "My Bank"
+   :desc "My Bank Company"
+   :ct [{:el :org-unit
+         :id :mybank.organization/personal-customers
+         :name "Personal Customers"
+         :desc ""
+         :ct [{:el :org-unit
+               :id :mybank.organization.personal-customers/internet-banking
+               :name "Internet Banking"}
+              {:el :org-unit
+               :id :mybank.organization.personal-customers/personal-loans-org
+               :name "Personal Loans"}
+              {:el :org-unit
+               :id :mybank.organization.personal-customers/mortgage-org
+               :name "Mortgage"
+               :desc ""}]}
+        {:el :org-unit
+         :id :mybank.organization/corporate-customers
+         :name "Corporate Customers"
+         :ct [{:el :org-unit
+               :id :mybank.organization.corporate-customers/loans-org
+               :name "Loans"
+               :desc ""
+               :ct []}]}
+        {:el :org-unit
+         :id :mybank.investments/investments-org
+         :name "Investments"
+         :desc ""
+         :ct [{:el :org-unit
+               :id :mybank.investments/asset-management-org
+               :name "Asset Management"
+               :desc ""}]}
+        
+        ;
+        ]}
   
   {:el :enterprise-boundary
    :id :mybank/mybank-plc
@@ -149,48 +188,6 @@
    :from :mybank/personal-customer
    :to :mybank.digital-banking.internet-banking-system/mobile-app
    :name "views account balances and makes payments using"}
-
-  ;;
-  ;; Component level
-  ;;
-  {:el :request
-   :id :mybank.digital-banking.internet-banking-system/single-page-app-calls-sign-in-controller
-   :from :mybank.digital-banking.internet-banking-system/single-page-app
-   :to :mybank.digital-banking.internet-banking-system/sign-in-controller
-   :name "makes API calls to"
-   :tech "Transit/HTTPS"}
-
-  {:el :request
-   :id :mybank.digital-banking.internet-banking-system/single-page-app-calls-reset-password-controller
-   :from :mybank.digital-banking.internet-banking-system/single-page-app
-   :to :mybank.digital-banking.internet-banking-system/reset-password-controller
-   :name "makes API calls to"
-   :tech "Transit/HTTPS"}
-
-  {:el :request
-   :id :mybank.digital-banking.internet-banking-system/single-page-app-calls-accounts-summary-controller
-   :from :mybank.digital-banking.internet-banking-system/single-page-app
-   :to :mybank.digital-banking.internet-banking-system/accounts-summary-controller
-   :name "makes API calls to"
-   :tech "Transit/HTTPS"}
-
-  {:el :request
-   :id :mybank.digital-banking.internet-banking-system/sign-in-controller-uses-security-component
-   :from :mybank.digital-banking.internet-banking-system/sign-in-controller
-   :to :mybank.digital-banking.internet-banking-system/security-component
-   :name "uses"}
-
-  {:el :request
-   :id :mybank.digital-banking.internet-banking-system/reset-password-controller-uses-email-component
-   :from :mybank.digital-banking.internet-banking-system/reset-password-controller
-   :to :mybank.digital-banking.internet-banking-system/email-component
-   :name "uses for sending password reset emails"}
-
-  {:el :request
-   :id :mybank.digital-banking.internet-banking-system/accounts-summary-controller-uses-core-banking-system-facade
-   :from :mybank.digital-banking.internet-banking-system/accounts-summary-controller
-   :to :mybank.digital-banking.internet-banking-system/core-banking-systems-facade
-   :name "retrieves account data from"}
 
   ;;
   ;; System Landscape level

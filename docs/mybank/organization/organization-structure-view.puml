@@ -1,25 +1,25 @@
 
 @startwbs
 * My Bank
-** Projects
-** Compliance & Risk Management
-*** Risk Management
-*** Fraud
-*** Regulations
-** Personal Customers
-*** Mortgage
-*** Internet Banking
-*** Personal Loans
-** IT Management
-*** Azure Platform
-*** AWS Platform
 ** Investments
 *** Asset Management
 ** Corporate Customers
 *** Loans
 ** Human Resources
 *** Recruiting
-** Marketing
+** IT Management
+*** AWS Platform
+*** Azure Platform
+*** On Premise Datacenter
+** Personal Customers
+*** Mortgage
+*** Internet Banking
+*** Personal Loans
+** Projects
+** Compliance & Risk Management
+*** Risk Management
+*** Fraud
+*** Regulations
 
 @endwbs
 

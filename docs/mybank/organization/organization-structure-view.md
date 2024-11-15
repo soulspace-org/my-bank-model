@@ -4,12 +4,12 @@
 ![MyBank Organization Chart](../../mybank/organization/organization-structure-view.png)
 
 ## Description
-Shows the structure of the MyBank organization
+Shows the hierarchical structure of the MyBank organization
 
 ## Organizations
 | Name | Description |
 |---|---|
-| [My Bank](../../mybank/organization/my-bank-organization.md) | My Bank Company |
+| [My Bank](../../mybank/my-bank-organization.md) | My Bank Company |
 
 
 ## Navigation

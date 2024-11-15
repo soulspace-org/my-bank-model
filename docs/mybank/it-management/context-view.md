@@ -11,6 +11,9 @@ Shows the systems of the domain IT management and their relations.
 | [Cloud FinOps Specialist](../../mybank/it-management/cloud-finops-specialist.md) | Operates cloud infrastructure and controls costs |
 | [Cloud Operations Specialist](../../mybank/it-management/cloud-operations-specialist.md) | Operates cloud infrastructure |
 | [Cloud Solution Architect](../../mybank/it-management/cloud-solution-architect.md) | Designs cloud solutions |
+| [Database Administrator](../../mybank/it-management/database-administrator.md) | Manages databases |
+| [Network Engineer](../../mybank/it-management/network-engineer.md) | Designs and operates network infrastructure |
+| [Security Engineer](../../mybank/it-management/security-engineer.md) | Designs and operates security infrastructure |
 
 
 ## Navigation
