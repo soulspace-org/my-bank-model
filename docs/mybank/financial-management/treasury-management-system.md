@@ -11,11 +11,12 @@ Kyriba
 ## System Context View
 ![Context View of the Financial Management Systems](../../mybank/financial-management/context-view.png)
 
-[Financial Management Context View](../../mybank/financial-management/context-view.md)
+[Context View of the Financial Management Systems](../../mybank/financial-management/context-view.md)
 
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../views.md)
 
 (generated with docs/architecture-node.md.cmb)

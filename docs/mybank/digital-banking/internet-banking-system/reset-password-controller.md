@@ -23,11 +23,12 @@ Clojure namespace
 ## Component View
 ![Component View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/component-view.png)
 
-[Internet Banking System Component View](../../../mybank/digital-banking/internet-banking-system/component-view.md)
+[Component View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/component-view.md)
 
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../../views.md)
 
 (generated with docs/architecture-node.md.cmb)

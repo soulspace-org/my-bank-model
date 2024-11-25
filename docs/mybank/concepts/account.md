@@ -10,7 +10,7 @@ Records the financial transactions between a customer and a bank
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)
-[High Level Concept Map](../../mybank/concepts/concept-view.md)
+[High Level Banking Concepts](../../mybank/concepts/concept-view.md)
 
 
 ## Navigation

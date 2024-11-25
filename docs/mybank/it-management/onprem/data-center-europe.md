@@ -10,6 +10,9 @@ Name | Description
 ---|---
 [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | VNet for the hub infrastructure in europe
 
+### Tags
+onprem, platform
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

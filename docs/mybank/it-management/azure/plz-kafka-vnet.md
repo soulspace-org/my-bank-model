@@ -12,6 +12,9 @@ Name | Description
 ---|---
 [Kafka Subnet](../../../mybank/it-management/azure/plz-kafka-subnet.md) | 
 
+### Tags
+cloud, platform
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

@@ -18,7 +18,7 @@ Entity requesting services around money
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)
-[High Level Concept Map](../../mybank/concepts/concept-view.md)
+[High Level Banking Concepts](../../mybank/concepts/concept-view.md)
 
 
 ## Navigation

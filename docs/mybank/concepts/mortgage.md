@@ -9,7 +9,7 @@ A loan for a immobile, e.g. a house
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)
-[High Level Concept Map](../../mybank/concepts/concept-view.md)
+[High Level Banking Concepts](../../mybank/concepts/concept-view.md)
 
 
 ## Navigation

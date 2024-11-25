@@ -12,6 +12,9 @@ Name | Description
 [Log Archive Account](../../../mybank/it-management/aws/log-archive-account.md) | Account for archiving logs
 [Management Account](../../../mybank/it-management/aws/platform-management-account.md) | Account for managing the AWS platform
 
+### Tags
+cloud, platform
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

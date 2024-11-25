@@ -12,7 +12,7 @@ place an order for an account
 ## Use Case View
 ![Use Case View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/use-case-view.png)
 
-[Internet Banking System Use Case View](../../../mybank/digital-banking/internet-banking-system/use-case-view.md)
+[Use Case View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/use-case-view.md)
 
 
 ## Navigation

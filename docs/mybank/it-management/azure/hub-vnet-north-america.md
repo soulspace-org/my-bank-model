@@ -8,6 +8,9 @@ Azure Virtual Network
 ## Parent Node
 [Connectivity Subscription](../../../mybank/it-management/azure/connectivity-subscription.md)
 
+### Tags
+cloud, platform
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

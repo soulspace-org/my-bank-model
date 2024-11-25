@@ -19,11 +19,12 @@ The internal Microsoft Exchange email system.
 ## System Context View
 ![Context View of the MyBank Systems](../mybank/context-view.png)
 
-[Context View](../mybank/context-view.md)
+[Context View of the MyBank Systems](../mybank/context-view.md)
 
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/architecture-node.md.cmb)

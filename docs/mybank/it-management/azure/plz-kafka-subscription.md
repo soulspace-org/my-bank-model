@@ -12,6 +12,9 @@ Name | Description
 ---|---
 [LZ Kafka VNet](../../../mybank/it-management/azure/plz-kafka-vnet.md) | VNet for the Kafka infrastructure
 
+### Tags
+cloud, platform
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

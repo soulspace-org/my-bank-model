@@ -16,6 +16,9 @@ Name | Description
 [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | VNet for the hub infrastructure in europe
 [Hub VNet North America](../../../mybank/it-management/azure/hub-vnet-north-america.md) | VNet for the hub infrastructure in north america
 
+### Tags
+cloud, platform
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

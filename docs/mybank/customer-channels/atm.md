@@ -18,11 +18,12 @@ C++, Java
 ## System Context View
 ![Context View of the Customer Channels Systems](../../mybank/customer-channels/context-view.png)
 
-[Customer Channels Context View](../../mybank/customer-channels/context-view.md)
+[Context View of the Customer Channels Systems](../../mybank/customer-channels/context-view.md)
 
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../views.md)
 
 (generated with docs/architecture-node.md.cmb)

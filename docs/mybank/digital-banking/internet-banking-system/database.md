@@ -18,11 +18,12 @@ Datomic
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)
 
-[Internet Banking System Container View](../../../mybank/digital-banking/internet-banking-system/container-view.md)
+[Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.md)
 
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../../views.md)
 
 (generated with docs/architecture-node.md.cmb)

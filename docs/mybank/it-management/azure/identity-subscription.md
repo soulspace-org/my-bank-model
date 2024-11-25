@@ -13,6 +13,9 @@ Name | Description
 [Identity  VNet North America](../../../mybank/it-management/azure/identity-vnet-north-america.md) | VNet for the identity infrastructure in north america
 [Identity VNet Europe](../../../mybank/it-management/azure/identity-vnet-europe.md) | VNet for the identity infrastructure in europe
 
+### Tags
+cloud, platform
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

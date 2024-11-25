@@ -36,11 +36,12 @@ These containers are the main processes of the Internet Banking System system.
 ## System Context View
 ![Context View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/context-view.png)
 
-[Internet Banking System Context View](../../../mybank/digital-banking/internet-banking-system/context-view.md)
+[Context View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/context-view.md)
 
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../../views.md)
 
 (generated with docs/architecture-node.md.cmb)

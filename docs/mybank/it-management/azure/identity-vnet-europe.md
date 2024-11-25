@@ -8,6 +8,9 @@ Azure Virtual Network
 ## Parent Node
 [Identity Subscription](../../../mybank/it-management/azure/identity-subscription.md)
 
+### Tags
+cloud, platform
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

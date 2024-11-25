@@ -51,7 +51,6 @@
                :id :mybank.investments/asset-management-org
                :name "Asset Management"
                :desc ""}]}
-        
         ;
         ]}
   
