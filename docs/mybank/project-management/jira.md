@@ -5,6 +5,8 @@ Platform for planning, executing, and tracking projects.
 ## Technology
 Jira
 
+## Parent
+[Project Management and Development](../../mybank/project-management/context-boundary.md)
 
 ## Interfaces
 

@@ -5,6 +5,8 @@ Processes financial transactions in real-time.
 ## Technology
 Java, Kafka
 
+## Parent
+[Core Banking System](../../mybank/core-banking/context-boundary.md)
 
 ## Interfaces
 

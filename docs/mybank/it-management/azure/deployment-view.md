@@ -29,9 +29,9 @@ Shows the nodes and containers of the IT management Azure cloud infrastructure.
 | [VNet Europe](../../../mybank/it-management/azure/alz1-vnet-europe.md) | Azure Virtual Network | VNet for an application infrastructure in europe |
 
 ## Links
-| Name | From | To | Technology | Description |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| peered to | VNet Europe | Hub VNet Europe | Azure Virtual Network Peering | Provides connectivity for the spoke |
+| [VNet Europe](../../../mybank/it-management/azure/alz1-vnet-europe.md) | peered to | [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | Azure Virtual Network Peering | Provides connectivity for the spoke |
 
 
 ## Navigation

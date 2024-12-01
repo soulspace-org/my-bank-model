@@ -5,6 +5,8 @@ Comprehensive financial accounting and reporting system.
 ## Technology
 Oracle Financials
 
+## Parent
+[Financial Management](../../mybank/financial-management/context-boundary.md)
 
 ## Interfaces
 

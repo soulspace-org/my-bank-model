@@ -5,6 +5,8 @@ Manages liquidity, investments, and risk in the treasury function.
 ## Technology
 Kyriba
 
+## Parent
+[Financial Management](../../mybank/financial-management/context-boundary.md)
 
 ## Interfaces
 

@@ -5,6 +5,8 @@ Central repository for storing large volumes of data.
 ## Technology
 AWS Redshift
 
+## Parent
+[Data Management and Analytics](../../mybank/data-management/context-boundary.md)
 
 ## Interfaces
 

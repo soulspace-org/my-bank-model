@@ -5,6 +5,8 @@ Detects risks and manages risk mitigation.
 ## Technology
 Java, Spring Boot
 
+## Parent
+[Risk Management and Compliance](../../mybank/compliance/context-boundary.md)
 
 ## Interfaces
 

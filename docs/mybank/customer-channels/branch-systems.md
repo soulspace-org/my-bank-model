@@ -5,6 +5,8 @@ Software and hardware for in-branch banking services.
 ## Technology
 Java, Swing
 
+## Parent
+[Customer Channels](../../mybank/customer-channels/context-boundary.md)
 
 ## Interfaces
 
