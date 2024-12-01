@@ -99,6 +99,12 @@
   :id-as-name true
   :extension "md"}
 
+ {:selection {:el :boundary}
+  :template "docs/architecture-node.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
  {:selection {:el :state}
   :template "docs/state.md.cmb"
   :per-element true
