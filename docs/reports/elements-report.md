@@ -61,6 +61,7 @@
  :mybank.project-management/confluence-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.it-management/cloud-solution-architect-role-in-azure-unit | role in | :role-in |  | Architects solutions on the Azure platform |  | 
  :mybank.it-management/cloud-finops-specialist | Cloud FinOps Specialist | :person |  | Operates cloud infrastructure and controls costs |  | 
+ :mybank.project-management/project-management-unit-responsible-for-manage-projects | responsible for | :responsible-for |  | Project management unit manages projects |  | 
  :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-view-account | implements | :implements |  |  |  | 
  :mybank.core-banking/context-boundary | Core Banking System | :context-boundary |  | Manages customer accounts, transactions, and loans. |  | 
  :mybank.payment/ach-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
@@ -140,6 +141,7 @@
  :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-place-order | implements | :implements |  |  |  | 
  :mybank.compliance/compliance-system | Compliance System | :system |  | Ensures operations comply with regulations. | Java, Spring Boot | 
  :mybank.it-management/azure-unit | Azure Platform | :org-unit |  | Responsible for the Azure cloud platform. |  | 
+ :mybank.project-management/project-management-required-for-manage-projects | required for | :required-for |  | Process required for capability |  | 
  :mybank.it-management/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.it-management/azure-unit-responsible-for-azure-tenant | responsible for | :responsible-for |  |  |  | 
  :mybank.digital-banking.internet-banking-system/single-page-app-contained-in-internet-banking-system | contained-in | :contained-in |  |  |  | 
