@@ -103,6 +103,20 @@
    :name "Incident Management"
    :desc "Process to manage incidents"}
 
+  {:el :required-for
+   :id :mybank.project-management/project-management-required-for-manage-projects
+   :from :mybank.project-management/project-management
+   :to :mybank.project-management/manage-projects
+   :name "required for"
+   :desc "Process required for capability"}
+
+  {:el :responsible-for
+   :id :mybank.project-management/project-management-unit-responsible-for-manage-projects
+   :from :mybank.project-management/project-management-unit
+   :to :mybank.project-management/manage-projects
+   :name "responsible for"
+   :desc "Project management unit manages projects"}
+
   ;;;
   ;;; Use Cases
   ;;;
