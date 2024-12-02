@@ -3,13 +3,13 @@
 ## Description
 Develops and operates software systems
 
-## Organization Units
-The DevOps Engineer is a role in the following organizational units.
+## Processes
+The DevOps Engineer is a role in these processes.
 
 | Name | Desc |
 |---|---|
-| [Config Management](../../mybank/project-management/config-management.md) | Process to manage configurations and baselines |
 | [Software Development](../../mybank/project-management/software-development.md) | Process to develop software |
+| [Config Management](../../mybank/project-management/config-management.md) | Process to manage configurations and baselines |
 
 
 ## Navigation

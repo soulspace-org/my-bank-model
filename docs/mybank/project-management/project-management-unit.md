@@ -3,6 +3,11 @@
 Responsible for MyBank Projects
 
 
+## Roles
+| Name | Description |
+|---|---|
+| [Project Manager](../../mybank/project-management/project-manager.md) | Manages projects at MyBank |
+
 ## Responsibilities
 | Name | Description |
 |---|---|

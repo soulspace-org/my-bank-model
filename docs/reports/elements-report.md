@@ -93,6 +93,7 @@
  :mybank.organization.personal-customers/mortgage-org-contained-in-personal-customers | contained-in | :contained-in |  |  |  | 
  :mybank.payment/swift-rtgs-neft-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/context-boundary | Risk Management and Compliance | :context-boundary |  | Detects and mitigates risks, ensuring regulatory compliance. |  | 
+ :mybank.project-management/project-manager-has-role-in-project-management | role in | :role-in |  | Manages projects |  | 
  :mybank.customer-channels/atm-uses-account-management-system | retrieves account balance | :rel |  |  |  | 
  :mybank.it-management/database-administrator-role-in-onprem-unit | role in | :role-in |  | Manages databases in the On Premise Datacenter |  | 
  :mybank.human-resources/hris | HR Information Systems (HRIS) | :system |  | Manages employee data, payroll, and benefits. | Workday | 

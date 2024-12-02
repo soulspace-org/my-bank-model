@@ -6,6 +6,9 @@
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
 !include <logos/kong>
+!include <tupadr3/font-awesome-5/jira>
+!include <tupadr3/font-awesome-5/confluence>
+!include <awslib14/Analytics/Redshift>
 
 
 LAYOUT_TOP_DOWN()

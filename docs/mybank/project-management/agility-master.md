@@ -3,8 +3,8 @@
 ## Description
 Facilitates agile practices
 
-## Organization Units
-The Agility Master is a role in the following organizational units.
+## Processes
+The Agility Master is a role in these processes.
 
 | Name | Desc |
 |---|---|
