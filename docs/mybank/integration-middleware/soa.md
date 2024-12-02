@@ -5,6 +5,8 @@ Framework for enabling seamless integration between services.
 ## Technology
 Apache CXF
 
+## Parent
+[Integration and Middleware](../../mybank/integration-middleware-context.md)
 
 ## Interfaces
 

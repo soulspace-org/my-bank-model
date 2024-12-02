@@ -5,6 +5,8 @@ Tools for recruitment, training, and performance management.
 ## Technology
 SAP SuccessFactors
 
+## Parent
+[Human Resources Management](../../mybank/human-resources/context-boundary.md)
 
 ## Interfaces
 

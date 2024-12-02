@@ -5,6 +5,8 @@ Middleware for integrating various banking systems.
 ## Technology
 MuleSoft
 
+## Parent
+[Integration and Middleware](../../mybank/integration-middleware-context.md)
 
 ## Interfaces
 

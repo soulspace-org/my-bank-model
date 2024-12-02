@@ -5,6 +5,8 @@ Handles customer accounts, deposits, and withdrawals.
 ## Technology
 Java, Spring Boot
 
+## Parent
+[Core Banking System](../../mybank/core-banking/context-boundary.md)
 
 ## Interfaces
 

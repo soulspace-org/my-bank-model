@@ -5,6 +5,8 @@ Provides limited internet banking functionality to customers via mobile devices.
 ## Technology
 ClojureScript and Reagent
 
+## Parent
+[Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md)
 
 ## Interfaces
 

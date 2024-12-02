@@ -5,6 +5,8 @@ Manages loan products, applications, and repayments.
 ## Technology
 Java, Spring Boot
 
+## Parent
+[Core Banking System](../../mybank/core-banking/context-boundary.md)
 
 ## Interfaces
 

@@ -34,10 +34,10 @@ Shows the nodes and containers of the domain IT management infrastructure.
 | [VNet Europe](../../mybank/it-management/azure/alz1-vnet-europe.md) | Azure Virtual Network | VNet for an application infrastructure in europe |
 
 ## Links
-| Name | From | To | Technology | Description |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| network link | MyBank On Premise Datacenter | Hub VNet Europe | Azure Express Route | High speed/volume link 100 Mb/s |
-| peered to | VNet Europe | Hub VNet Europe | Azure Virtual Network Peering | Provides connectivity for the spoke |
+| [MyBank On Premise Datacenter](../../mybank/it-management/onprem/data-center-europe.md) | network link | [Hub VNet Europe](../../mybank/it-management/azure/hub-vnet-europe.md) | Azure Express Route | High speed/volume link 100 Mb/s |
+| [VNet Europe](../../mybank/it-management/azure/alz1-vnet-europe.md) | peered to | [Hub VNet Europe](../../mybank/it-management/azure/hub-vnet-europe.md) | Azure Virtual Network Peering | Provides connectivity for the spoke |
 
 
 ## Navigation

@@ -5,6 +5,8 @@ Manages employee data, payroll, and benefits.
 ## Technology
 Workday
 
+## Parent
+[Human Resources Management](../../mybank/human-resources/context-boundary.md)
 
 ## Interfaces
 

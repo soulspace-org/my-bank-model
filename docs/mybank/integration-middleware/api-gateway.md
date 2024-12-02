@@ -5,6 +5,8 @@ Manages APIs for third-party services and fintech apps.
 ## Technology
 Kong
 
+## Parent
+[Integration and Middleware](../../mybank/integration-middleware-context.md)
 
 ## Interfaces
 

@@ -5,6 +5,8 @@ Provides customers with a summary of their bank accounts.
 ## Technology
 Clojure namespace
 
+## Parent
+[API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md)
 
 ## Interfaces
 
