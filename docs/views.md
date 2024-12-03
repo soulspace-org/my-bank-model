@@ -48,14 +48,14 @@
 |---|---|
 | [AWS Deployment View](./mybank/it-management/aws/deployment-view.md) | Shows the nodes and containers of the IT management AWS cloud infrastructure. |
 | [Azure Deployment View](./mybank/it-management/azure/deployment-view.md) | Shows the nodes and containers of the IT management Azure cloud infrastructure. |
-| [Azure Deployment View](./mybank/it-management/onprem/deployment-view.md) | Shows the nodes and containers of the IT management on premise datacenter infrastructure. |
+| [On Premise Azure Deployment View](./mybank/it-management/onprem/deployment-view.md) | Shows the nodes and containers of the IT management on premise datacenter infrastructure. |
 | [IT Management Deployment View](./mybank/it-management/deployment-view.md) | Shows the nodes and containers of the domain IT management infrastructure. |
 ## Deployment Structure Views
 | Title | Description |
 |---|---|
 | [AWS Deployment Structure View](./mybank/it-management/aws/aws-deployment-structure-view.md) | Shows the hierarchical structure of the AWS platform deployment |
 | [Azure Deployment Structure View](./mybank/it-management/azure/azure-deployment-structure-view.md) | Shows the hierarchical structure of the Azure platform deployment |
-| [Onpremise Deployment Structure View](./mybank/it-management/onprem/onprem-deployment-structure-view.md) | Shows the hierarchical structure of the onpremise detacenter deployment |
+| [On Premise Deployment Structure View](./mybank/it-management/onprem/onprem-deployment-structure-view.md) | Shows the hierarchical structure of the on premise datacenter deployment |
 ## Organization Structure Views
 | Title | Description |
 |---|---|

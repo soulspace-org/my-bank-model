@@ -1,10 +1,10 @@
-# Deployment View for the MyBank Onpremise Datacenters
+# Deployment View for the MyBank Onpremise Datacenter
 
 ## Diagram
-![Deployment View for the MyBank Onpremise Datacenters](../../../mybank/it-management/onprem/onprem-deployment-structure-view.png)
+![Deployment View for the MyBank Onpremise Datacenter](../../../mybank/it-management/onprem/onprem-deployment-structure-view.png)
 
 ## Description
-Shows the hierarchical structure of the onpremise detacenter deployment
+Shows the hierarchical structure of the on premise datacenter deployment
 
 ## Nodes
 | Name | Technology | Description |
