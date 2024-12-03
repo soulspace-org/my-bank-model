@@ -3,8 +3,8 @@
 ;;;;
 #{{:el :context-view
    :id :mybank.data-management/context-view
-   :spec {:selection {:namespace-prefix "mybank.data-management"
-                      :to-namespace-prefix "mybank.data-management"}
+   :spec {:selection [{:namespace-prefix "mybank.data-management"}
+                      {:to-namespace-prefix "mybank.data-management"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Data Management Context View"
@@ -13,8 +13,8 @@
   
   {:el :container-view
    :id :mybank.data-management/container-view
-   :spec {:selection {:namespace-prefix "mybank.data-management"
-                      :to-namespace-prefix "mybank.data-management"}
+   :spec {:selection [{:namespace-prefix "mybank.data-management"}
+                      {:to-namespace-prefix "mybank.data-management"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Data Management Container View"

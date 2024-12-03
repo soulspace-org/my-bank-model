@@ -5,6 +5,8 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <azure/Networking/AzureExpressRoute>
+!include <azure/Networking/AzureVirtualNetwork>
 
 
 LAYOUT_TOP_DOWN()
@@ -13,5 +15,8 @@ LAYOUT_TOP_DOWN()
 
 
 title Deployment View of the IT Management On Premise Datacenter
+Node(mybank_itManagement_azure_hubVnetEurope, "Hub VNet Europe", $descr="VNet for the hub infrastructure in europe", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
+Node(mybank_itManagement_onprem_dataCenterEurope, "MyBank On Premise Datacenter", $descr="Data Center of MyBank")
+Rel(mybank_itManagement_onprem_dataCenterEurope, mybank_itManagement_azure_hubVnetEurope, "network link", $descr="High speed/volume link 100 Mb/s", $techn="Azure Express Route", $sprite="AzureExpressRoute,scale=0.5")
 SHOW_LEGEND()
 @enduml

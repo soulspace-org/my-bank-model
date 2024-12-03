@@ -3,8 +3,8 @@
 ;;;;
 #{{:el :context-view
    :id :mybank.customer-channels/context-view
-   :spec {:selection {:namespace-prefix "mybank.customer-channels"
-                      :to-namespace-prefix "mybank.customer-channels"}
+   :spec {:selection [{:namespace-prefix "mybank.customer-channels"}
+                      {:to-namespace-prefix "mybank.customer-channels"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Customer Channels Context View"
@@ -13,8 +13,8 @@
   
   {:el :container-view
    :id :mybank.customer-channels/container-view
-   :spec {:selection {:namespace-prefix "mybank.customer-channels"
-                      :to-namespace-prefix "mybank.customer-channels"}
+   :spec {:selection [{:namespace-prefix "mybank.customer-channels"}
+                      {:to-namespace-prefix "mybank.customer-channels"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Customer Channels Container View"

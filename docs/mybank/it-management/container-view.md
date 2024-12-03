@@ -13,8 +13,15 @@ Shows the systems and containers of the domain IT management and their relations
 | [Cloud Operations Specialist](../../mybank/it-management/cloud-operations-specialist.md) | Operates cloud infrastructure |
 | [Cloud Solution Architect](../../mybank/it-management/cloud-solution-architect.md) | Designs cloud solutions |
 | [Database Administrator](../../mybank/it-management/database-administrator.md) | Manages databases |
+| [IT Manager](../../mybank/it-management/it-manager.md) | Manages the IT platform |
 | [Network Engineer](../../mybank/it-management/network-engineer.md) | Designs and operates network infrastructure |
 | [Security Engineer](../../mybank/it-management/security-engineer.md) | Designs and operates security infrastructure |
+## Systems
+| Name | Description |
+|---|---|
+| [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) | Cloud computing resources for scalability and flexibility. |
+| [IT Infrastructure](../../mybank/infrastructure-management/it-infrastructure-system.md) | Hardware and software resources, including servers and networking. |
+| [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) | Monitors system performance and health. |
 
 
 ## Navigation

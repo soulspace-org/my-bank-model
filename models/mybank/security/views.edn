@@ -3,8 +3,8 @@
 ;;;;
 #{{:el :context-view
    :id :mybank.security/context-view
-   :spec {:selection {:namespace-prefix "mybank.security"
-                      :to-namespace-prefix "mybank.security"}
+   :spec {:selection [{:namespace-prefix "mybank.security"}
+                      {:to-namespace-prefix "mybank.security"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Security Context View"
@@ -13,8 +13,8 @@
   
   {:el :container-view
    :id :mybank.security/container-view
-   :spec {:selection {:namespace-prefix "mybank.security"
-                      :to-namespace-prefix "mybank.security"}
+   :spec {:selection [{:namespace-prefix "mybank.security"}
+                      {:to-namespace-prefix "mybank.security"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Security Container View"

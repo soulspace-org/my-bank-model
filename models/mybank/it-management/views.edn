@@ -1,7 +1,7 @@
 #{{:el :context-view
    :id :mybank.it-management/context-view
-   :spec {:selection {:namespace-prefix "mybank.it-management"
-                      :to-namespace-prefix "mybank.it-management"}
+   :spec {:selection [{:namespace-prefix "mybank.it-management"}
+                      {:to-namespace-prefix "mybank.it-management"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "IT Management Context View"
@@ -10,8 +10,8 @@
 
   {:el :container-view
    :id :mybank.it-management/container-view
-   :spec {:selection {:namespace-prefix "mybank.it-management"
-                      :to-namespace-prefix "mybank.it-management"}
+   :spec {:selection [{:namespace-prefix "mybank.it-management"}
+                      {:to-namespace-prefix "mybank.it-management"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "IT Management Container View"
@@ -20,8 +20,8 @@
 
   {:el :deployment-view
    :id :mybank.it-management/deployment-view
-   :spec {:selection {:namespace-prefix "mybank.it-management"
-                      :to-namespace-prefix "mybank.it-management"}
+   :spec {:selection [{:namespace-prefix "mybank.it-management"}
+                      {:to-namespace-prefix "mybank.it-management"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "IT Management Deployment View"

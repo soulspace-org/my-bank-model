@@ -13,14 +13,34 @@ LAYOUT_TOP_DOWN()
 
 
 title Container View of the Internet Banking System
-System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System") {
-  Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
-  Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
-  Container(mybank_digitalBanking_internetBankingSystem_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
-  Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
-  ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
+System_Ext(mybank_emailSystem, "E-mail System", $descr="The internal Microsoft Exchange email system.")
+Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
+System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
+System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot")
+System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
+Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
+  System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
+  System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System") {
+    Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
+    Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
+    Container(mybank_digitalBanking_internetBankingSystem_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
+    Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
+    ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
+  }
+  System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System") {
+    Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
+    Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
+    Container(mybank_digitalBanking_internetBankingSystem_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
+    Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
+    ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
+  }
 }
+Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
+Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_emailSystem, "sends e-mail using", $techn="SMTP")
+Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_coreBanking_accountManagementSystem, "makes API calls to", $techn="REST")
+Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_singlePageApp, "views account balances and makes payments using")
 Rel(mybank_digitalBanking_internetBankingSystem_mobileApp, mybank_digitalBanking_internetBankingSystem_apiApplication, "makes API calls to", $techn="Transit/HTTPS")
+Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_mobileApp, "views account balances and makes payments using")
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_digitalBanking_internetBankingSystem_database, "reads from and writes to", $techn="Datalog")
 SHOW_LEGEND()
 @enduml

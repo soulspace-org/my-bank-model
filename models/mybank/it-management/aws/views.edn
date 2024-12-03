@@ -5,8 +5,8 @@
 
   {:el :deployment-view
    :id :mybank.it-management.aws/deployment-view
-   :spec {:selection {:namespace-prefix "mybank.it-management.aws"
-                      :to-namespace-prefix "mybank.it-management.aws"}
+   :spec {:selection [{:namespace-prefix "mybank.it-management.aws"}
+                      {:to-namespace-prefix "mybank.it-management.aws"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "AWS Deployment View"

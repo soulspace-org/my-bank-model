@@ -3,8 +3,8 @@
 ;;;;
 #{{:el :context-view
    :id :mybank.compliance/context-view
-   :spec {:selection {:namespace-prefix "mybank.compliance"
-                      :to-namespace-prefix "mybank.compliance"}
+   :spec {:selection [{:namespace-prefix "mybank.compliance"}
+                      {:to-namespace-prefix "mybank.compliance"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Compliance & Risk Management Context View"
@@ -13,8 +13,8 @@
 
   {:el :container-view
    :id :mybank.compliance/container-view
-   :spec {:selection {:namespace-prefix "mybank.compliance"
-                      :to-namespace-prefix "mybank.compliance"}
+   :spec {:selection [{:namespace-prefix "mybank.compliance"}
+                      {:to-namespace-prefix "mybank.compliance"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Compliance & Risk Management Container View"

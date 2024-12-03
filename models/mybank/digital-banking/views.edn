@@ -5,8 +5,8 @@
   
   {:el :context-view
    :id :mybank.digital-banking/context-view
-   :spec {:selection {:namespace-prefix "mybank.digital-banking"
-                      :to-namespace-prefix "mybank.digital-banking"}
+   :spec {:selection [{:namespace-prefix "mybank.digital-banking"}
+                      {:to-namespace-prefix "mybank.digital-banking"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Digital Banking Context View"
@@ -15,8 +15,8 @@
 
   {:el :container-view
    :id :mybank.digital-banking/container-view
-   :spec {:selection {:namespace-prefix "mybank.digital-banking"
-                      :to-namespace-prefix "mybank.digital-banking"}
+   :spec {:selection [{:namespace-prefix "mybank.digital-banking"}
+                      {:to-namespace-prefix "mybank.digital-banking"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Digital Banking Container View"

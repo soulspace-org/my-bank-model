@@ -7,6 +7,7 @@
 !include <tupadr3/common>
 !include <azure/Networking/AzureSubnet>
 !include <azure/Networking/AzureDNS>
+!include <azure/Networking/AzureExpressRoute>
 !include <azure/General/Azure>
 !include <azure/Networking/AzureFirewall>
 !include <azure/Management/AzureSubscription>
@@ -46,6 +47,8 @@ Node(mybank_itManagement_azure_mybankAzureTenant, "MyBank Azure Tenant", $descr=
     }
   }
 }
+Node(mybank_itManagement_onprem_dataCenterEurope, "MyBank On Premise Datacenter", $descr="Data Center of MyBank")
 Rel(mybank_itManagement_azure_alz1VnetEurope, mybank_itManagement_azure_hubVnetEurope, "peered to", $descr="Provides connectivity for the spoke", $techn="Azure Virtual Network Peering", $sprite="AzureVirtualNetworkPeering,scale=0.5")
+Rel(mybank_itManagement_onprem_dataCenterEurope, mybank_itManagement_azure_hubVnetEurope, "network link", $descr="High speed/volume link 100 Mb/s", $techn="Azure Express Route", $sprite="AzureExpressRoute,scale=0.5")
 SHOW_LEGEND()
 @enduml
