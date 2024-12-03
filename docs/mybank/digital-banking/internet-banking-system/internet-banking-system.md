@@ -7,6 +7,13 @@ Allows customers to view information about their bank accounts and make payments
 
 ## Parent
 [Digital Banking](../../../mybank/digital-banking/context-boundary.md)
+## Implemented Use Cases
+
+| Use Case | Description |
+|---|---|
+| [place order](../../../mybank/digital-banking/internet-banking-system/place-order.md)| place an order for an account |
+| [transfer money](../../../mybank/digital-banking/internet-banking-system/transfer-money.md)| transfer money from one account to another |
+| [view account](../../../mybank/digital-banking/internet-banking-system/view-account.md)| view the details of an account |
 ## Containers
 These containers are the main processes of the Internet Banking System system.
 
