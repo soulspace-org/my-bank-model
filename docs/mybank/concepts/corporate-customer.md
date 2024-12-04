@@ -2,7 +2,7 @@
 ## Description
 An organization requesting services around money
 
-# Superordinates
+## Superordinates
 | Name | Description |
 |---|---|
 | [Customer](../../mybank/concepts/customer.md) | Entity requesting services around money |
@@ -14,6 +14,7 @@ An organization requesting services around money
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../views.md)
 
 (generated with docs/concept.md.cmb)

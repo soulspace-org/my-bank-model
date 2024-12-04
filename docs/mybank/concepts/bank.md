@@ -2,7 +2,7 @@
 ## Description
 Organization providing services around money
 
-# Features
+## Features
 | Name | Description |
 |---|---|
 | [Account](../../mybank/concepts/account.md) | Records the financial transactions between a customer and a bank |
@@ -16,6 +16,7 @@ Organization providing services around money
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../views.md)
 
 (generated with docs/concept.md.cmb)

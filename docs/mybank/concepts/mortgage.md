@@ -2,7 +2,7 @@
 ## Description
 A loan for a immobile, e.g. a house
 
-# Superordinates
+## Superordinates
 | Name | Description |
 |---|---|
 | [Loan](../../mybank/concepts/loan.md) | Lending money from the bank to the customer |
@@ -14,6 +14,7 @@ A loan for a immobile, e.g. a house
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../views.md)
 
 (generated with docs/concept.md.cmb)

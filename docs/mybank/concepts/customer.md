@@ -2,19 +2,29 @@
 ## Description
 Entity requesting services around money
 
-# Subordinates
+## Subordinates
 | Name | Description |
 |---|---|
 | [Corporate Customer](../../mybank/concepts/corporate-customer.md) | An organization requesting services around money |
 | [Personal Customer](../../mybank/concepts/personal-customer.md) | A person requesting services around money |
-# Features
+
+## Features
 | Name | Description |
 |---|---|
 | [Account](../../mybank/concepts/account.md) | Records the financial transactions between a customer and a bank |
-# Feature of
+
+## Feature of
 | Name | Description |
 |---|---|
 | [Bank](../../mybank/concepts/bank.md) | Organization providing services around money |
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Customer](../../mybank/concepts/customer.md) | performs | [Transfer](../../mybank/concepts/transfer.md) |  |
+| [Customer](../../mybank/concepts/customer.md) | performs | [Deposit](../../mybank/concepts/deposit.md) |  |
+| [Customer](../../mybank/concepts/customer.md) | performs | [Withdrawal](../../mybank/concepts/withdrawal.md) |  |
+| [Customer](../../mybank/concepts/customer.md) | requests | [Loan](../../mybank/concepts/loan.md) |  |
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)
@@ -23,6 +33,7 @@ Entity requesting services around money
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../views.md)
 
 (generated with docs/concept.md.cmb)
