@@ -12,17 +12,19 @@ ClojureScript and Re-Frame
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| views account balances and makes payments using | [Personal Customer](../../../mybank/personal-customer.md) |  |  |
+#### Provided Services
 
-#### Client
-| Name | Provided By | Technology | Description |
-|---|---|---|---|
-| makes API calls to | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Transit/HTTPS |  |
-| makes API calls to | [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | Transit/HTTPS |  |
-| makes API calls to | [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | Transit/HTTPS |  |
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) |  |  |
+
+#### Used Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) |  | Transit/HTTPS |
+| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) |  | Transit/HTTPS |
+| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) |  | Transit/HTTPS |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

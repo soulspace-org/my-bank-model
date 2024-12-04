@@ -12,15 +12,17 @@ Clojure namespace
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| makes API calls to | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | Transit/HTTPS |  |
+#### Provided Services
 
-#### Client
-| Name | Provided By | Technology | Description |
-|---|---|---|---|
-| uses | [Security Component](../../../mybank/digital-banking/internet-banking-system/security-component.md) |  |  |
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) |  | Transit/HTTPS |
+
+#### Used Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | uses | [Security Component](../../../mybank/digital-banking/internet-banking-system/security-component.md) |  |  |
 
 ## Component View
 ![Component View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/component-view.png)

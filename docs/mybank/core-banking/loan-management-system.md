@@ -12,15 +12,17 @@ Java, Spring Boot
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| fetches loan details and payment status from | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
+#### Provided Services
 
-#### Client
-| Name | Provided By | Technology | Description |
-|---|---|---|---|
-| retrieves customer account information from | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../../mybank/core-banking/loan-management-system.md) |  |  |
+
+#### Used Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Loan Management](../../mybank/core-banking/loan-management-system.md) | retrieves customer account information from | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
 
 ## System Context View
 ![Context View of the Core Banking Systems](../../mybank/core-banking/context-view.png)

@@ -12,15 +12,17 @@ ClojureScript and Reagent
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| views account balances and makes payments using | [Personal Customer](../../../mybank/personal-customer.md) |  |  |
+#### Provided Services
 
-#### Client
-| Name | Provided By | Technology | Description |
-|---|---|---|---|
-| makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) |  |  |
+
+#### Used Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) |  | Transit/HTTPS |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

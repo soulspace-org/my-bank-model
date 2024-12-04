@@ -12,11 +12,12 @@ The internal Microsoft Exchange email system.
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| sends e-mail using | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
-| sends e-mail using | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | SMTP |  |
+#### Provided Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) |  |  |
+| [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) |  | SMTP |
 
 ## System Context View
 ![Context View of the MyBank Systems](../mybank/context-view.png)

@@ -12,15 +12,17 @@ Java, Spring Boot
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| processes customer payments using | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
+#### Provided Services
 
-#### Client
-| Name | Provided By | Technology | Description |
-|---|---|---|---|
-| validates and processes payments using | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |  |
+
+#### Used Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | validates and processes payments using | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 
 ## System Context View
 ![Context View of the Payment Systems](../../mybank/payment/context-view.png)

@@ -12,10 +12,11 @@ Clojure namespace
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| uses | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) |  |  |
+#### Provided Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | uses | [Security Component](../../../mybank/digital-banking/internet-banking-system/security-component.md) |  |  |
 
 ## Component View
 ![Component View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/component-view.png)

@@ -12,10 +12,11 @@ Clojure Namespace, http-client
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| retrieves account data from | [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) |  |  |
+#### Provided Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | retrieves account data from | [Core Banking Systems Facade](../../../mybank/digital-banking/internet-banking-system/core-banking-systems-facade.md) |  |  |
 
 ## Component View
 ![Component View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/component-view.png)

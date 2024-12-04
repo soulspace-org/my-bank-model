@@ -12,10 +12,11 @@ Clojure and Luminus
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| visits mybank.com via browser | [Personal Customer](../../../mybank/personal-customer.md) | HTTPS |  |
+#### Provided Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Personal Customer](../../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) |  | HTTPS |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

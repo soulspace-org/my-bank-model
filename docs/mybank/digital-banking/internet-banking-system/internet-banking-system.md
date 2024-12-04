@@ -29,18 +29,20 @@ These containers are the main processes of the Internet Banking System system.
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| views account balances and makes payments using | [Personal Customer](../../../mybank/personal-customer.md) |  |  |
+#### Provided Services
 
-#### Client
-| Name | Provided By | Technology | Description |
-|---|---|---|---|
-| sends e-mail using | [E-mail System](../../../mybank/email-system.md) |  |  |
-| fetches loan details and payment status from | [Loan Management](../../../mybank/core-banking/loan-management-system.md) |  |  |
-| gets account information from, and makes payments using | [Account Management](../../../mybank/core-banking/account-management-system.md) |  |  |
-| processes customer payments using | [Payment Gateway](../../../mybank/payment/payment-gateway-system.md) |  |  |
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
+
+#### Used Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) |  |  |
+| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../../../mybank/core-banking/loan-management-system.md) |  |  |
+| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../../../mybank/core-banking/account-management-system.md) |  |  |
+| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../../../mybank/payment/payment-gateway-system.md) |  |  |
 
 ## System Context View
 ![Context View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/context-view.png)

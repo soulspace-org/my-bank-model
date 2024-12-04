@@ -12,10 +12,11 @@ Clojure namespace
 
 ### Synchronous Interfaces
 
-#### Service
-| Name | Called From | Technology | Description |
-|---|---|---|---|
-| uses for sending password reset emails | [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) |  |  |
+#### Provided Services
+
+| From | Name | To | Description | Technology |
+|---|---|---|---|---|
+| [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | uses for sending password reset emails | [E-mail Component](../../../mybank/digital-banking/internet-banking-system/email-component.md) |  |  |
 
 ## Component View
 ![Component View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/component-view.png)

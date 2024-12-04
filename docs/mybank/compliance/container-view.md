@@ -9,6 +9,7 @@ Shows the systems and containers of the domain Compliance & Risk Management and 
 ## User Roles
 | Name | Description |
 |---|---|
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | Administration and support staff within the bank. |
 | [Compliance Manager](../../mybank/compliance/compliance-manager.md) | Responsible for the compliance of MyBank. |
 | [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | Responsible for the fraud detection and mitigation of MyBank. |
 | [Risk Manager](../../mybank/compliance/risk-manager.md) | Responsible for managing the risks. |
@@ -19,6 +20,7 @@ Shows the systems and containers of the domain Compliance & Risk Management and 
 | [Compliance System](../../mybank/compliance/compliance-system.md) | Ensures operations comply with regulations. |
 | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) | Detects and mitigates fraudulent activities. |
 | [Risk Management System](../../mybank/compliance/risk-management-system.md) | Detects risks and manages risk mitigation. |
+| [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) | Processes financial transactions in real-time. |
 
 
 ## Navigation
