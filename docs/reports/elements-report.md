@@ -1,9 +1,11 @@
 # Model Elements Report
 
 ## Selection
-`{}`
-
-318 results
+```clojure
+{}
+```
+## Results
+318 nodes selected
 
 ## Nodes
  Id |Name | Type | Subtype | Description | Techs | Tags

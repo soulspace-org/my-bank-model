@@ -2,9 +2,11 @@
 # Systems Report
 
 ## Selection
+```clojure
 {:el :system}
-
-36 results
+```
+## Results
+36 elements selected
 
 
 ## Nodes
