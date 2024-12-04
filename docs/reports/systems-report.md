@@ -1,7 +1,10 @@
+
 # Systems Report
 
 ## Selection
 {:el :system}
+
+36 results
 
 
 ## Nodes

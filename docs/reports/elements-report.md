@@ -1,7 +1,9 @@
 # Model Elements Report
 
 ## Selection
-{}
+`{}`
+
+318 results
 
 ## Nodes
  Id |Name | Type | Subtype | Description | Techs | Tags
