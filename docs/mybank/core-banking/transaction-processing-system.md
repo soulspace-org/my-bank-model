@@ -14,7 +14,7 @@ Java, Kafka
 
 #### Provided Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | validates and processes payments using | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 | [Risk Management System](../../mybank/compliance/risk-management-system.md) | fetches transaction history and customer data from | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |

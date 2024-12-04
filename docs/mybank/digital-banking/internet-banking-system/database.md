@@ -14,9 +14,9 @@ Datomic
 
 #### Provided Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) |  | Datalog |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) | Datalog |  |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

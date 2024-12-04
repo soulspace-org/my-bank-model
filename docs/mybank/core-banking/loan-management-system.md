@@ -14,13 +14,13 @@ Java, Spring Boot
 
 #### Provided Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../../mybank/core-banking/loan-management-system.md) |  |  |
 
 #### Used Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Loan Management](../../mybank/core-banking/loan-management-system.md) | retrieves customer account information from | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
 

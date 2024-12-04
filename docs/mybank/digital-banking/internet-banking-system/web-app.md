@@ -14,9 +14,9 @@ Clojure and Luminus
 
 #### Provided Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Personal Customer](../../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) |  | HTTPS |
+| [Personal Customer](../../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

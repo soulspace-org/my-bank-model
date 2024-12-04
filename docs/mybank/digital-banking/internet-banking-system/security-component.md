@@ -14,7 +14,7 @@ Clojure namespace
 
 #### Provided Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | uses | [Security Component](../../../mybank/digital-banking/internet-banking-system/security-component.md) |  |  |
 

@@ -14,7 +14,7 @@ C++, Java
 
 #### Provided Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Personal Customer](../../mybank/personal-customer.md) | uses atm for balance information and withdrawals | [ATM](../../mybank/customer-channels/atm.md) |  |  |
 

@@ -25,17 +25,17 @@ These components show the internal structure of the API Application container.
 
 #### Provided Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) |  | Transit/HTTPS |
+| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 
 #### Used Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) |  | SMTP |
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../../mybank/core-banking/account-management-system.md) |  | REST |
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) |  | Datalog |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) | SMTP |  |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../../mybank/core-banking/account-management-system.md) | REST |  |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) | Datalog |  |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

@@ -31,13 +31,13 @@ These containers are the main processes of the Internet Banking System system.
 
 #### Provided Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 
 #### Used Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) |  |  |
 | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../../../mybank/core-banking/loan-management-system.md) |  |  |

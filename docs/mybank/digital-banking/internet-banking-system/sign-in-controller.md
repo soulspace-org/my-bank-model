@@ -14,13 +14,13 @@ Clojure namespace
 
 #### Provided Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) |  | Transit/HTTPS |
+| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Transit/HTTPS |  |
 
 #### Used Services
 
-| From | Name | To | Description | Technology |
+| From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | uses | [Security Component](../../../mybank/digital-banking/internet-banking-system/security-component.md) |  |  |
 
