@@ -14,10 +14,6 @@ LAYOUT_TOP_DOWN()
 
 title Component View of the Internet Banking System
 System_Ext(mybank_emailSystem, "E-mail System", $descr="The internal Microsoft Exchange email system.")
-Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
-System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
-System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot")
-System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
 Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
   System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
   System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System") {
@@ -34,21 +30,11 @@ Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
     Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
     ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
   }
-  System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System") {
-    Container_Boundary(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application") {
-      Component(mybank_digitalBanking_internetBankingSystem_securityComponent, "Security Component", $descr="Handles authentication, password changes, etc.", $techn="Clojure namespace")
-      Component(mybank_digitalBanking_internetBankingSystem_resetPasswordController, "Reset Password Controller", $descr="Allows users to reset their passwords.", $techn="Clojure namespace")
-      Component(mybank_digitalBanking_internetBankingSystem_emailComponent, "E-mail Component", $descr="Sends e-mails to users.", $techn="Clojure namespace")
-      Component(mybank_digitalBanking_internetBankingSystem_coreBankingSystemsFacade, "Core Banking Systems Facade", $descr="Facilitates interaction with the core banking systems.", $techn="Clojure Namespace, http-client")
-      Component(mybank_digitalBanking_internetBankingSystem_accountsSummaryController, "Accounts Summary Controller", $descr="Provides customers with a summary of their bank accounts.", $techn="Clojure namespace")
-      Component(mybank_digitalBanking_internetBankingSystem_signInController, "Sign In Controller", $descr="Allows users to sign in to the banking system.", $techn="Clojure namespace")
-    }
-    Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
-    Container(mybank_digitalBanking_internetBankingSystem_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
-    Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
-    ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
-  }
 }
+Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
+System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
+System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot")
+System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
 Rel(mybank_digitalBanking_internetBankingSystem_accountsSummaryController, mybank_digitalBanking_internetBankingSystem_coreBankingSystemsFacade, "retrieves account data from")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_singlePageApp, "views account balances and makes payments using")

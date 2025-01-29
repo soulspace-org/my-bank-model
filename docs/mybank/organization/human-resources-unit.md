@@ -3,6 +3,11 @@
 Central management of human resources
 
 
+## Parent Unit
+| Name | Description |
+|---|---|
+| [My Bank](../../mybank/my-bank-organization.md) | My Bank Company |
+
 ## Sub Units
 | Name | Description |
 |---|---|

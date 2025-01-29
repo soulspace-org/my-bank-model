@@ -5,7 +5,7 @@
 {}
 ```
 ## Results
-318 nodes selected
+317 nodes selected
 
 ## Nodes
  Id |Name | Type | Subtype | Description | Techs | Tags
@@ -112,6 +112,7 @@
  :mybank.it-management/context-boundary | IT Management | :context-boundary |  | Manages IT infrastructure, cloud resources, and system monitoring. |  | 
  :mybank/integration-middleware-context-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/api-application-uses-email-system | sends e-mail using | :request |  |  | SMTP | 
+ :mybank.digital-banking/context-boundary | Digital Banking | :context-boundary |  | Enables online and mobile banking services for customers. |  | 
  :mybank.digital-banking.internet-banking-system/api-application-uses-account-management-system | makes API calls to | :request |  |  | REST | 
  :mybank.it-management.azure/hub-vnet-europe | Hub VNet Europe | :node |  | VNet for the hub infrastructure in europe | Azure Virtual Network | #{"cloud" "platform"}
  :mybank.compliance/fraud | Fraud | :org-unit |  |  |  | 
@@ -259,7 +260,6 @@
  :mybank.compliance/fraud-specialist-role-in-fraud | function | :role-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/security-component | Security Component | :component |  | Handles authentication, password changes, etc. | Clojure namespace | 
  :mybank.concepts/bank-has-customer | has | :has |  |  |  | 
- :mybank.digital-banking.internet-banking-system/internet-banking-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.concepts/customer-performs-withdrawal | performs | :rel |  |  |  | 
  :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-account-management-system | gets account information from, and makes payments using | :request |  |  |  | 
  :mybank.payment/context-boundary-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
@@ -313,7 +313,6 @@
  :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-payment-gateway-system | processes customer payments using | :request |  |  |  | 
  :mybank.compliance/compliance-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank/personal-customer-uses-mobile-app | views account balances and makes payments using | :request |  |  |  | 
- :mybank.digital-banking/context-boundary | Digital Banking | :context-boundary |  | Enables online and mobile banking services for customers. |  | 
  :mybank.human-resources/talent-management-system | Talent Management | :system |  | Tools for recruitment, training, and performance management. | SAP SuccessFactors | 
  :mybank.digital-banking.internet-banking-system/sign-in-controller | Sign In Controller | :component |  | Allows users to sign in to the banking system. | Clojure namespace | 
  :mybank.digital-banking.internet-banking-system/api-application-uses-database | reads from and writes to | :request |  |  | Datalog | 
