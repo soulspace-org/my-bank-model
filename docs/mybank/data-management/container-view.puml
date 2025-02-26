@@ -30,13 +30,6 @@ Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
       Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
       ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
     }
-    System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System") {
-      Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
-      Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
-      Container(mybank_digitalBanking_internetBankingSystem_webApp, "Web Application", $descr="Delivers the static content and the internet banking single-page application.", $techn="Clojure and Luminus")
-      Container(mybank_digitalBanking_internetBankingSystem_mobileApp, "Mobile App", $descr="Provides limited internet banking functionality to customers via mobile devices.", $techn="ClojureScript and Reagent")
-      ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
-    }
   }
   Boundary(mybank_financialManagement_contextBoundary, "Financial Management") {
     System(mybank_financialManagement_treasuryManagementSystem, "Treasury Management", $descr="Manages liquidity, investments, and risk in the treasury function.", $type="Kyriba")

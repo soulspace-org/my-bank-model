@@ -3,6 +3,11 @@
 Responsible for MyBank Projects
 
 
+## Parent Unit
+| Name | Description |
+|---|---|
+| [My Bank](../../mybank/my-bank-organization.md) | My Bank Company |
+
 ## Roles
 | Name | Description |
 |---|---|

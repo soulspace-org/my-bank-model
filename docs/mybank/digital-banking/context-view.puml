@@ -5,7 +5,6 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <logos/kong>
 
 
 LAYOUT_TOP_DOWN()
@@ -22,7 +21,6 @@ Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
   }
   Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
     System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
-    System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
     System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
   }
   Boundary(mybank_financialManagement_contextBoundary, "Financial Management") {
