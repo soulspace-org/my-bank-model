@@ -7,29 +7,47 @@
  ;;
  ;;  Diagram Generation for Views
  ;;
+ {:view-selection {:el :system-structure-view}
+  :template "views/structure-view.puml.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "puml"}
+
+ {:view-selection {:el :deployment-structure-view}
+  :template "views/structure-view.puml.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "puml"}
+
+ {:view-selection {:el :organization-structure-view}
+  :template "views/structure-view.puml.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "puml"}
+
  {:view-selection {:el :model-view}
   :template "views/model-view.dot.cmb"
   :per-element true
   :id-as-name true
   :extension "dot"}
 
- {:view-selection {:el :system-structure-view}
-  :template "views/system-structure-view.puml.cmb"
+ {:view-selection {:el :concept-view}
+  :template "views/model-view.dot.cmb"
   :per-element true
   :id-as-name true
-  :extension "puml"}
+  :extension "dot"}
 
- {:view-selection {:el :deployment-structure-view}
-  :template "views/deployment-structure-view.puml.cmb"
+ {:view-selection {:el :process-view}
+  :template "views/model-view.dot.cmb"
   :per-element true
   :id-as-name true
-  :extension "puml"}
+  :extension "dot"}
 
- {:view-selection {:el :organization-structure-view}
-  :template "views/organization-structure-view.puml.cmb"
+ {:view-selection {:el :glossary-view}
+  :template "views/glossary-view.md.cmb"
   :per-element true
   :id-as-name true
-  :extension "puml"}
+  :extension "md"}
 
  ;;
  ;;  Markdown Generation for Model Elements
