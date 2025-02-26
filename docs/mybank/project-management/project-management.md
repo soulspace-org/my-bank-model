@@ -8,11 +8,6 @@ Process to manage projects
 |---|---|
 | [Manage Projects](../../mybank/project-management/manage-projects.md) | Capability to manage projects for the organization |
 
-## Roles
-| Name | Description |
-|---|---|
-| [Project Manager](../../mybank/project-management/project-manager.md) | Manages projects at MyBank |
-
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

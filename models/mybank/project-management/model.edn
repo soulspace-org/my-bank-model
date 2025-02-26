@@ -57,13 +57,6 @@
    :name "role in"
    :desc "Manages projects"}
 
-  {:el :role-in
-   :id :mybank.project-management/project-manager-has-role-in-project-management
-   :from :mybank.project-management/project-manager
-   :to :mybank.project-management/project-management
-   :name "role in"
-   :desc "Manages projects"}
-
   {:el :process
    :id :mybank.project-management/software-development
    :name "Software Development"

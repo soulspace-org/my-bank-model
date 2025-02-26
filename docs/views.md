@@ -11,7 +11,7 @@
 ## System Context Views
 | Title | Description |
 |---|---|
-| [Compliance & Risk Management Context View](./mybank/compliance/context-view.md) | Shows the systems of the domain Compliance & Risk Management and their relations. |
+| [Compliance and Risk Management Context View](./mybank/compliance/context-view.md) | Shows the systems of the domain Compliance and Risk Management and their relations. |
 | [Core Banking Context View](./mybank/core-banking/context-view.md) | Shows the systems of the domain Core Banking and their relations. |
 | [Customer Channels Context View](./mybank/customer-channels/context-view.md) | Shows the systems of the domain Customer Channels and their relations. |
 | [Data Management Context View](./mybank/data-management/context-view.md) | Shows the systems of the domain Data Management and their relations. |
@@ -27,7 +27,7 @@
 ## Container Views
 | Title | Description |
 |---|---|
-| [Compliance & Risk Management Container View](./mybank/compliance/container-view.md) | Shows the systems and containers of the domain Compliance & Risk Management and their relations. |
+| [Compliance and Risk Management Container View](./mybank/compliance/container-view.md) | Shows the systems and containers of the domain Compliance and Risk Management and their relations. |
 | [Core Banking Container View](./mybank/core-banking/container-view.md) | Shows the systems and containers of the domain Core Banking and their relations. |
 | [Customer Channels Container View](./mybank/customer-channels/container-view.md) | Shows the systems and containers of the domain Customer Channels and their relations. |
 | [Data Management Container View](./mybank/data-management/container-view.md) | Shows the systems and containers of the domain Data Management and their relations. |

@@ -6,7 +6,7 @@
 ## Parent Unit
 | Name | Description |
 |---|---|
-| [Compliance & Risk Management](../../mybank/compliance/compliance-unit.md) | Responsible for the compliance and risk management of MyBank |
+| [Compliance and Risk Management](../../mybank/compliance/compliance-unit.md) | Responsible for the compliance and risk management of MyBank |
 
 ## Roles
 | Name | Description |

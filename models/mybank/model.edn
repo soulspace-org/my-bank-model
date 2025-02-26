@@ -192,12 +192,6 @@
   ;; System Landscape level
   ;;
   {:el :rel
-   :id :mybank/personal-customer-uses-atm
-   :from :mybank/personal-customer
-   :to :mybank.customer-channels/atm
-   :name "withdraws cash using"}
-
-  {:el :rel
    :id :mybank/personal-customer-asks-customer-service-staff
    :from :mybank/personal-customer
    :to :mybank.customer-channels/customer-service-staff

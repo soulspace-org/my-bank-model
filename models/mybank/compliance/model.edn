@@ -6,7 +6,7 @@
   ;;;
   {:el :org-unit
    :id :mybank.compliance/compliance-unit
-   :name "Compliance & Risk Management"
+   :name "Compliance and Risk Management"
    :desc "Responsible for the compliance and risk management of MyBank"
    :ct [{:el :org-unit
          :id :mybank.compliance/fraud

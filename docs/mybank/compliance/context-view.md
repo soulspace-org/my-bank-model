@@ -4,7 +4,7 @@
 ![Context View of the Compliance and Risk Management Systems](../../mybank/compliance/context-view.png)
 
 ## Description
-Shows the systems of the domain Compliance & Risk Management and their relations.
+Shows the systems of the domain Compliance and Risk Management and their relations.
 ## User Roles
 | Name | Description |
 |---|---|

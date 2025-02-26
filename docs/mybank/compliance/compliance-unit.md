@@ -1,4 +1,4 @@
-# Compliance & Risk Management (Org-unit)
+# Compliance and Risk Management (Org-unit)
 ## Description
 Responsible for the compliance and risk management of MyBank
 

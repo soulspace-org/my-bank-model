@@ -6,7 +6,7 @@
 {}
 ```
 ## Results
-317 nodes selected
+315 nodes selected
 
 ## Nodes
  Id |Name | Type | Subtype | Description | Techs | Tags
@@ -53,7 +53,7 @@
  :mybank.project-management/project-manager | Project Manager | :person |  | Manages projects at MyBank |  | 
  :mybank.compliance/risk-management-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank/mybank-plc | My Bank | :enterprise-boundary |  |  |  | 
-  | unit of | :contained-in |  | Human Resources is a unit of My Bank. |  | 
+ :mybank.organization/human-resources-unit-contained-in-my-bank-organization | unit of | :contained-in |  | Human Resources is a unit of My Bank. |  | 
  :mybank.it-management/azure-unit-contained-in-it-management-unit | contained-in | :contained-in |  |  |  | 
  :mybank.it-management.azure/connectivity-subscription-contained-in-platform-management-group | contained-in | :contained-in |  |  |  | 
  :mybank.compliance/risk-management-system | Risk Management System | :system |  | Detects risks and manages risk mitigation. | Java, Spring Boot | 
@@ -89,7 +89,6 @@
  :mybank.digital-banking.internet-banking-system/api-application | API Application | :container |  | Provides internet banking functionality via a RESTful JSON/HTTPS API. | Clojure and Liberator | 
  :mybank.it-management.aws/platform-management-account | Management Account | :node |  | Account for managing the AWS platform | AWS Account | 
  :mybank.it-management.azure/management-subscription | Management Subscription | :node |  | Subscription for the Management Infrastructure | Azure Subscription | #{"cloud" "platform"}
- :mybank/personal-customer-uses-atm | withdraws cash using | :rel |  |  |  | 
  :mybank.organization/corporate-customers | Corporate Customers | :org-unit |  |  |  | 
  :mybank.it-management/cloud-solution-architect-role-in-aws-unit | role in | :role-in |  | Architects solutions on the AWS platform |  | 
  :mybank.compliance/risk-manager | Risk Manager | :person |  | Responsible for managing the risks. |  | 
@@ -204,7 +203,6 @@
  :mybank.project-management/release-management | Release Management | :process |  | Process to manage software releases |  | 
  :mybank.customer-channels/branch-systems-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank/email-system-contained-in-mybank-plc | contained-in | :contained-in |  |  |  | 
- :mybank.project-management/project-manager-has-role-in-project-management | role in | :role-in |  | Manages projects |  | 
  :mybank.payment/payment-gateway-system | Payment Gateway | :system |  | Facilitates credit/debit card transactions. | Java, Spring Boot | 
  :mybank.digital-banking.internet-banking-system/transfer-money | transfer money | :use-case |  | transfer money from one account to another |  | 
  :mybank/personal-customer-uses-internet-banking-system | views account balances and makes payments using | :request |  |  |  | 
@@ -250,7 +248,6 @@
  :mybank.it-management.azure/landing-zone-management-group-contained-in-mybank-azure-tenant | contained-in | :contained-in |  |  |  | 
  :mybank.financial-management/general-ledger-system | General Ledger | :system |  | Comprehensive financial accounting and reporting system. | Oracle Financials | 
  :mybank.compliance/fraud-detection-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
- :mybank.compliance/compliance-unit | Compliance & Risk Management | :org-unit |  | Responsible for the compliance and risk management of MyBank |  | 
  :mybank.concepts/deposit-to-account | to | :rel |  |  |  | 
  :mybank.project-management/project-management-unit-contained-in-my-bank-organization | unit of | :contained-in |  | Project Management unit is part of MyBank. |  | 
  :mybank.compliance/compliance-unit-contained-in-my-bank-organization | unit of | :contained-in |  | Compliance and Risk Management unit is part of MyBank. |  | 
@@ -296,6 +293,7 @@
  :mybank.compliance/aml-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.concepts/bank-has-loan | provides | :has |  |  |  | 
  :mybank.payment/swift-rtgs-neft-system | SWIFT/RTGS/NEFT | :system |  | Handles interbank transfers and settlements. | Java, Apache Camel | 
+ :mybank.compliance/compliance-unit | Compliance and Risk Management | :org-unit |  | Responsible for the compliance and risk management of MyBank |  | 
  :mybank.human-resources/talent-management-system-contained-in-context-boundary | contained-in | :contained-in |  |  |  | 
  :mybank.digital-banking.internet-banking-system/accounts-summary-controller-contained-in-api-application | contained-in | :contained-in |  |  |  | 
  :mybank/my-bank-organization | My Bank | :organization |  | My Bank Company |  | 

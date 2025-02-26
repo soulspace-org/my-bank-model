@@ -4,7 +4,7 @@
 ![Container View of the Compliance and Risk Management Systems](../../mybank/compliance/container-view.png)
 
 ## Description
-Shows the systems and containers of the domain Compliance & Risk Management and their relations.
+Shows the systems and containers of the domain Compliance and Risk Management and their relations.
 
 ## User Roles
 | Name | Description |

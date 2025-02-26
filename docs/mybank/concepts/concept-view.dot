@@ -1,30 +1,34 @@
 digraph "High Level Banking Concepts" {
-labelloc= "t"
-label="High Level Banking Concepts"
+  labelloc= "t"
+  label="High Level Banking Concepts"
 
-
-mybank_concepts_account[label="Account", style="filled", fillcolor="#dddddd"];
-mybank_concepts_bank[label="Bank", style="filled", fillcolor="#dddddd"];
-mybank_concepts_corporateCustomer[label="Corporate Customer", style="filled", fillcolor="#dddddd"];
-mybank_concepts_customer[label="Customer", style="filled", fillcolor="#dddddd"];
-mybank_concepts_deposit[label="Deposit", style="filled", fillcolor="#dddddd"];
-mybank_concepts_loan[label="Loan", style="filled", fillcolor="#dddddd"];
-mybank_concepts_mortgage[label="Mortgage", style="filled", fillcolor="#dddddd"];
-mybank_concepts_personalCustomer[label="Personal Customer", style="filled", fillcolor="#dddddd"];
-mybank_concepts_transfer[label="Transfer", style="filled", fillcolor="#dddddd"];
-mybank_concepts_withdrawal[label="Withdrawal", style="filled", fillcolor="#dddddd"];
-mybank_concepts_bank -> mybank_concepts_account [label="provides"];
-mybank_concepts_bank -> mybank_concepts_customer [label="has"];
-mybank_concepts_bank -> mybank_concepts_loan [label="provides"];
-mybank_concepts_corporateCustomer -> mybank_concepts_customer [label="is a"];
-mybank_concepts_customer -> mybank_concepts_account [label="has"];
-mybank_concepts_customer -> mybank_concepts_deposit [label="performs"];
-mybank_concepts_customer -> mybank_concepts_transfer [label="performs"];
-mybank_concepts_customer -> mybank_concepts_withdrawal [label="performs"];
-mybank_concepts_customer -> mybank_concepts_loan [label="requests"];
-mybank_concepts_deposit -> mybank_concepts_account [label="to"];
-mybank_concepts_mortgage -> mybank_concepts_loan [label="is a"];
-mybank_concepts_personalCustomer -> mybank_concepts_customer [label="is a"];
-mybank_concepts_transfer -> mybank_concepts_account [label="between"];
-mybank_concepts_withdrawal -> mybank_concepts_account [label="from"];
+  layout=dot
+mybank_concepts__mortgage [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Mortgage</B><BR/><FONT POINT-SIZE="10"><I>A loan for a immobile, e.g. a house </I></FONT>>]
+mybank_concepts__transfer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Transfer</B><BR/><FONT POINT-SIZE="10"><I>Moves money from one account to another<BR/>account </I></FONT>>]
+mybank_concepts__personal_customer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Personal Customer</B><BR/><FONT POINT-SIZE="10"><I>A person requesting services around<BR/>money </I></FONT>>]
+mybank_concepts__account [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Account</B><BR/><FONT POINT-SIZE="10"><I>Records the financial transactions<BR/>between a customer and a bank </I></FONT>>]
+mybank_concepts__bank [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Bank</B><BR/><FONT POINT-SIZE="10"><I>Organization providing services around<BR/>money </I></FONT>>]
+mybank_concepts__customer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Customer</B><BR/><FONT POINT-SIZE="10"><I>Entity requesting services around money </I></FONT>>]
+mybank_concepts__deposit [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Deposit</B><BR/><FONT POINT-SIZE="10"><I>Puts money on account </I></FONT>>]
+mybank_concepts__corporate_customer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Corporate Customer</B><BR/><FONT POINT-SIZE="10"><I>An organization requesting services<BR/>around money </I></FONT>>]
+mybank_concepts__withdrawal [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Withdrawal</B><BR/><FONT POINT-SIZE="10"><I>Takes money from account </I></FONT>>]
+mybank_concepts__loan [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Loan</B><BR/><FONT POINT-SIZE="10"><I>Lending money from the bank to the<BR/>customer </I></FONT>>]
+ 
+mybank_concepts__customer -> mybank_concepts__transfer [label=<performs<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__transfer -> mybank_concepts__account [label=<between<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__customer -> mybank_concepts__account [label=<has<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__customer -> mybank_concepts__deposit [label=<performs<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__corporate_customer -> mybank_concepts__customer [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__personal_customer -> mybank_concepts__customer [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__mortgage -> mybank_concepts__loan [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__withdrawal -> mybank_concepts__account [label=<from<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__deposit -> mybank_concepts__account [label=<to<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__bank -> mybank_concepts__customer [label=<has<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__customer -> mybank_concepts__withdrawal [label=<performs<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__bank -> mybank_concepts__account [label=<provides<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__customer -> mybank_concepts__loan [label=<requests<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+mybank_concepts__bank -> mybank_concepts__loan [label=<provides<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+ 
 }
+
+// (generated by Overarch with template views/model-view.dot.cmb)

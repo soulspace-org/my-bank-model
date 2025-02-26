@@ -1,5 +1,5 @@
 ;;;;
-;;;; MyBank Compliance & Risk Management Domain Views
+;;;; MyBank Compliance and Risk Management Domain Views
 ;;;;
 #{{:el :context-view
    :id :mybank.compliance/context-view
@@ -7,9 +7,9 @@
                       {:to-namespace-prefix "mybank.compliance"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
-   :name "Compliance & Risk Management Context View"
+   :name "Compliance and Risk Management Context View"
    :title "Context View of the Compliance and Risk Management Systems"
-   :desc "Shows the systems of the domain Compliance & Risk Management and their relations."}
+   :desc "Shows the systems of the domain Compliance and Risk Management and their relations."}
 
   {:el :container-view
    :id :mybank.compliance/container-view
@@ -17,9 +17,9 @@
                       {:to-namespace-prefix "mybank.compliance"}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
-   :name "Compliance & Risk Management Container View"
+   :name "Compliance and Risk Management Container View"
    :title "Container View of the Compliance and Risk Management Systems"
-   :desc "Shows the systems and containers of the domain Compliance & Risk Management and their relations."}
+   :desc "Shows the systems and containers of the domain Compliance and Risk Management and their relations."}
   
   ;
   }
