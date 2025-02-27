@@ -35,6 +35,16 @@
    :name "Agility Master"
    :desc "Facilitates agile practices"}
 
+  {:el :person
+   :id :mybank.project-management/incident-manager
+   :name "Incident Manager"
+   :desc "Manages incidents"}
+
+  {:el :person
+   :id :mybank.project-management/quality-manager
+   :name "Quality Manager"
+   :desc "Responsible for quality assurance and compliance to quality standards"}
+
   {:el :capability
    :id :mybank.project-management/manage-projects
    :name "Manage Projects"
@@ -163,7 +173,7 @@
           :name "Development Platform"
           :desc "Tools for software development, testing, and deployment."
           :tech "GitLab"}}}
-  
+
   ;
   }
 

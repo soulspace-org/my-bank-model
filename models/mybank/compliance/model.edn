@@ -1,7 +1,8 @@
 ;;;;
 ;;;; MyBank Risk Management Domain Model
 ;;;;
-#{;;;
+#{;
+  ;;;
   ;;; Organization
   ;;;
   {:el :org-unit
@@ -86,4 +87,6 @@
           :id :mybank.compliance/risk-management-system
           :name "Risk Management System"
           :desc "Detects risks and manages risk mitigation."
-          :tech "Java, Spring Boot"}}}}
+          :tech "Java, Spring Boot"}}}
+  ;
+  }
