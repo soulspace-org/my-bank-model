@@ -48,7 +48,7 @@
 |---|---|
 | [AWS Deployment View](./mybank/it-management/aws/deployment-view.md) | Shows the nodes and containers of the IT management AWS cloud infrastructure. |
 | [Azure Deployment View](./mybank/it-management/azure/deployment-view.md) | Shows the nodes and containers of the IT management Azure cloud infrastructure. |
-| [On Premise Azure Deployment View](./mybank/it-management/onprem/deployment-view.md) | Shows the nodes and containers of the IT management on premise datacenter infrastructure. |
+| [On Premise Deployment View](./mybank/it-management/onprem/deployment-view.md) | Shows the nodes and containers of the IT management on premise datacenter infrastructure. |
 | [IT Management Deployment View](./mybank/it-management/deployment-view.md) | Shows the nodes and containers of the domain IT management infrastructure. |
 ## Deployment Structure Views
 | Title | Description |

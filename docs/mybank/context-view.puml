@@ -83,10 +83,12 @@ Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
 }
 Person(mybank_projectManagement_devopsEngineer, "DevOps Engineer", $descr="Develops and operates software systems")
 Person(mybank_itManagement_cloudFinopsSpecialist, "Cloud FinOps Specialist", $descr="Operates cloud infrastructure and controls costs")
+Person(mybank_projectManagement_incidentManager, "Incident Manager", $descr="Manages incidents")
 Person(mybank_compliance_riskManager, "Risk Manager", $descr="Responsible for managing the risks.")
 Person(mybank_itManagement_cloudOperationsSpecialist, "Cloud Operations Specialist", $descr="Operates cloud infrastructure")
 Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
 Person(mybank_compliance_complianceManager, "Compliance Manager", $descr="Responsible for the compliance of MyBank.")
+Person(mybank_projectManagement_qualityManager, "Quality Manager", $descr="Responsible for quality assurance and compliance to quality standards")
 Person(mybank_itManagement_itManager, "IT Manager", $descr="Manages the IT platform")
 Person(mybank_itManagement_cloudSolutionArchitect, "Cloud Solution Architect", $descr="Designs cloud solutions")
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
