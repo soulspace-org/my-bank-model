@@ -14,8 +14,8 @@ cloud, platform
 ## Links to
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [MyBank On Premise Datacenter](../../../mybank/it-management/onprem/data-center-europe.md) | network link | [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | High speed/volume link 100 Mb/s |
-| [VNet Europe](../../../mybank/it-management/azure/alz1-vnet-europe.md) | peered to | [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | Provides connectivity for the spoke |
+| [MyBank On Premise Datacenter](../../../mybank/it-management/onprem/data-center-europe.md) | network link | [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | Azure Express Route | High speed/volume link 100 Mb/s |
+| [VNet Europe](../../../mybank/it-management/azure/alz1-vnet-europe.md) | peered to | [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | Azure Virtual Network Peering | Provides connectivity for the spoke |
 
 
 ## Deployment

@@ -12,12 +12,12 @@ The internal Microsoft Exchange email system.
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) |  |
-| [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) |  |
+| [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) |  |  |
+| [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) | SMTP |  |
 ## Outgoing Asynchronous Sends
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [E-mail System](../mybank/email-system.md) | sends e-mail to | [Personal Customer](../mybank/personal-customer.md) |  |
+| [E-mail System](../mybank/email-system.md) | sends e-mail to | [Personal Customer](../mybank/personal-customer.md) |  |  |
 
 ## System Context View
 ![Context View of the MyBank Systems](../mybank/context-view.png)

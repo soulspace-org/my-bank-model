@@ -20,13 +20,13 @@ Clojure and Liberator
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) |  |
+| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../../mybank/core-banking/account-management-system.md) |  |
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) |  |
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) |  |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../../mybank/core-banking/account-management-system.md) | REST |  |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) | Datalog |  |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) | SMTP |  |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

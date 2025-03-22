@@ -9,7 +9,7 @@ onprem, platform
 ## Links to
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [MyBank On Premise Datacenter](../../../mybank/it-management/onprem/data-center-europe.md) | network link | [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | High speed/volume link 100 Mb/s |
+| [MyBank On Premise Datacenter](../../../mybank/it-management/onprem/data-center-europe.md) | network link | [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | Azure Express Route | High speed/volume link 100 Mb/s |
 
 
 ## Deployment

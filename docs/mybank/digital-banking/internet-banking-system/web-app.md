@@ -11,7 +11,7 @@ Clojure and Luminus
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Personal Customer](../../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) |  |
+| [Personal Customer](../../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

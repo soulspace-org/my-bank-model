@@ -30,13 +30,13 @@ Shows the containers of the Internet Banking System and their relations.
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../../mybank/core-banking/account-management-system.md) |  |
-| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) |  |
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) |  |
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) |  |
-| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) |  |
-| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) |  |
-| [Personal Customer](../../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) |  |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../../mybank/core-banking/account-management-system.md) | REST |  |
+| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) | Datalog |  |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) | SMTP |  |
+| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) |  |  |
+| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) |  |  |
+| [Personal Customer](../../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

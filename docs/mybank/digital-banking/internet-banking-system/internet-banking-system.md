@@ -23,14 +23,14 @@ Allows customers to view information about their bank accounts and make payments
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |
+| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../../../mybank/core-banking/loan-management-system.md) |  |
-| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../../../mybank/core-banking/account-management-system.md) |  |
-| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../../../mybank/payment/payment-gateway-system.md) |  |
-| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) |  |
+| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../../../mybank/core-banking/loan-management-system.md) |  |  |
+| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../../../mybank/core-banking/account-management-system.md) |  |  |
+| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../../../mybank/payment/payment-gateway-system.md) |  |  |
+| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) |  |  |
 
 ## System Context View
 ![Context View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/context-view.png)

@@ -14,7 +14,7 @@ generic, cloud
 ## Links to
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [VNet Europe](../../../mybank/it-management/azure/alz1-vnet-europe.md) | peered to | [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | Provides connectivity for the spoke |
+| [VNet Europe](../../../mybank/it-management/azure/alz1-vnet-europe.md) | peered to | [Hub VNet Europe](../../../mybank/it-management/azure/hub-vnet-europe.md) | Azure Virtual Network Peering | Provides connectivity for the spoke |
 
 
 ## Deployment

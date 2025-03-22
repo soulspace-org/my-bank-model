@@ -11,11 +11,11 @@ ClojureScript and Reagent
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) |  |
+| [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) |  |  |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) |  |
+| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)
