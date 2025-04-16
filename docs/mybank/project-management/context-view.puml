@@ -5,7 +5,6 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <logos/kong>
 !include <tupadr3/font-awesome-5/jira>
 !include <tupadr3/font-awesome-5/confluence>
 
@@ -16,70 +15,15 @@ LAYOUT_TOP_DOWN()
 
 
 title Context View of the Project Management Systems
-Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manages projects at MyBank")
-Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
-  Boundary(mybank_dataManagement_contextBoundary, "Data Management and Analytics") {
-    System(mybank_dataManagement_bigDataAnalyticsSystem, "Big Data Analytics", $descr="Advanced analytics for predictive modeling.", $type="Java, Hadoop, Spark")
-    System(mybank_dataManagement_businessIntelligenceSystem, "Business Intelligence (BI)", $descr="Provides tools for reporting and data analysis.", $type="Tableau, Python")
-    System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
-  }
-  Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
-    System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
-    System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
-  }
-  Boundary(mybank_financialManagement_contextBoundary, "Financial Management") {
-    System(mybank_financialManagement_treasuryManagementSystem, "Treasury Management", $descr="Manages liquidity, investments, and risk in the treasury function.", $type="Kyriba")
-    System(mybank_financialManagement_expenseManagementSystem, "Expense Management", $descr="Tracks and manages expenses.", $type="Concur")
-    System(mybank_financialManagement_generalLedgerSystem, "General Ledger", $descr="Comprehensive financial accounting and reporting system.", $type="Oracle Financials")
-  }
-  Boundary(mybank_projectManagement_contextBoundary, "Project Management and Development") {
-    System(mybank_projectManagement_confluence, "Projects Wiki", $descr="Platform for documenting projects.", $type="Confluence", $sprite="confluence")
-    System(mybank_projectManagement_gitlab, "Development Platform", $descr="Tools for software development, testing, and deployment.", $type="GitLab")
-    System(mybank_projectManagement_jira, "Project Management Tool", $descr="Platform for planning, executing, and tracking projects.", $type="Jira", $sprite="jira")
-  }
-  Boundary(mybank_customerChannels_contextBoundary, "Customer Channels") {
-    System(mybank_customerChannels_contactCenterSystem, "Contact Center", $descr="Telephony and customer support systems for call centers.", $type="Genesys, Avaya")
-    System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java")
-    System(mybank_customerChannels_branchSystems, "Branch Systems", $descr="Software and hardware for in-branch banking services.", $type="Java, Swing")
-  }
-  Boundary(mybank_integrationMiddlewareContext, "Integration and Middleware") {
-    System(mybank_integrationMiddleware_soa, "Service-Oriented Architecture (SOA)", $descr="Framework for enabling seamless integration between services.", $type="Apache CXF")
-    System(mybank_integrationMiddleware_apiGateway, "API Gateway", $descr="Manages APIs for third-party services and fintech apps.", $type="Kong", $sprite="kong")
-    System(mybank_integrationMiddleware_esb, "Enterprise Service Bus (ESB)", $descr="Middleware for integrating various banking systems.", $type="MuleSoft")
-  }
-  Boundary(mybank_itManagement_contextBoundary, "IT Management") {
-    System(mybank_infrastructureManagement_itInfrastructureSystem, "IT Infrastructure", $descr="Hardware and software resources, including servers and networking.", $type="VMware, Cisco")
-    System(mybank_infrastructureManagement_cloudServicesSystem, "Cloud Services", $descr="Cloud computing resources for scalability and flexibility.", $type="AWS, Azure")
-    System(mybank_infrastructureManagement_systemMonitoringSystem, "System Monitoring", $descr="Monitors system performance and health.", $type="Nagios, Prometheus")
-  }
-  Boundary(mybank_compliance_contextBoundary, "Risk Management and Compliance") {
-    System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot")
-    System(mybank_compliance_fraudDetectionSystem, "Fraud Detection System", $descr="Detects and mitigates fraudulent activities.", $type="Python, TensorFlow")
-    System(mybank_compliance_amlSystem, "Anti-Money Laundering (AML) System", $descr="Monitors and prevents money laundering activities.", $type="Python, Scikit-learn")
-    System(mybank_compliance_complianceSystem, "Compliance System", $descr="Ensures operations comply with regulations.", $type="Java, Spring Boot")
-  }
-  System_Ext(mybank_emailSystem, "E-mail System", $descr="The internal Microsoft Exchange email system.")
-  Boundary(mybank_security_contextBoundary, "Security") {
-    System(mybank_security_identityAccessManagementSystem, "Identity and Access Management (IAM)", $descr="Manages secure access to systems and data.", $type="OAuth 2.0, OpenID Connect")
-    System(mybank_security_cybersecuritySystem, "Cybersecurity", $descr="Protects against cyber threats.", $type="Snort, Suricata")
-    System(mybank_security_disasterRecoverySystem, "Disaster Recovery", $descr="Ensures business continuity in case of a disaster.", $type="AWS Backup, DRaaS")
-  }
-  Boundary(mybank_payment_contextBoundary, "Payment Systems") {
-    System(mybank_payment_achSystem, "ACH System", $descr="Processes ACH transactions for direct deposits and bill payments.", $type="Java, Spring Boot, Spring Batch")
-    System(mybank_payment_swiftRtgsNeftSystem, "SWIFT/RTGS/NEFT", $descr="Handles interbank transfers and settlements.", $type="Java, Apache Camel")
-    System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
-  }
-  Boundary(mybank_coreBanking_contextBoundary, "Core Banking System") {
-    System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
-    System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot")
-    System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
-  }
-  Boundary(mybank_humanResources_contextBoundary, "Human Resources Management") {
-    System(mybank_humanResources_hris, "HR Information Systems (HRIS)", $descr="Manages employee data, payroll, and benefits.", $type="Workday")
-    System(mybank_humanResources_talentManagementSystem, "Talent Management", $descr="Tools for recruitment, training, and performance management.", $type="SAP SuccessFactors")
-  }
+Boundary(mybank_projectManagement_contextBoundary, "Project Management and Development") {
+  System(mybank_projectManagement_confluence, "Projects Wiki", $descr="Platform for documenting projects.", $type="Confluence", $sprite="confluence")
+  System(mybank_projectManagement_gitlab, "Development Platform", $descr="Tools for software development, testing, and deployment.", $type="GitLab")
+  System(mybank_projectManagement_jira, "Project Management Tool", $descr="Platform for planning, executing, and tracking projects.", $type="Jira", $sprite="jira")
 }
+Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manages projects at MyBank")
 Person(mybank_projectManagement_devopsEngineer, "DevOps Engineer", $descr="Develops and operates software systems")
+Person(mybank_projectManagement_incidentManager, "Incident Manager", $descr="Manages incidents")
+Person(mybank_projectManagement_qualityManager, "Quality Manager", $descr="Responsible for quality assurance and compliance to quality standards")
 Person(mybank_projectManagement_agilityMaster, "Agility Master", $descr="Facilitates agile practices")
 SHOW_LEGEND()
 @enduml
