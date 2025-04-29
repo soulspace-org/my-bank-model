@@ -13,12 +13,12 @@ LAYOUT_TOP_DOWN()
 
 
 title Container View of the Core Banking Systems
-System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot")
 Boundary(mybank_coreBanking_contextBoundary, "Core Banking System") {
   System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
   System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot")
   System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
 }
+System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot")
 Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
 System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
 System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java")

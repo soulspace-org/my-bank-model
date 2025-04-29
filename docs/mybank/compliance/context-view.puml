@@ -13,17 +13,17 @@ LAYOUT_TOP_DOWN()
 
 
 title Context View of the Compliance and Risk Management Systems
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
 Person(mybank_compliance_riskManager, "Risk Manager", $descr="Responsible for managing the risks.")
+Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
+Person(mybank_compliance_complianceManager, "Compliance Manager", $descr="Responsible for the compliance of MyBank.")
 Boundary(mybank_compliance_contextBoundary, "Risk Management and Compliance") {
   System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot")
   System(mybank_compliance_fraudDetectionSystem, "Fraud Detection System", $descr="Detects and mitigates fraudulent activities.", $type="Python, TensorFlow")
   System(mybank_compliance_amlSystem, "Anti-Money Laundering (AML) System", $descr="Monitors and prevents money laundering activities.", $type="Python, Scikit-learn")
   System(mybank_compliance_complianceSystem, "Compliance System", $descr="Ensures operations comply with regulations.", $type="Java, Spring Boot")
 }
-Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
-Person(mybank_compliance_complianceManager, "Compliance Manager", $descr="Responsible for the compliance of MyBank.")
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
-System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
 Rel(mybank_coreBanking_backofficeStaff, mybank_compliance_complianceSystem, "assesses customer risk for loan approval using")
 Rel(mybank_compliance_riskManagementSystem, mybank_coreBanking_transactionProcessingSystem, "fetches transaction history and customer data from")
 SHOW_LEGEND()

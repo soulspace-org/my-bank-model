@@ -23,6 +23,11 @@ LAYOUT_TOP_DOWN()
 
 
 title Deployment View of the IT Management Systems
+Node(mybank_itManagement_aws_mybankAwsOrganization, "MyBank AWS Organization", $descr="AWS Organization for MyBank", $type="AWS", $sprite="aws") {
+  Node(mybank_itManagement_aws_logArchiveAccount, "Log Archive Account", $descr="Account for archiving logs", $type="AWS Account", $sprite="AWSAccount")
+  Node(mybank_itManagement_aws_platformManagementAccount, "Management Account", $descr="Account for managing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
+  Node(mybank_itManagement_aws_auditAccount, "Audit Account", $descr="Account for auditing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
+}
 Node(mybank_itManagement_azure_mybankAzureTenant, "MyBank Azure Tenant", $descr="Azure Tenant for MyBank", $type="Azure", $sprite="Azure") {
   Node(mybank_itManagement_azure_platformManagementGroup, "Platform Management Group") {
     Node(mybank_itManagement_azure_plzKafkaSubscription, "LZ Kafka Subscription", $descr="Subscription for the central Kafka infrastructure", $type="Azure Subscription", $sprite="AzureSubscription") {
@@ -50,11 +55,6 @@ Node(mybank_itManagement_azure_mybankAzureTenant, "MyBank Azure Tenant", $descr=
   }
 }
 Node(mybank_itManagement_onprem_dataCenterEurope, "MyBank On Premise Datacenter", $descr="Data Center of MyBank")
-Node(mybank_itManagement_aws_mybankAwsOrganization, "MyBank AWS Organization", $descr="AWS Organization for MyBank", $type="AWS", $sprite="aws") {
-  Node(mybank_itManagement_aws_logArchiveAccount, "Log Archive Account", $descr="Account for archiving logs", $type="AWS Account", $sprite="AWSAccount")
-  Node(mybank_itManagement_aws_platformManagementAccount, "Management Account", $descr="Account for managing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
-  Node(mybank_itManagement_aws_auditAccount, "Audit Account", $descr="Account for auditing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
-}
 Person(mybank_itManagement_cloudFinopsSpecialist, "Cloud FinOps Specialist", $descr="Operates cloud infrastructure and controls costs")
 Person(mybank_itManagement_cloudOperationsSpecialist, "Cloud Operations Specialist", $descr="Operates cloud infrastructure")
 Person(mybank_itManagement_itManager, "IT Manager", $descr="Manages the IT platform")

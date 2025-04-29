@@ -18,9 +18,9 @@ Boundary(mybank_payment_contextBoundary, "Payment Systems") {
   System(mybank_payment_swiftRtgsNeftSystem, "SWIFT/RTGS/NEFT", $descr="Handles interbank transfers and settlements.", $type="Java, Apache Camel")
   System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
 }
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
 System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
-System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
 Rel(mybank_payment_paymentGatewaySystem, mybank_coreBanking_transactionProcessingSystem, "validates and processes payments using")
 Rel(mybank_coreBanking_backofficeStaff, mybank_payment_paymentGatewaySystem, "validates and processes payments using")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_payment_paymentGatewaySystem, "processes customer payments using")

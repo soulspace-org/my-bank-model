@@ -18,9 +18,9 @@ Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
   System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
   System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
 }
+System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot")
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
 System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
-System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot")
 System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_emailSystem, "sends e-mail using")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_coreBanking_loanManagementSystem, "fetches loan details and payment status from")

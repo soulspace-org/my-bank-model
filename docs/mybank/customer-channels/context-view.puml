@@ -14,9 +14,9 @@ LAYOUT_TOP_DOWN()
 
 title Context View of the Customer Channels Systems
 Person(mybank_customerChannels_customerServiceStaff, "Customer Service Staff", $descr="Customer service staff within the bank.")
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
 System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
-System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
 Boundary(mybank_customerChannels_contextBoundary, "Customer Channels") {
   System(mybank_customerChannels_contactCenterSystem, "Contact Center", $descr="Telephony and customer support systems for call centers.", $type="Genesys, Avaya")
   System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java")
