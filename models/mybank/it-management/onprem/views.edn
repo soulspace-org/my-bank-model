@@ -6,7 +6,7 @@
   {:el :deployment-view
    :id :mybank.it-management.onprem/deployment-view
    :spec {:selection [{:namespace-prefix "mybank.it-management.onprem"}
-                      {:to-namespace-prefix "mybank.it-management.onprem"}]
+                      {:to {:namespace-prefix "mybank.it-management.onprem"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "On Premise Deployment View"

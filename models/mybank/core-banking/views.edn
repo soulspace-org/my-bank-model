@@ -4,7 +4,7 @@
 #{{:el :context-view
    :id :mybank.core-banking/context-view
    :spec {:selection [{:namespace-prefix "mybank.core-banking"}
-                      {:to-namespace-prefix "mybank.core-banking"}]
+                      {:to {:namespace-prefix "mybank.core-banking"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Core Banking Context View"
@@ -14,7 +14,7 @@
   {:el :container-view
    :id :mybank.core-banking/container-view
    :spec {:selection [{:namespace-prefix "mybank.core-banking"}
-                      {:to-namespace-prefix "mybank.core-banking"}]
+                      {:to {:namespace-prefix "mybank.core-banking"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Core Banking Container View"

@@ -4,7 +4,7 @@
 #{{:el :context-view
    :id :mybank.human-resources/context-view
    :spec {:selection [{:namespace-prefix "mybank.human-resources"}
-                      {:to-namespace-prefix "mybank.human-resources"}]
+                      {:to {:namespace-prefix "mybank.human-resources"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Human Resources Context View"
@@ -14,7 +14,7 @@
   {:el :container-view
    :id :mybank.human-resources/container-view
    :spec {:selection [{:namespace-prefix "mybank.human-resources"}
-                      {:to-namespace-prefix "mybank.human-resources"}]
+                      {:to {:namespace-prefix "mybank.human-resources"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Human Resources Container View"

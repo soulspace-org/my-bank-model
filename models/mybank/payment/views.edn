@@ -4,7 +4,7 @@
 #{{:el :context-view
    :id :mybank.payment/context-view
    :spec {:selection [{:namespace-prefix "mybank.payment"}
-                      {:to-namespace-prefix "mybank.payment"}]
+                      {:to {:namespace-prefix "mybank.payment"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Payment Context View"
@@ -14,7 +14,7 @@
   {:el :container-view
    :id :mybank.payment/container-view
    :spec {:selection [{:namespace-prefix "mybank.payment"}
-                      {:to-namespace-prefix "mybank.payment"}]
+                      {:to {:namespace-prefix "mybank.payment"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Payment Container View"

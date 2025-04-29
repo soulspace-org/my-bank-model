@@ -8,7 +8,7 @@
   {:el :use-case-view
    :id :mybank.digital-banking.internet-banking-system/use-case-view
    :spec {:selection {:el :use-case-model-relation
-                      :to-namespace-prefix "mybank.digital-banking.internet-banking-system"}
+                      :to {:namespace-prefix "mybank.digital-banking.internet-banking-system"}}
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Internet Banking System Use Case View"
@@ -21,7 +21,7 @@
   {:el :context-view
    :id :mybank.digital-banking.internet-banking-system/context-view
    :spec {:selection [{:namespace-prefix "mybank.digital-banking.internet-banking-system"}
-                      {:to-namespace-prefix "mybank.digital-banking.internet-banking-system"}]
+                      {:to {:namespace-prefix "mybank.digital-banking.internet-banking-system"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Internet Banking System Context View"
@@ -31,7 +31,7 @@
   {:el :container-view
    :id :mybank.digital-banking.internet-banking-system/container-view
    :spec {:selection [{:namespace-prefix "mybank.digital-banking.internet-banking-system"}
-                      {:to-namespace-prefix "mybank.digital-banking.internet-banking-system"}]
+                      {:to {:namespace-prefix "mybank.digital-banking.internet-banking-system"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Internet Banking System Container View"
@@ -41,7 +41,7 @@
   {:el :component-view
    :id :mybank.digital-banking.internet-banking-system/component-view
    :spec {:selection [{:namespace-prefix "mybank.digital-banking.internet-banking-system"}
-                      {:to-namespace-prefix "mybank.digital-banking.internet-banking-system"}]
+                      {:to {:namespace-prefix "mybank.digital-banking.internet-banking-system"}}]
           :include :related
           :plantuml {:sprite-libs [:awslib :azure :devicons]}}
    :name "Internet Banking System Component View"
