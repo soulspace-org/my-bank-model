@@ -28,6 +28,7 @@ Shows the systems of the domain Digital Banking and their relations.
 | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
 | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |  |
 | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../../mybank/email-system.md) |  |  |
+| [Personal Customer](../../mybank/personal-customer.md) | uses | [Digital Wallets](../../mybank/digital-banking/digital-wallets-system.md) |  |  |
 | [Personal Customer](../../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 
 ## Navigation

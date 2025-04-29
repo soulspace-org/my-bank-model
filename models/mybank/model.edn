@@ -3,8 +3,10 @@
 ;;;;
 #{;
   ;;; 
-  ;;; Nodes
+  ;;; Roles
   ;;;
+
+  ;; Nodes
   {:el :person
    :id :mybank/corporate-customer
    :external true
@@ -17,6 +19,18 @@
    :name "Personal Customer"
    :desc "Personal Customer of MyBank."}
 
+  ;; Relationships
+  {:el :request
+   :id :mybank/personal-customer-uses-digital-wallets-system
+   :from :mybank/personal-customer
+   :to :mybank.digital-banking/digital-wallets-system
+   :name "uses"}
+
+  ;;; 
+  ;;; Organization
+  ;;;
+
+  ;; Nodes
   {:el :organization
    :id :mybank/my-bank-organization
    :name "My Bank"
@@ -53,7 +67,12 @@
                :desc ""}]}
         ;
         ]}
+
+  ;;;
+  ;;; Architecture
+  ;;;
   
+  ;; Nodes
   {:el :enterprise-boundary
    :id :mybank/mybank-plc
    :name "My Bank"
@@ -118,12 +137,8 @@
           :name "E-mail System"
           :desc "The internal Microsoft Exchange email system."}}}
 
-  ;;;
-  ;;; Relations
-  ;;;
-  ;;
+  ;; Relationships
   ;; Context Level
-  ;;
   {:el :request
    :id :mybank/personal-customer-uses-atm
    :from :mybank/personal-customer
@@ -166,9 +181,7 @@
    :to :mybank.core-banking/transaction-processing-system
    :name "fetches transaction history and customer data from"}
 
-  ;;
   ;; Container level
-  ;;
   {:el :request
    :id :mybank/personal-customer-uses-web-app
    :from :mybank/personal-customer
@@ -188,9 +201,7 @@
    :to :mybank.digital-banking.internet-banking-system/mobile-app
    :name "views account balances and makes payments using"}
 
-  ;;
   ;; System Landscape level
-  ;;
   {:el :rel
    :id :mybank/personal-customer-asks-customer-service-staff
    :from :mybank/personal-customer

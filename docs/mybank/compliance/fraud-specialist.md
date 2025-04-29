@@ -8,6 +8,10 @@ Responsible for the fraud detection and mitigation of MyBank.
 | Org-unit | Description |
 |---|---|
 | [Fraud](../../mybank/compliance/fraud.md)|  |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | uses | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) |  | generate fraud reports |
 
 
 ## Navigation

@@ -22,6 +22,7 @@ System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manag
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
 System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
 System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
+Rel(mybank_personalCustomer, mybank_digitalBanking_digitalWalletsSystem, "uses")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_emailSystem, "sends e-mail using")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_coreBanking_loanManagementSystem, "fetches loan details and payment status from")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "views account balances and makes payments using")

@@ -88,5 +88,21 @@
           :name "Risk Management System"
           :desc "Detects risks and manages risk mitigation."
           :tech "Java, Spring Boot"}}}
+
+  {:el :request
+   :from :mybank.compliance/compliance-manager
+   :to :mybank.compliance/compliance-system
+   :name "uses"
+   :desc "generate compliance reports"}
+  {:el :request
+   :from :mybank.compliance/risk-manager
+   :to :mybank.compliance/risk-management-system
+   :name "uses"
+   :desc "generate risk reports"}
+  {:el :request
+   :from :mybank.compliance/fraud-specialist
+   :to :mybank.compliance/fraud-detection-system
+   :name "uses"
+   :desc "generate fraud reports"}
   ;
   }

@@ -3,8 +3,10 @@
 ;;;;
 #{;
   ;;;
-  ;;; Nodes
+  ;;; Concepts
   ;;; 
+
+  ;; Nodes
   {:el :concept
    :id :mybank.concepts/bank
    :name "Bank"
@@ -46,9 +48,7 @@
    :name "Mortgage"
    :desc "A loan for a immobile, e.g. a house"}
 
-  ;;;
-  ;;; Relations
-  ;;;
+  ;;; Relationships
   {:el :has
    :id :mybank.concepts/bank-has-customer
    :from :mybank.concepts/bank

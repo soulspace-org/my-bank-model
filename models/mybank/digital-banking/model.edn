@@ -2,10 +2,12 @@
 ;;;; MyBank Digital Banking Domain Model
 ;;;;
 #{;
-;;;
-;;; Architecture
-;;;
-{:el :context-boundary
+  ;;;
+  ;;; Architecture
+  ;;;
+  
+  ;; Nodes
+  {:el :context-boundary
    :id :mybank.digital-banking/context-boundary
    :name "Digital Banking"
    :desc "Enables online and mobile banking services for customers."
@@ -15,5 +17,7 @@
           :desc "Supports digital wallet integration and mobile payments."
           :tech "Node.js and Express"}}}
 
-  ;          
+  ;; Relationships
+
+  ;
   }

@@ -1,4 +1,10 @@
-#{
+;;;;
+;;;; Views for the Mybank Concepts
+;;;;
+#{;
+  ;;;
+  ;;; Concept Views
+  ;;;
   {:el :concept-view
    :id :mybank.concepts/concept-view
    :spec {:selection {:namespace-prefix "mybank.concepts"}} 

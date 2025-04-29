@@ -98,10 +98,13 @@ Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
     System(mybank_humanResources_talentManagementSystem, "Talent Management", $descr="Tools for recruitment, training, and performance management.", $type="SAP SuccessFactors")
   }
 }
+Rel(mybank_compliance_complianceManager, mybank_compliance_complianceSystem, "uses", $descr="generate compliance reports")
+Rel(mybank_personalCustomer, mybank_digitalBanking_digitalWalletsSystem, "uses")
 Rel(mybank_payment_paymentGatewaySystem, mybank_coreBanking_transactionProcessingSystem, "validates and processes payments using")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_emailSystem, "sends e-mail using")
 Rel(mybank_customerChannels_atm, mybank_coreBanking_accountManagementSystem, "retrieves account balance")
 Rel(mybank_coreBanking_backofficeStaff, mybank_compliance_complianceSystem, "assesses customer risk for loan approval using")
+Rel(mybank_compliance_fraudSpecialist, mybank_compliance_fraudDetectionSystem, "uses", $descr="generate fraud reports")
 Rel(mybank_coreBanking_loanManagementSystem, mybank_coreBanking_accountManagementSystem, "retrieves customer account information from")
 Rel(mybank_coreBanking_backofficeStaff, mybank_payment_paymentGatewaySystem, "validates and processes payments using")
 Rel(mybank_emailSystem, mybank_personalCustomer, "sends e-mail to")
@@ -114,6 +117,7 @@ Rel(mybank_personalCustomer, mybank_customerChannels_atm, "uses atm for balance 
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_coreBanking_accountManagementSystem, "gets account information from, and makes payments using")
 Rel(mybank_coreBanking_backofficeStaff, mybank_coreBanking_loanManagementSystem, "processes loan applications and updates loan status using")
 Rel(mybank_compliance_riskManagementSystem, mybank_coreBanking_transactionProcessingSystem, "fetches transaction history and customer data from")
+Rel(mybank_compliance_riskManager, mybank_compliance_riskManagementSystem, "uses", $descr="generate risk reports")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_payment_paymentGatewaySystem, "processes customer payments using")
 SHOW_LEGEND()
 @enduml

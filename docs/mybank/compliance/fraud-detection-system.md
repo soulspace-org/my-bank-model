@@ -8,6 +8,10 @@ Detects and mitigates fraudulent activities.
 
 ## Technology
 Python, TensorFlow
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | uses | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) |  | generate fraud reports |
 
 ## System Context View
 ![Context View of the Compliance and Risk Management Systems](../../mybank/compliance/context-view.png)

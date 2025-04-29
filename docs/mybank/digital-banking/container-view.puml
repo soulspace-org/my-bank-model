@@ -27,6 +27,7 @@ Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
 System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
+Rel(mybank_personalCustomer, mybank_digitalBanking_digitalWalletsSystem, "uses")
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_emailSystem, "sends e-mail using", $techn="SMTP")
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_coreBanking_accountManagementSystem, "makes API calls to", $techn="REST")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_singlePageApp, "views account balances and makes payments using")

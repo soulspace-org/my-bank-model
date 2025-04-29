@@ -24,7 +24,10 @@ Boundary(mybank_compliance_contextBoundary, "Risk Management and Compliance") {
   System(mybank_compliance_complianceSystem, "Compliance System", $descr="Ensures operations comply with regulations.", $type="Java, Spring Boot")
 }
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
+Rel(mybank_compliance_complianceManager, mybank_compliance_complianceSystem, "uses", $descr="generate compliance reports")
 Rel(mybank_coreBanking_backofficeStaff, mybank_compliance_complianceSystem, "assesses customer risk for loan approval using")
+Rel(mybank_compliance_fraudSpecialist, mybank_compliance_fraudDetectionSystem, "uses", $descr="generate fraud reports")
 Rel(mybank_compliance_riskManagementSystem, mybank_coreBanking_transactionProcessingSystem, "fetches transaction history and customer data from")
+Rel(mybank_compliance_riskManager, mybank_compliance_riskManagementSystem, "uses", $descr="generate risk reports")
 SHOW_LEGEND()
 @enduml

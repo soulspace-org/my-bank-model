@@ -12,6 +12,10 @@ Java, Spring Boot
 | From | Name | To | Description |
 |---|---|---|---|
 | [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | assesses customer risk for loan approval using | [Compliance System](../../mybank/compliance/compliance-system.md) |  |
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Compliance Manager](../../mybank/compliance/compliance-manager.md) | uses | [Compliance System](../../mybank/compliance/compliance-system.md) |  | generate compliance reports |
 
 ## System Context View
 ![Context View of the Compliance and Risk Management Systems](../../mybank/compliance/context-view.png)

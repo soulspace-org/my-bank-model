@@ -27,6 +27,9 @@ Shows the systems of the domain Compliance and Risk Management and their relatio
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Risk Management System](../../mybank/compliance/risk-management-system.md) | fetches transaction history and customer data from | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
+| [Compliance Manager](../../mybank/compliance/compliance-manager.md) | uses | [Compliance System](../../mybank/compliance/compliance-system.md) |  | generate compliance reports |
+| [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | uses | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) |  | generate fraud reports |
+| [Risk Manager](../../mybank/compliance/risk-manager.md) | uses | [Risk Management System](../../mybank/compliance/risk-management-system.md) |  | generate risk reports |
 
 ## Other Relationships
 | From | Name | To | Description |

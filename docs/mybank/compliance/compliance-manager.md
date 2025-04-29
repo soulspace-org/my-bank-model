@@ -8,6 +8,10 @@ Responsible for the compliance of MyBank.
 | Org-unit | Description |
 |---|---|
 | [Regulations](../../mybank/compliance/regulations.md)|  |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Compliance Manager](../../mybank/compliance/compliance-manager.md) | uses | [Compliance System](../../mybank/compliance/compliance-system.md) |  | generate compliance reports |
 
 
 ## Navigation

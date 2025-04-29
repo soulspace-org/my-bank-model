@@ -8,6 +8,10 @@ Responsible for managing the risks.
 | Org-unit | Description |
 |---|---|
 | [Risk Management](../../mybank/compliance/risk-management.md)|  |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Risk Manager](../../mybank/compliance/risk-manager.md) | uses | [Risk Management System](../../mybank/compliance/risk-management-system.md) |  | generate risk reports |
 
 
 ## Navigation

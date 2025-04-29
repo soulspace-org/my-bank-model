@@ -8,6 +8,10 @@ Supports digital wallet integration and mobile payments.
 
 ## Technology
 Node.js and Express
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Personal Customer](../../mybank/personal-customer.md) | uses | [Digital Wallets](../../mybank/digital-banking/digital-wallets-system.md) |  |  |
 
 ## System Context View
 ![Context View of the Digital Banking Systems](../../mybank/digital-banking/context-view.png)
