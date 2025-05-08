@@ -12,7 +12,7 @@ Python, TensorFlow
 ## Responsibility of Organization Unit
 | Org-unit | Description |
 |---|---|
-| [Fraud](../../mybank/compliance/fraud.md)|  |
+| [Fraud](../../mybank/compliance/fraud-unit.md)| Responsible for the fraud detection and mitigation |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

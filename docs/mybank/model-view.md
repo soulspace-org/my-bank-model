@@ -67,9 +67,9 @@ Shows the complete model graph
 | [AWS Platform](../mybank/it-management/aws-unit.md)| Responsible for the AWS cloud platform. |
 | [Asset Management](../mybank/investments/asset-management-org.md)|  |
 | [Azure Platform](../mybank/it-management/azure-unit.md)| Responsible for the Azure cloud platform. |
-| [Compliance and Risk Management](../mybank/compliance/compliance-unit.md)| Responsible for the compliance and risk management of MyBank |
+| [Compliance and Risk Management](../mybank/compliance/compliance-unit.md)| Responsible for the compliance and risk management |
 | [Corporate Customers](../mybank/organization/corporate-customers.md)|  |
-| [Fraud](../mybank/compliance/fraud.md)|  |
+| [Fraud](../mybank/compliance/fraud-unit.md)| Responsible for the fraud detection and mitigation |
 | [Human Resources](../mybank/organization/human-resources-unit.md)| Central management of human resources |
 | [IT Management](../mybank/it-management/it-management-unit.md)| Responsible for the IT platform of MyBank |
 | [Internet Banking](../mybank/organization/personal-customers/internet-banking.md)|  |
@@ -82,8 +82,8 @@ Shows the complete model graph
 | [Personal Loans](../mybank/organization/personal-customers/personal-loans-org.md)|  |
 | [Projects](../mybank/project-management/project-management-unit.md)| Responsible for MyBank Projects |
 | [Recruiting](../mybank/organization/hr/recruiting.md)| Responsible for recruiting new employees |
-| [Regulations](../mybank/compliance/regulations.md)|  |
-| [Risk Management](../mybank/compliance/risk-management.md)|  |
+| [Regulations](../mybank/compliance/regulations-unit.md)| Responsible for the compliance and regulations |
+| [Risk Management](../mybank/compliance/risk-management-unit.md)| Responsible for the risk management |
 
 ## Roles
 | Person/Role | Description |

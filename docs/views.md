@@ -60,6 +60,7 @@
 | Title | Description |
 |---|---|
 | [MyBank Organization Chart](./mybank/organization/organization-structure-view.md) | Shows the hierarchical structure of the MyBank organization |
+| [Compliance and Risk Management Org Chart](./mybank/compliance/organization-structure-view.md) | Shows the organization structure of the Compliance and Risk Management unit. |
 ## Glossary Views
 | Title | Description |
 |---|---|

@@ -8,16 +8,19 @@
   {:el :org-unit
    :id :mybank.compliance/compliance-unit
    :name "Compliance and Risk Management"
-   :desc "Responsible for the compliance and risk management of MyBank"
+   :desc "Responsible for the compliance and risk management"
    :ct [{:el :org-unit
-         :id :mybank.compliance/fraud
-         :name "Fraud"}
+         :id :mybank.compliance/fraud-unit
+         :name "Fraud"
+         :desc "Responsible for the fraud detection and mitigation"}
         {:el :org-unit
-         :id :mybank.compliance/regulations
-         :name "Regulations"}
+         :id :mybank.compliance/regulations-unit
+         :name "Regulations"
+         :desc "Responsible for the compliance and regulations"}
         {:el :org-unit
-         :id :mybank.compliance/risk-management
-         :name "Risk Management"}]}
+         :id :mybank.compliance/risk-management-unit
+         :name "Risk Management"
+         :desc "Responsible for the risk management"}]}
 
   {:el :contained-in
    :id :mybank.compliance/compliance-unit-contained-in-my-bank-organization
@@ -28,21 +31,21 @@
 
   {:el :responsible-for
    :id :mybank.compliance/regulations-unit-responsible-for-compliance-system
-   :from :mybank.compliance/regulations
+   :from :mybank.compliance/regulations-unit
    :to :mybank.compliance/compliance-system
    :name "responsible for"
    :desc "Regulations unit is responsible for the compliance system."}
   
   {:el :responsible-for
    :id :mybank.compliance/risk-management-unit-responsible-for-risk-management-system
-   :from :mybank.compliance/risk-management
+   :from :mybank.compliance/risk-management-unit
    :to :mybank.compliance/risk-management-system
    :name "responsible for"
    :desc "Risk Management unit is responsible for the risk management system."}
 
   {:el :responsible-for
    :id :mybank.compliance/fraud-unit-responsible-for-fraud-detection-system
-   :from :mybank.compliance/fraud
+   :from :mybank.compliance/fraud-unit
    :to :mybank.compliance/fraud-detection-system
    :name "responsible for"
    :desc "Fraud unit is responsible for the fraud detection system."}
@@ -69,17 +72,17 @@
   {:el :role-in
    :id :mybank.compliance/risk-manager-role-in-risk-management
    :from :mybank.compliance/risk-manager
-   :to :mybank.compliance/risk-management
+   :to :mybank.compliance/risk-management-unit
    :name "function"}
   {:el :role-in
    :id :mybank.compliance/compliance-manager-role-in-regulations
    :from :mybank.compliance/compliance-manager
-   :to :mybank.compliance/regulations
+   :to :mybank.compliance/regulations-unit
    :name "function"}
   {:el :role-in
    :id :mybank.compliance/fraud-specialist-role-in-fraud
    :from :mybank.compliance/fraud-specialist
-   :to :mybank.compliance/fraud
+   :to :mybank.compliance/fraud-unit
    :name "function"}
 
   ;;;

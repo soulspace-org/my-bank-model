@@ -1,7 +1,7 @@
 
 # Compliance and Risk Management (Org-unit)
 ## Description
-Responsible for the compliance and risk management of MyBank
+Responsible for the compliance and risk management
 
 ## Parent
 [My Bank](../../mybank/my-bank-organization.md)
@@ -9,9 +9,14 @@ Responsible for the compliance and risk management of MyBank
 ## Sub Units
 | Org-unit | Description |
 |---|---|
-| [Fraud](../../mybank/compliance/fraud.md)|  |
-| [Regulations](../../mybank/compliance/regulations.md)|  |
-| [Risk Management](../../mybank/compliance/risk-management.md)|  |
+| [Fraud](../../mybank/compliance/fraud-unit.md)| Responsible for the fraud detection and mitigation |
+| [Regulations](../../mybank/compliance/regulations-unit.md)| Responsible for the compliance and regulations |
+| [Risk Management](../../mybank/compliance/risk-management-unit.md)| Responsible for the risk management |
+
+
+## Organization Structure
+![Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.png)
+[Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.md)
 
 
 ## Navigation

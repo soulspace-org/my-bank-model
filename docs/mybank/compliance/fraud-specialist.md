@@ -7,7 +7,7 @@ Responsible for the fraud detection and mitigation of MyBank.
 ## Role in Organization Units
 | Org-unit | Description |
 |---|---|
-| [Fraud](../../mybank/compliance/fraud.md)|  |
+| [Fraud](../../mybank/compliance/fraud-unit.md)| Responsible for the fraud detection and mitigation |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
