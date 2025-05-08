@@ -6,6 +6,11 @@
 ## Description
 Shows the systems and containers of the domain Human Resources and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Human Resources Management](../../mybank/human-resources/context-boundary.md)| Manages employee information, payroll, and talent management. |
+
 ## Systems
 | System | Description |
 |---|---|

@@ -6,6 +6,11 @@
 ## Description
 Shows the systems of the domain Compliance and Risk Management and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Risk Management and Compliance](../../mybank/compliance/context-boundary.md)| Detects and mitigates risks, ensuring regulatory compliance. |
+
 ## Roles
 | Person/Role | Description |
 |---|---|

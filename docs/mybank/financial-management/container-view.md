@@ -6,6 +6,11 @@
 ## Description
 Shows the systems and containers of the domain Financial Management and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Financial Management](../../mybank/financial-management/context-boundary.md)| Handles financial accounting, treasury, and expense management. |
+
 ## Systems
 | System | Description |
 |---|---|

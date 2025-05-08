@@ -8,6 +8,11 @@ Detects and mitigates fraudulent activities.
 
 ## Technology
 Python, TensorFlow
+
+## Responsibility of Organization Unit
+| Org-unit | Description |
+|---|---|
+| [Fraud](../../mybank/compliance/fraud.md)|  |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

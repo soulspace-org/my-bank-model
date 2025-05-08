@@ -6,6 +6,11 @@
 ## Description
 Shows the systems of the domain Core Banking and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Core Banking System](../../mybank/core-banking/context-boundary.md)| Manages customer accounts, transactions, and loans. |
+
 ## Roles
 | Person/Role | Description |
 |---|---|

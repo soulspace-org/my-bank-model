@@ -6,6 +6,11 @@
 ## Description
 Shows the systems of the domain Project Management and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Project Management and Development](../../mybank/project-management/context-boundary.md)| Tools for managing projects and software development. |
+
 ## Roles
 | Person/Role | Description |
 |---|---|
