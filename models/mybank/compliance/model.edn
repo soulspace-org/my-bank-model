@@ -26,6 +26,27 @@
    :name "unit of"
    :desc "Compliance and Risk Management unit is part of MyBank."}
 
+  {:el :responsible-for
+   :id :mybank.compliance/regulations-unit-responsible-for-compliance-system
+   :from :mybank.compliance/regulations
+   :to :mybank.compliance/compliance-system
+   :name "responsible for"
+   :desc "Regulations unit is responsible for the compliance system."}
+  
+  {:el :responsible-for
+   :id :mybank.compliance/risk-management-unit-responsible-for-risk-management-system
+   :from :mybank.compliance/risk-management
+   :to :mybank.compliance/risk-management-system
+   :name "responsible for"
+   :desc "Risk Management unit is responsible for the risk management system."}
+
+  {:el :responsible-for
+   :id :mybank.compliance/fraud-unit-responsible-for-fraud-detection-system
+   :from :mybank.compliance/fraud
+   :to :mybank.compliance/fraud-detection-system
+   :name "responsible for"
+   :desc "Fraud unit is responsible for the fraud detection system."}
+
   ;;;
   ;;; Roles
   ;;;
