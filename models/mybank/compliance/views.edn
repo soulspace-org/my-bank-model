@@ -20,6 +20,14 @@
    :name "Compliance and Risk Management Container View"
    :title "Container View of the Compliance and Risk Management Systems"
    :desc "Shows the systems and containers of the domain Compliance and Risk Management and their relations."}
-  
+
+  {:el :organization-structure-view
+   :id :mybank.compliance/organization-structure-view
+   :spec {:selection {:id :mybank.compliance/compliance-unit}
+          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :name "Compliance and Risk Management Org Chart"
+   :title "Org Chart of the Compliance and Risk Management unit"
+   :desc "Shows the organization structure of the Compliance and Risk Management unit."}
+
   ;
   }

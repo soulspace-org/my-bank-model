@@ -1,7 +1,7 @@
 
 # Regulations (Org-unit)
 ## Description
-
+Responsible for the compliance and regulations
 
 ## Parent
 [Compliance and Risk Management](../../mybank/compliance/compliance-unit.md)
@@ -10,6 +10,11 @@
 | Person/Role | Description |
 |---|---|
 | [Compliance Manager](../../mybank/compliance/compliance-manager.md)| Responsible for the compliance of MyBank. |
+
+
+## Organization Structure
+![Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.png)
+[Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.md)
 
 
 ## Navigation

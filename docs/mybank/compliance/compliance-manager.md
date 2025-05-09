@@ -7,7 +7,7 @@ Responsible for the compliance of MyBank.
 ## Role in Organization Units
 | Org-unit | Description |
 |---|---|
-| [Regulations](../../mybank/compliance/regulations.md)|  |
+| [Regulations](../../mybank/compliance/regulations-unit.md)| Responsible for the compliance and regulations |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

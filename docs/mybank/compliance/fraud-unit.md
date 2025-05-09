@@ -1,7 +1,7 @@
 
 # Fraud (Org-unit)
 ## Description
-
+Responsible for the fraud detection and mitigation
 
 ## Parent
 [Compliance and Risk Management](../../mybank/compliance/compliance-unit.md)
@@ -10,6 +10,11 @@
 | Person/Role | Description |
 |---|---|
 | [Fraud specialist](../../mybank/compliance/fraud-specialist.md)| Responsible for the fraud detection and mitigation of MyBank. |
+
+
+## Organization Structure
+![Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.png)
+[Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.md)
 
 
 ## Navigation

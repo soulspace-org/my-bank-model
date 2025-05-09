@@ -6,6 +6,11 @@
 ## Description
 Shows the systems of the domain Data Management and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Data Management and Analytics](../../mybank/data-management/context-boundary.md)| Manages data storage, warehousing, and analytics. |
+
 ## Systems
 | System | Description |
 |---|---|

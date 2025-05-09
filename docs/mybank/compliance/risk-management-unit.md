@@ -1,7 +1,7 @@
 
 # Risk Management (Org-unit)
 ## Description
-
+Responsible for the risk management
 
 ## Parent
 [Compliance and Risk Management](../../mybank/compliance/compliance-unit.md)
@@ -10,6 +10,11 @@
 | Person/Role | Description |
 |---|---|
 | [Risk Manager](../../mybank/compliance/risk-manager.md)| Responsible for managing the risks. |
+
+
+## Organization Structure
+![Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.png)
+[Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.md)
 
 
 ## Navigation

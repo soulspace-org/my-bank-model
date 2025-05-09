@@ -6,6 +6,11 @@
 ## Description
 Shows the systems of the domain Security and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Security](../../mybank/security/context-boundary.md)| Ensures the security of systems and data. |
+
 ## Systems
 | System | Description |
 |---|---|

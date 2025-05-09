@@ -6,6 +6,11 @@
 ## Description
 Shows the systems of the domain Customer Channels and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Customer Channels](../../mybank/customer-channels/context-boundary.md)| Interfaces for customer interaction, including branch systems, ATMs, and call centers. |
+
 ## Roles
 | Person/Role | Description |
 |---|---|

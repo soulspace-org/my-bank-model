@@ -7,7 +7,7 @@ Responsible for managing the risks.
 ## Role in Organization Units
 | Org-unit | Description |
 |---|---|
-| [Risk Management](../../mybank/compliance/risk-management.md)|  |
+| [Risk Management](../../mybank/compliance/risk-management-unit.md)| Responsible for the risk management |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

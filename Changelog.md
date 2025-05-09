@@ -1,5 +1,10 @@
 # Change Log
 
+## 2025-05-09
+* updated overarch and templates
+* updated compliance model and views
+  * added responsibilities for compliance systems
+
 ## 2025-04-19
 * updated overarch
 * updated selections for views

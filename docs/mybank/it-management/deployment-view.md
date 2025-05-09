@@ -6,6 +6,11 @@
 ## Description
 Shows the nodes and containers of the domain IT management infrastructure.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [IT Management](../../mybank/it-management/context-boundary.md)| Manages IT infrastructure, cloud resources, and system monitoring. |
+
 ## Roles
 | Person/Role | Description |
 |---|---|

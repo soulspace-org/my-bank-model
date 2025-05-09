@@ -6,6 +6,11 @@
 ## Description
 Shows the systems and containers of the domain Payment and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Payment Systems](../../mybank/payment/context-boundary.md)| Manages interbank payments, ACH, and SWIFT transactions. |
+
 ## Roles
 | Person/Role | Description |
 |---|---|

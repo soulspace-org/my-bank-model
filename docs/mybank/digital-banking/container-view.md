@@ -6,6 +6,11 @@
 ## Description
 Shows the systems and containers of the domain digital banking and their relations.
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Digital Banking](../../mybank/digital-banking/context-boundary.md)| Enables online and mobile banking services for customers. |
+
 ## Roles
 | Person/Role | Description |
 |---|---|

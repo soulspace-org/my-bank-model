@@ -6,6 +6,27 @@
 ## Description
 Shows the complete model graph
 
+## Enterprise Boundaries
+| Enterprise-boundary | Description |
+|---|---|
+| [My Bank](../mybank/mybank-plc.md)|  |
+
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Core Banking System](../mybank/core-banking/context-boundary.md)| Manages customer accounts, transactions, and loans. |
+| [Customer Channels](../mybank/customer-channels/context-boundary.md)| Interfaces for customer interaction, including branch systems, ATMs, and call centers. |
+| [Data Management and Analytics](../mybank/data-management/context-boundary.md)| Manages data storage, warehousing, and analytics. |
+| [Digital Banking](../mybank/digital-banking/context-boundary.md)| Enables online and mobile banking services for customers. |
+| [Financial Management](../mybank/financial-management/context-boundary.md)| Handles financial accounting, treasury, and expense management. |
+| [Human Resources Management](../mybank/human-resources/context-boundary.md)| Manages employee information, payroll, and talent management. |
+| [IT Management](../mybank/it-management/context-boundary.md)| Manages IT infrastructure, cloud resources, and system monitoring. |
+| [Integration and Middleware](../mybank/integration-middleware-context.md)| Facilitates integration across systems. |
+| [Payment Systems](../mybank/payment/context-boundary.md)| Manages interbank payments, ACH, and SWIFT transactions. |
+| [Project Management and Development](../mybank/project-management/context-boundary.md)| Tools for managing projects and software development. |
+| [Risk Management and Compliance](../mybank/compliance/context-boundary.md)| Detects and mitigates risks, ensuring regulatory compliance. |
+| [Security](../mybank/security/context-boundary.md)| Ensures the security of systems and data. |
+
 ## Concepts
 | Concept | Description |
 |---|---|
@@ -46,9 +67,9 @@ Shows the complete model graph
 | [AWS Platform](../mybank/it-management/aws-unit.md)| Responsible for the AWS cloud platform. |
 | [Asset Management](../mybank/investments/asset-management-org.md)|  |
 | [Azure Platform](../mybank/it-management/azure-unit.md)| Responsible for the Azure cloud platform. |
-| [Compliance and Risk Management](../mybank/compliance/compliance-unit.md)| Responsible for the compliance and risk management of MyBank |
+| [Compliance and Risk Management](../mybank/compliance/compliance-unit.md)| Responsible for the compliance and risk management |
 | [Corporate Customers](../mybank/organization/corporate-customers.md)|  |
-| [Fraud](../mybank/compliance/fraud.md)|  |
+| [Fraud](../mybank/compliance/fraud-unit.md)| Responsible for the fraud detection and mitigation |
 | [Human Resources](../mybank/organization/human-resources-unit.md)| Central management of human resources |
 | [IT Management](../mybank/it-management/it-management-unit.md)| Responsible for the IT platform of MyBank |
 | [Internet Banking](../mybank/organization/personal-customers/internet-banking.md)|  |
@@ -61,8 +82,8 @@ Shows the complete model graph
 | [Personal Loans](../mybank/organization/personal-customers/personal-loans-org.md)|  |
 | [Projects](../mybank/project-management/project-management-unit.md)| Responsible for MyBank Projects |
 | [Recruiting](../mybank/organization/hr/recruiting.md)| Responsible for recruiting new employees |
-| [Regulations](../mybank/compliance/regulations.md)|  |
-| [Risk Management](../mybank/compliance/risk-management.md)|  |
+| [Regulations](../mybank/compliance/regulations-unit.md)| Responsible for the compliance and regulations |
+| [Risk Management](../mybank/compliance/risk-management-unit.md)| Responsible for the risk management |
 
 ## Roles
 | Person/Role | Description |

@@ -8,6 +8,11 @@ Ensures operations comply with regulations.
 
 ## Technology
 Java, Spring Boot
+
+## Responsibility of Organization Unit
+| Org-unit | Description |
+|---|---|
+| [Regulations](../../mybank/compliance/regulations-unit.md)| Responsible for the compliance and regulations |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
