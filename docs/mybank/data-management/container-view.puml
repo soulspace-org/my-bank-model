@@ -5,17 +5,21 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/java>
+!include <logos/hadoop>
+!include <logos/spark>
+!include <tupadr3/font-awesome-5/python>
 !include <awslib14/Analytics/Redshift>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 
 
 title Container View of the Data Management Systems
 Boundary(mybank_dataManagement_contextBoundary, "Data Management and Analytics") {
-  System(mybank_dataManagement_bigDataAnalyticsSystem, "Big Data Analytics", $descr="Advanced analytics for predictive modeling.", $type="Java, Hadoop, Spark")
+  System(mybank_dataManagement_bigDataAnalyticsSystem, "Big Data Analytics", $descr="Advanced analytics for predictive modeling.", $type="Java, Hadoop, Spark", $sprite="java")
   System(mybank_dataManagement_businessIntelligenceSystem, "Business Intelligence (BI)", $descr="Provides tools for reporting and data analysis.", $type="Tableau, Python")
   System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
 }

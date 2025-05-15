@@ -5,20 +5,26 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/java>
+!include <logos/kafka>
+!include <tupadr3/font-awesome-5/java>
+!include <logos/apache-camel>
+!include <tupadr3/font-awesome-5/java>
+!include <tupadr3/font-awesome-5/java>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 
 
 title Context View of the Payment Systems
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
 Boundary(mybank_payment_contextBoundary, "Payment Systems") {
-  System(mybank_payment_achSystem, "ACH System", $descr="Processes ACH transactions for direct deposits and bill payments.", $type="Java, Spring Boot, Spring Batch")
-  System(mybank_payment_swiftRtgsNeftSystem, "SWIFT/RTGS/NEFT", $descr="Handles interbank transfers and settlements.", $type="Java, Apache Camel")
-  System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
+  System(mybank_payment_achSystem, "ACH System", $descr="Processes ACH transactions for direct deposits and bill payments.", $type="Java, Spring Boot, Spring Batch", $sprite="java")
+  System(mybank_payment_swiftRtgsNeftSystem, "SWIFT/RTGS/NEFT", $descr="Handles interbank transfers and settlements.", $type="Java, Apache Camel", $sprite="java")
+  System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot", $sprite="java")
 }
-System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
 System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
 Rel(mybank_payment_paymentGatewaySystem, mybank_coreBanking_transactionProcessingSystem, "validates and processes payments using")

@@ -5,20 +5,23 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/java>
+!include <tupadr3/font-awesome-5/java>
+!include <tupadr3/font-awesome-5/java>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 
 
 title Context View of the Internet Banking System
 System_Ext(mybank_emailSystem, "E-mail System", $descr="The internal Microsoft Exchange email system.")
-System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot")
+System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
+System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot", $sprite="java")
 System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
-System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot")
-System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
+System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot", $sprite="java")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_emailSystem, "sends e-mail using")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_coreBanking_loanManagementSystem, "fetches loan details and payment status from")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "views account balances and makes payments using")
