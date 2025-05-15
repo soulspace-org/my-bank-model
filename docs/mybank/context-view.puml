@@ -6,6 +6,7 @@
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/java>
+<<<<<<< HEAD
 !include <logos/kafka>
 !include <logos/kong>
 !include <tupadr3/font-awesome-5/java>
@@ -35,6 +36,25 @@
 !include <tupadr3/font-awesome-5/java>
 !include <awslib14/Storage/Backup>
 !include <tupadr3/font-awesome-5/java>
+=======
+!include <tupadr3/font-awesome-5/confluence>
+!include <logos/apache-camel>
+!include <tupadr3/font-awesome-5/aws>
+!include <azure/General/Azure>
+!include <logos/kong>
+!include <logos/kafka>
+!include <cloudinsight/nagios>
+!include <logos/prometheus>
+!include <tupadr3/font-awesome-5/python>
+!include <awslib14/Storage/Backup>
+!include <tupadr3/devicons2/cplusplus>
+!include <cloudogu/tools/vmware>
+!include <tupadr3/devicons/cisco>
+!include <logos/hadoop>
+!include <logos/spark>
+!include <awslib14/Analytics/Redshift>
+!include <tupadr3/font-awesome-5/jira>
+>>>>>>> 2d84492a05deb8505ea1bd09ad34988829fec88a
 
 
 

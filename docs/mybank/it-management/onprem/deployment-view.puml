@@ -5,11 +5,15 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <azure/Networking/AzureExpressRoute>
 !include <azure/Networking/AzureVirtualNetwork>
+!include <azure/Networking/AzureExpressRoute>
 
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2d84492a05deb8505ea1bd09ad34988829fec88a
 
 
 
