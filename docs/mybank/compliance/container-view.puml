@@ -8,9 +8,6 @@
 !include <tupadr3/font-awesome-5/java>
 !include <logos/kafka>
 !include <tupadr3/font-awesome-5/python>
-!include <tupadr3/font-awesome-5/python>
-!include <tupadr3/font-awesome-5/java>
-!include <tupadr3/font-awesome-5/java>
 
 
 
@@ -19,12 +16,8 @@
 
 
 title Container View of the Compliance and Risk Management Systems
-System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
 Person(mybank_compliance_riskManager, "Risk Manager", $descr="Responsible for managing the risks.")
-<<<<<<< HEAD
 System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
-=======
->>>>>>> f327c067f31374847e934894d33e7adb5455e23f
 Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
 Person(mybank_compliance_complianceManager, "Compliance Manager", $descr="Responsible for the compliance of MyBank.")
 Boundary(mybank_compliance_contextBoundary, "Risk Management and Compliance") {

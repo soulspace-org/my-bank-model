@@ -207,25 +207,17 @@ Shows the complete model graph
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../mybank/core-banking/loan-management-system.md) |  |  |
 | [Risk Management System](../mybank/compliance/risk-management-system.md) | fetches transaction history and customer data from | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  |  |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../mybank/core-banking/account-management-system.md) |  |  |
-<<<<<<< HEAD
 | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Accounts Summary Controller](../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | Transit/HTTPS |  |
 | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Reset Password Controller](../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | Transit/HTTPS |  |
 | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Transit/HTTPS |  |
 | [Mobile App](../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../mybank/core-banking/account-management-system.md) | REST |  |
-=======
-| [Mobile App](../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
-| [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../mybank/core-banking/account-management-system.md) | REST |  |
-| [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Accounts Summary Controller](../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | Transit/HTTPS |  |
-| [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Reset Password Controller](../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | Transit/HTTPS |  |
-| [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Transit/HTTPS |  |
->>>>>>> f327c067f31374847e934894d33e7adb5455e23f
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../mybank/payment/payment-gateway-system.md) |  |  |
 | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../mybank/digital-banking/internet-banking-system/database.md) | Datalog |  |
 | [Accounts Summary Controller](../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | retrieves account data from | [Core Banking Systems Facade](../mybank/digital-banking/internet-banking-system/core-banking-systems-facade.md) |  |  |
 | [Loan Management](../mybank/core-banking/loan-management-system.md) | retrieves customer account information from | [Account Management](../mybank/core-banking/account-management-system.md) |  |  |
-| [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) | SMTP |  |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) |  |  |
+| [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) | SMTP |  |
 | [Compliance Manager](../mybank/compliance/compliance-manager.md) | uses | [Compliance System](../mybank/compliance/compliance-system.md) |  | generate compliance reports |
 | [Personal Customer](../mybank/personal-customer.md) | uses | [Digital Wallets](../mybank/digital-banking/digital-wallets-system.md) |  |  |
 | [Fraud specialist](../mybank/compliance/fraud-specialist.md) | uses | [Fraud Detection System](../mybank/compliance/fraud-detection-system.md) |  | generate fraud reports |

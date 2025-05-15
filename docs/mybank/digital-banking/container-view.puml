@@ -26,24 +26,14 @@ Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
   }
 }
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
-<<<<<<< HEAD
 System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
-=======
-Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_emailSystem, "sends e-mail using", $techn="SMTP")
->>>>>>> f327c067f31374847e934894d33e7adb5455e23f
 Rel(mybank_personalCustomer, mybank_digitalBanking_digitalWalletsSystem, "uses")
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_digitalBanking_internetBankingSystem_database, "reads from and writes to", $techn="Datalog")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_singlePageApp, "views account balances and makes payments using")
-<<<<<<< HEAD
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_emailSystem, "sends e-mail using", $techn="SMTP")
 Rel(mybank_digitalBanking_internetBankingSystem_mobileApp, mybank_digitalBanking_internetBankingSystem_apiApplication, "makes API calls to", $techn="Transit/HTTPS")
-=======
-Rel(mybank_digitalBanking_internetBankingSystem_mobileApp, mybank_digitalBanking_internetBankingSystem_apiApplication, "makes API calls to", $techn="Transit/HTTPS")
-Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
->>>>>>> f327c067f31374847e934894d33e7adb5455e23f
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_coreBanking_accountManagementSystem, "makes API calls to", $techn="REST")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_mobileApp, "views account balances and makes payments using")
-Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_digitalBanking_internetBankingSystem_database, "reads from and writes to", $techn="Datalog")
 SHOW_LEGEND()
 @enduml

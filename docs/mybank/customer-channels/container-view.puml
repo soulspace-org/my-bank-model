@@ -7,10 +7,7 @@
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/java>
 !include <logos/kafka>
-!include <tupadr3/font-awesome-5/java>
-!include <tupadr3/font-awesome-5/java>
 !include <tupadr3/devicons2/cplusplus>
-!include <tupadr3/font-awesome-5/java>
 
 
 
@@ -19,13 +16,8 @@
 
 
 title Container View of the Customer Channels Systems
-<<<<<<< HEAD
 Person(mybank_customerChannels_customerServiceStaff, "Customer Service Staff", $descr="Customer service staff within the bank.")
-=======
->>>>>>> f327c067f31374847e934894d33e7adb5455e23f
 System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
-Person(mybank_customerChannels_customerServiceStaff, "Customer Service Staff", $descr="Customer service staff within the bank.")
-System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
 System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
 Boundary(mybank_customerChannels_contextBoundary, "Customer Channels") {

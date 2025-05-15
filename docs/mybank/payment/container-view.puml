@@ -7,14 +7,7 @@
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/java>
 !include <logos/kafka>
-<<<<<<< HEAD
 !include <logos/apache-camel>
-=======
-!include <tupadr3/font-awesome-5/java>
-!include <logos/apache-camel>
-!include <tupadr3/font-awesome-5/java>
-!include <tupadr3/font-awesome-5/java>
->>>>>>> f327c067f31374847e934894d33e7adb5455e23f
 
 
 
@@ -23,12 +16,12 @@
 
 
 title Container View of the Payment Systems
-System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
 Boundary(mybank_payment_contextBoundary, "Payment Systems") {
   System(mybank_payment_achSystem, "ACH System", $descr="Processes ACH transactions for direct deposits and bill payments.", $type="Java, Spring Boot, Spring Batch", $sprite="java")
   System(mybank_payment_swiftRtgsNeftSystem, "SWIFT/RTGS/NEFT", $descr="Handles interbank transfers and settlements.", $type="Java, Apache Camel", $sprite="java")
   System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot", $sprite="java")
 }
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
 Rel(mybank_payment_paymentGatewaySystem, mybank_coreBanking_transactionProcessingSystem, "validates and processes payments using")
 Rel(mybank_coreBanking_backofficeStaff, mybank_payment_paymentGatewaySystem, "validates and processes payments using")

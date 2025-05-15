@@ -5,7 +5,6 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-<<<<<<< HEAD
 !include <azure/Management/AzureSubscription>
 !include <azure/Networking/AzureExpressRoute>
 !include <azure/Networking/AzureVirtualNetwork>
@@ -14,25 +13,6 @@
 !include <azure/Networking/AzureFirewall>
 !include <azure/General/Azure>
 !include <azure/Networking/AzureSubnet>
-=======
-!include <azure/Management/AzureSubscription>
-!include <azure/Networking/AzureVirtualNetwork>
-!include <azure/Networking/AzureDNS>
-!include <azure/Networking/AzureVirtualNetwork>
-!include <azure/Networking/AzureExpressRoute>
-!include <azure/Networking/AzureFirewall>
-!include <azure/General/Azure>
-!include <azure/Networking/AzureVirtualNetwork>
-!include <azure/Networking/AzureVirtualNetworkPeering>
-!include <azure/Networking/AzureVirtualNetwork>
-!include <azure/Management/AzureSubscription>
-!include <azure/Management/AzureSubscription>
-!include <azure/Networking/AzureVirtualNetwork>
-!include <azure/Management/AzureSubscription>
-!include <azure/Networking/AzureSubnet>
-!include <azure/Management/AzureSubscription>
-!include <azure/Networking/AzureVirtualNetwork>
->>>>>>> f327c067f31374847e934894d33e7adb5455e23f
 
 
 
