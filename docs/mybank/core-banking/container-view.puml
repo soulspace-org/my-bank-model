@@ -7,16 +7,12 @@
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/java>
 !include <logos/kafka>
-<<<<<<< HEAD
 !include <tupadr3/font-awesome-5/java>
 !include <tupadr3/font-awesome-5/java>
 !include <tupadr3/font-awesome-5/java>
 !include <tupadr3/font-awesome-5/java>
 !include <tupadr3/devicons2/cplusplus>
 !include <tupadr3/font-awesome-5/java>
-=======
-!include <tupadr3/devicons2/cplusplus>
->>>>>>> 2d84492a05deb8505ea1bd09ad34988829fec88a
 
 
 
@@ -25,7 +21,6 @@
 
 
 title Container View of the Core Banking Systems
-<<<<<<< HEAD
 Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
 Boundary(mybank_coreBanking_contextBoundary, "Core Banking System") {
   System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
@@ -35,17 +30,6 @@ Boundary(mybank_coreBanking_contextBoundary, "Core Banking System") {
 System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot", $sprite="java")
 System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot", $sprite="java")
 System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java", $sprite="cplusplus")
-=======
-Boundary(mybank_coreBanking_contextBoundary, "Core Banking System") {
-  System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
-  System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot", $sprite="java")
-  System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
-}
-System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot", $sprite="java")
-System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot", $sprite="java")
-System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java", $sprite="cplusplus")
-Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
->>>>>>> 2d84492a05deb8505ea1bd09ad34988829fec88a
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
 Rel(mybank_payment_paymentGatewaySystem, mybank_coreBanking_transactionProcessingSystem, "validates and processes payments using")
 Rel(mybank_customerChannels_atm, mybank_coreBanking_accountManagementSystem, "retrieves account balance")

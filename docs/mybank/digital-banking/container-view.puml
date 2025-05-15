@@ -27,7 +27,6 @@ Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
   }
 }
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
-<<<<<<< HEAD
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_emailSystem, "sends e-mail using", $techn="SMTP")
 Rel(mybank_personalCustomer, mybank_digitalBanking_digitalWalletsSystem, "uses")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_singlePageApp, "views account balances and makes payments using")
@@ -35,15 +34,6 @@ Rel(mybank_digitalBanking_internetBankingSystem_mobileApp, mybank_digitalBanking
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_coreBanking_accountManagementSystem, "makes API calls to", $techn="REST")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_mobileApp, "views account balances and makes payments using")
-=======
->>>>>>> 2d84492a05deb8505ea1bd09ad34988829fec88a
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_digitalBanking_internetBankingSystem_database, "reads from and writes to", $techn="Datalog")
-Rel(mybank_personalCustomer, mybank_digitalBanking_digitalWalletsSystem, "uses")
-Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_singlePageApp, "views account balances and makes payments using")
-Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_coreBanking_accountManagementSystem, "makes API calls to", $techn="REST")
-Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_emailSystem, "sends e-mail using", $techn="SMTP")
-Rel(mybank_digitalBanking_internetBankingSystem_mobileApp, mybank_digitalBanking_internetBankingSystem_apiApplication, "makes API calls to", $techn="Transit/HTTPS")
-Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
-Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_mobileApp, "views account balances and makes payments using")
 SHOW_LEGEND()
 @enduml

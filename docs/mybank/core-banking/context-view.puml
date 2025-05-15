@@ -7,16 +7,12 @@
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/java>
 !include <logos/kafka>
-<<<<<<< HEAD
 !include <tupadr3/font-awesome-5/java>
 !include <tupadr3/font-awesome-5/java>
 !include <tupadr3/font-awesome-5/java>
 !include <tupadr3/font-awesome-5/java>
 !include <tupadr3/devicons2/cplusplus>
 !include <tupadr3/font-awesome-5/java>
-=======
-!include <tupadr3/devicons2/cplusplus>
->>>>>>> 2d84492a05deb8505ea1bd09ad34988829fec88a
 
 
 
@@ -30,13 +26,8 @@ Boundary(mybank_coreBanking_contextBoundary, "Core Banking System") {
   System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot", $sprite="java")
   System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
 }
-<<<<<<< HEAD
 System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot", $sprite="java")
 System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot", $sprite="java")
-=======
-System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot", $sprite="java")
-System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot", $sprite="java")
->>>>>>> 2d84492a05deb8505ea1bd09ad34988829fec88a
 System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
 System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java", $sprite="cplusplus")
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
