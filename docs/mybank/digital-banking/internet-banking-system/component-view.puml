@@ -35,7 +35,15 @@ Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp,
 Rel(mybank_digitalBanking_internetBankingSystem_accountsSummaryController, mybank_digitalBanking_internetBankingSystem_coreBankingSystemsFacade, "retrieves account data from")
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_singlePageApp, "views account balances and makes payments using")
 Rel(mybank_digitalBanking_internetBankingSystem_resetPasswordController, mybank_digitalBanking_internetBankingSystem_emailComponent, "uses for sending password reset emails")
+<<<<<<< HEAD
 Rel(mybank_digitalBanking_internetBankingSystem_signInController, mybank_digitalBanking_internetBankingSystem_securityComponent, "uses")
+=======
+Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
+Rel(mybank_digitalBanking_internetBankingSystem_signInController, mybank_digitalBanking_internetBankingSystem_securityComponent, "uses")
+Rel(mybank_digitalBanking_internetBankingSystem_singlePageApp, mybank_digitalBanking_internetBankingSystem_accountsSummaryController, "makes API calls to", $techn="Transit/HTTPS")
+Rel(mybank_digitalBanking_internetBankingSystem_singlePageApp, mybank_digitalBanking_internetBankingSystem_resetPasswordController, "makes API calls to", $techn="Transit/HTTPS")
+>>>>>>> f327c067f31374847e934894d33e7adb5455e23f
 Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_mobileApp, "views account balances and makes payments using")
+Rel(mybank_digitalBanking_internetBankingSystem_singlePageApp, mybank_digitalBanking_internetBankingSystem_signInController, "makes API calls to", $techn="Transit/HTTPS")
 SHOW_LEGEND()
 @enduml
