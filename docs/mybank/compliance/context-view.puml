@@ -17,8 +17,8 @@
 
 title Context View of the Compliance and Risk Management Systems
 Person(mybank_compliance_riskManager, "Risk Manager", $descr="Responsible for managing the risks.")
-Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
 System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
+Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
 Person(mybank_compliance_complianceManager, "Compliance Manager", $descr="Responsible for the compliance of MyBank.")
 Boundary(mybank_compliance_contextBoundary, "Risk Management and Compliance") {
   System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot", $sprite="java")

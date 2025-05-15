@@ -5,8 +5,8 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <tupadr3/font-awesome-5/aws>
 !include <awslib14/Groups/AWSAccount>
+!include <tupadr3/font-awesome-5/aws>
 
 
 

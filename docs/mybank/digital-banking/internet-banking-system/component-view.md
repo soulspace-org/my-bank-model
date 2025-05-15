@@ -39,8 +39,8 @@ Shows the containers and components of the domain Internet Banking System and th
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | Transit/HTTPS |  |
-| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Transit/HTTPS |  |
 | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | Transit/HTTPS |  |
+| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Transit/HTTPS |  |
 | [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | retrieves account data from | [Core Banking Systems Facade](../../../mybank/digital-banking/internet-banking-system/core-banking-systems-facade.md) |  |  |
 | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | uses | [Security Component](../../../mybank/digital-banking/internet-banking-system/security-component.md) |  |  |
 | [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | uses for sending password reset emails | [E-mail Component](../../../mybank/digital-banking/internet-banking-system/email-component.md) |  |  |
