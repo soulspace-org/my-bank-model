@@ -5,23 +5,26 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/java>
+!include <logos/kafka>
+!include <tupadr3/font-awesome-5/python>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 
 
 title Container View of the Compliance and Risk Management Systems
-System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
 Person(mybank_compliance_riskManager, "Risk Manager", $descr="Responsible for managing the risks.")
 Person(mybank_compliance_fraudSpecialist, "Fraud specialist", $descr="Responsible for the fraud detection and mitigation of MyBank.")
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
 Person(mybank_compliance_complianceManager, "Compliance Manager", $descr="Responsible for the compliance of MyBank.")
 Boundary(mybank_compliance_contextBoundary, "Risk Management and Compliance") {
-  System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot")
-  System(mybank_compliance_fraudDetectionSystem, "Fraud Detection System", $descr="Detects and mitigates fraudulent activities.", $type="Python, TensorFlow")
-  System(mybank_compliance_amlSystem, "Anti-Money Laundering (AML) System", $descr="Monitors and prevents money laundering activities.", $type="Python, Scikit-learn")
-  System(mybank_compliance_complianceSystem, "Compliance System", $descr="Ensures operations comply with regulations.", $type="Java, Spring Boot")
+  System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot", $sprite="java")
+  System(mybank_compliance_fraudDetectionSystem, "Fraud Detection System", $descr="Detects and mitigates fraudulent activities.", $type="Python, TensorFlow", $sprite="python")
+  System(mybank_compliance_amlSystem, "Anti-Money Laundering (AML) System", $descr="Monitors and prevents money laundering activities.", $type="Python, Scikit-learn", $sprite="python")
+  System(mybank_compliance_complianceSystem, "Compliance System", $descr="Ensures operations comply with regulations.", $type="Java, Spring Boot", $sprite="java")
 }
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
 Rel(mybank_compliance_complianceManager, mybank_compliance_complianceSystem, "uses", $descr="generate compliance reports")

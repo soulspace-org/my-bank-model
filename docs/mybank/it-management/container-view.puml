@@ -7,7 +7,7 @@
 !include <tupadr3/common>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 
@@ -20,9 +20,9 @@ Person(mybank_itManagement_cloudSolutionArchitect, "Cloud Solution Architect", $
 Person(mybank_itManagement_databaseAdministrator, "Database Administrator", $descr="Manages databases")
 Person(mybank_itManagement_securityEngineer, "Security Engineer", $descr="Designs and operates security infrastructure")
 Boundary(mybank_itManagement_contextBoundary, "IT Management") {
-  System(mybank_infrastructureManagement_itInfrastructureSystem, "IT Infrastructure", $descr="Hardware and software resources, including servers and networking.", $type="VMware, Cisco")
-  System(mybank_infrastructureManagement_cloudServicesSystem, "Cloud Services", $descr="Cloud computing resources for scalability and flexibility.", $type="AWS, Azure")
-  System(mybank_infrastructureManagement_systemMonitoringSystem, "System Monitoring", $descr="Monitors system performance and health.", $type="Nagios, Prometheus")
+  System(mybank_infrastructureManagement_itInfrastructureSystem, "IT Infrastructure", $descr="Hardware and software resources, including servers and networking.", $type="VMware, Cisco", $sprite="vmware")
+  System(mybank_infrastructureManagement_cloudServicesSystem, "Cloud Services", $descr="Cloud computing resources for scalability and flexibility.", $type="AWS, Azure", $sprite="aws")
+  System(mybank_infrastructureManagement_systemMonitoringSystem, "System Monitoring", $descr="Monitors system performance and health.", $type="Nagios, Prometheus", $sprite="nagios")
 }
 Person(mybank_itManagement_networkEngineer, "Network Engineer", $descr="Designs and operates network infrastructure")
 SHOW_LEGEND()

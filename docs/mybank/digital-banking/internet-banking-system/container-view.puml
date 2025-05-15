@@ -5,15 +5,17 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/java>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 
 
 title Container View of the Internet Banking System
 System_Ext(mybank_emailSystem, "E-mail System", $descr="The internal Microsoft Exchange email system.")
+System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
 System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System") {
   Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure and Liberator")
   Container(mybank_digitalBanking_internetBankingSystem_singlePageApp, "Single-Page Application", $descr="Provides internet banking functionality to customers via their web browser.", $techn="ClojureScript and Re-Frame")
@@ -22,13 +24,12 @@ System_Boundary(mybank_digitalBanking_internetBankingSystem_internetBankingSyste
   ContainerDb(mybank_digitalBanking_internetBankingSystem_database, "Database", $descr="Stores user registration, authentication, and access logs.", $techn="Datomic")
 }
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
-System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
-Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
-Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_emailSystem, "sends e-mail using", $techn="SMTP")
-Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_coreBanking_accountManagementSystem, "makes API calls to", $techn="REST")
-Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_singlePageApp, "views account balances and makes payments using")
-Rel(mybank_digitalBanking_internetBankingSystem_mobileApp, mybank_digitalBanking_internetBankingSystem_apiApplication, "makes API calls to", $techn="Transit/HTTPS")
-Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_mobileApp, "views account balances and makes payments using")
 Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_digitalBanking_internetBankingSystem_database, "reads from and writes to", $techn="Datalog")
+Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_singlePageApp, "views account balances and makes payments using")
+Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_coreBanking_accountManagementSystem, "makes API calls to", $techn="REST")
+Rel(mybank_digitalBanking_internetBankingSystem_apiApplication, mybank_emailSystem, "sends e-mail using", $techn="SMTP")
+Rel(mybank_digitalBanking_internetBankingSystem_mobileApp, mybank_digitalBanking_internetBankingSystem_apiApplication, "makes API calls to", $techn="Transit/HTTPS")
+Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_webApp, "visits mybank.com via browser", $techn="HTTPS")
+Rel(mybank_personalCustomer, mybank_digitalBanking_internetBankingSystem_mobileApp, "views account balances and makes payments using")
 SHOW_LEGEND()
 @enduml

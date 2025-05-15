@@ -5,17 +5,17 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <azure/Networking/AzureVirtualNetwork>
+!include <azure/Management/AzureSubscription>
 !include <azure/Networking/AzureSubnet>
 !include <azure/Networking/AzureDNS>
-!include <azure/Networking/AzureExpressRoute>
-!include <azure/General/Azure>
 !include <azure/Networking/AzureFirewall>
-!include <azure/Management/AzureSubscription>
+!include <azure/General/Azure>
 !include <azure/Networking/AzureVirtualNetworkPeering>
-!include <azure/Networking/AzureVirtualNetwork>
+!include <azure/Networking/AzureExpressRoute>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 

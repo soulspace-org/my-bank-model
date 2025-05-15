@@ -5,29 +5,24 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <azure/Networking/AzureVirtualNetwork>
+!include <azure/Management/AzureSubscription>
 !include <azure/Networking/AzureSubnet>
+!include <azure/Networking/AzureDNS>
+!include <azure/Networking/AzureFirewall>
+!include <azure/General/Azure>
+!include <azure/Networking/AzureVirtualNetworkPeering>
 !include <tupadr3/font-awesome-5/aws>
 !include <awslib14/Groups/AWSAccount>
-!include <azure/Networking/AzureDNS>
 !include <azure/Networking/AzureExpressRoute>
-!include <azure/General/Azure>
-!include <azure/Networking/AzureFirewall>
-!include <azure/Management/AzureSubscription>
-!include <azure/Networking/AzureVirtualNetworkPeering>
-!include <azure/Networking/AzureVirtualNetwork>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 
 
 title Deployment View of the IT Management Systems
-Node(mybank_itManagement_aws_mybankAwsOrganization, "MyBank AWS Organization", $descr="AWS Organization for MyBank", $type="AWS", $sprite="aws") {
-  Node(mybank_itManagement_aws_logArchiveAccount, "Log Archive Account", $descr="Account for archiving logs", $type="AWS Account", $sprite="AWSAccount")
-  Node(mybank_itManagement_aws_platformManagementAccount, "Management Account", $descr="Account for managing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
-  Node(mybank_itManagement_aws_auditAccount, "Audit Account", $descr="Account for auditing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
-}
 Node(mybank_itManagement_azure_mybankAzureTenant, "MyBank Azure Tenant", $descr="Azure Tenant for MyBank", $type="Azure", $sprite="Azure") {
   Node(mybank_itManagement_azure_platformManagementGroup, "Platform Management Group") {
     Node(mybank_itManagement_azure_plzKafkaSubscription, "LZ Kafka Subscription", $descr="Subscription for the central Kafka infrastructure", $type="Azure Subscription", $sprite="AzureSubscription") {
@@ -53,6 +48,11 @@ Node(mybank_itManagement_azure_mybankAzureTenant, "MyBank Azure Tenant", $descr=
       Node(mybank_itManagement_azure_alz1VnetEurope, "VNet Europe", $descr="VNet for an application infrastructure in europe", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
     }
   }
+}
+Node(mybank_itManagement_aws_mybankAwsOrganization, "MyBank AWS Organization", $descr="AWS Organization for MyBank", $type="AWS", $sprite="aws") {
+  Node(mybank_itManagement_aws_logArchiveAccount, "Log Archive Account", $descr="Account for archiving logs", $type="AWS Account", $sprite="AWSAccount")
+  Node(mybank_itManagement_aws_platformManagementAccount, "Management Account", $descr="Account for managing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
+  Node(mybank_itManagement_aws_auditAccount, "Audit Account", $descr="Account for auditing the AWS platform", $type="AWS Account", $sprite="AWSAccount")
 }
 Node(mybank_itManagement_onprem_dataCenterEurope, "MyBank On Premise Datacenter", $descr="Data Center of MyBank")
 Rel(mybank_itManagement_azure_alz1VnetEurope, mybank_itManagement_azure_hubVnetEurope, "peered to", $descr="Provides connectivity for the spoke", $techn="Azure Virtual Network Peering", $sprite="AzureVirtualNetworkPeering,scale=0.5")

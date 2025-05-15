@@ -5,22 +5,25 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/java>
+!include <logos/kafka>
+!include <tupadr3/devicons2/cplusplus>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 
 
 title Context View of the Customer Channels Systems
+System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
 Person(mybank_customerChannels_customerServiceStaff, "Customer Service Staff", $descr="Customer service staff within the bank.")
-System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka")
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
 Person_Ext(mybank_personalCustomer, "Personal Customer", $descr="Personal Customer of MyBank.")
-System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot")
 Boundary(mybank_customerChannels_contextBoundary, "Customer Channels") {
   System(mybank_customerChannels_contactCenterSystem, "Contact Center", $descr="Telephony and customer support systems for call centers.", $type="Genesys, Avaya")
-  System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java")
-  System(mybank_customerChannels_branchSystems, "Branch Systems", $descr="Software and hardware for in-branch banking services.", $type="Java, Swing")
+  System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java", $sprite="cplusplus")
+  System(mybank_customerChannels_branchSystems, "Branch Systems", $descr="Software and hardware for in-branch banking services.", $type="Java, Swing", $sprite="java")
 }
 Rel(mybank_customerChannels_atm, mybank_coreBanking_accountManagementSystem, "retrieves account balance")
 Rel(mybank_customerChannels_atm, mybank_coreBanking_transactionProcessingSystem, "validates transaction")

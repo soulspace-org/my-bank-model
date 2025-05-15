@@ -5,9 +5,10 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <awslib14/Storage/Backup>
 
 
-LAYOUT_TOP_DOWN()
+
 
 
 
@@ -16,7 +17,7 @@ title Context View of the Security Systems
 Boundary(mybank_security_contextBoundary, "Security") {
   System(mybank_security_identityAccessManagementSystem, "Identity and Access Management (IAM)", $descr="Manages secure access to systems and data.", $type="OAuth 2.0, OpenID Connect")
   System(mybank_security_cybersecuritySystem, "Cybersecurity", $descr="Protects against cyber threats.", $type="Snort, Suricata")
-  System(mybank_security_disasterRecoverySystem, "Disaster Recovery", $descr="Ensures business continuity in case of a disaster.", $type="AWS Backup, DRaaS")
+  System(mybank_security_disasterRecoverySystem, "Disaster Recovery", $descr="Ensures business continuity in case of a disaster.", $type="AWS Backup, DRaaS", $sprite="Backup")
 }
 SHOW_LEGEND()
 @enduml
