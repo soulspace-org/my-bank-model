@@ -23,11 +23,8 @@ The `publish.sh` script in the root folder calls Overarch to render views and
 template based artifacts, calls PlantUML and GraphViz to generate
 images from the rendered views and publishes the generated artifacts to the `docs` folder.
 
-The `overarch.sh` script in the root folder only calls Overarch to render views
+The `modelling.sh` script in the root folder only calls Overarch to render views
 and template based artifacts. This script does not generate any images.
-
-## Version
-0.1.0
 
 ## Copyright
 (c) 2024 Ludger Solbach
