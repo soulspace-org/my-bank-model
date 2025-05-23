@@ -20,7 +20,7 @@
 title Context View of the Data Management Systems
 Boundary(mybank_dataManagement_contextBoundary, "Data Management and Analytics") {
   System(mybank_dataManagement_bigDataAnalyticsSystem, "Big Data Analytics", $descr="Advanced analytics for predictive modeling.", $type="Java, Hadoop, Spark", $sprite="java")
-  System(mybank_dataManagement_businessIntelligenceSystem, "Business Intelligence (BI)", $descr="Provides tools for reporting and data analysis.", $type="Tableau, Python")
+  System(mybank_dataManagement_businessIntelligenceSystem, "Business Intelligence (BI)", $descr="Provides tools for reporting and data analysis.", $type="Tableau, Python", $sprite="python")
   System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
 }
 SHOW_LEGEND()
