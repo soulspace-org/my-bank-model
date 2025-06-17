@@ -7,7 +7,7 @@ Allows users to reset their passwords.
 [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md)
 
 ## Technology
-Clojure namespace
+Clojure, Namespace
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

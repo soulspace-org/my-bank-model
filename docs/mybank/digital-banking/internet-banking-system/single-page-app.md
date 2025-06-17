@@ -7,7 +7,7 @@ Provides internet banking functionality to customers via their web browser.
 [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md)
 
 ## Technology
-ClojureScript and Re-Frame
+ClojureScript, Re-Frame
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

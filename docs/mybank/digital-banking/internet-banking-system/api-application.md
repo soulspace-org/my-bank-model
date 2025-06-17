@@ -7,7 +7,7 @@ Provides internet banking functionality via a RESTful JSON/HTTPS API.
 [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md)
 
 ## Technology
-Clojure and Liberator
+Clojure, Liberator
 ## Components
 | Component | Description |
 |---|---|

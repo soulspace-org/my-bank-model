@@ -7,7 +7,7 @@ Delivers the static content and the internet banking single-page application.
 [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md)
 
 ## Technology
-Clojure and Luminus
+Clojure, Luminus
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

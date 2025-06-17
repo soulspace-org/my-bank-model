@@ -48,52 +48,52 @@
           :id :mybank.digital-banking.internet-banking-system/web-app
           :name "Web Application"
           :desc "Delivers the static content and the internet banking single-page application."
-          :tech "Clojure and Luminus"}
+          :tech "Clojure, Luminus"}
          {:el :container
           :id :mybank.digital-banking.internet-banking-system/single-page-app
           :name "Single-Page Application"
           :desc "Provides internet banking functionality to customers via their web browser."
-          :tech "ClojureScript and Re-Frame"}
+          :tech "ClojureScript, Re-Frame"}
          {:el :container
           :id :mybank.digital-banking.internet-banking-system/mobile-app
           :name "Mobile App"
           :desc "Provides limited internet banking functionality to customers via mobile devices."
-          :tech "ClojureScript and Reagent"}
+          :tech "ClojureScript, Reagent"}
          {:el :container
           :id :mybank.digital-banking.internet-banking-system/api-application
           :name "API Application"
           :desc "Provides internet banking functionality via a RESTful JSON/HTTPS API."
-          :tech "Clojure and Liberator"
+          :tech "Clojure, Liberator"
           :ct #{{:el :component
                  :id :mybank.digital-banking.internet-banking-system/sign-in-controller
                  :name "Sign In Controller"
                  :desc "Allows users to sign in to the banking system."
-                 :tech "Clojure namespace"}
+                 :tech "Clojure, Namespace"}
                 {:el :component
                  :id :mybank.digital-banking.internet-banking-system/security-component
                  :name "Security Component"
                  :desc "Handles authentication, password changes, etc."
-                 :tech "Clojure namespace"}
+                 :tech "Clojure, Namespace"}
                 {:el :component
                  :id :mybank.digital-banking.internet-banking-system/reset-password-controller
                  :name "Reset Password Controller"
                  :desc "Allows users to reset their passwords."
-                 :tech "Clojure namespace"}
+                 :tech "Clojure, Namespace"}
                 {:el :component
                  :id :mybank.digital-banking.internet-banking-system/email-component
                  :name "E-mail Component"
                  :desc "Sends e-mails to users."
-                 :tech "Clojure namespace"}
+                 :tech "Clojure, Namespace"}
                 {:el :component
                  :id :mybank.digital-banking.internet-banking-system/accounts-summary-controller
                  :name "Accounts Summary Controller"
                  :desc "Provides customers with a summary of their bank accounts."
-                 :tech "Clojure namespace"}
+                 :tech "Clojure, Namespace"}
                 {:el :component
                  :id :mybank.digital-banking.internet-banking-system/core-banking-systems-facade
                  :name "Core Banking Systems Facade"
                  :desc "Facilitates interaction with the core banking systems."
-                 :tech "Clojure Namespace, http-client"}}}
+                 :tech "Clojure, Namespace, Http Client"}}}
          {:el :container
           :subtype :database
           :id :mybank.digital-banking.internet-banking-system/database
