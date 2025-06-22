@@ -1,5 +1,12 @@
 # Change Log
 
+## 2025-06-22
+* updated overarch
+* updated views to reflect current practice
+  * no need for :spec anymore
+  * default sprite-libs for plantuml
+* updated some techs
+
 ## 2025-05-24
 * updated overarch
 
