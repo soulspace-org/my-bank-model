@@ -7,7 +7,7 @@ Allows users to sign in to the banking system.
 [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md)
 
 ## Technology
-Clojure, Namespace
+Namespace
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

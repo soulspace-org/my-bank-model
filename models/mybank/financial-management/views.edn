@@ -3,20 +3,18 @@
 ;;;;
 #{{:el :context-view
    :id :mybank.financial-management/context-view
-   :spec {:selection [{:namespace-prefix "mybank.financial-management"}
-                      {:to {:namespace-prefix "mybank.financial-management"}}]
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection [{:namespace-prefix "mybank.financial-management"}
+               {:to {:namespace-prefix "mybank.financial-management"}}]
+   :include :related
    :name "Financial Management Context View"
    :title "Context View of the Financial Management Systems"
    :desc "Shows the systems of the domain Financial Management and their relations."}
   
   {:el :container-view
    :id :mybank.financial-management/container-view
-   :spec {:selection [{:namespace-prefix "mybank.financial-management"}
-                      {:to {:namespace-prefix "mybank.financial-management"}}]
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection [{:namespace-prefix "mybank.financial-management"}
+               {:to {:namespace-prefix "mybank.financial-management"}}]
+   :include :related
    :name "Financial Management Container View"
    :title "Container View of the Financial Management Systems"
    :desc "Shows the systems and containers of the domain Financial Management and their relations."}

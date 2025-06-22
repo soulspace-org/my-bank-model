@@ -7,7 +7,7 @@ Supports digital wallet integration and mobile payments.
 [Digital Banking](../../mybank/digital-banking/context-boundary.md)
 
 ## Technology
-Node.js and Express
+Node.js, Express
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

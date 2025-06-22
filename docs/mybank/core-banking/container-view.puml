@@ -5,11 +5,9 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <tupadr3/common>
-!include <tupadr3/common>
+!include <tupadr3/devicons/clojure>
 !include <tupadr3/font-awesome-5/java>
 !include <logos/kafka>
-!include <tupadr3/devicons/clojure>
 !include <tupadr3/devicons2/cplusplus>
 
 
@@ -19,13 +17,13 @@
 
 
 title Container View of the Core Banking Systems
+Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure, Pedestal", $sprite="clojure")
 System(mybank_compliance_riskManagementSystem, "Risk Management System", $descr="Detects risks and manages risk mitigation.", $type="Java, Spring Boot", $sprite="java")
 Boundary(mybank_coreBanking_contextBoundary, "Core Banking System") {
   System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
   System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot", $sprite="java")
   System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
 }
-Container(mybank_digitalBanking_internetBankingSystem_apiApplication, "API Application", $descr="Provides internet banking functionality via a RESTful JSON/HTTPS API.", $techn="Clojure, Liberator", $sprite="clojure")
 System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot", $sprite="java")
 System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java", $sprite="cplusplus")
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")

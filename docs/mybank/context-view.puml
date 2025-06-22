@@ -15,6 +15,7 @@
 !include <tupadr3/font-awesome-5/confluence>
 !include <awslib14/Storage/Backup>
 !include <logos/kong>
+!include <logos/express>
 !include <tupadr3/font-awesome-5/python>
 !include <cloudinsight/nagios>
 !include <logos/prometheus>
@@ -57,7 +58,7 @@ Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
     System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
   }
   Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
-    System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
+    System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js, Express", $sprite="express")
     System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
   }
   Boundary(mybank_financialManagement_contextBoundary, "Financial Management") {

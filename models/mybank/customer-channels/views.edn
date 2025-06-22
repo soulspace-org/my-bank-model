@@ -3,20 +3,18 @@
 ;;;;
 #{{:el :context-view
    :id :mybank.customer-channels/context-view
-   :spec {:selection [{:namespace-prefix "mybank.customer-channels"}
-                      {:to {:namespace-prefix "mybank.customer-channels"}}]
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection [{:namespace-prefix "mybank.customer-channels"}
+               {:to {:namespace-prefix "mybank.customer-channels"}}]
+   :include :related
    :name "Customer Channels Context View"
    :title "Context View of the Customer Channels Systems"
    :desc "Shows the systems of the domain Customer Channels and their relations."}
   
   {:el :container-view
    :id :mybank.customer-channels/container-view
-   :spec {:selection [{:namespace-prefix "mybank.customer-channels"}
-                      {:to {:namespace-prefix "mybank.customer-channels"}}]
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection [{:namespace-prefix "mybank.customer-channels"}
+               {:to {:namespace-prefix "mybank.customer-channels"}}]
+   :include :related
    :name "Customer Channels Container View"
    :title "Container View of the Customer Channels Systems"
    :desc "Shows the systems and containers of the domain Customer Channels and their relations."}

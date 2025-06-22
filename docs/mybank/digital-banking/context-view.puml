@@ -6,6 +6,7 @@
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/java>
+!include <logos/express>
 
 
 
@@ -16,7 +17,7 @@
 title Context View of the Digital Banking Systems
 System_Ext(mybank_emailSystem, "E-mail System", $descr="The internal Microsoft Exchange email system.")
 Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
-  System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
+  System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js, Express", $sprite="express")
   System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
 }
 System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot", $sprite="java")

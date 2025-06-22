@@ -7,7 +7,7 @@ Handles authentication, password changes, etc.
 [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md)
 
 ## Technology
-Clojure, Namespace
+Namespace
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

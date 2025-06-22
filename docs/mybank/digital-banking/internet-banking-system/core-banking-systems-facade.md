@@ -7,7 +7,7 @@ Facilitates interaction with the core banking systems.
 [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md)
 
 ## Technology
-Clojure, Namespace, Http Client
+Namespace, Http Client
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
