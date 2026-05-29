@@ -7,7 +7,7 @@ Provides limited internet banking functionality to customers via mobile devices.
 [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md)
 
 ## Technology
-ClojureScript and Reagent
+ClojureScript, Reagent
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

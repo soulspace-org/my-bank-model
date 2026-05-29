@@ -7,9 +7,9 @@
   ;;;
   {:el :concept-view
    :id :mybank.concepts/concept-view
-   :spec {:selection {:namespace-prefix "mybank.concepts"}} 
+   :selection {:namespace-prefix "mybank.concepts"} 
    :name "High Level Concept Map"
    :title "High Level Banking Concepts"
    :desc "Shows the high level concepts of banking and their relations"
    }
-}
+  }

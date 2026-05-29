@@ -3,28 +3,25 @@
 ;;;;
 #{{:el :context-view
    :id :mybank.compliance/context-view
-   :spec {:selection [{:namespace-prefix "mybank.compliance"}
-                      {:to {:namespace-prefix "mybank.compliance"}}]
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection [{:namespace-prefix "mybank.compliance"}
+               {:to {:namespace-prefix "mybank.compliance"}}]
+   :include :related
    :name "Compliance and Risk Management Context View"
    :title "Context View of the Compliance and Risk Management Systems"
    :desc "Shows the systems of the domain Compliance and Risk Management and their relations."}
 
   {:el :container-view
    :id :mybank.compliance/container-view
-   :spec {:selection [{:namespace-prefix "mybank.compliance"}
-                      {:to {:namespace-prefix "mybank.compliance"}}]
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection [{:namespace-prefix "mybank.compliance"}
+               {:to {:namespace-prefix "mybank.compliance"}}]
+   :include :related
    :name "Compliance and Risk Management Container View"
    :title "Container View of the Compliance and Risk Management Systems"
    :desc "Shows the systems and containers of the domain Compliance and Risk Management and their relations."}
 
   {:el :organization-structure-view
    :id :mybank.compliance/organization-structure-view
-   :spec {:selection {:id :mybank.compliance/compliance-unit}
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection {:id :mybank.compliance/compliance-unit}
    :name "Compliance and Risk Management Org Chart"
    :title "Org Chart of the Compliance and Risk Management unit"
    :desc "Shows the organization structure of the Compliance and Risk Management unit."}

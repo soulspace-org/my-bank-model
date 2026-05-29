@@ -7,7 +7,7 @@ Sends e-mails to users.
 [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md)
 
 ## Technology
-Clojure namespace
+Namespace
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

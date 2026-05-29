@@ -1,0 +1,54 @@
+@startuml deployment-view
+!include <C4/C4_Deployment.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+!include <azure/Networking/AzureSubnet>
+!include <azure/Networking/AzureDNS>
+!include <azure/Networking/AzureExpressRoute>
+!include <azure/General/Azure>
+!include <azure/Networking/AzureFirewall>
+!include <azure/Management/AzureSubscription>
+!include <azure/Networking/AzureVirtualNetworkPeering>
+!include <azure/Networking/AzureVirtualNetwork>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Deployment View for the MyBank Systems
+Node(mybank_itManagement_azure_mybankTenant, "MyBank Azure Tenant", $descr="Azure Tenant for MyBank", $type="Azure", $sprite="Azure") {
+  Node(mybank_itManagement_azure_landingZoneManagementGroup, "Landing Zone Management Group") {
+    Node(mybank_itManagement_azure_alz1Subscription, "LZ1 Subscription", $descr="Subscription for the landing zone of an application", $type="Azure Subscription", $sprite="AzureSubscription") {
+      Node(mybank_itManagement_azure_alz1VnetEurope, "VNet Europe", $descr="VNet for an application infrastructure in europe", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
+    }
+  }
+  Node(mybank_itManagement_azure_platformManagementGroup, "Platform Management Group") {
+    Node(mybank_itManagement_azure_plzKafkaSubscription, "LZ Kafka Subscription", $descr="Subscription for the central Kafka infrastructure", $type="Azure Subscription", $sprite="AzureSubscription") {
+      Node(mybank_itManagement_azure_plzKafkaVnet, "LZ Kafka VNet", $descr="VNet for the Kafka infrastructure", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork") {
+        Node(mybank_itManagement_azure_plzKafkaSubnet, "Kafka Subnet", $type="Azure Subnet", $sprite="AzureSubnet")
+      }
+    }
+    Node(mybank_itManagement_azure_connectivitySubscription, "Connectivity Subscription", $descr="Subscription for the Connectivity Infrastructure", $type="Azure Subscription", $sprite="AzureSubscription") {
+      Node(mybank_itManagement_azure_dns, "Azure DNS", $descr="Domain Name Service", $type="Azure DNS", $sprite="AzureDNS")
+      Node(mybank_itManagement_azure_firewall, "Azure Firewall", $descr="Restrict network access/traffic", $type="Azure Firewall", $sprite="AzureFirewall")
+      Node(mybank_itManagement_azure_hubVnetNorthAmerica, "Hub VNet North America", $descr="VNet for the hub infrastructure in north america", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
+      Node(mybank_itManagement_azure_ddosProtection, "Azure DDoS", $descr="Protection against denial of service attacks", $type="Azure DDoS")
+      Node(mybank_itManagement_azure_hubVnetEurope, "Hub VNet Europe", $descr="VNet for the hub infrastructure in europe", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
+    }
+    Node(mybank_itManagement_azure_identitySubscription, "Identity Subscription", $descr="Subscription for the IAM Infrastructure", $type="Azure Subscription", $sprite="AzureSubscription") {
+      Node(mybank_itManagement_azure_identityVnetNorthAmerica, "Identity  VNet North America", $descr="VNet for the identity infrastructure in north america", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
+      Node(mybank_itManagement_azure_identityVnetEurope, "Identity VNet Europe", $descr="VNet for the identity infrastructure in europe", $type="Azure Virtual Network", $sprite="AzureVirtualNetwork")
+    }
+    Node(mybank_itManagement_azure_managementSubscription, "Management Subscription", $descr="Subscription for the Management Infrastructure", $type="Azure Subscription", $sprite="AzureSubscription")
+  }
+}
+Node(mybank_itManagement_onprem_dataCenterEurope, "MyBank On Premise Datacenter", $descr="Data Center of MyBank")
+Rel(mybank_itManagement_azure_alz1VnetEurope, mybank_itManagement_azure_hubVnetEurope, "peered to", $descr="Provides connectivity for the spoke", $techn="Azure Virtual Network Peering", $sprite="AzureVirtualNetworkPeering,scale=0.5")
+Rel(mybank_itManagement_onprem_dataCenterEurope, mybank_itManagement_azure_hubVnetEurope, "network link", $descr="High speed/volume link 100 Mb/s", $techn="Azure Express Route", $sprite="AzureExpressRoute,scale=0.5")
+SHOW_LEGEND()
+@enduml

@@ -5,8 +5,8 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <tupadr3/font-awesome-5/confluence>
 !include <tupadr3/font-awesome-5/jira>
+!include <tupadr3/font-awesome-5/confluence>
 
 
 

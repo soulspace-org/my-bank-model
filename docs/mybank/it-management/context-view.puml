@@ -5,6 +5,12 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/aws>
+!include <azure/General/Azure>
+!include <cloudogu/tools/vmware>
+!include <tupadr3/devicons/cisco>
+!include <cloudinsight/nagios>
+!include <logos/prometheus>
 
 
 

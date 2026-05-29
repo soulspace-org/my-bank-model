@@ -3,20 +3,18 @@
 ;;;;
 #{{:el :context-view
    :id :mybank.human-resources/context-view
-   :spec {:selection [{:namespace-prefix "mybank.human-resources"}
-                      {:to {:namespace-prefix "mybank.human-resources"}}]
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection [{:namespace-prefix "mybank.human-resources"}
+               {:to {:namespace-prefix "mybank.human-resources"}}]
+   :include :related
    :name "Human Resources Context View"
    :title "Context View of the Human Resources Systems"
    :desc "Shows the systems of the domain Human Resources and their relations."}
   
   {:el :container-view
    :id :mybank.human-resources/container-view
-   :spec {:selection [{:namespace-prefix "mybank.human-resources"}
-                      {:to {:namespace-prefix "mybank.human-resources"}}]
-          :include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection [{:namespace-prefix "mybank.human-resources"}
+               {:to {:namespace-prefix "mybank.human-resources"}}]
+   :include :related
    :name "Human Resources Container View"
    :title "Container View of the Human Resources Systems"
    :desc "Shows the systems and containers of the domain Human Resources and their relations."}

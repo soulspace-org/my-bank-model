@@ -6,35 +6,24 @@
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/java>
-!include <logos/kafka>
-!include <logos/kong>
-!include <tupadr3/font-awesome-5/java>
-!include <logos/apache-camel>
-!include <tupadr3/font-awesome-5/python>
-!include <cloudogu/tools/vmware>
-!include <tupadr3/devicons/cisco>
-!include <tupadr3/font-awesome-5/java>
-!include <tupadr3/font-awesome-5/python>
-!include <tupadr3/font-awesome-5/java>
-!include <tupadr3/font-awesome-5/java>
-!include <tupadr3/font-awesome-5/confluence>
 !include <tupadr3/font-awesome-5/aws>
 !include <azure/General/Azure>
-!include <tupadr3/font-awesome-5/java>
+!include <logos/kafka>
+!include <tupadr3/font-awesome-5/jira>
+!include <cloudogu/tools/vmware>
+!include <tupadr3/devicons/cisco>
+!include <tupadr3/font-awesome-5/confluence>
+!include <awslib14/Storage/Backup>
+!include <logos/kong>
+!include <logos/express>
+!include <tupadr3/font-awesome-5/python>
 !include <cloudinsight/nagios>
 !include <logos/prometheus>
-!include <tupadr3/font-awesome-5/jira>
-!include <tupadr3/font-awesome-5/java>
+!include <awslib14/Analytics/Redshift>
+!include <logos/apache-camel>
+!include <tupadr3/devicons2/cplusplus>
 !include <logos/hadoop>
 !include <logos/spark>
-!include <tupadr3/font-awesome-5/java>
-!include <tupadr3/font-awesome-5/python>
-!include <awslib14/Analytics/Redshift>
-!include <tupadr3/font-awesome-5/java>
-!include <tupadr3/devicons2/cplusplus>
-!include <tupadr3/font-awesome-5/java>
-!include <awslib14/Storage/Backup>
-!include <tupadr3/font-awesome-5/java>
 
 
 
@@ -65,11 +54,11 @@ Person(mybank_itManagement_networkEngineer, "Network Engineer", $descr="Designs 
 Enterprise_Boundary(mybank_mybankPlc, "My Bank") {
   Boundary(mybank_dataManagement_contextBoundary, "Data Management and Analytics") {
     System(mybank_dataManagement_bigDataAnalyticsSystem, "Big Data Analytics", $descr="Advanced analytics for predictive modeling.", $type="Java, Hadoop, Spark", $sprite="java")
-    System(mybank_dataManagement_businessIntelligenceSystem, "Business Intelligence (BI)", $descr="Provides tools for reporting and data analysis.", $type="Tableau, Python")
+    System(mybank_dataManagement_businessIntelligenceSystem, "Business Intelligence (BI)", $descr="Provides tools for reporting and data analysis.", $type="Tableau, Python", $sprite="python")
     System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
   }
   Boundary(mybank_digitalBanking_contextBoundary, "Digital Banking") {
-    System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js and Express")
+    System(mybank_digitalBanking_digitalWalletsSystem, "Digital Wallets", $descr="Supports digital wallet integration and mobile payments.", $type="Node.js, Express", $sprite="express")
     System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
   }
   Boundary(mybank_financialManagement_contextBoundary, "Financial Management") {

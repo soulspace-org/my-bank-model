@@ -15,7 +15,7 @@
           :id :mybank.digital-banking/digital-wallets-system
           :name "Digital Wallets"
           :desc "Supports digital wallet integration and mobile payments."
-          :tech "Node.js and Express"}}}
+          :tech "Node.js, Express"}}}
 
   ;; Relationships
 
