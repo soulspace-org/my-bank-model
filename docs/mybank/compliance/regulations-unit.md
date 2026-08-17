@@ -9,7 +9,7 @@ Responsible for the compliance and regulations
 ## Roles
 | Person/Role | Description |
 |---|---|
-| [Compliance Manager](../../mybank/compliance/compliance-manager.md)| Responsible for the compliance of MyBank. |
+| [Compliance Manager](../../mybank/compliance/compliance-manager.md) | Responsible for the compliance of MyBank. |
 
 
 ## Organization Structure

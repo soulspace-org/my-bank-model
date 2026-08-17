@@ -6,7 +6,7 @@ Manage sprints for software development
 ## Actors
 | Actor | Description |
 |---|---|
-| [Agility Master](../../mybank/project-management/agility-master.md)| Facilitates agile practices |
+| [Agility Master](../../mybank/project-management/agility-master.md) | Facilitates agile practices |
 
 
 ## Navigation

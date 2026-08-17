@@ -7,7 +7,7 @@ Process to manage projects
 ## Required for Capabilities
 | Capability | Description |
 |---|---|
-| [Manage Projects](../../mybank/project-management/manage-projects.md)| Capability to manage projects for the organization |
+| [Manage Projects](../../mybank/project-management/manage-projects.md) | Capability to manage projects for the organization |
 
 
 ## Navigation

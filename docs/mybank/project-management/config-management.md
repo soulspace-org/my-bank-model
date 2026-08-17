@@ -7,7 +7,7 @@ Process to manage configurations and baselines
 ## Roles
 | Person/Role | Description |
 |---|---|
-| [DevOps Engineer](../../mybank/project-management/devops-engineer.md)| Develops and operates software systems |
+| [DevOps Engineer](../../mybank/project-management/devops-engineer.md) | Develops and operates software systems |
 
 
 ## Navigation

@@ -11,6 +11,8 @@ AWS Account
 
 
 ## Deployment
+![Deployment View of the IT Management AWS Cloud](../../../mybank/it-management/aws/deployment-view.png)
+
 [Deployment View of the IT Management AWS Cloud](../../../mybank/it-management/aws/deployment-view.md)
 
 

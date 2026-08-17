@@ -9,7 +9,7 @@
 ## Sub Units
 | Org-unit | Description |
 |---|---|
-| [Loans](../../mybank/organization/corporate-customers/loans-org.md)|  |
+| [Loans](../../mybank/organization/corporate-customers/loans-org.md) |  |
 
 
 ## Organization Structure

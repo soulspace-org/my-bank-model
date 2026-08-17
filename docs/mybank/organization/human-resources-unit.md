@@ -9,7 +9,7 @@ Central management of human resources
 ## Sub Units
 | Org-unit | Description |
 |---|---|
-| [Recruiting](../../mybank/organization/hr/recruiting.md)| Responsible for recruiting new employees |
+| [Recruiting](../../mybank/organization/hr/recruiting.md) | Responsible for recruiting new employees |
 
 
 ## Organization Structure

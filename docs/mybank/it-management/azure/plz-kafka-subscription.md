@@ -14,10 +14,12 @@ cloud, platform
 ## Nodes
 | Node | Description |
 |---|---|
-| [LZ Kafka VNet](../../../mybank/it-management/azure/plz-kafka-vnet.md)| VNet for the Kafka infrastructure |
+| [LZ Kafka VNet](../../../mybank/it-management/azure/plz-kafka-vnet.md) | VNet for the Kafka infrastructure |
 
 
 ## Deployment
+![Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.png)
+
 [Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.md)
 
 

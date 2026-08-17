@@ -6,7 +6,7 @@ A person requesting services around money
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Customer](../../mybank/concepts/customer.md)| Entity requesting services around money |
+| [Customer](../../mybank/concepts/customer.md) | Entity requesting services around money |
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)

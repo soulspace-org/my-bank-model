@@ -9,17 +9,17 @@ Allows customers to view information about their bank accounts and make payments
 ## Implemented Use Cases
 | Use Case | Description |
 |---|---|
-| [place order](../../../mybank/digital-banking/internet-banking-system/place-order.md)| place an order for an account |
-| [transfer money](../../../mybank/digital-banking/internet-banking-system/transfer-money.md)| transfer money from one account to another |
-| [view account](../../../mybank/digital-banking/internet-banking-system/view-account.md)| view the details of an account |
+| [place order](../../../mybank/digital-banking/internet-banking-system/place-order.md) | place an order for an account |
+| [transfer money](../../../mybank/digital-banking/internet-banking-system/transfer-money.md) | transfer money from one account to another |
+| [view account](../../../mybank/digital-banking/internet-banking-system/view-account.md) | view the details of an account |
 ## Containers
 | Container | Description |
 |---|---|
-| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md)| Provides internet banking functionality via a RESTful JSON/HTTPS API. |
-| [Database](../../../mybank/digital-banking/internet-banking-system/database.md)| Stores user registration, authentication, and access logs. |
-| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md)| Provides limited internet banking functionality to customers via mobile devices. |
-| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md)| Provides internet banking functionality to customers via their web browser. |
-| [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md)| Delivers the static content and the internet banking single-page application. |
+| [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Provides internet banking functionality via a RESTful JSON/HTTPS API. |
+| [Database](../../../mybank/digital-banking/internet-banking-system/database.md) | Stores user registration, authentication, and access logs. |
+| [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | Provides limited internet banking functionality to customers via mobile devices. |
+| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | Provides internet banking functionality to customers via their web browser. |
+| [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | Delivers the static content and the internet banking single-page application. |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

@@ -9,7 +9,7 @@
 ## Sub Units
 | Org-unit | Description |
 |---|---|
-| [Asset Management](../../mybank/investments/asset-management-org.md)|  |
+| [Asset Management](../../mybank/investments/asset-management-org.md) |  |
 
 
 ## Navigation

@@ -14,10 +14,12 @@ cloud, platform
 ## Nodes
 | Node | Description |
 |---|---|
-| [Kafka Subnet](../../../mybank/it-management/azure/plz-kafka-subnet.md)|  |
+| [Kafka Subnet](../../../mybank/it-management/azure/plz-kafka-subnet.md) |  |
 
 
 ## Deployment
+![Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.png)
+
 [Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.md)
 
 

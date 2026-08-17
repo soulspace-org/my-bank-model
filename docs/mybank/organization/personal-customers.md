@@ -9,9 +9,9 @@
 ## Sub Units
 | Org-unit | Description |
 |---|---|
-| [Internet Banking](../../mybank/organization/personal-customers/internet-banking.md)|  |
-| [Mortgage](../../mybank/organization/personal-customers/mortgage-org.md)|  |
-| [Personal Loans](../../mybank/organization/personal-customers/personal-loans-org.md)|  |
+| [Internet Banking](../../mybank/organization/personal-customers/internet-banking.md) |  |
+| [Mortgage](../../mybank/organization/personal-customers/mortgage-org.md) |  |
+| [Personal Loans](../../mybank/organization/personal-customers/personal-loans-org.md) |  |
 
 
 ## Organization Structure

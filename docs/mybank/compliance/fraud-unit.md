@@ -9,7 +9,7 @@ Responsible for the fraud detection and mitigation
 ## Roles
 | Person/Role | Description |
 |---|---|
-| [Fraud specialist](../../mybank/compliance/fraud-specialist.md)| Responsible for the fraud detection and mitigation of MyBank. |
+| [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | Responsible for the fraud detection and mitigation of MyBank. |
 
 
 ## Organization Structure

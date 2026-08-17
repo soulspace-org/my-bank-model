@@ -7,7 +7,7 @@ Capability to manage projects for the organization
 ## Responsibility of Organization Unit
 | Org-unit | Description |
 |---|---|
-| [Projects](../../mybank/project-management/project-management-unit.md)| Responsible for MyBank Projects |
+| [Projects](../../mybank/project-management/project-management-unit.md) | Responsible for MyBank Projects |
 
 
 ## Navigation

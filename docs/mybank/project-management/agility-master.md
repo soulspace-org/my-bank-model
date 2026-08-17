@@ -7,11 +7,11 @@ Facilitates agile practices
 ## Role in Processes
 | Process | Description |
 |---|---|
-| [Software Development](../../mybank/project-management/software-development.md)| Process to develop software |
+| [Software Development](../../mybank/project-management/software-development.md) | Process to develop software |
 ## Actor in Use Cases
 | Use Case | Description |
 |---|---|
-| [Manage Sprints](../../mybank/project-management/manage-sprints.md)| Manage sprints for software development |
+| [Manage Sprints](../../mybank/project-management/manage-sprints.md) | Manage sprints for software development |
 
 
 ## Navigation

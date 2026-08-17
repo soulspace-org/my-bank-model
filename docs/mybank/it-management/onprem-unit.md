@@ -9,9 +9,9 @@ Responsible for the On Premise Datacenter.
 ## Roles
 | Person/Role | Description |
 |---|---|
-| [Database Administrator](../../mybank/it-management/database-administrator.md)| Manages databases |
-| [Network Engineer](../../mybank/it-management/network-engineer.md)| Designs and operates network infrastructure |
-| [Security Engineer](../../mybank/it-management/security-engineer.md)| Designs and operates security infrastructure |
+| [Database Administrator](../../mybank/it-management/database-administrator.md) | Manages databases |
+| [Network Engineer](../../mybank/it-management/network-engineer.md) | Designs and operates network infrastructure |
+| [Security Engineer](../../mybank/it-management/security-engineer.md) | Designs and operates security infrastructure |
 
 
 ## Navigation

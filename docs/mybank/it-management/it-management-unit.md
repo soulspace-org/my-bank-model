@@ -9,9 +9,9 @@ Responsible for the IT platform of MyBank
 ## Sub Units
 | Org-unit | Description |
 |---|---|
-| [AWS Platform](../../mybank/it-management/aws-unit.md)| Responsible for the AWS cloud platform. |
-| [Azure Platform](../../mybank/it-management/azure-unit.md)| Responsible for the Azure cloud platform. |
-| [On Premise Datacenter](../../mybank/it-management/onprem-unit.md)| Responsible for the On Premise Datacenter. |
+| [AWS Platform](../../mybank/it-management/aws-unit.md) | Responsible for the AWS cloud platform. |
+| [Azure Platform](../../mybank/it-management/azure-unit.md) | Responsible for the Azure cloud platform. |
+| [On Premise Datacenter](../../mybank/it-management/onprem-unit.md) | Responsible for the On Premise Datacenter. |
 
 
 ## Navigation

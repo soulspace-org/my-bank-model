@@ -10,9 +10,9 @@ Personal Customer of MyBank.
 ## Actor in Use Cases
 | Use Case | Description |
 |---|---|
-| [place order](../mybank/digital-banking/internet-banking-system/place-order.md)| place an order for an account |
-| [transfer money](../mybank/digital-banking/internet-banking-system/transfer-money.md)| transfer money from one account to another |
-| [view account](../mybank/digital-banking/internet-banking-system/view-account.md)| view the details of an account |
+| [place order](../mybank/digital-banking/internet-banking-system/place-order.md) | place an order for an account |
+| [transfer money](../mybank/digital-banking/internet-banking-system/transfer-money.md) | transfer money from one account to another |
+| [view account](../mybank/digital-banking/internet-banking-system/view-account.md) | view the details of an account |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

@@ -6,7 +6,7 @@ A loan for a immobile, e.g. a house
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Loan](../../mybank/concepts/loan.md)| Lending money from the bank to the customer |
+| [Loan](../../mybank/concepts/loan.md) | Lending money from the bank to the customer |
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)

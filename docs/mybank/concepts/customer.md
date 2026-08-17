@@ -6,16 +6,16 @@ Entity requesting services around money
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Corporate Customer](../../mybank/concepts/corporate-customer.md)| An organization requesting services around money |
-| [Personal Customer](../../mybank/concepts/personal-customer.md)| A person requesting services around money |
+| [Corporate Customer](../../mybank/concepts/corporate-customer.md) | An organization requesting services around money |
+| [Personal Customer](../../mybank/concepts/personal-customer.md) | A person requesting services around money |
 ## Features
 | Concept | Description |
 |---|---|
-| [Account](../../mybank/concepts/account.md)| Records the financial transactions between a customer and a bank |
+| [Account](../../mybank/concepts/account.md) | Records the financial transactions between a customer and a bank |
 ## Feature of
 | Concept | Description |
 |---|---|
-| [Bank](../../mybank/concepts/bank.md)| Organization providing services around money |
+| [Bank](../../mybank/concepts/bank.md) | Organization providing services around money |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|

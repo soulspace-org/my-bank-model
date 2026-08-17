@@ -3,16 +3,16 @@ digraph "High Level Banking Concepts" {
   label="High Level Banking Concepts"
 
   layout=dot
-mybank_concepts__mortgage [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Mortgage</B><BR/><FONT POINT-SIZE="10"><I>A loan for a immobile, e.g. a house </I></FONT>>]
-mybank_concepts__transfer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Transfer</B><BR/><FONT POINT-SIZE="10"><I>Moves money from one account to another<BR/>account </I></FONT>>]
-mybank_concepts__personal_customer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Personal Customer</B><BR/><FONT POINT-SIZE="10"><I>A person requesting services around<BR/>money </I></FONT>>]
-mybank_concepts__account [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Account</B><BR/><FONT POINT-SIZE="10"><I>Records the financial transactions<BR/>between a customer and a bank </I></FONT>>]
-mybank_concepts__bank [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Bank</B><BR/><FONT POINT-SIZE="10"><I>Organization providing services around<BR/>money </I></FONT>>]
-mybank_concepts__customer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Customer</B><BR/><FONT POINT-SIZE="10"><I>Entity requesting services around money </I></FONT>>]
-mybank_concepts__deposit [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Deposit</B><BR/><FONT POINT-SIZE="10"><I>Puts money on account </I></FONT>>]
-mybank_concepts__corporate_customer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Corporate Customer</B><BR/><FONT POINT-SIZE="10"><I>An organization requesting services<BR/>around money </I></FONT>>]
-mybank_concepts__withdrawal [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Withdrawal</B><BR/><FONT POINT-SIZE="10"><I>Takes money from account </I></FONT>>]
-mybank_concepts__loan [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Loan</B><BR/><FONT POINT-SIZE="10"><I>Lending money from the bank to the<BR/>customer </I></FONT>>]
+mybank_concepts__mortgage [shape=box style=filled fillcolor="#dddddd" label=<<B>Mortgage</B><BR/><FONT POINT-SIZE="10"><I>A loan for a immobile, e.g. a house </I></FONT>>]
+mybank_concepts__transfer [shape=box style=filled fillcolor="#dddddd" label=<<B>Transfer</B><BR/><FONT POINT-SIZE="10"><I>Moves money from one account to another<BR/>account </I></FONT>>]
+mybank_concepts__personal_customer [shape=box style=filled fillcolor="#dddddd" label=<<B>Personal Customer</B><BR/><FONT POINT-SIZE="10"><I>A person requesting services around<BR/>money </I></FONT>>]
+mybank_concepts__account [shape=box style=filled fillcolor="#dddddd" label=<<B>Account</B><BR/><FONT POINT-SIZE="10"><I>Records the financial transactions<BR/>between a customer and a bank </I></FONT>>]
+mybank_concepts__bank [shape=box style=filled fillcolor="#dddddd" label=<<B>Bank</B><BR/><FONT POINT-SIZE="10"><I>Organization providing services around<BR/>money </I></FONT>>]
+mybank_concepts__customer [shape=box style=filled fillcolor="#dddddd" label=<<B>Customer</B><BR/><FONT POINT-SIZE="10"><I>Entity requesting services around money </I></FONT>>]
+mybank_concepts__deposit [shape=box style=filled fillcolor="#dddddd" label=<<B>Deposit</B><BR/><FONT POINT-SIZE="10"><I>Puts money on account </I></FONT>>]
+mybank_concepts__corporate_customer [shape=box style=filled fillcolor="#dddddd" label=<<B>Corporate Customer</B><BR/><FONT POINT-SIZE="10"><I>An organization requesting services<BR/>around money </I></FONT>>]
+mybank_concepts__withdrawal [shape=box style=filled fillcolor="#dddddd" label=<<B>Withdrawal</B><BR/><FONT POINT-SIZE="10"><I>Takes money from account </I></FONT>>]
+mybank_concepts__loan [shape=box style=filled fillcolor="#dddddd" label=<<B>Loan</B><BR/><FONT POINT-SIZE="10"><I>Lending money from the bank to the<BR/>customer </I></FONT>>]
  
 mybank_concepts__customer -> mybank_concepts__transfer [label=<performs<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
 mybank_concepts__transfer -> mybank_concepts__account [label=<between<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]

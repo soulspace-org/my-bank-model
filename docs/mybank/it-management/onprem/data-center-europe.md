@@ -13,6 +13,8 @@ onprem, platform
 
 
 ## Deployment
+![Deployment View of the IT Management On Premise Datacenter](../../../mybank/it-management/onprem/deployment-view.png)
+
 [Deployment View of the IT Management On Premise Datacenter](../../../mybank/it-management/onprem/deployment-view.md)
 
 
