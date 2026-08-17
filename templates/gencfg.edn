@@ -10,7 +10,7 @@
  ;;
 
  ; rendered as graphviz dot 
- {:view-selection {:els #{:concept-view :process-view :model-view}}
+ {:view-selection {:els #{:concept-view :process-view :domain-view :model-view}}
   :template "views/view.dot.cmb"
   :per-element true
   :id-as-name true
@@ -25,10 +25,17 @@
 
  ; rendered as plantuml UML
  #_{:view-selection {:els #{:code-view :state-machine-view :use-case-view}}
-  :template "views/uml-view.puml.cmb"
-  :per-element true
-  :id-as-name true
-  :extension "puml"}
+    :template "views/uml-view.puml.cmb"
+    :per-element true
+    :id-as-name true
+    :extension "puml"}
+
+ ; rendered as Mermaid treemap
+ #_{:view-selection {:els #{:deployment-structure-view :organization-structure-view :system-structure-view}}
+    :template "views/treemap.mm.cmb"
+    :per-element true
+    :id-as-name true
+    :extension "mermaid"}
 
  ;;
  ;;  Markdown Generation for Model Elements
@@ -71,6 +78,17 @@
   :per-element true
   :id-as-name true
   :extension "md"}
+
+ ;;;
+ ;;; Markdown Architecture Documentation
+ ;;;
+ {:selection {:el :system :external? false}
+  :template "docs/arc42.md.cmb"
+  :per-element true
+  :id-as-name true
+  :suffix "_architecture"
+  :extension "md"
+  :protected-area "PA"}
 
  ;;;
  ;;; Markdown Reports
