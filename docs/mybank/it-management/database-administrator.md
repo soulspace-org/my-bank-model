@@ -7,7 +7,7 @@ Manages databases
 ## Role in Organization Units
 | Org-unit | Description |
 |---|---|
-| [On Premise Datacenter](../../mybank/it-management/onprem-unit.md)| Responsible for the On Premise Datacenter. |
+| [On Premise Datacenter](../../mybank/it-management/onprem-unit.md) | Responsible for the On Premise Datacenter. |
 
 
 ## Navigation

@@ -9,7 +9,7 @@ Responsible for the risk management
 ## Roles
 | Person/Role | Description |
 |---|---|
-| [Risk Manager](../../mybank/compliance/risk-manager.md)| Responsible for managing the risks. |
+| [Risk Manager](../../mybank/compliance/risk-manager.md) | Responsible for managing the risks. |
 
 
 ## Organization Structure

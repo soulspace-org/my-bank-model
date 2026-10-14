@@ -13,15 +13,17 @@ cloud, platform
 ## Responsibility of Organization Unit
 | Org-unit | Description |
 |---|---|
-| [Azure Platform](../../../mybank/it-management/azure-unit.md)| Responsible for the Azure cloud platform. |
+| [Azure Platform](../../../mybank/it-management/azure-unit.md) | Responsible for the Azure cloud platform. |
 ## Nodes
 | Node | Description |
 |---|---|
-| [Landing Zone Management Group](../../../mybank/it-management/azure/landing-zone-management-group.md)|  |
-| [Platform Management Group](../../../mybank/it-management/azure/platform-management-group.md)|  |
+| [Landing Zone Management Group](../../../mybank/it-management/azure/landing-zone-management-group.md) |  |
+| [Platform Management Group](../../../mybank/it-management/azure/platform-management-group.md) |  |
 
 
 ## Deployment
+![Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.png)
+
 [Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.md)
 
 

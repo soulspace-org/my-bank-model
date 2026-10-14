@@ -6,11 +6,11 @@ Lending money from the bank to the customer
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Mortgage](../../mybank/concepts/mortgage.md)| A loan for a immobile, e.g. a house |
+| [Mortgage](../../mybank/concepts/mortgage.md) | A loan for a immobile, e.g. a house |
 ## Feature of
 | Concept | Description |
 |---|---|
-| [Bank](../../mybank/concepts/bank.md)| Organization providing services around money |
+| [Bank](../../mybank/concepts/bank.md) | Organization providing services around money |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|

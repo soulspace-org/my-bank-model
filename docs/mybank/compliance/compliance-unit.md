@@ -9,9 +9,9 @@ Responsible for the compliance and risk management
 ## Sub Units
 | Org-unit | Description |
 |---|---|
-| [Fraud](../../mybank/compliance/fraud-unit.md)| Responsible for the fraud detection and mitigation |
-| [Regulations](../../mybank/compliance/regulations-unit.md)| Responsible for the compliance and regulations |
-| [Risk Management](../../mybank/compliance/risk-management-unit.md)| Responsible for the risk management |
+| [Fraud](../../mybank/compliance/fraud-unit.md) | Responsible for the fraud detection and mitigation |
+| [Regulations](../../mybank/compliance/regulations-unit.md) | Responsible for the compliance and regulations |
+| [Risk Management](../../mybank/compliance/risk-management-unit.md) | Responsible for the risk management |
 
 
 ## Organization Structure

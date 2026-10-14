@@ -7,7 +7,7 @@ Manages projects at MyBank
 ## Role in Organization Units
 | Org-unit | Description |
 |---|---|
-| [Projects](../../mybank/project-management/project-management-unit.md)| Responsible for MyBank Projects |
+| [Projects](../../mybank/project-management/project-management-unit.md) | Responsible for MyBank Projects |
 
 
 ## Navigation

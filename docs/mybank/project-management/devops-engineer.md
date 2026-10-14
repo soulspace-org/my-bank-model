@@ -7,8 +7,8 @@ Develops and operates software systems
 ## Role in Processes
 | Process | Description |
 |---|---|
-| [Config Management](../../mybank/project-management/config-management.md)| Process to manage configurations and baselines |
-| [Software Development](../../mybank/project-management/software-development.md)| Process to develop software |
+| [Config Management](../../mybank/project-management/config-management.md) | Process to manage configurations and baselines |
+| [Software Development](../../mybank/project-management/software-development.md) | Process to develop software |
 
 
 ## Navigation

@@ -8,13 +8,15 @@
 ## Nodes
 | Node | Description |
 |---|---|
-| [Connectivity Subscription](../../../mybank/it-management/azure/connectivity-subscription.md)| Subscription for the Connectivity Infrastructure |
-| [Identity Subscription](../../../mybank/it-management/azure/identity-subscription.md)| Subscription for the IAM Infrastructure |
-| [LZ Kafka Subscription](../../../mybank/it-management/azure/plz-kafka-subscription.md)| Subscription for the central Kafka infrastructure |
-| [Management Subscription](../../../mybank/it-management/azure/management-subscription.md)| Subscription for the Management Infrastructure |
+| [Connectivity Subscription](../../../mybank/it-management/azure/connectivity-subscription.md) | Subscription for the Connectivity Infrastructure |
+| [Identity Subscription](../../../mybank/it-management/azure/identity-subscription.md) | Subscription for the IAM Infrastructure |
+| [LZ Kafka Subscription](../../../mybank/it-management/azure/plz-kafka-subscription.md) | Subscription for the central Kafka infrastructure |
+| [Management Subscription](../../../mybank/it-management/azure/management-subscription.md) | Subscription for the Management Infrastructure |
 
 
 ## Deployment
+![Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.png)
+
 [Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.md)
 
 

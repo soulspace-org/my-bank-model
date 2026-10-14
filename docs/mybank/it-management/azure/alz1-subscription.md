@@ -14,10 +14,12 @@ cloud, platform
 ## Nodes
 | Node | Description |
 |---|---|
-| [VNet Europe](../../../mybank/it-management/azure/alz1-vnet-europe.md)| VNet for an application infrastructure in europe |
+| [VNet Europe](../../../mybank/it-management/azure/alz1-vnet-europe.md) | VNet for an application infrastructure in europe |
 
 
 ## Deployment
+![Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.png)
+
 [Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.md)
 
 

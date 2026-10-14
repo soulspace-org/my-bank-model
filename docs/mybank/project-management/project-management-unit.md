@@ -9,12 +9,12 @@ Responsible for MyBank Projects
 ## Roles
 | Person/Role | Description |
 |---|---|
-| [Project Manager](../../mybank/project-management/project-manager.md)| Manages projects at MyBank |
+| [Project Manager](../../mybank/project-management/project-manager.md) | Manages projects at MyBank |
 
 ## Responsibility for Capabilities
 | Capability | Description |
 |---|---|
-| [Manage Projects](../../mybank/project-management/manage-projects.md)| Capability to manage projects for the organization |
+| [Manage Projects](../../mybank/project-management/manage-projects.md) | Capability to manage projects for the organization |
 
 
 ## Navigation

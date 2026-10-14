@@ -7,8 +7,8 @@ Operates cloud infrastructure and controls costs
 ## Role in Organization Units
 | Org-unit | Description |
 |---|---|
-| [AWS Platform](../../mybank/it-management/aws-unit.md)| Responsible for the AWS cloud platform. |
-| [Azure Platform](../../mybank/it-management/azure-unit.md)| Responsible for the Azure cloud platform. |
+| [AWS Platform](../../mybank/it-management/aws-unit.md) | Responsible for the AWS cloud platform. |
+| [Azure Platform](../../mybank/it-management/azure-unit.md) | Responsible for the Azure cloud platform. |
 
 
 ## Navigation

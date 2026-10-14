@@ -11,12 +11,12 @@ Clojure, Pedestal
 ## Components
 | Component | Description |
 |---|---|
-| [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md)| Provides customers with a summary of their bank accounts. |
-| [Core Banking Systems Facade](../../../mybank/digital-banking/internet-banking-system/core-banking-systems-facade.md)| Facilitates interaction with the core banking systems. |
-| [E-mail Component](../../../mybank/digital-banking/internet-banking-system/email-component.md)| Sends e-mails to users. |
-| [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md)| Allows users to reset their passwords. |
-| [Security Component](../../../mybank/digital-banking/internet-banking-system/security-component.md)| Handles authentication, password changes, etc. |
-| [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md)| Allows users to sign in to the banking system. |
+| [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | Provides customers with a summary of their bank accounts. |
+| [Core Banking Systems Facade](../../../mybank/digital-banking/internet-banking-system/core-banking-systems-facade.md) | Facilitates interaction with the core banking systems. |
+| [E-mail Component](../../../mybank/digital-banking/internet-banking-system/email-component.md) | Sends e-mails to users. |
+| [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | Allows users to reset their passwords. |
+| [Security Component](../../../mybank/digital-banking/internet-banking-system/security-component.md) | Handles authentication, password changes, etc. |
+| [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Allows users to sign in to the banking system. |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

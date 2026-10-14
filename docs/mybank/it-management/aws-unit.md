@@ -9,9 +9,9 @@ Responsible for the AWS cloud platform.
 ## Roles
 | Person/Role | Description |
 |---|---|
-| [Cloud FinOps Specialist](../../mybank/it-management/cloud-finops-specialist.md)| Operates cloud infrastructure and controls costs |
-| [Cloud Operations Specialist](../../mybank/it-management/cloud-operations-specialist.md)| Operates cloud infrastructure |
-| [Cloud Solution Architect](../../mybank/it-management/cloud-solution-architect.md)| Designs cloud solutions |
+| [Cloud FinOps Specialist](../../mybank/it-management/cloud-finops-specialist.md) | Operates cloud infrastructure and controls costs |
+| [Cloud Operations Specialist](../../mybank/it-management/cloud-operations-specialist.md) | Operates cloud infrastructure |
+| [Cloud Solution Architect](../../mybank/it-management/cloud-solution-architect.md) | Designs cloud solutions |
 
 
 ## Navigation

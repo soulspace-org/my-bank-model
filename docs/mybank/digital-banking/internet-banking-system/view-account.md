@@ -6,7 +6,7 @@ view the details of an account
 ## Actors
 | Actor | Description |
 |---|---|
-| [Personal Customer](../../../mybank/personal-customer.md)| Personal Customer of MyBank. |
+| [Personal Customer](../../../mybank/personal-customer.md) | Personal Customer of MyBank. |
 
 ## Use Case View
 ![Use Case View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/use-case-view.png)

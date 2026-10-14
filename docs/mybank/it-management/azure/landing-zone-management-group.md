@@ -8,10 +8,12 @@
 ## Nodes
 | Node | Description |
 |---|---|
-| [LZ1 Subscription](../../../mybank/it-management/azure/alz1-subscription.md)| Subscription for the landing zone of an application |
+| [LZ1 Subscription](../../../mybank/it-management/azure/alz1-subscription.md) | Subscription for the landing zone of an application |
 
 
 ## Deployment
+![Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.png)
+
 [Deployment View of the IT Management Azure Cloud](../../../mybank/it-management/azure/deployment-view.md)
 
 
