@@ -3,14 +3,14 @@
 ## Description
 Customer service staff within the bank.
 
-## Other Relations
-| From | Name | To | Description |
-|---|---|---|---|
-| [Personal Customer](../../mybank/personal-customer.md) | asks questions to | [Customer Service Staff](../../mybank/customer-channels/customer-service-staff.md) |  |
-| [Customer Service Staff](../../mybank/customer-channels/customer-service-staff.md) | sends and receives customer communication using | [E-mail System](../../mybank/email-system.md) |  |
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Personal Customer](../../mybank/personal-customer.md) | asks questions to | [Customer Service Staff](../../mybank/customer-channels/customer-service-staff.md) |  |  |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Customer Service Staff](../../mybank/customer-channels/customer-service-staff.md) | sends and receives customer communication using | [E-mail System](../../mybank/email-system.md) |  |  |
 | [Customer Service Staff](../../mybank/customer-channels/customer-service-staff.md) | uses | [Contact Center](../../mybank/customer-channels/contact-center-system.md) |  | Customer calls and cases |
 
 

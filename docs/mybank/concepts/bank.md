@@ -6,9 +6,15 @@ Organization providing services around money
 ## Features
 | Concept | Description |
 |---|---|
-| [Account](../../mybank/concepts/account.md) | Records the financial transactions between a customer and a bank |
 | [Customer](../../mybank/concepts/customer.md) | Entity requesting services around money |
-| [Loan](../../mybank/concepts/loan.md) | Lending money from the bank to the customer |
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Bank](../../mybank/concepts/bank.md) | performs | [Risk Assessment](../../mybank/concepts/risk-assessment.md) |  |
+| [Bank](../../mybank/concepts/bank.md) | provides | [Loan](../../mybank/concepts/loan.md) |  |
+| [Bank](../../mybank/concepts/bank.md) | provides | [Account](../../mybank/concepts/account.md) |  |
+| [Bank](../../mybank/concepts/bank.md) | provides | [Channel](../../mybank/concepts/channel.md) |  |
+| [Bank](../../mybank/concepts/bank.md) | provides | [Investment](../../mybank/concepts/investment.md) |  |
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)

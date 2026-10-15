@@ -8,6 +8,13 @@ Monitors system performance and health.
 
 ## Technology
 Nagios, Prometheus
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Cloud Operations Specialist](../../mybank/it-management/cloud-operations-specialist.md) | uses | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) |  | Health and performance metrics |
+| [Incident Manager](../../mybank/project-management/incident-manager.md) | uses | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) |  | Alerts and system health |
+| [DevOps Engineer](../../mybank/project-management/devops-engineer.md) | uses | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) |  | Application metrics and alerts |
+| [IT Manager](../../mybank/it-management/it-manager.md) | uses | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) |  | Service levels and incident overview |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

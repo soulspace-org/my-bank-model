@@ -174,6 +174,70 @@
           :desc "Tools for software development, testing, and deployment."
           :tech "GitLab"}}}
 
+  ;; Role usage of systems
+  {:el :request
+   :id :mybank.project-management/project-manager-requests-jira
+   :from :mybank.project-management/project-manager
+   :to :mybank.project-management/jira
+   :name "plans in"
+   :desc "Project plans, milestones and status reports"}
+
+  {:el :request
+   :id :mybank.project-management/project-manager-requests-confluence
+   :from :mybank.project-management/project-manager
+   :to :mybank.project-management/confluence
+   :name "documents in"
+   :desc "Project documentation"}
+
+  {:el :request
+   :id :mybank.project-management/agility-master-requests-jira
+   :from :mybank.project-management/agility-master
+   :to :mybank.project-management/jira
+   :name "uses"
+   :desc "Backlogs, sprints and burndown charts"}
+
+  {:el :request
+   :id :mybank.project-management/devops-engineer-requests-gitlab
+   :from :mybank.project-management/devops-engineer
+   :to :mybank.project-management/gitlab
+   :name "uses"
+   :desc "Source code, pipelines and deployments"}
+
+  {:el :request
+   :id :mybank.project-management/devops-engineer-requests-system-monitoring
+   :from :mybank.project-management/devops-engineer
+   :to :mybank.infrastructure-management/system-monitoring-system
+   :name "uses"
+   :desc "Application metrics and alerts"}
+
+  {:el :request
+   :id :mybank.project-management/incident-manager-requests-jira
+   :from :mybank.project-management/incident-manager
+   :to :mybank.project-management/jira
+   :name "tracks in"
+   :desc "Incident tickets and resolutions"}
+
+  {:el :request
+   :id :mybank.project-management/incident-manager-requests-system-monitoring
+   :from :mybank.project-management/incident-manager
+   :to :mybank.infrastructure-management/system-monitoring-system
+   :name "uses"
+   :desc "Alerts and system health"}
+
+  {:el :request
+   :id :mybank.project-management/quality-manager-requests-jira
+   :from :mybank.project-management/quality-manager
+   :to :mybank.project-management/jira
+   :name "tracks in"
+   :desc "Defects and test results"}
+
+  {:el :request
+   :id :mybank.project-management/quality-manager-requests-gitlab
+   :from :mybank.project-management/quality-manager
+   :to :mybank.project-management/gitlab
+   :name "reviews in"
+   :desc "Test reports and quality gates"}
+
   {:el :request
    :id :mybank.project-management/gitlab-requests-jira
    :from :mybank.project-management/gitlab

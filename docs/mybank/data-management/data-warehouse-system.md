@@ -11,6 +11,7 @@ AWS Redshift
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Database Administrator](../../mybank/it-management/database-administrator.md) | administers | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) |  | Schemas, backups and performance settings |
 | [Business Intelligence (BI)](../../mybank/data-management/business-intelligence-system.md) | queries | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | SQL | Aggregated data for reports and dashboards |
 | [Big Data Analytics](../../mybank/data-management/big-data-analytics-system.md) | queries | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | SQL | Historical data for predictive models |
 ## Incoming Asynchronous Sends

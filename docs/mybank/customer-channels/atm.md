@@ -8,15 +8,15 @@ Allows customers to withdraw cash.
 
 ## Technology
 C++, Java
-## Other Relations
-| From | Name | To | Description |
-|---|---|---|---|
-| [ATM](../../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../../mybank/core-banking/account-management-system.md) |  |
-| [ATM](../../mybank/customer-channels/atm.md) | validates transaction | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Personal Customer](../../mybank/personal-customer.md) | uses atm for balance information and withdrawals | [ATM](../../mybank/customer-channels/atm.md) |  |  |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [ATM](../../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
+| [ATM](../../mybank/customer-channels/atm.md) | validates transaction | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 
 ## System Context View
 ![Context View of the Customer Channels Systems](../../mybank/customer-channels/context-view.png)

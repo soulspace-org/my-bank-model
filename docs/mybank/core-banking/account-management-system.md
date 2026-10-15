@@ -8,10 +8,6 @@ Handles customer accounts, deposits, and withdrawals.
 
 ## Technology
 Java, Spring Boot
-## Other Relations
-| From | Name | To | Description |
-|---|---|---|---|
-| [ATM](../../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../../mybank/core-banking/account-management-system.md) |  |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
@@ -19,6 +15,7 @@ Java, Spring Boot
 | [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | calls | [Account Management](../../mybank/core-banking/account-management-system.md) | REST | Account queries and updates |
 | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
 | [API Application](../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../mybank/core-banking/account-management-system.md) | REST |  |
+| [ATM](../../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
 | [Loan Management](../../mybank/core-banking/loan-management-system.md) | retrieves customer account information from | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
 | [Contact Center](../../mybank/customer-channels/contact-center-system.md) | uses | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Customer account information |
 | [Branch Systems](../../mybank/customer-channels/branch-systems.md) | uses | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Customer account data and changes |

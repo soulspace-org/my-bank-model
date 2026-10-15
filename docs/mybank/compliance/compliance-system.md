@@ -13,13 +13,10 @@ Java, Spring Boot
 | Org-unit | Description |
 |---|---|
 | [Regulations](../../mybank/compliance/regulations-unit.md) | Responsible for the compliance and regulations |
-## Other Relations
-| From | Name | To | Description |
-|---|---|---|---|
-| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | assesses customer risk for loan approval using | [Compliance System](../../mybank/compliance/compliance-system.md) |  |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | assesses customer risk for loan approval using | [Compliance System](../../mybank/compliance/compliance-system.md) |  |  |
 | [Compliance Manager](../../mybank/compliance/compliance-manager.md) | uses | [Compliance System](../../mybank/compliance/compliance-system.md) |  | generate compliance reports |
 ## Incoming Asynchronous Sends
 | From | Name | To | Technology | Description |

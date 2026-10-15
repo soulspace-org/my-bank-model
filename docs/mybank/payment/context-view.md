@@ -36,11 +36,7 @@ Shows the systems of the domain Payment and their relations.
 | [SWIFT/RTGS/NEFT](../../mybank/payment/swift-rtgs-neft-system.md) | settles with | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Settlement bookings |
 | [ACH System](../../mybank/payment/ach-system.md) | settles with | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Batch settlement bookings |
 | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | validates and processes payments using | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
-
-## Other Relationships
-| From | Name | To | Description |
-|---|---|---|---|
-| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | validates and processes payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | validates and processes payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

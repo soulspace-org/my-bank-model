@@ -7,6 +7,8 @@
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/jira>
 !include <tupadr3/font-awesome-5/confluence>
+!include <cloudinsight/nagios>
+!include <logos/prometheus>
 
 
 
@@ -24,9 +26,19 @@ Person(mybank_projectManagement_projectManager, "Project Manager", $descr="Manag
 Person(mybank_projectManagement_devopsEngineer, "DevOps Engineer", $descr="Develops and operates software systems")
 Person(mybank_projectManagement_incidentManager, "Incident Manager", $descr="Manages incidents")
 Person(mybank_projectManagement_qualityManager, "Quality Manager", $descr="Responsible for quality assurance and compliance to quality standards")
+System(mybank_infrastructureManagement_systemMonitoringSystem, "System Monitoring", $descr="Monitors system performance and health.", $type="Nagios, Prometheus", $sprite="nagios")
 Person(mybank_projectManagement_agilityMaster, "Agility Master", $descr="Facilitates agile practices")
 Rel(mybank_projectManagement_gitlab, mybank_projectManagement_confluence, "publishes to", $descr="Technical documentation", $techn="REST")
+Rel(mybank_projectManagement_qualityManager, mybank_projectManagement_gitlab, "reviews in", $descr="Test reports and quality gates")
+Rel(mybank_projectManagement_qualityManager, mybank_projectManagement_jira, "tracks in", $descr="Defects and test results")
+Rel(mybank_projectManagement_incidentManager, mybank_projectManagement_jira, "tracks in", $descr="Incident tickets and resolutions")
 Rel(mybank_projectManagement_jira, mybank_projectManagement_confluence, "links to", $descr="Project documentation pages", $techn="REST")
+Rel(mybank_projectManagement_devopsEngineer, mybank_projectManagement_gitlab, "uses", $descr="Source code, pipelines and deployments")
+Rel(mybank_projectManagement_agilityMaster, mybank_projectManagement_jira, "uses", $descr="Backlogs, sprints and burndown charts")
+Rel(mybank_projectManagement_projectManager, mybank_projectManagement_confluence, "documents in", $descr="Project documentation")
+Rel(mybank_projectManagement_incidentManager, mybank_infrastructureManagement_systemMonitoringSystem, "uses", $descr="Alerts and system health")
+Rel(mybank_projectManagement_devopsEngineer, mybank_infrastructureManagement_systemMonitoringSystem, "uses", $descr="Application metrics and alerts")
+Rel(mybank_projectManagement_projectManager, mybank_projectManagement_jira, "plans in", $descr="Project plans, milestones and status reports")
 Rel(mybank_projectManagement_gitlab, mybank_projectManagement_jira, "updates", $descr="Issue status from commits and merge requests", $techn="REST")
 SHOW_LEGEND()
 @enduml

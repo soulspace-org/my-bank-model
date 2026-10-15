@@ -9,6 +9,7 @@ Shows the Internet Banking System and its relations.
 ## Roles
 | Person/Role | Description |
 |---|---|
+| [Corporate Customer](../../../mybank/corporate-customer.md)| Corporate Customer of MyBank. |
 | [Personal Customer](../../../mybank/personal-customer.md)| Personal Customer of MyBank. |
 
 ## Systems
@@ -29,6 +30,7 @@ Shows the Internet Banking System and its relations.
 | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../../../mybank/core-banking/account-management-system.md) |  |  |
 | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../../../mybank/payment/payment-gateway-system.md) |  |  |
 | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../../../mybank/email-system.md) |  |  |
+| [Corporate Customer](../../../mybank/corporate-customer.md) | uses | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  | Corporate account balances and payment orders |
 | [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 
 ## Navigation

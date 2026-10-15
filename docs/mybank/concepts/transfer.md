@@ -3,11 +3,15 @@
 ## Description
 Moves money from one account to another account
 
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Transaction](../../mybank/concepts/transaction.md) | Movement of money recorded on an account |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Transfer](../../mybank/concepts/transfer.md) | between | [Account](../../mybank/concepts/account.md) |  |
-| [Customer](../../mybank/concepts/customer.md) | performs | [Transfer](../../mybank/concepts/transfer.md) |  |
+| [Transfer](../../mybank/concepts/transfer.md) | credits target | [Account](../../mybank/concepts/account.md) |  |
+| [Transfer](../../mybank/concepts/transfer.md) | debits source | [Account](../../mybank/concepts/account.md) |  |
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)

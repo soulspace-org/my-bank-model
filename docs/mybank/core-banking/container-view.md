@@ -50,7 +50,9 @@ Shows the systems and containers of the domain Core Banking and their relations.
 | [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | calls | [Loan Management](../../mybank/core-banking/loan-management-system.md) | REST | Loan applications and loan status |
 | [Risk Management System](../../mybank/compliance/risk-management-system.md) | fetches transaction history and customer data from | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 | [API Application](../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../mybank/core-banking/account-management-system.md) | REST |  |
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | processes loan applications and updates loan status using | [Loan Management](../../mybank/core-banking/loan-management-system.md) |  |  |
 | [Anti-Money Laundering (AML) System](../../mybank/compliance/aml-system.md) | reads from | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transactions to screen for money laundering |
+| [ATM](../../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
 | [Loan Management](../../mybank/core-banking/loan-management-system.md) | retrieves customer account information from | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
 | [SWIFT/RTGS/NEFT](../../mybank/payment/swift-rtgs-neft-system.md) | settles with | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Settlement bookings |
 | [ACH System](../../mybank/payment/ach-system.md) | settles with | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Batch settlement bookings |
@@ -58,13 +60,7 @@ Shows the systems and containers of the domain Core Banking and their relations.
 | [Branch Systems](../../mybank/customer-channels/branch-systems.md) | uses | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Counter transactions |
 | [Branch Systems](../../mybank/customer-channels/branch-systems.md) | uses | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Customer account data and changes |
 | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | validates and processes payments using | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
-
-## Other Relationships
-| From | Name | To | Description |
-|---|---|---|---|
-| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | processes loan applications and updates loan status using | [Loan Management](../../mybank/core-banking/loan-management-system.md) |  |
-| [ATM](../../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../../mybank/core-banking/account-management-system.md) |  |
-| [ATM](../../mybank/customer-channels/atm.md) | validates transaction | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |
+| [ATM](../../mybank/customer-channels/atm.md) | validates transaction | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

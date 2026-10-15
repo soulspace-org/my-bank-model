@@ -8,14 +8,11 @@ Facilitates credit/debit card transactions.
 
 ## Technology
 Java, Spring Boot
-## Other Relations
-| From | Name | To | Description |
-|---|---|---|---|
-| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | validates and processes payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |  |
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | validates and processes payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |  |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

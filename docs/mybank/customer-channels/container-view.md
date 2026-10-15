@@ -29,18 +29,14 @@ Shows the systems and containers of the domain Customer Channels and their relat
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Personal Customer](../../mybank/personal-customer.md) | asks questions to | [Customer Service Staff](../../mybank/customer-channels/customer-service-staff.md) |  |  |
+| [ATM](../../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../../mybank/core-banking/account-management-system.md) |  |  |
 | [Contact Center](../../mybank/customer-channels/contact-center-system.md) | uses | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Customer account information |
 | [Branch Systems](../../mybank/customer-channels/branch-systems.md) | uses | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Counter transactions |
 | [Branch Systems](../../mybank/customer-channels/branch-systems.md) | uses | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Customer account data and changes |
 | [Customer Service Staff](../../mybank/customer-channels/customer-service-staff.md) | uses | [Contact Center](../../mybank/customer-channels/contact-center-system.md) |  | Customer calls and cases |
 | [Personal Customer](../../mybank/personal-customer.md) | uses atm for balance information and withdrawals | [ATM](../../mybank/customer-channels/atm.md) |  |  |
-
-## Other Relationships
-| From | Name | To | Description |
-|---|---|---|---|
-| [Personal Customer](../../mybank/personal-customer.md) | asks questions to | [Customer Service Staff](../../mybank/customer-channels/customer-service-staff.md) |  |
-| [ATM](../../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../../mybank/core-banking/account-management-system.md) |  |
-| [ATM](../../mybank/customer-channels/atm.md) | validates transaction | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |
+| [ATM](../../mybank/customer-channels/atm.md) | validates transaction | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

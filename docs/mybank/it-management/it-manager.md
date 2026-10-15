@@ -3,6 +3,10 @@
 ## Description
 Manages the IT platform
 
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [IT Manager](../../mybank/it-management/it-manager.md) | uses | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) |  | Service levels and incident overview |
 
 
 ## Navigation

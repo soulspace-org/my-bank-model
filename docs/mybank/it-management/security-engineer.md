@@ -8,6 +8,11 @@ Designs and operates security infrastructure
 | Org-unit | Description |
 |---|---|
 | [On Premise Datacenter](../../mybank/it-management/onprem-unit.md) | Responsible for the On Premise Datacenter. |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Security Engineer](../../mybank/it-management/security-engineer.md) | administers | [Identity and Access Management (IAM)](../../mybank/security/identity-access-management-system.md) |  | Access policies and identities |
+| [Security Engineer](../../mybank/it-management/security-engineer.md) | operates | [Cybersecurity](../../mybank/security/cybersecurity-system.md) |  | Security events and detection rules |
 
 
 ## Navigation

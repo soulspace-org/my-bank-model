@@ -146,6 +146,77 @@
           :desc "Monitors system performance and health."
           :tech "Nagios, Prometheus"}}}
 
+  ;; Role usage of systems
+  {:el :request
+   :id :mybank.it-management/cloud-solution-architect-requests-cloud-services
+   :from :mybank.it-management/cloud-solution-architect
+   :to :mybank.infrastructure-management/cloud-services-system
+   :name "designs with"
+   :desc "Cloud architectures and landing zone configuration"}
+
+  {:el :request
+   :id :mybank.it-management/cloud-operations-specialist-requests-cloud-services
+   :from :mybank.it-management/cloud-operations-specialist
+   :to :mybank.infrastructure-management/cloud-services-system
+   :name "operates"
+   :desc "Cloud resources and deployments"}
+
+  {:el :request
+   :id :mybank.it-management/cloud-operations-specialist-requests-system-monitoring
+   :from :mybank.it-management/cloud-operations-specialist
+   :to :mybank.infrastructure-management/system-monitoring-system
+   :name "uses"
+   :desc "Health and performance metrics"}
+
+  {:el :request
+   :id :mybank.it-management/cloud-finops-specialist-requests-cloud-services
+   :from :mybank.it-management/cloud-finops-specialist
+   :to :mybank.infrastructure-management/cloud-services-system
+   :name "analyzes costs in"
+   :desc "Cloud usage and cost data"}
+
+  {:el :request
+   :id :mybank.it-management/it-manager-requests-system-monitoring
+   :from :mybank.it-management/it-manager
+   :to :mybank.infrastructure-management/system-monitoring-system
+   :name "uses"
+   :desc "Service levels and incident overview"}
+
+  {:el :request
+   :id :mybank.it-management/network-engineer-requests-it-infrastructure
+   :from :mybank.it-management/network-engineer
+   :to :mybank.infrastructure-management/it-infrastructure-system
+   :name "operates"
+   :desc "Network configuration and traffic"}
+
+  {:el :request
+   :id :mybank.it-management/security-engineer-requests-cybersecurity
+   :from :mybank.it-management/security-engineer
+   :to :mybank.security/cybersecurity-system
+   :name "operates"
+   :desc "Security events and detection rules"}
+
+  {:el :request
+   :id :mybank.it-management/security-engineer-requests-iam
+   :from :mybank.it-management/security-engineer
+   :to :mybank.security/identity-access-management-system
+   :name "administers"
+   :desc "Access policies and identities"}
+
+  {:el :request
+   :id :mybank.it-management/database-administrator-requests-data-warehouse
+   :from :mybank.it-management/database-administrator
+   :to :mybank.data-management/data-warehouse-system
+   :name "administers"
+   :desc "Schemas, backups and performance settings"}
+
+  {:el :request
+   :id :mybank.it-management/database-administrator-requests-internet-banking-database
+   :from :mybank.it-management/database-administrator
+   :to :mybank.digital-banking.internet-banking-system/database
+   :name "administers"
+   :desc "Schemas, backups and performance settings"}
+
   {:el :request
    :id :mybank.infrastructure-management/system-monitoring-requests-it-infrastructure
    :from :mybank.infrastructure-management/system-monitoring-system

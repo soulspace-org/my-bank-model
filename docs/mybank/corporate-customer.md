@@ -3,6 +3,11 @@
 ## Description
 Corporate Customer of MyBank.
 
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Corporate Customer](../mybank/corporate-customer.md) | uses | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  | Corporate account balances and payment orders |
+| [Corporate Customer](../mybank/corporate-customer.md) | uses | [API Gateway](../mybank/integration-middleware/api-gateway.md) | REST | Automated payment orders and account statements |
 
 
 ## Navigation

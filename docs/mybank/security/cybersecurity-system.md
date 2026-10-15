@@ -8,6 +8,10 @@ Protects against cyber threats.
 
 ## Technology
 Snort, Suricata
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Security Engineer](../../mybank/it-management/security-engineer.md) | operates | [Cybersecurity](../../mybank/security/cybersecurity-system.md) |  | Security events and detection rules |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

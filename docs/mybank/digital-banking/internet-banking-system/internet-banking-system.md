@@ -23,6 +23,7 @@ Allows customers to view information about their bank accounts and make payments
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Corporate Customer](../../../mybank/corporate-customer.md) | uses | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  | Corporate account balances and payment orders |
 | [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |

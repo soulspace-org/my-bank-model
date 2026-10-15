@@ -8,6 +8,10 @@ Designs and operates network infrastructure
 | Org-unit | Description |
 |---|---|
 | [On Premise Datacenter](../../mybank/it-management/onprem-unit.md) | Responsible for the On Premise Datacenter. |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Network Engineer](../../mybank/it-management/network-engineer.md) | operates | [IT Infrastructure](../../mybank/infrastructure-management/it-infrastructure-system.md) |  | Network configuration and traffic |
 
 
 ## Navigation

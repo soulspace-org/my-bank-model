@@ -3,6 +3,11 @@
 ## Description
 Responsible for quality assurance and compliance to quality standards
 
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Quality Manager](../../mybank/project-management/quality-manager.md) | reviews in | [Development Platform](../../mybank/project-management/gitlab.md) |  | Test reports and quality gates |
+| [Quality Manager](../../mybank/project-management/quality-manager.md) | tracks in | [Project Management Tool](../../mybank/project-management/jira.md) |  | Defects and test results |
 
 
 ## Navigation

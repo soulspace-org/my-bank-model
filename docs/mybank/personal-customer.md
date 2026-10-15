@@ -3,10 +3,6 @@
 ## Description
 Personal Customer of MyBank.
 
-## Other Relations
-| From | Name | To | Description |
-|---|---|---|---|
-| [Personal Customer](../mybank/personal-customer.md) | asks questions to | [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) |  |
 ## Actor in Use Cases
 | Use Case | Description |
 |---|---|
@@ -16,6 +12,7 @@ Personal Customer of MyBank.
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Personal Customer](../mybank/personal-customer.md) | asks questions to | [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) |  |  |
 | [Personal Customer](../mybank/personal-customer.md) | uses | [Digital Wallets](../mybank/digital-banking/digital-wallets-system.md) |  |  |
 | [Personal Customer](../mybank/personal-customer.md) | uses atm for balance information and withdrawals | [ATM](../mybank/customer-channels/atm.md) |  |  |
 | [Personal Customer](../mybank/personal-customer.md) | views account balances and makes payments using | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) |  |  |

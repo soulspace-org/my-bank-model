@@ -13,6 +13,7 @@ VMware, Cisco
 |---|---|---|---|---|
 | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) | connects to | [IT Infrastructure](../../mybank/infrastructure-management/it-infrastructure-system.md) |  | Hybrid connectivity to on-premise resources |
 | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [IT Infrastructure](../../mybank/infrastructure-management/it-infrastructure-system.md) |  | Health and performance metrics |
+| [Network Engineer](../../mybank/it-management/network-engineer.md) | operates | [IT Infrastructure](../../mybank/infrastructure-management/it-infrastructure-system.md) |  | Network configuration and traffic |
 
 
 ## Navigation

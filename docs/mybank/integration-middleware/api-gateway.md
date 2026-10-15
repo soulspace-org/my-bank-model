@@ -12,6 +12,7 @@ Kong
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Cybersecurity](../../mybank/security/cybersecurity-system.md) | monitors | [API Gateway](../../mybank/integration-middleware/api-gateway.md) |  | Network traffic and security events |
+| [Corporate Customer](../../mybank/corporate-customer.md) | uses | [API Gateway](../../mybank/integration-middleware/api-gateway.md) | REST | Automated payment orders and account statements |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

@@ -25,8 +25,10 @@ Boundary(mybank_dataManagement_contextBoundary, "Data Management and Analytics")
   System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
 }
 System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
+Person(mybank_itManagement_databaseAdministrator, "Database Administrator", $descr="Manages databases")
 Rel(mybank_dataManagement_businessIntelligenceSystem, mybank_dataManagement_dataWarehouseSystem, "queries", $descr="Aggregated data for reports and dashboards", $techn="SQL")
 Rel(mybank_dataManagement_bigDataAnalyticsSystem, mybank_dataManagement_dataWarehouseSystem, "queries", $descr="Historical data for predictive models", $techn="SQL")
+Rel(mybank_itManagement_databaseAdministrator, mybank_dataManagement_dataWarehouseSystem, "administers", $descr="Schemas, backups and performance settings")
 Rel(mybank_coreBanking_transactionProcessingSystem, mybank_dataManagement_dataWarehouseSystem, "feeds", $descr="Transaction events", $techn="Kafka", $sprite="kafka,scale=0.5")
 SHOW_LEGEND()
 @enduml

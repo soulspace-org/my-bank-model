@@ -11,7 +11,10 @@ AWS, Azure
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Cloud FinOps Specialist](../../mybank/it-management/cloud-finops-specialist.md) | analyzes costs in | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) |  | Cloud usage and cost data |
+| [Cloud Solution Architect](../../mybank/it-management/cloud-solution-architect.md) | designs with | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) |  | Cloud architectures and landing zone configuration |
 | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) | REST | Health and performance metrics |
+| [Cloud Operations Specialist](../../mybank/it-management/cloud-operations-specialist.md) | operates | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) |  | Cloud resources and deployments |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

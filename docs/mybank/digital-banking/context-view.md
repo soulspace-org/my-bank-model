@@ -14,6 +14,7 @@ Shows the systems of the domain Digital Banking and their relations.
 ## Roles
 | Person/Role | Description |
 |---|---|
+| [Corporate Customer](../../mybank/corporate-customer.md)| Corporate Customer of MyBank. |
 | [Personal Customer](../../mybank/personal-customer.md)| Personal Customer of MyBank. |
 
 ## Systems
@@ -36,6 +37,7 @@ Shows the systems of the domain Digital Banking and their relations.
 | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |  |
 | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../../mybank/email-system.md) |  |  |
 | [Personal Customer](../../mybank/personal-customer.md) | uses | [Digital Wallets](../../mybank/digital-banking/digital-wallets-system.md) |  |  |
+| [Corporate Customer](../../mybank/corporate-customer.md) | uses | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  | Corporate account balances and payment orders |
 | [Personal Customer](../../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 
 ## Navigation

@@ -8,6 +8,11 @@ Manages databases
 | Org-unit | Description |
 |---|---|
 | [On Premise Datacenter](../../mybank/it-management/onprem-unit.md) | Responsible for the On Premise Datacenter. |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Database Administrator](../../mybank/it-management/database-administrator.md) | administers | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) |  | Schemas, backups and performance settings |
+| [Database Administrator](../../mybank/it-management/database-administrator.md) | administers | [Database](../../mybank/digital-banking/internet-banking-system/database.md) |  | Schemas, backups and performance settings |
 
 
 ## Navigation

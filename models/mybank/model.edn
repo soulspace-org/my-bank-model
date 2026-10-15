@@ -244,6 +244,22 @@
    :to :mybank/email-system
    :name "sends and receives customer communication using"}
 
+  ;; Corporate customer
+  {:el :request
+   :id :mybank/corporate-customer-requests-internet-banking-system
+   :from :mybank/corporate-customer
+   :to :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :name "uses"
+   :desc "Corporate account balances and payment orders"}
+
+  {:el :request
+   :id :mybank/corporate-customer-requests-api-gateway
+   :from :mybank/corporate-customer
+   :to :mybank.integration-middleware/api-gateway
+   :name "uses"
+   :desc "Automated payment orders and account statements"
+   :tech "REST"}
+
   ;; Integration and Security
   {:el :request
    :id :mybank.integration-middleware/api-gateway-requests-esb

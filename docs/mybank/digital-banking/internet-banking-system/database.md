@@ -11,6 +11,7 @@ Datomic
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Database Administrator](../../../mybank/it-management/database-administrator.md) | administers | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) |  | Schemas, backups and performance settings |
 | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) | Datalog |  |
 
 ## Container View

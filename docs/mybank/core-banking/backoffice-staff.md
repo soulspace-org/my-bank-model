@@ -3,12 +3,12 @@
 ## Description
 Administration and support staff within the bank.
 
-## Other Relations
-| From | Name | To | Description |
-|---|---|---|---|
-| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | assesses customer risk for loan approval using | [Compliance System](../../mybank/compliance/compliance-system.md) |  |
-| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | processes loan applications and updates loan status using | [Loan Management](../../mybank/core-banking/loan-management-system.md) |  |
-| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | validates and processes payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | assesses customer risk for loan approval using | [Compliance System](../../mybank/compliance/compliance-system.md) |  |  |
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | processes loan applications and updates loan status using | [Loan Management](../../mybank/core-banking/loan-management-system.md) |  |  |
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | validates and processes payments using | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) |  |  |
 
 
 ## Navigation

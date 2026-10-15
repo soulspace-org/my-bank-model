@@ -9,6 +9,10 @@ Operates cloud infrastructure and controls costs
 |---|---|
 | [AWS Platform](../../mybank/it-management/aws-unit.md) | Responsible for the AWS cloud platform. |
 | [Azure Platform](../../mybank/it-management/azure-unit.md) | Responsible for the Azure cloud platform. |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Cloud FinOps Specialist](../../mybank/it-management/cloud-finops-specialist.md) | analyzes costs in | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) |  | Cloud usage and cost data |
 
 
 ## Navigation

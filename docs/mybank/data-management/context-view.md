@@ -11,6 +11,11 @@ Shows the systems of the domain Data Management and their relations.
 |---|---|
 | [Data Management and Analytics](../../mybank/data-management/context-boundary.md)| Manages data storage, warehousing, and analytics. |
 
+## Roles
+| Person/Role | Description |
+|---|---|
+| [Database Administrator](../../mybank/it-management/database-administrator.md)| Manages databases |
+
 ## Systems
 | System | Description |
 |---|---|
@@ -22,6 +27,7 @@ Shows the systems of the domain Data Management and their relations.
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Database Administrator](../../mybank/it-management/database-administrator.md) | administers | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) |  | Schemas, backups and performance settings |
 | [Business Intelligence (BI)](../../mybank/data-management/business-intelligence-system.md) | queries | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | SQL | Aggregated data for reports and dashboards |
 | [Big Data Analytics](../../mybank/data-management/big-data-analytics-system.md) | queries | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | SQL | Historical data for predictive models |
 

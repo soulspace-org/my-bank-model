@@ -12,6 +12,9 @@ Entity requesting services around money
 | Concept | Description |
 |---|---|
 | [Account](../../mybank/concepts/account.md) | Records the financial transactions between a customer and a bank |
+| [Card](../../mybank/concepts/card.md) | Payment instrument giving access to an account, e.g. a debit or credit card |
+| [Investment](../../mybank/concepts/investment.md) | Asset held by a customer to generate return, e.g. securities or funds |
+| [Loan](../../mybank/concepts/loan.md) | Lending money from the bank to the customer |
 ## Feature of
 | Concept | Description |
 |---|---|
@@ -19,10 +22,10 @@ Entity requesting services around money
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Customer](../../mybank/concepts/customer.md) | performs | [Transfer](../../mybank/concepts/transfer.md) |  |
-| [Customer](../../mybank/concepts/customer.md) | performs | [Deposit](../../mybank/concepts/deposit.md) |  |
-| [Customer](../../mybank/concepts/customer.md) | performs | [Withdrawal](../../mybank/concepts/withdrawal.md) |  |
+| [Risk Assessment](../../mybank/concepts/risk-assessment.md) | evaluates | [Customer](../../mybank/concepts/customer.md) |  |
+| [Customer](../../mybank/concepts/customer.md) | performs | [Transaction](../../mybank/concepts/transaction.md) |  |
 | [Customer](../../mybank/concepts/customer.md) | requests | [Loan](../../mybank/concepts/loan.md) |  |
+| [Customer](../../mybank/concepts/customer.md) | uses | [Channel](../../mybank/concepts/channel.md) |  |
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)

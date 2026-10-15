@@ -8,6 +8,11 @@ Manages projects at MyBank
 | Org-unit | Description |
 |---|---|
 | [Projects](../../mybank/project-management/project-management-unit.md) | Responsible for MyBank Projects |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Project Manager](../../mybank/project-management/project-manager.md) | documents in | [Projects Wiki](../../mybank/project-management/confluence.md) |  | Project documentation |
+| [Project Manager](../../mybank/project-management/project-manager.md) | plans in | [Project Management Tool](../../mybank/project-management/jira.md) |  | Project plans, milestones and status reports |
 
 
 ## Navigation

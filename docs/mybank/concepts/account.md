@@ -3,16 +3,29 @@
 ## Description
 Records the financial transactions between a customer and a bank
 
+## Subordinates
+| Concept | Description |
+|---|---|
+| [Checking Account](../../mybank/concepts/checking-account.md) | An account for everyday payments and transactions |
+| [Savings Account](../../mybank/concepts/savings-account.md) | An account for saving money that earns interest |
+## Features
+| Concept | Description |
+|---|---|
+| [Transaction](../../mybank/concepts/transaction.md) | Movement of money recorded on an account |
 ## Feature of
 | Concept | Description |
 |---|---|
-| [Bank](../../mybank/concepts/bank.md) | Organization providing services around money |
 | [Customer](../../mybank/concepts/customer.md) | Entity requesting services around money |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Transfer](../../mybank/concepts/transfer.md) | between | [Account](../../mybank/concepts/account.md) |  |
+| [Transfer](../../mybank/concepts/transfer.md) | credits target | [Account](../../mybank/concepts/account.md) |  |
+| [Transfer](../../mybank/concepts/transfer.md) | debits source | [Account](../../mybank/concepts/account.md) |  |
 | [Withdrawal](../../mybank/concepts/withdrawal.md) | from | [Account](../../mybank/concepts/account.md) |  |
+| [Card](../../mybank/concepts/card.md) | gives access to | [Account](../../mybank/concepts/account.md) |  |
+| [Payment](../../mybank/concepts/payment.md) | is made from | [Account](../../mybank/concepts/account.md) |  |
+| [Loan](../../mybank/concepts/loan.md) | is settled via | [Account](../../mybank/concepts/account.md) |  |
+| [Bank](../../mybank/concepts/bank.md) | provides | [Account](../../mybank/concepts/account.md) |  |
 | [Deposit](../../mybank/concepts/deposit.md) | to | [Account](../../mybank/concepts/account.md) |  |
 
 ## Concept Map

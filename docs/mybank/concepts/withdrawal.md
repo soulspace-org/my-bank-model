@@ -3,11 +3,14 @@
 ## Description
 Takes money from account
 
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Transaction](../../mybank/concepts/transaction.md) | Movement of money recorded on an account |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
 | [Withdrawal](../../mybank/concepts/withdrawal.md) | from | [Account](../../mybank/concepts/account.md) |  |
-| [Customer](../../mybank/concepts/customer.md) | performs | [Withdrawal](../../mybank/concepts/withdrawal.md) |  |
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)

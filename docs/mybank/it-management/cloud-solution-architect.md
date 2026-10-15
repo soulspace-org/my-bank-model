@@ -9,6 +9,10 @@ Designs cloud solutions
 |---|---|
 | [AWS Platform](../../mybank/it-management/aws-unit.md) | Responsible for the AWS cloud platform. |
 | [Azure Platform](../../mybank/it-management/azure-unit.md) | Responsible for the Azure cloud platform. |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Cloud Solution Architect](../../mybank/it-management/cloud-solution-architect.md) | designs with | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) |  | Cloud architectures and landing zone configuration |
 
 
 ## Navigation

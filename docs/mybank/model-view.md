@@ -32,29 +32,48 @@ Shows the complete model graph
 |---|---|
 | [Account](../mybank/concepts/account.md)| Records the financial transactions between a customer and a bank |
 | [Bank](../mybank/concepts/bank.md)| Organization providing services around money |
+| [Card](../mybank/concepts/card.md)| Payment instrument giving access to an account, e.g. a debit or credit card |
+| [Channel](../mybank/concepts/channel.md)| Way for the customer to interact with the bank, e.g. branch, ATM or online |
+| [Checking Account](../mybank/concepts/checking-account.md)| An account for everyday payments and transactions |
+| [Collateral](../mybank/concepts/collateral.md)| Asset pledged by the borrower to secure a loan |
 | [Corporate Customer](../mybank/concepts/corporate-customer.md)| An organization requesting services around money |
 | [Customer](../mybank/concepts/customer.md)| Entity requesting services around money |
 | [Deposit](../mybank/concepts/deposit.md)| Puts money on account |
+| [Investment](../mybank/concepts/investment.md)| Asset held by a customer to generate return, e.g. securities or funds |
 | [Loan](../mybank/concepts/loan.md)| Lending money from the bank to the customer |
-| [Mortgage](../mybank/concepts/mortgage.md)| A loan for a immobile, e.g. a house |
+| [Mortgage](../mybank/concepts/mortgage.md)| A loan secured by real estate, e.g. a house |
+| [Payment](../mybank/concepts/payment.md)| Transaction paying a third party |
 | [Personal Customer](../mybank/concepts/personal-customer.md)| A person requesting services around money |
+| [Repayment](../mybank/concepts/repayment.md)| Payment of an installment of a loan |
+| [Risk Assessment](../mybank/concepts/risk-assessment.md)| Evaluation of the creditworthiness and risk of a customer |
+| [Savings Account](../mybank/concepts/savings-account.md)| An account for saving money that earns interest |
+| [Transaction](../mybank/concepts/transaction.md)| Movement of money recorded on an account |
 | [Transfer](../mybank/concepts/transfer.md)| Moves money from one account to another account |
 | [Withdrawal](../mybank/concepts/withdrawal.md)| Takes money from account |
 
 ## Generalizations
 | From | Name | To | Description |
 |---|---|---|---|
+| [Savings Account](../mybank/concepts/savings-account.md) | is a | [Account](../mybank/concepts/account.md) |  |
+| [Withdrawal](../mybank/concepts/withdrawal.md) | is a | [Transaction](../mybank/concepts/transaction.md) |  |
+| [Deposit](../mybank/concepts/deposit.md) | is a | [Transaction](../mybank/concepts/transaction.md) |  |
+| [Repayment](../mybank/concepts/repayment.md) | is a | [Payment](../mybank/concepts/payment.md) |  |
 | [Corporate Customer](../mybank/concepts/corporate-customer.md) | is a | [Customer](../mybank/concepts/customer.md) |  |
+| [Transfer](../mybank/concepts/transfer.md) | is a | [Transaction](../mybank/concepts/transaction.md) |  |
 | [Personal Customer](../mybank/concepts/personal-customer.md) | is a | [Customer](../mybank/concepts/customer.md) |  |
 | [Mortgage](../mybank/concepts/mortgage.md) | is a | [Loan](../mybank/concepts/loan.md) |  |
+| [Payment](../mybank/concepts/payment.md) | is a | [Transaction](../mybank/concepts/transaction.md) |  |
+| [Checking Account](../mybank/concepts/checking-account.md) | is a | [Account](../mybank/concepts/account.md) |  |
 
 ## Features
 | From | Name | To | Description |
 |---|---|---|---|
 | [Customer](../mybank/concepts/customer.md) | has | [Account](../mybank/concepts/account.md) |  |
+| [Customer](../mybank/concepts/customer.md) | has | [Card](../mybank/concepts/card.md) |  |
+| [Customer](../mybank/concepts/customer.md) | has | [Loan](../mybank/concepts/loan.md) |  |
 | [Bank](../mybank/concepts/bank.md) | has | [Customer](../mybank/concepts/customer.md) |  |
-| [Bank](../mybank/concepts/bank.md) | provides | [Account](../mybank/concepts/account.md) |  |
-| [Bank](../mybank/concepts/bank.md) | provides | [Loan](../mybank/concepts/loan.md) |  |
+| [Customer](../mybank/concepts/customer.md) | holds | [Investment](../mybank/concepts/investment.md) |  |
+| [Account](../mybank/concepts/account.md) | records | [Transaction](../mybank/concepts/transaction.md) |  |
 
 ## Organizations
 | Organization | Description |
@@ -204,6 +223,12 @@ Shows the complete model graph
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Security Engineer](../mybank/it-management/security-engineer.md) | administers | [Identity and Access Management (IAM)](../mybank/security/identity-access-management-system.md) |  | Access policies and identities |
+| [Database Administrator](../mybank/it-management/database-administrator.md) | administers | [Data Warehouse](../mybank/data-management/data-warehouse-system.md) |  | Schemas, backups and performance settings |
+| [Database Administrator](../mybank/it-management/database-administrator.md) | administers | [Database](../mybank/digital-banking/internet-banking-system/database.md) |  | Schemas, backups and performance settings |
+| [Cloud FinOps Specialist](../mybank/it-management/cloud-finops-specialist.md) | analyzes costs in | [Cloud Services](../mybank/infrastructure-management/cloud-services-system.md) |  | Cloud usage and cost data |
+| [Personal Customer](../mybank/personal-customer.md) | asks questions to | [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) |  |  |
+| [Backoffice Staff](../mybank/core-banking/backoffice-staff.md) | assesses customer risk for loan approval using | [Compliance System](../mybank/compliance/compliance-system.md) |  |  |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | authenticates with | [Identity and Access Management (IAM)](../mybank/security/identity-access-management-system.md) | OpenID Connect | Credentials, tokens and access rights |
 | [Disaster Recovery](../mybank/security/disaster-recovery-system.md) | backs up | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Transaction data snapshots |
 | [Disaster Recovery](../mybank/security/disaster-recovery-system.md) | backs up | [Account Management](../mybank/core-banking/account-management-system.md) |  | Account data snapshots |
@@ -213,6 +238,8 @@ Shows the complete model graph
 | [Enterprise Service Bus (ESB)](../mybank/integration-middleware/esb.md) | calls | [Loan Management](../mybank/core-banking/loan-management-system.md) | REST | Loan applications and loan status |
 | [Payment Gateway](../mybank/payment/payment-gateway-system.md) | checks with | [Fraud Detection System](../mybank/compliance/fraud-detection-system.md) |  | Payment data for fraud scoring |
 | [Cloud Services](../mybank/infrastructure-management/cloud-services-system.md) | connects to | [IT Infrastructure](../mybank/infrastructure-management/it-infrastructure-system.md) |  | Hybrid connectivity to on-premise resources |
+| [Cloud Solution Architect](../mybank/it-management/cloud-solution-architect.md) | designs with | [Cloud Services](../mybank/infrastructure-management/cloud-services-system.md) |  | Cloud architectures and landing zone configuration |
+| [Project Manager](../mybank/project-management/project-manager.md) | documents in | [Projects Wiki](../mybank/project-management/confluence.md) |  | Project documentation |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../mybank/core-banking/loan-management-system.md) |  |  |
 | [Risk Management System](../mybank/compliance/risk-management-system.md) | fetches transaction history and customer data from | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  |  |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../mybank/core-banking/account-management-system.md) |  |  |
@@ -225,34 +252,54 @@ Shows the complete model graph
 | [Cybersecurity](../mybank/security/cybersecurity-system.md) | monitors | [API Gateway](../mybank/integration-middleware/api-gateway.md) |  | Network traffic and security events |
 | [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [IT Infrastructure](../mybank/infrastructure-management/it-infrastructure-system.md) |  | Health and performance metrics |
 | [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [Cloud Services](../mybank/infrastructure-management/cloud-services-system.md) | REST | Health and performance metrics |
+| [Network Engineer](../mybank/it-management/network-engineer.md) | operates | [IT Infrastructure](../mybank/infrastructure-management/it-infrastructure-system.md) |  | Network configuration and traffic |
+| [Security Engineer](../mybank/it-management/security-engineer.md) | operates | [Cybersecurity](../mybank/security/cybersecurity-system.md) |  | Security events and detection rules |
+| [Cloud Operations Specialist](../mybank/it-management/cloud-operations-specialist.md) | operates | [Cloud Services](../mybank/infrastructure-management/cloud-services-system.md) |  | Cloud resources and deployments |
+| [Project Manager](../mybank/project-management/project-manager.md) | plans in | [Project Management Tool](../mybank/project-management/jira.md) |  | Project plans, milestones and status reports |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../mybank/payment/payment-gateway-system.md) |  |  |
+| [Backoffice Staff](../mybank/core-banking/backoffice-staff.md) | processes loan applications and updates loan status using | [Loan Management](../mybank/core-banking/loan-management-system.md) |  |  |
 | [Business Intelligence (BI)](../mybank/data-management/business-intelligence-system.md) | queries | [Data Warehouse](../mybank/data-management/data-warehouse-system.md) | SQL | Aggregated data for reports and dashboards |
 | [Big Data Analytics](../mybank/data-management/big-data-analytics-system.md) | queries | [Data Warehouse](../mybank/data-management/data-warehouse-system.md) | SQL | Historical data for predictive models |
 | [Talent Management](../mybank/human-resources/talent-management-system.md) | reads from | [HR Information Systems (HRIS)](../mybank/human-resources/hris.md) |  | Employee master data |
 | [Anti-Money Laundering (AML) System](../mybank/compliance/aml-system.md) | reads from | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Transactions to screen for money laundering |
 | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../mybank/digital-banking/internet-banking-system/database.md) | Datalog |  |
+| [ATM](../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../mybank/core-banking/account-management-system.md) |  |  |
 | [Accounts Summary Controller](../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | retrieves account data from | [Core Banking Systems Facade](../mybank/digital-banking/internet-banking-system/core-banking-systems-facade.md) |  |  |
 | [Loan Management](../mybank/core-banking/loan-management-system.md) | retrieves customer account information from | [Account Management](../mybank/core-banking/account-management-system.md) |  |  |
+| [Quality Manager](../mybank/project-management/quality-manager.md) | reviews in | [Development Platform](../mybank/project-management/gitlab.md) |  | Test reports and quality gates |
 | [Payment Gateway](../mybank/payment/payment-gateway-system.md) | routes to | [ACH System](../mybank/payment/ach-system.md) |  | Direct debits and bill payments |
 | [API Gateway](../mybank/integration-middleware/api-gateway.md) | routes to | [Enterprise Service Bus (ESB)](../mybank/integration-middleware/esb.md) | REST | API requests of third-party services and fintech apps |
 | [Payment Gateway](../mybank/payment/payment-gateway-system.md) | routes to | [SWIFT/RTGS/NEFT](../mybank/payment/swift-rtgs-neft-system.md) |  | Interbank payment orders |
+| [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) | sends and receives customer communication using | [E-mail System](../mybank/email-system.md) |  |  |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) |  |  |
 | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) | SMTP |  |
 | [SWIFT/RTGS/NEFT](../mybank/payment/swift-rtgs-neft-system.md) | settles with | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Settlement bookings |
 | [ACH System](../mybank/payment/ach-system.md) | settles with | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Batch settlement bookings |
+| [Quality Manager](../mybank/project-management/quality-manager.md) | tracks in | [Project Management Tool](../mybank/project-management/jira.md) |  | Defects and test results |
+| [Incident Manager](../mybank/project-management/incident-manager.md) | tracks in | [Project Management Tool](../mybank/project-management/jira.md) |  | Incident tickets and resolutions |
 | [Development Platform](../mybank/project-management/gitlab.md) | updates | [Project Management Tool](../mybank/project-management/jira.md) | REST | Issue status from commits and merge requests |
 | [Compliance Manager](../mybank/compliance/compliance-manager.md) | uses | [Compliance System](../mybank/compliance/compliance-system.md) |  | generate compliance reports |
 | [Personal Customer](../mybank/personal-customer.md) | uses | [Digital Wallets](../mybank/digital-banking/digital-wallets-system.md) |  |  |
+| [Corporate Customer](../mybank/corporate-customer.md) | uses | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  | Corporate account balances and payment orders |
 | [Contact Center](../mybank/customer-channels/contact-center-system.md) | uses | [Account Management](../mybank/core-banking/account-management-system.md) |  | Customer account information |
 | [Branch Systems](../mybank/customer-channels/branch-systems.md) | uses | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Counter transactions |
 | [Fraud specialist](../mybank/compliance/fraud-specialist.md) | uses | [Fraud Detection System](../mybank/compliance/fraud-detection-system.md) |  | generate fraud reports |
+| [DevOps Engineer](../mybank/project-management/devops-engineer.md) | uses | [Development Platform](../mybank/project-management/gitlab.md) |  | Source code, pipelines and deployments |
+| [Agility Master](../mybank/project-management/agility-master.md) | uses | [Project Management Tool](../mybank/project-management/jira.md) |  | Backlogs, sprints and burndown charts |
+| [Cloud Operations Specialist](../mybank/it-management/cloud-operations-specialist.md) | uses | [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) |  | Health and performance metrics |
 | [Branch Systems](../mybank/customer-channels/branch-systems.md) | uses | [Account Management](../mybank/core-banking/account-management-system.md) |  | Customer account data and changes |
+| [Incident Manager](../mybank/project-management/incident-manager.md) | uses | [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) |  | Alerts and system health |
+| [DevOps Engineer](../mybank/project-management/devops-engineer.md) | uses | [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) |  | Application metrics and alerts |
+| [IT Manager](../mybank/it-management/it-manager.md) | uses | [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) |  | Service levels and incident overview |
 | [Sign In Controller](../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | uses | [Security Component](../mybank/digital-banking/internet-banking-system/security-component.md) |  |  |
+| [Corporate Customer](../mybank/corporate-customer.md) | uses | [API Gateway](../mybank/integration-middleware/api-gateway.md) | REST | Automated payment orders and account statements |
 | [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) | uses | [Contact Center](../mybank/customer-channels/contact-center-system.md) |  | Customer calls and cases |
 | [Risk Manager](../mybank/compliance/risk-manager.md) | uses | [Risk Management System](../mybank/compliance/risk-management-system.md) |  | generate risk reports |
 | [Personal Customer](../mybank/personal-customer.md) | uses atm for balance information and withdrawals | [ATM](../mybank/customer-channels/atm.md) |  |  |
 | [Reset Password Controller](../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | uses for sending password reset emails | [E-mail Component](../mybank/digital-banking/internet-banking-system/email-component.md) |  |  |
 | [Payment Gateway](../mybank/payment/payment-gateway-system.md) | validates and processes payments using | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  |  |
+| [Backoffice Staff](../mybank/core-banking/backoffice-staff.md) | validates and processes payments using | [Payment Gateway](../mybank/payment/payment-gateway-system.md) |  |  |
+| [ATM](../mybank/customer-channels/atm.md) | validates transaction | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  |  |
 | [Personal Customer](../mybank/personal-customer.md) | views account balances and makes payments using | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) |  |  |
 | [Personal Customer](../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 | [Personal Customer](../mybank/personal-customer.md) | views account balances and makes payments using | [Mobile App](../mybank/digital-banking/internet-banking-system/mobile-app.md) |  |  |
@@ -288,20 +335,27 @@ Shows the complete model graph
 ## Other Relationships
 | From | Name | To | Description |
 |---|---|---|---|
-| [Personal Customer](../mybank/personal-customer.md) | asks questions to | [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) |  |
-| [Backoffice Staff](../mybank/core-banking/backoffice-staff.md) | assesses customer risk for loan approval using | [Compliance System](../mybank/compliance/compliance-system.md) |  |
-| [Transfer](../mybank/concepts/transfer.md) | between | [Account](../mybank/concepts/account.md) |  |
+| [Card](../mybank/concepts/card.md) | authorizes | [Payment](../mybank/concepts/payment.md) |  |
+| [Transfer](../mybank/concepts/transfer.md) | credits target | [Account](../mybank/concepts/account.md) |  |
+| [Transfer](../mybank/concepts/transfer.md) | debits source | [Account](../mybank/concepts/account.md) |  |
+| [Risk Assessment](../mybank/concepts/risk-assessment.md) | evaluates | [Customer](../mybank/concepts/customer.md) |  |
 | [Withdrawal](../mybank/concepts/withdrawal.md) | from | [Account](../mybank/concepts/account.md) |  |
-| [Customer](../mybank/concepts/customer.md) | performs | [Transfer](../mybank/concepts/transfer.md) |  |
-| [Customer](../mybank/concepts/customer.md) | performs | [Deposit](../mybank/concepts/deposit.md) |  |
-| [Customer](../mybank/concepts/customer.md) | performs | [Withdrawal](../mybank/concepts/withdrawal.md) |  |
-| [Backoffice Staff](../mybank/core-banking/backoffice-staff.md) | processes loan applications and updates loan status using | [Loan Management](../mybank/core-banking/loan-management-system.md) |  |
+| [Card](../mybank/concepts/card.md) | gives access to | [Account](../mybank/concepts/account.md) |  |
+| [Transaction](../mybank/concepts/transaction.md) | is initiated via | [Channel](../mybank/concepts/channel.md) |  |
+| [Payment](../mybank/concepts/payment.md) | is made from | [Account](../mybank/concepts/account.md) |  |
+| [Loan](../mybank/concepts/loan.md) | is settled via | [Account](../mybank/concepts/account.md) |  |
+| [Customer](../mybank/concepts/customer.md) | performs | [Transaction](../mybank/concepts/transaction.md) |  |
+| [Bank](../mybank/concepts/bank.md) | performs | [Risk Assessment](../mybank/concepts/risk-assessment.md) |  |
+| [Bank](../mybank/concepts/bank.md) | provides | [Loan](../mybank/concepts/loan.md) |  |
+| [Bank](../mybank/concepts/bank.md) | provides | [Account](../mybank/concepts/account.md) |  |
+| [Bank](../mybank/concepts/bank.md) | provides | [Channel](../mybank/concepts/channel.md) |  |
+| [Bank](../mybank/concepts/bank.md) | provides | [Investment](../mybank/concepts/investment.md) |  |
+| [Repayment](../mybank/concepts/repayment.md) | repays | [Loan](../mybank/concepts/loan.md) |  |
 | [Customer](../mybank/concepts/customer.md) | requests | [Loan](../mybank/concepts/loan.md) |  |
-| [ATM](../mybank/customer-channels/atm.md) | retrieves account balance | [Account Management](../mybank/core-banking/account-management-system.md) |  |
-| [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) | sends and receives customer communication using | [E-mail System](../mybank/email-system.md) |  |
+| [Loan](../mybank/concepts/loan.md) | requires | [Risk Assessment](../mybank/concepts/risk-assessment.md) |  |
+| [Collateral](../mybank/concepts/collateral.md) | secures | [Loan](../mybank/concepts/loan.md) |  |
 | [Deposit](../mybank/concepts/deposit.md) | to | [Account](../mybank/concepts/account.md) |  |
-| [Backoffice Staff](../mybank/core-banking/backoffice-staff.md) | validates and processes payments using | [Payment Gateway](../mybank/payment/payment-gateway-system.md) |  |
-| [ATM](../mybank/customer-channels/atm.md) | validates transaction | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  |
+| [Customer](../mybank/concepts/customer.md) | uses | [Channel](../mybank/concepts/channel.md) |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

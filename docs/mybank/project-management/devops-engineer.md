@@ -9,6 +9,11 @@ Develops and operates software systems
 |---|---|
 | [Config Management](../../mybank/project-management/config-management.md) | Process to manage configurations and baselines |
 | [Software Development](../../mybank/project-management/software-development.md) | Process to develop software |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [DevOps Engineer](../../mybank/project-management/devops-engineer.md) | uses | [Development Platform](../../mybank/project-management/gitlab.md) |  | Source code, pipelines and deployments |
+| [DevOps Engineer](../../mybank/project-management/devops-engineer.md) | uses | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) |  | Application metrics and alerts |
 
 
 ## Navigation

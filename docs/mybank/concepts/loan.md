@@ -6,15 +6,20 @@ Lending money from the bank to the customer
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Mortgage](../../mybank/concepts/mortgage.md) | A loan for a immobile, e.g. a house |
+| [Mortgage](../../mybank/concepts/mortgage.md) | A loan secured by real estate, e.g. a house |
 ## Feature of
 | Concept | Description |
 |---|---|
-| [Bank](../../mybank/concepts/bank.md) | Organization providing services around money |
+| [Customer](../../mybank/concepts/customer.md) | Entity requesting services around money |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
+| [Loan](../../mybank/concepts/loan.md) | is settled via | [Account](../../mybank/concepts/account.md) |  |
+| [Bank](../../mybank/concepts/bank.md) | provides | [Loan](../../mybank/concepts/loan.md) |  |
+| [Repayment](../../mybank/concepts/repayment.md) | repays | [Loan](../../mybank/concepts/loan.md) |  |
 | [Customer](../../mybank/concepts/customer.md) | requests | [Loan](../../mybank/concepts/loan.md) |  |
+| [Loan](../../mybank/concepts/loan.md) | requires | [Risk Assessment](../../mybank/concepts/risk-assessment.md) |  |
+| [Collateral](../../mybank/concepts/collateral.md) | secures | [Loan](../../mybank/concepts/loan.md) |  |
 
 ## Concept Map
 ![High Level Banking Concepts](../../mybank/concepts/concept-view.png)

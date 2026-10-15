@@ -9,6 +9,11 @@ Operates cloud infrastructure
 |---|---|
 | [AWS Platform](../../mybank/it-management/aws-unit.md) | Responsible for the AWS cloud platform. |
 | [Azure Platform](../../mybank/it-management/azure-unit.md) | Responsible for the Azure cloud platform. |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Cloud Operations Specialist](../../mybank/it-management/cloud-operations-specialist.md) | operates | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) |  | Cloud resources and deployments |
+| [Cloud Operations Specialist](../../mybank/it-management/cloud-operations-specialist.md) | uses | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) |  | Health and performance metrics |
 
 
 ## Navigation

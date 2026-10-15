@@ -32,17 +32,13 @@ Shows the systems and containers of the domain Compliance and Risk Management an
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | assesses customer risk for loan approval using | [Compliance System](../../mybank/compliance/compliance-system.md) |  |  |
 | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | checks with | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) |  | Payment data for fraud scoring |
 | [Risk Management System](../../mybank/compliance/risk-management-system.md) | fetches transaction history and customer data from | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 | [Anti-Money Laundering (AML) System](../../mybank/compliance/aml-system.md) | reads from | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transactions to screen for money laundering |
 | [Compliance Manager](../../mybank/compliance/compliance-manager.md) | uses | [Compliance System](../../mybank/compliance/compliance-system.md) |  | generate compliance reports |
 | [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | uses | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) |  | generate fraud reports |
 | [Risk Manager](../../mybank/compliance/risk-manager.md) | uses | [Risk Management System](../../mybank/compliance/risk-management-system.md) |  | generate risk reports |
-
-## Other Relationships
-| From | Name | To | Description |
-|---|---|---|---|
-| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | assesses customer risk for loan approval using | [Compliance System](../../mybank/compliance/compliance-system.md) |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

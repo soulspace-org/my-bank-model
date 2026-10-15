@@ -3,6 +3,11 @@
 ## Description
 Manages incidents
 
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Incident Manager](../../mybank/project-management/incident-manager.md) | tracks in | [Project Management Tool](../../mybank/project-management/jira.md) |  | Incident tickets and resolutions |
+| [Incident Manager](../../mybank/project-management/incident-manager.md) | uses | [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) |  | Alerts and system health |
 
 
 ## Navigation

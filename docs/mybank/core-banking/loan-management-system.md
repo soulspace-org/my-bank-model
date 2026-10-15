@@ -8,15 +8,12 @@ Manages loan products, applications, and repayments.
 
 ## Technology
 Java, Spring Boot
-## Other Relations
-| From | Name | To | Description |
-|---|---|---|---|
-| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | processes loan applications and updates loan status using | [Loan Management](../../mybank/core-banking/loan-management-system.md) |  |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | calls | [Loan Management](../../mybank/core-banking/loan-management-system.md) | REST | Loan applications and loan status |
 | [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../../mybank/core-banking/loan-management-system.md) |  |  |
+| [Backoffice Staff](../../mybank/core-banking/backoffice-staff.md) | processes loan applications and updates loan status using | [Loan Management](../../mybank/core-banking/loan-management-system.md) |  |  |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

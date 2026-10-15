@@ -8,6 +8,11 @@ Tools for software development, testing, and deployment.
 
 ## Technology
 GitLab
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Quality Manager](../../mybank/project-management/quality-manager.md) | reviews in | [Development Platform](../../mybank/project-management/gitlab.md) |  | Test reports and quality gates |
+| [DevOps Engineer](../../mybank/project-management/devops-engineer.md) | uses | [Development Platform](../../mybank/project-management/gitlab.md) |  | Source code, pipelines and deployments |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

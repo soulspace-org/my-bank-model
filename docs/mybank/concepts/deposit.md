@@ -3,10 +3,13 @@
 ## Description
 Puts money on account
 
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Transaction](../../mybank/concepts/transaction.md) | Movement of money recorded on an account |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Customer](../../mybank/concepts/customer.md) | performs | [Deposit](../../mybank/concepts/deposit.md) |  |
 | [Deposit](../../mybank/concepts/deposit.md) | to | [Account](../../mybank/concepts/account.md) |  |
 
 ## Concept Map

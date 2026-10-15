@@ -11,6 +11,7 @@ Confluence
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Project Manager](../../mybank/project-management/project-manager.md) | documents in | [Projects Wiki](../../mybank/project-management/confluence.md) |  | Project documentation |
 | [Project Management Tool](../../mybank/project-management/jira.md) | links to | [Projects Wiki](../../mybank/project-management/confluence.md) | REST | Project documentation pages |
 ## Incoming Asynchronous Sends
 | From | Name | To | Technology | Description |

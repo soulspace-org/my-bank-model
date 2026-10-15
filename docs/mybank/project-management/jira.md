@@ -11,7 +11,11 @@ Jira
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Project Manager](../../mybank/project-management/project-manager.md) | plans in | [Project Management Tool](../../mybank/project-management/jira.md) |  | Project plans, milestones and status reports |
+| [Quality Manager](../../mybank/project-management/quality-manager.md) | tracks in | [Project Management Tool](../../mybank/project-management/jira.md) |  | Defects and test results |
+| [Incident Manager](../../mybank/project-management/incident-manager.md) | tracks in | [Project Management Tool](../../mybank/project-management/jira.md) |  | Incident tickets and resolutions |
 | [Development Platform](../../mybank/project-management/gitlab.md) | updates | [Project Management Tool](../../mybank/project-management/jira.md) | REST | Issue status from commits and merge requests |
+| [Agility Master](../../mybank/project-management/agility-master.md) | uses | [Project Management Tool](../../mybank/project-management/jira.md) |  | Backlogs, sprints and burndown charts |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

@@ -9,6 +9,7 @@ Shows the containers of the Internet Banking System and their relations.
 ## Roles
 | Person/Role | Description |
 |---|---|
+| [Database Administrator](../../../mybank/it-management/database-administrator.md)| Manages databases |
 | [Personal Customer](../../../mybank/personal-customer.md)| Personal Customer of MyBank. |
 
 ## Systems
@@ -30,6 +31,7 @@ Shows the containers of the Internet Banking System and their relations.
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Database Administrator](../../../mybank/it-management/database-administrator.md) | administers | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) |  | Schemas, backups and performance settings |
 | [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../../mybank/core-banking/account-management-system.md) | REST |  |
 | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../../mybank/digital-banking/internet-banking-system/database.md) | Datalog |  |

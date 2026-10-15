@@ -12,6 +12,10 @@ Facilitates agile practices
 | Use Case | Description |
 |---|---|
 | [Manage Sprints](../../mybank/project-management/manage-sprints.md) | Manage sprints for software development |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Agility Master](../../mybank/project-management/agility-master.md) | uses | [Project Management Tool](../../mybank/project-management/jira.md) |  | Backlogs, sprints and burndown charts |
 
 
 ## Navigation

@@ -1,7 +1,7 @@
 
 # Mortgage (Concept)
 ## Description
-A loan for a immobile, e.g. a house
+A loan secured by real estate, e.g. a house
 
 ## Superordinates
 | Concept | Description |

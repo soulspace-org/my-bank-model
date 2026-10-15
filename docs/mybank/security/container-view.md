@@ -11,6 +11,11 @@ Shows the systems and containers of the domain Security and their relations.
 |---|---|
 | [Security](../../mybank/security/context-boundary.md)| Ensures the security of systems and data. |
 
+## Roles
+| Person/Role | Description |
+|---|---|
+| [Security Engineer](../../mybank/it-management/security-engineer.md)| Designs and operates security infrastructure |
+
 ## Systems
 | System | Description |
 |---|---|
@@ -24,9 +29,11 @@ Shows the systems and containers of the domain Security and their relations.
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Security Engineer](../../mybank/it-management/security-engineer.md) | administers | [Identity and Access Management (IAM)](../../mybank/security/identity-access-management-system.md) |  | Access policies and identities |
 | [Disaster Recovery](../../mybank/security/disaster-recovery-system.md) | backs up | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transaction data snapshots |
 | [Disaster Recovery](../../mybank/security/disaster-recovery-system.md) | backs up | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Account data snapshots |
 | [Cybersecurity](../../mybank/security/cybersecurity-system.md) | monitors | [API Gateway](../../mybank/integration-middleware/api-gateway.md) |  | Network traffic and security events |
+| [Security Engineer](../../mybank/it-management/security-engineer.md) | operates | [Cybersecurity](../../mybank/security/cybersecurity-system.md) |  | Security events and detection rules |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

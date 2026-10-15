@@ -46,6 +46,15 @@ Provides tools for reporting and data analysis.
 
 ## C
 
+### [Card](../mybank/concepts/card.md) (Concept)
+Payment instrument giving access to an account, e.g. a debit or credit card
+
+### [Channel](../mybank/concepts/channel.md) (Concept)
+Way for the customer to interact with the bank, e.g. branch, ATM or online
+
+### [Checking Account](../mybank/concepts/checking-account.md) (Concept)
+An account for everyday payments and transactions
+
 ### [Cloud FinOps Specialist](../mybank/it-management/cloud-finops-specialist.md) (Person)
 Operates cloud infrastructure and controls costs
 
@@ -57,6 +66,9 @@ Cloud computing resources for scalability and flexibility.
 
 ### [Cloud Solution Architect](../mybank/it-management/cloud-solution-architect.md) (Person)
 Designs cloud solutions
+
+### [Collateral](../mybank/concepts/collateral.md) (Concept)
+Asset pledged by the borrower to secure a loan
 
 ### [Compliance Manager](../mybank/compliance/compliance-manager.md) (Person)
 Responsible for the compliance of MyBank.
@@ -178,6 +190,9 @@ Facilitates integration across systems.
 ### [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) (System)
 Allows customers to view information about their bank accounts and make payments.
 
+### [Investment](../mybank/concepts/investment.md) (Concept)
+Asset held by a customer to generate return, e.g. securities or funds
+
 ## L
 
 ### [Loan](../mybank/concepts/loan.md) (Concept)
@@ -192,7 +207,7 @@ Manages loan products, applications, and repayments.
 Provides limited internet banking functionality to customers via mobile devices.
 
 ### [Mortgage](../mybank/concepts/mortgage.md) (Concept)
-A loan for a immobile, e.g. a house
+A loan secured by real estate, e.g. a house
 
 ### [My Bank](../mybank/mybank-plc.md) (Enterprise-boundary)
 
@@ -203,6 +218,9 @@ A loan for a immobile, e.g. a house
 Designs and operates network infrastructure
 
 ## P
+
+### [Payment](../mybank/concepts/payment.md) (Concept)
+Transaction paying a third party
 
 ### [Payment Gateway](../mybank/payment/payment-gateway-system.md) (System)
 Facilitates credit/debit card transactions.
@@ -235,6 +253,12 @@ Responsible for quality assurance and compliance to quality standards
 
 ## R
 
+### [Repayment](../mybank/concepts/repayment.md) (Concept)
+Payment of an installment of a loan
+
+### [Risk Assessment](../mybank/concepts/risk-assessment.md) (Concept)
+Evaluation of the creditworthiness and risk of a customer
+
 ### [Risk Management System](../mybank/compliance/risk-management-system.md) (System)
 Detects risks and manages risk mitigation.
 
@@ -248,6 +272,9 @@ Responsible for managing the risks.
 
 ### [SWIFT/RTGS/NEFT](../mybank/payment/swift-rtgs-neft-system.md) (System)
 Handles interbank transfers and settlements.
+
+### [Savings Account](../mybank/concepts/savings-account.md) (Concept)
+An account for saving money that earns interest
 
 ### [Security](../mybank/security/context-boundary.md) (Context-boundary)
 Ensures the security of systems and data.
@@ -268,6 +295,9 @@ Monitors system performance and health.
 
 ### [Talent Management](../mybank/human-resources/talent-management-system.md) (System)
 Tools for recruitment, training, and performance management.
+
+### [Transaction](../mybank/concepts/transaction.md) (Concept)
+Movement of money recorded on an account
 
 ### [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) (System)
 Processes financial transactions in real-time.

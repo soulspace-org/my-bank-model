@@ -28,6 +28,10 @@
    :name "Account"
    :desc "Records the financial transactions between a customer and a bank"}
   {:el :concept
+   :id :mybank.concepts/transaction
+   :name "Transaction"
+   :desc "Movement of money recorded on an account"}
+  {:el :concept
    :id :mybank.concepts/deposit
    :name "Deposit"
    :desc "Puts money on account"}
@@ -46,7 +50,43 @@
   {:el :concept
    :id :mybank.concepts/mortgage
    :name "Mortgage"
-   :desc "A loan for a immobile, e.g. a house"}
+   :desc "A loan secured by real estate, e.g. a house"}
+  {:el :concept
+   :id :mybank.concepts/savings-account
+   :name "Savings Account"
+   :desc "An account for saving money that earns interest"}
+  {:el :concept
+   :id :mybank.concepts/checking-account
+   :name "Checking Account"
+   :desc "An account for everyday payments and transactions"}
+  {:el :concept
+   :id :mybank.concepts/card
+   :name "Card"
+   :desc "Payment instrument giving access to an account, e.g. a debit or credit card"}
+  {:el :concept
+   :id :mybank.concepts/payment
+   :name "Payment"
+   :desc "Transaction paying a third party"}
+  {:el :concept
+   :id :mybank.concepts/repayment
+   :name "Repayment"
+   :desc "Payment of an installment of a loan"}
+  {:el :concept
+   :id :mybank.concepts/channel
+   :name "Channel"
+   :desc "Way for the customer to interact with the bank, e.g. branch, ATM or online"}
+  {:el :concept
+   :id :mybank.concepts/collateral
+   :name "Collateral"
+   :desc "Asset pledged by the borrower to secure a loan"}
+  {:el :concept
+   :id :mybank.concepts/risk-assessment
+   :name "Risk Assessment"
+   :desc "Evaluation of the creditworthiness and risk of a customer"}
+  {:el :concept
+   :id :mybank.concepts/investment
+   :name "Investment"
+   :desc "Asset held by a customer to generate return, e.g. securities or funds"}
 
   ;;; Relationships
   {:el :has
@@ -54,13 +94,13 @@
    :from :mybank.concepts/bank
    :to :mybank.concepts/customer
    :name "has"}
-  {:el :has
-   :id :mybank.concepts/bank-has-account
+  {:el :rel
+   :id :mybank.concepts/bank-provides-account
    :from :mybank.concepts/bank
    :to :mybank.concepts/account
    :name "provides"}
-  {:el :has
-   :id :mybank.concepts/bank-has-loan
+  {:el :rel
+   :id :mybank.concepts/bank-provides-loan
    :from :mybank.concepts/bank
    :to :mybank.concepts/loan
    :name "provides"}
@@ -89,21 +129,41 @@
    :from :mybank.concepts/mortgage
    :to :mybank.concepts/loan
    :name "is a"}
-  {:el :rel
-   :id :mybank.concepts/customer-performs-deposit
+  {:el :has
+   :id :mybank.concepts/customer-has-loan
    :from :mybank.concepts/customer
-   :to :mybank.concepts/deposit
-   :name "performs"}
+   :to :mybank.concepts/loan
+   :name "has"}
   {:el :rel
-   :id :mybank.concepts/customer-performs-withdrawal
-   :from :mybank.concepts/customer
-   :to :mybank.concepts/withdrawal
-   :name "performs"}
+   :id :mybank.concepts/loan-settled-via-account
+   :from :mybank.concepts/loan
+   :to :mybank.concepts/account
+   :name "is settled via"}
   {:el :rel
-   :id :mybank.concepts/customer-performs-transfer
+   :id :mybank.concepts/customer-performs-transaction
    :from :mybank.concepts/customer
-   :to :mybank.concepts/transfer
+   :to :mybank.concepts/transaction
    :name "performs"}
+  {:el :has
+   :id :mybank.concepts/account-has-transaction
+   :from :mybank.concepts/account
+   :to :mybank.concepts/transaction
+   :name "records"}
+  {:el :is-a
+   :id :mybank.concepts/deposit-is-a-transaction
+   :from :mybank.concepts/deposit
+   :to :mybank.concepts/transaction
+   :name "is a"}
+  {:el :is-a
+   :id :mybank.concepts/withdrawal-is-a-transaction
+   :from :mybank.concepts/withdrawal
+   :to :mybank.concepts/transaction
+   :name "is a"}
+  {:el :is-a
+   :id :mybank.concepts/transfer-is-a-transaction
+   :from :mybank.concepts/transfer
+   :to :mybank.concepts/transaction
+   :name "is a"}
   {:el :rel
    :id :mybank.concepts/deposit-to-account
    :from :mybank.concepts/deposit
@@ -115,10 +175,115 @@
    :to :mybank.concepts/account
    :name "from"}
   {:el :rel
-   :id :mybank.concepts/transfer-between-account
+   :id :mybank.concepts/transfer-debits-source-account
    :from :mybank.concepts/transfer
    :to :mybank.concepts/account
-   :name "between"}
+   :name "debits source"}
+  {:el :rel
+   :id :mybank.concepts/transfer-credits-target-account
+   :from :mybank.concepts/transfer
+   :to :mybank.concepts/account
+   :name "credits target"}
+
+  ;; Accounts
+  {:el :is-a
+   :id :mybank.concepts/savings-account-is-a-account
+   :from :mybank.concepts/savings-account
+   :to :mybank.concepts/account
+   :name "is a"}
+  {:el :is-a
+   :id :mybank.concepts/checking-account-is-a-account
+   :from :mybank.concepts/checking-account
+   :to :mybank.concepts/account
+   :name "is a"}
+
+  ;; Payments and cards
+  {:el :is-a
+   :id :mybank.concepts/payment-is-a-transaction
+   :from :mybank.concepts/payment
+   :to :mybank.concepts/transaction
+   :name "is a"}
+  {:el :rel
+   :id :mybank.concepts/payment-made-from-account
+   :from :mybank.concepts/payment
+   :to :mybank.concepts/account
+   :name "is made from"}
+  {:el :has
+   :id :mybank.concepts/customer-has-card
+   :from :mybank.concepts/customer
+   :to :mybank.concepts/card
+   :name "has"}
+  {:el :rel
+   :id :mybank.concepts/card-accesses-account
+   :from :mybank.concepts/card
+   :to :mybank.concepts/account
+   :name "gives access to"}
+  {:el :rel
+   :id :mybank.concepts/card-authorizes-payment
+   :from :mybank.concepts/card
+   :to :mybank.concepts/payment
+   :name "authorizes"}
+
+  ;; Channels
+  {:el :rel
+   :id :mybank.concepts/bank-provides-channel
+   :from :mybank.concepts/bank
+   :to :mybank.concepts/channel
+   :name "provides"}
+  {:el :rel
+   :id :mybank.concepts/customer-uses-channel
+   :from :mybank.concepts/customer
+   :to :mybank.concepts/channel
+   :name "uses"}
+  {:el :rel
+   :id :mybank.concepts/transaction-initiated-via-channel
+   :from :mybank.concepts/transaction
+   :to :mybank.concepts/channel
+   :name "is initiated via"}
+
+  ;; Lending and risk
+  {:el :is-a
+   :id :mybank.concepts/repayment-is-a-payment
+   :from :mybank.concepts/repayment
+   :to :mybank.concepts/payment
+   :name "is a"}
+  {:el :rel
+   :id :mybank.concepts/repayment-repays-loan
+   :from :mybank.concepts/repayment
+   :to :mybank.concepts/loan
+   :name "repays"}
+  {:el :rel
+   :id :mybank.concepts/collateral-secures-loan
+   :from :mybank.concepts/collateral
+   :to :mybank.concepts/loan
+   :name "secures"}
+  {:el :rel
+   :id :mybank.concepts/bank-performs-risk-assessment
+   :from :mybank.concepts/bank
+   :to :mybank.concepts/risk-assessment
+   :name "performs"}
+  {:el :rel
+   :id :mybank.concepts/risk-assessment-evaluates-customer
+   :from :mybank.concepts/risk-assessment
+   :to :mybank.concepts/customer
+   :name "evaluates"}
+  {:el :rel
+   :id :mybank.concepts/loan-requires-risk-assessment
+   :from :mybank.concepts/loan
+   :to :mybank.concepts/risk-assessment
+   :name "requires"}
+
+  ;; Investments
+  {:el :rel
+   :id :mybank.concepts/bank-provides-investment
+   :from :mybank.concepts/bank
+   :to :mybank.concepts/investment
+   :name "provides"}
+  {:el :has
+   :id :mybank.concepts/customer-has-investment
+   :from :mybank.concepts/customer
+   :to :mybank.concepts/investment
+   :name "holds"}
 
   ;
   }
