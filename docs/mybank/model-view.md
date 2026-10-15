@@ -263,6 +263,7 @@ Shows the complete model graph
 | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Accounts Summary Controller](../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | Transit/HTTPS |  |
 | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Reset Password Controller](../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | Transit/HTTPS |  |
 | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Transit/HTTPS |  |
+| [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 | [Mobile App](../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 | [API Application](../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../mybank/core-banking/account-management-system.md) | REST |  |
 | [Cybersecurity](../mybank/security/cybersecurity-system.md) | monitors | [API Gateway](../mybank/integration-middleware/api-gateway.md) |  | Network traffic and security events |
@@ -302,6 +303,7 @@ Shows the complete model graph
 | [Fraud specialist](../mybank/compliance/fraud-specialist.md) | uses | [Fraud Detection System](../mybank/compliance/fraud-detection-system.md) |  | generate fraud reports |
 | [DevOps Engineer](../mybank/project-management/devops-engineer.md) | uses | [Development Platform](../mybank/project-management/gitlab.md) |  | Source code, pipelines and deployments |
 | [Agility Master](../mybank/project-management/agility-master.md) | uses | [Project Management Tool](../mybank/project-management/jira.md) |  | Backlogs, sprints and burndown charts |
+| [Corporate Customer](../mybank/corporate-customer.md) | uses | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) |  | Corporate account balances and payment orders |
 | [Cloud Operations Specialist](../mybank/it-management/cloud-operations-specialist.md) | uses | [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) |  | Health and performance metrics |
 | [Branch Systems](../mybank/customer-channels/branch-systems.md) | uses | [Account Management](../mybank/core-banking/account-management-system.md) |  | Customer account data and changes |
 | [Incident Manager](../mybank/project-management/incident-manager.md) | uses | [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) |  | Alerts and system health |
@@ -320,6 +322,7 @@ Shows the complete model graph
 | [Personal Customer](../mybank/personal-customer.md) | views account balances and makes payments using | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  |  |
 | [Personal Customer](../mybank/personal-customer.md) | views account balances and makes payments using | [Mobile App](../mybank/digital-banking/internet-banking-system/mobile-app.md) |  |  |
 | [Personal Customer](../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
+| [Corporate Customer](../mybank/corporate-customer.md) | visits mybank.com via browser | [Web Application](../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
 
 ## Deployment Nodes
 | Node | Description |

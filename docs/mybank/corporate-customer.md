@@ -15,7 +15,9 @@ Corporate Customer of MyBank.
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Corporate Customer](../mybank/corporate-customer.md) | uses | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) |  | Corporate account balances and payment orders |
+| [Corporate Customer](../mybank/corporate-customer.md) | uses | [Single-Page Application](../mybank/digital-banking/internet-banking-system/single-page-app.md) |  | Corporate account balances and payment orders |
 | [Corporate Customer](../mybank/corporate-customer.md) | uses | [API Gateway](../mybank/integration-middleware/api-gateway.md) | REST | Automated payment orders and account statements |
+| [Corporate Customer](../mybank/corporate-customer.md) | visits mybank.com via browser | [Web Application](../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
 
 
 ## Navigation

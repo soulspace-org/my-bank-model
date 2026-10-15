@@ -20,6 +20,7 @@ Clojure, Pedestal
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 | [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |

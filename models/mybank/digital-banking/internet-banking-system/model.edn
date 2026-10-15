@@ -294,6 +294,20 @@
    :tech "Transit/HTTPS"}
 
   {:el :request
+   :id :mybank.digital-banking.internet-banking-system/single-page-app-calls-api-application
+   :from :mybank.digital-banking.internet-banking-system/single-page-app
+   :to :mybank.digital-banking.internet-banking-system/api-application
+   :name "makes API calls to"
+   :tech "Transit/HTTPS"}
+
+  {:el :send
+   :id :mybank.digital-banking.internet-banking-system/web-app-delivers-single-page-app
+   :from :mybank.digital-banking.internet-banking-system/web-app
+   :to :mybank.digital-banking.internet-banking-system/single-page-app
+   :name "delivers"
+   :tech "HTTPS"}
+
+  {:el :request
    :id :mybank.digital-banking.internet-banking-system/api-application-uses-database
    :from :mybank.digital-banking.internet-banking-system/api-application
    :to :mybank.digital-banking.internet-banking-system/database

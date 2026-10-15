@@ -260,6 +260,20 @@
    :desc "Automated payment orders and account statements"
    :tech "REST"}
 
+  {:el :request
+   :id :mybank/corporate-customer-uses-web-app
+   :from :mybank/corporate-customer
+   :to :mybank.digital-banking.internet-banking-system/web-app
+   :name "visits mybank.com via browser"
+   :tech "HTTPS"}
+
+  {:el :request
+   :id :mybank/corporate-customer-uses-single-page-app
+   :from :mybank/corporate-customer
+   :to :mybank.digital-banking.internet-banking-system/single-page-app
+   :name "uses"
+   :desc "Corporate account balances and payment orders"}
+
   ;; Integration and Security
   {:el :request
    :id :mybank.integration-middleware/api-gateway-requests-esb

@@ -12,6 +12,11 @@ Clojure, Pedestal
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Personal Customer](../../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
+| [Corporate Customer](../../../mybank/corporate-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
+## Outgoing Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | delivers | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | HTTPS |  |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

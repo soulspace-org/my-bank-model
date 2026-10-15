@@ -14,6 +14,7 @@ Shows the systems and containers of the domain digital banking and their relatio
 ## Roles
 | Person/Role | Description |
 |---|---|
+| [Corporate Customer](../../mybank/corporate-customer.md)| Corporate Customer of MyBank. |
 | [Database Administrator](../../mybank/it-management/database-administrator.md)| Manages databases |
 | [Personal Customer](../../mybank/personal-customer.md)| Personal Customer of MyBank. |
 
@@ -38,14 +39,17 @@ Shows the systems and containers of the domain digital banking and their relatio
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Database Administrator](../../mybank/it-management/database-administrator.md) | administers | [Database](../../mybank/digital-banking/internet-banking-system/database.md) |  | Schemas, backups and performance settings |
+| [Single-Page Application](../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [API Application](../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 | [Mobile App](../../mybank/digital-banking/internet-banking-system/mobile-app.md) | makes API calls to | [API Application](../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
 | [API Application](../../mybank/digital-banking/internet-banking-system/api-application.md) | makes API calls to | [Account Management](../../mybank/core-banking/account-management-system.md) | REST |  |
 | [API Application](../../mybank/digital-banking/internet-banking-system/api-application.md) | reads from and writes to | [Database](../../mybank/digital-banking/internet-banking-system/database.md) | Datalog |  |
 | [API Application](../../mybank/digital-banking/internet-banking-system/api-application.md) | sends e-mail using | [E-mail System](../../mybank/email-system.md) | SMTP |  |
 | [Personal Customer](../../mybank/personal-customer.md) | uses | [Digital Wallets](../../mybank/digital-banking/digital-wallets-system.md) |  |  |
+| [Corporate Customer](../../mybank/corporate-customer.md) | uses | [Single-Page Application](../../mybank/digital-banking/internet-banking-system/single-page-app.md) |  | Corporate account balances and payment orders |
 | [Personal Customer](../../mybank/personal-customer.md) | views account balances and makes payments using | [Single-Page Application](../../mybank/digital-banking/internet-banking-system/single-page-app.md) |  |  |
 | [Personal Customer](../../mybank/personal-customer.md) | views account balances and makes payments using | [Mobile App](../../mybank/digital-banking/internet-banking-system/mobile-app.md) |  |  |
 | [Personal Customer](../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
+| [Corporate Customer](../../mybank/corporate-customer.md) | visits mybank.com via browser | [Web Application](../../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

@@ -11,6 +11,7 @@ ClojureScript, Re-Frame
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Corporate Customer](../../../mybank/corporate-customer.md) | uses | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) |  | Corporate account balances and payment orders |
 | [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) |  |  |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
@@ -18,6 +19,11 @@ ClojureScript, Re-Frame
 | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | Transit/HTTPS |  |
 | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | Transit/HTTPS |  |
 | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Transit/HTTPS |  |
+| [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [API Application](../../../mybank/digital-banking/internet-banking-system/api-application.md) | Transit/HTTPS |  |
+## Incoming Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | delivers | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | HTTPS |  |
 
 ## Container View
 ![Container View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/container-view.png)

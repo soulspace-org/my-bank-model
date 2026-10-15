@@ -9,6 +9,7 @@ Shows the containers and components of the domain Internet Banking System and th
 ## Roles
 | Person/Role | Description |
 |---|---|
+| [Corporate Customer](../../../mybank/corporate-customer.md)| Corporate Customer of MyBank. |
 | [Database Administrator](../../../mybank/it-management/database-administrator.md)| Manages databases |
 | [Personal Customer](../../../mybank/personal-customer.md)| Personal Customer of MyBank. |
 
@@ -44,11 +45,13 @@ Shows the containers and components of the domain Internet Banking System and th
 | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | Transit/HTTPS |  |
 | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) | makes API calls to | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | Transit/HTTPS |  |
 | [Accounts Summary Controller](../../../mybank/digital-banking/internet-banking-system/accounts-summary-controller.md) | retrieves account data from | [Core Banking Systems Facade](../../../mybank/digital-banking/internet-banking-system/core-banking-systems-facade.md) |  |  |
+| [Corporate Customer](../../../mybank/corporate-customer.md) | uses | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) |  | Corporate account balances and payment orders |
 | [Sign In Controller](../../../mybank/digital-banking/internet-banking-system/sign-in-controller.md) | uses | [Security Component](../../../mybank/digital-banking/internet-banking-system/security-component.md) |  |  |
 | [Reset Password Controller](../../../mybank/digital-banking/internet-banking-system/reset-password-controller.md) | uses for sending password reset emails | [E-mail Component](../../../mybank/digital-banking/internet-banking-system/email-component.md) |  |  |
 | [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Single-Page Application](../../../mybank/digital-banking/internet-banking-system/single-page-app.md) |  |  |
 | [Personal Customer](../../../mybank/personal-customer.md) | views account balances and makes payments using | [Mobile App](../../../mybank/digital-banking/internet-banking-system/mobile-app.md) |  |  |
 | [Personal Customer](../../../mybank/personal-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
+| [Corporate Customer](../../../mybank/corporate-customer.md) | visits mybank.com via browser | [Web Application](../../../mybank/digital-banking/internet-banking-system/web-app.md) | HTTPS |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
