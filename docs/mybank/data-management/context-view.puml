@@ -5,9 +5,10 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <tupadr3/font-awesome-5/python>
-!include <awslib14/Analytics/Redshift>
 !include <tupadr3/font-awesome-5/java>
+!include <logos/kafka>
+!include <awslib14/Analytics/Redshift>
+!include <tupadr3/font-awesome-5/python>
 !include <logos/hadoop>
 !include <logos/spark>
 
@@ -23,5 +24,9 @@ Boundary(mybank_dataManagement_contextBoundary, "Data Management and Analytics")
   System(mybank_dataManagement_businessIntelligenceSystem, "Business Intelligence (BI)", $descr="Provides tools for reporting and data analysis.", $type="Tableau, Python", $sprite="python")
   System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
 }
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
+Rel(mybank_dataManagement_businessIntelligenceSystem, mybank_dataManagement_dataWarehouseSystem, "queries", $descr="Aggregated data for reports and dashboards", $techn="SQL")
+Rel(mybank_dataManagement_bigDataAnalyticsSystem, mybank_dataManagement_dataWarehouseSystem, "queries", $descr="Historical data for predictive models", $techn="SQL")
+Rel(mybank_coreBanking_transactionProcessingSystem, mybank_dataManagement_dataWarehouseSystem, "feeds", $descr="Transaction events", $techn="Kafka", $sprite="kafka,scale=0.5")
 SHOW_LEGEND()
 @enduml

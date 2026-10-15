@@ -8,6 +8,10 @@ Advanced analytics for predictive modeling.
 
 ## Technology
 Java, Hadoop, Spark
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Big Data Analytics](../../mybank/data-management/big-data-analytics-system.md) | queries | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | SQL | Historical data for predictive models |
 
 ## System Context View
 ![Context View of the Data Management Systems](../../mybank/data-management/context-view.png)

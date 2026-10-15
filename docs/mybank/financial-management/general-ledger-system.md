@@ -8,6 +8,13 @@ Comprehensive financial accounting and reporting system.
 
 ## Technology
 Oracle Financials
+## Incoming Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Treasury Management](../../mybank/financial-management/treasury-management-system.md) | posts to | [General Ledger](../../mybank/financial-management/general-ledger-system.md) |  | Treasury bookings |
+| [HR Information Systems (HRIS)](../../mybank/human-resources/hris.md) | posts to | [General Ledger](../../mybank/financial-management/general-ledger-system.md) |  | Payroll bookings |
+| [Expense Management](../../mybank/financial-management/expense-management-system.md) | posts to | [General Ledger](../../mybank/financial-management/general-ledger-system.md) |  | Expense bookings |
+| [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) | posts to | [General Ledger](../../mybank/financial-management/general-ledger-system.md) | Kafka | Account bookings |
 
 ## System Context View
 ![Context View of the Financial Management Systems](../../mybank/financial-management/context-view.png)

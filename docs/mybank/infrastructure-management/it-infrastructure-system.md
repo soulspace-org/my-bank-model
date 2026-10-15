@@ -8,6 +8,11 @@ Hardware and software resources, including servers and networking.
 
 ## Technology
 VMware, Cisco
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) | connects to | [IT Infrastructure](../../mybank/infrastructure-management/it-infrastructure-system.md) |  | Hybrid connectivity to on-premise resources |
+| [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [IT Infrastructure](../../mybank/infrastructure-management/it-infrastructure-system.md) |  | Health and performance metrics |
 
 
 ## Navigation

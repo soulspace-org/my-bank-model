@@ -8,6 +8,11 @@ Software and hardware for in-branch banking services.
 
 ## Technology
 Java, Swing
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Branch Systems](../../mybank/customer-channels/branch-systems.md) | uses | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Counter transactions |
+| [Branch Systems](../../mybank/customer-channels/branch-systems.md) | uses | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Customer account data and changes |
 
 ## System Context View
 ![Context View of the Customer Channels Systems](../../mybank/customer-channels/context-view.png)

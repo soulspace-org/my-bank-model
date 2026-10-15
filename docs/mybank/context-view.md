@@ -93,15 +93,42 @@ Shows the systems of MyBank
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | authenticates with | [Identity and Access Management (IAM)](../mybank/security/identity-access-management-system.md) | OpenID Connect | Credentials, tokens and access rights |
+| [Disaster Recovery](../mybank/security/disaster-recovery-system.md) | backs up | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Transaction data snapshots |
+| [Disaster Recovery](../mybank/security/disaster-recovery-system.md) | backs up | [Account Management](../mybank/core-banking/account-management-system.md) |  | Account data snapshots |
+| [Enterprise Service Bus (ESB)](../mybank/integration-middleware/esb.md) | calls | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Transaction requests and results |
+| [Enterprise Service Bus (ESB)](../mybank/integration-middleware/esb.md) | calls | [Account Management](../mybank/core-banking/account-management-system.md) | REST | Account queries and updates |
+| [Enterprise Service Bus (ESB)](../mybank/integration-middleware/esb.md) | calls | [Service-Oriented Architecture (SOA)](../mybank/integration-middleware/soa.md) | SOAP | Service orchestration requests |
+| [Enterprise Service Bus (ESB)](../mybank/integration-middleware/esb.md) | calls | [Loan Management](../mybank/core-banking/loan-management-system.md) | REST | Loan applications and loan status |
+| [Payment Gateway](../mybank/payment/payment-gateway-system.md) | checks with | [Fraud Detection System](../mybank/compliance/fraud-detection-system.md) |  | Payment data for fraud scoring |
+| [Cloud Services](../mybank/infrastructure-management/cloud-services-system.md) | connects to | [IT Infrastructure](../mybank/infrastructure-management/it-infrastructure-system.md) |  | Hybrid connectivity to on-premise resources |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../mybank/core-banking/loan-management-system.md) |  |  |
 | [Risk Management System](../mybank/compliance/risk-management-system.md) | fetches transaction history and customer data from | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  |  |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../mybank/core-banking/account-management-system.md) |  |  |
+| [Project Management Tool](../mybank/project-management/jira.md) | links to | [Projects Wiki](../mybank/project-management/confluence.md) | REST | Project documentation pages |
+| [Cybersecurity](../mybank/security/cybersecurity-system.md) | monitors | [API Gateway](../mybank/integration-middleware/api-gateway.md) |  | Network traffic and security events |
+| [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [IT Infrastructure](../mybank/infrastructure-management/it-infrastructure-system.md) |  | Health and performance metrics |
+| [System Monitoring](../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [Cloud Services](../mybank/infrastructure-management/cloud-services-system.md) | REST | Health and performance metrics |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../mybank/payment/payment-gateway-system.md) |  |  |
+| [Business Intelligence (BI)](../mybank/data-management/business-intelligence-system.md) | queries | [Data Warehouse](../mybank/data-management/data-warehouse-system.md) | SQL | Aggregated data for reports and dashboards |
+| [Big Data Analytics](../mybank/data-management/big-data-analytics-system.md) | queries | [Data Warehouse](../mybank/data-management/data-warehouse-system.md) | SQL | Historical data for predictive models |
+| [Talent Management](../mybank/human-resources/talent-management-system.md) | reads from | [HR Information Systems (HRIS)](../mybank/human-resources/hris.md) |  | Employee master data |
+| [Anti-Money Laundering (AML) System](../mybank/compliance/aml-system.md) | reads from | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Transactions to screen for money laundering |
 | [Loan Management](../mybank/core-banking/loan-management-system.md) | retrieves customer account information from | [Account Management](../mybank/core-banking/account-management-system.md) |  |  |
+| [Payment Gateway](../mybank/payment/payment-gateway-system.md) | routes to | [ACH System](../mybank/payment/ach-system.md) |  | Direct debits and bill payments |
+| [API Gateway](../mybank/integration-middleware/api-gateway.md) | routes to | [Enterprise Service Bus (ESB)](../mybank/integration-middleware/esb.md) | REST | API requests of third-party services and fintech apps |
+| [Payment Gateway](../mybank/payment/payment-gateway-system.md) | routes to | [SWIFT/RTGS/NEFT](../mybank/payment/swift-rtgs-neft-system.md) |  | Interbank payment orders |
 | [Internet Banking System](../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | sends e-mail using | [E-mail System](../mybank/email-system.md) |  |  |
+| [SWIFT/RTGS/NEFT](../mybank/payment/swift-rtgs-neft-system.md) | settles with | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Settlement bookings |
+| [ACH System](../mybank/payment/ach-system.md) | settles with | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Batch settlement bookings |
+| [Development Platform](../mybank/project-management/gitlab.md) | updates | [Project Management Tool](../mybank/project-management/jira.md) | REST | Issue status from commits and merge requests |
 | [Compliance Manager](../mybank/compliance/compliance-manager.md) | uses | [Compliance System](../mybank/compliance/compliance-system.md) |  | generate compliance reports |
 | [Personal Customer](../mybank/personal-customer.md) | uses | [Digital Wallets](../mybank/digital-banking/digital-wallets-system.md) |  |  |
+| [Contact Center](../mybank/customer-channels/contact-center-system.md) | uses | [Account Management](../mybank/core-banking/account-management-system.md) |  | Customer account information |
+| [Branch Systems](../mybank/customer-channels/branch-systems.md) | uses | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  | Counter transactions |
 | [Fraud specialist](../mybank/compliance/fraud-specialist.md) | uses | [Fraud Detection System](../mybank/compliance/fraud-detection-system.md) |  | generate fraud reports |
+| [Branch Systems](../mybank/customer-channels/branch-systems.md) | uses | [Account Management](../mybank/core-banking/account-management-system.md) |  | Customer account data and changes |
+| [Customer Service Staff](../mybank/customer-channels/customer-service-staff.md) | uses | [Contact Center](../mybank/customer-channels/contact-center-system.md) |  | Customer calls and cases |
 | [Risk Manager](../mybank/compliance/risk-manager.md) | uses | [Risk Management System](../mybank/compliance/risk-management-system.md) |  | generate risk reports |
 | [Personal Customer](../mybank/personal-customer.md) | uses atm for balance information and withdrawals | [ATM](../mybank/customer-channels/atm.md) |  |  |
 | [Payment Gateway](../mybank/payment/payment-gateway-system.md) | validates and processes payments using | [Transaction Processing](../mybank/core-banking/transaction-processing-system.md) |  |  |

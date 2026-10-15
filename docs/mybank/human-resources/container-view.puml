@@ -13,9 +13,12 @@
 
 
 title Container View of the Human Resources Systems
+System(mybank_financialManagement_generalLedgerSystem, "General Ledger", $descr="Comprehensive financial accounting and reporting system.", $type="Oracle Financials")
 Boundary(mybank_humanResources_contextBoundary, "Human Resources Management") {
   System(mybank_humanResources_hris, "HR Information Systems (HRIS)", $descr="Manages employee data, payroll, and benefits.", $type="Workday")
   System(mybank_humanResources_talentManagementSystem, "Talent Management", $descr="Tools for recruitment, training, and performance management.", $type="SAP SuccessFactors")
 }
+Rel(mybank_humanResources_talentManagementSystem, mybank_humanResources_hris, "reads from", $descr="Employee master data")
+Rel(mybank_humanResources_hris, mybank_financialManagement_generalLedgerSystem, "posts to", $descr="Payroll bookings")
 SHOW_LEGEND()
 @enduml

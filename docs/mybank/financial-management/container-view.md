@@ -16,6 +16,8 @@ Shows the systems and containers of the domain Financial Management and their re
 |---|---|
 | [Expense Management](../../mybank/financial-management/expense-management-system.md)| Tracks and manages expenses. |
 | [General Ledger](../../mybank/financial-management/general-ledger-system.md)| Comprehensive financial accounting and reporting system. |
+| [HR Information Systems (HRIS)](../../mybank/human-resources/hris.md)| Manages employee data, payroll, and benefits. |
+| [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md)| Processes financial transactions in real-time. |
 | [Treasury Management](../../mybank/financial-management/treasury-management-system.md)| Manages liquidity, investments, and risk in the treasury function. |
 
 ## Navigation

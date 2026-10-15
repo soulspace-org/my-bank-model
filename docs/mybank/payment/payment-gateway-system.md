@@ -19,6 +19,9 @@ Java, Spring Boot
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | checks with | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) |  | Payment data for fraud scoring |
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | routes to | [ACH System](../../mybank/payment/ach-system.md) |  | Direct debits and bill payments |
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | routes to | [SWIFT/RTGS/NEFT](../../mybank/payment/swift-rtgs-neft-system.md) |  | Interbank payment orders |
 | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | validates and processes payments using | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 
 ## System Context View

@@ -8,6 +8,14 @@ Telephony and customer support systems for call centers.
 
 ## Technology
 Genesys, Avaya
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Customer Service Staff](../../mybank/customer-channels/customer-service-staff.md) | uses | [Contact Center](../../mybank/customer-channels/contact-center-system.md) |  | Customer calls and cases |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Contact Center](../../mybank/customer-channels/contact-center-system.md) | uses | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Customer account information |
 
 ## System Context View
 ![Context View of the Customer Channels Systems](../../mybank/customer-channels/context-view.png)

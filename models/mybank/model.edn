@@ -202,46 +202,94 @@
    :name "views account balances and makes payments using"}
 
   ;; System Landscape level
-  {:el :rel
+  {:el :request
    :id :mybank/personal-customer-asks-customer-service-staff
    :from :mybank/personal-customer
    :to :mybank.customer-channels/customer-service-staff
    :name "asks questions to"}
 
-  {:el :rel
+  {:el :request
    :id :mybank.customer-channels/atm-uses-account-management-system
    :from :mybank.customer-channels/atm
    :to :mybank.core-banking/account-management-system
    :name "retrieves account balance"}
 
-  {:el :rel
+  {:el :request
    :id :mybank.customer-channels/atm-uses-transaction-processing-system
    :from :mybank.customer-channels/atm
    :to :mybank.core-banking/transaction-processing-system
    :name "validates transaction"}
 
-  {:el :rel
+  {:el :request
    :id :mybank/backoffice-staff-uses-loan-management-system
    :from :mybank.core-banking/backoffice-staff
    :to :mybank.core-banking/loan-management-system
    :name "processes loan applications and updates loan status using"}
 
-  {:el :rel
+  {:el :request
    :id :mybank/backoffice-staff-uses-risk-management-system
    :from :mybank.core-banking/backoffice-staff
    :to :mybank.compliance/compliance-system
    :name "assesses customer risk for loan approval using"}
 
-  {:el :rel
+  {:el :request
    :id :mybank/backoffice-staff-uses-payment-gateway
    :from :mybank.core-banking/backoffice-staff
    :to :mybank.payment/payment-gateway-system
    :name "validates and processes payments using"}
 
-  {:el :rel
+  {:el :request
    :id :mybank/customer-service-staff-uses-email-system
    :from :mybank.customer-channels/customer-service-staff
    :to :mybank/email-system
    :name "sends and receives customer communication using"}
+
+  ;; Integration and Security
+  {:el :request
+   :id :mybank.integration-middleware/api-gateway-requests-esb
+   :from :mybank.integration-middleware/api-gateway
+   :to :mybank.integration-middleware/esb
+   :name "routes to"
+   :desc "API requests of third-party services and fintech apps"
+   :tech "REST"}
+
+  {:el :request
+   :id :mybank.integration-middleware/esb-requests-account-management
+   :from :mybank.integration-middleware/esb
+   :to :mybank.core-banking/account-management-system
+   :name "calls"
+   :desc "Account queries and updates"
+   :tech "REST"}
+
+  {:el :request
+   :id :mybank.integration-middleware/esb-requests-transaction-processing
+   :from :mybank.integration-middleware/esb
+   :to :mybank.core-banking/transaction-processing-system
+   :name "calls"
+   :desc "Transaction requests and results"}
+
+  {:el :request
+   :id :mybank.integration-middleware/esb-requests-loan-management
+   :from :mybank.integration-middleware/esb
+   :to :mybank.core-banking/loan-management-system
+   :name "calls"
+   :desc "Loan applications and loan status"
+   :tech "REST"}
+
+  {:el :request
+   :id :mybank.integration-middleware/esb-requests-soa
+   :from :mybank.integration-middleware/esb
+   :to :mybank.integration-middleware/soa
+   :name "calls"
+   :desc "Service orchestration requests"
+   :tech "SOAP"}
+
+  {:el :request
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-requests-iam
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.security/identity-access-management-system
+   :name "authenticates with"
+   :desc "Credentials, tokens and access rights"
+   :tech "OpenID Connect"}
   ;
   }

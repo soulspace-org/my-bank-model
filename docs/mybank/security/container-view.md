@@ -14,9 +14,19 @@ Shows the systems and containers of the domain Security and their relations.
 ## Systems
 | System | Description |
 |---|---|
+| [API Gateway](../../mybank/integration-middleware/api-gateway.md)| Manages APIs for third-party services and fintech apps. |
+| [Account Management](../../mybank/core-banking/account-management-system.md)| Handles customer accounts, deposits, and withdrawals. |
 | [Cybersecurity](../../mybank/security/cybersecurity-system.md)| Protects against cyber threats. |
 | [Disaster Recovery](../../mybank/security/disaster-recovery-system.md)| Ensures business continuity in case of a disaster. |
 | [Identity and Access Management (IAM)](../../mybank/security/identity-access-management-system.md)| Manages secure access to systems and data. |
+| [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md)| Processes financial transactions in real-time. |
+
+## Synchronous Requests
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Disaster Recovery](../../mybank/security/disaster-recovery-system.md) | backs up | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transaction data snapshots |
+| [Disaster Recovery](../../mybank/security/disaster-recovery-system.md) | backs up | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Account data snapshots |
+| [Cybersecurity](../../mybank/security/cybersecurity-system.md) | monitors | [API Gateway](../../mybank/integration-middleware/api-gateway.md) |  | Network traffic and security events |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

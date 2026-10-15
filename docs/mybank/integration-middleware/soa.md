@@ -8,6 +8,10 @@ Framework for enabling seamless integration between services.
 
 ## Technology
 Apache CXF
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | calls | [Service-Oriented Architecture (SOA)](../../mybank/integration-middleware/soa.md) | SOAP | Service orchestration requests |
 
 
 ## Navigation

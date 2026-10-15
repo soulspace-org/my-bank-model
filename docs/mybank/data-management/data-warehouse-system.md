@@ -8,6 +8,15 @@ Central repository for storing large volumes of data.
 
 ## Technology
 AWS Redshift
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Business Intelligence (BI)](../../mybank/data-management/business-intelligence-system.md) | queries | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | SQL | Aggregated data for reports and dashboards |
+| [Big Data Analytics](../../mybank/data-management/big-data-analytics-system.md) | queries | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | SQL | Historical data for predictive models |
+## Incoming Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) | feeds | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | Kafka | Transaction events |
 
 ## System Context View
 ![Context View of the Data Management Systems](../../mybank/data-management/context-view.png)

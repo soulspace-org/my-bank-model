@@ -128,5 +128,19 @@
    :to :mybank.compliance/fraud-detection-system
    :name "uses"
    :desc "generate fraud reports"}
+
+  {:el :request
+   :id :mybank.compliance/aml-system-requests-transaction-processing
+   :from :mybank.compliance/aml-system
+   :to :mybank.core-banking/transaction-processing-system
+   :name "reads from"
+   :desc "Transactions to screen for money laundering"}
+
+  {:el :send
+   :id :mybank.compliance/aml-system-sends-compliance-system
+   :from :mybank.compliance/aml-system
+   :to :mybank.compliance/compliance-system
+   :name "reports to"
+   :desc "Suspicious activity reports"}
   ;
   }

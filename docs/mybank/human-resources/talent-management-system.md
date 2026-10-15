@@ -8,6 +8,10 @@ Tools for recruitment, training, and performance management.
 
 ## Technology
 SAP SuccessFactors
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Talent Management](../../mybank/human-resources/talent-management-system.md) | reads from | [HR Information Systems (HRIS)](../../mybank/human-resources/hris.md) |  | Employee master data |
 
 ## System Context View
 ![Context View of the Human Resources Systems](../../mybank/human-resources/context-view.png)

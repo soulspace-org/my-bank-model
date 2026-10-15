@@ -5,7 +5,10 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/java>
+!include <logos/kafka>
 !include <awslib14/Storage/Backup>
+!include <logos/kong>
 
 
 
@@ -19,5 +22,11 @@ Boundary(mybank_security_contextBoundary, "Security") {
   System(mybank_security_cybersecuritySystem, "Cybersecurity", $descr="Protects against cyber threats.", $type="Snort, Suricata")
   System(mybank_security_disasterRecoverySystem, "Disaster Recovery", $descr="Ensures business continuity in case of a disaster.", $type="AWS Backup, DRaaS", $sprite="Backup")
 }
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
+System(mybank_integrationMiddleware_apiGateway, "API Gateway", $descr="Manages APIs for third-party services and fintech apps.", $type="Kong", $sprite="kong")
+System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
+Rel(mybank_security_disasterRecoverySystem, mybank_coreBanking_transactionProcessingSystem, "backs up", $descr="Transaction data snapshots")
+Rel(mybank_security_cybersecuritySystem, mybank_integrationMiddleware_apiGateway, "monitors", $descr="Network traffic and security events")
+Rel(mybank_security_disasterRecoverySystem, mybank_coreBanking_accountManagementSystem, "backs up", $descr="Account data snapshots")
 SHOW_LEGEND()
 @enduml

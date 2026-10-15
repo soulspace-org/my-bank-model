@@ -16,6 +16,7 @@ Shows the Internet Banking System and its relations.
 |---|---|
 | [Account Management](../../../mybank/core-banking/account-management-system.md)| Handles customer accounts, deposits, and withdrawals. |
 | [E-mail System](../../../mybank/email-system.md)| The internal Microsoft Exchange email system. |
+| [Identity and Access Management (IAM)](../../../mybank/security/identity-access-management-system.md)| Manages secure access to systems and data. |
 | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md)| Allows customers to view information about their bank accounts and make payments. |
 | [Loan Management](../../../mybank/core-banking/loan-management-system.md)| Manages loan products, applications, and repayments. |
 | [Payment Gateway](../../../mybank/payment/payment-gateway-system.md)| Facilitates credit/debit card transactions. |
@@ -23,6 +24,7 @@ Shows the Internet Banking System and its relations.
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | authenticates with | [Identity and Access Management (IAM)](../../../mybank/security/identity-access-management-system.md) | OpenID Connect | Credentials, tokens and access rights |
 | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | fetches loan details and payment status from | [Loan Management](../../../mybank/core-banking/loan-management-system.md) |  |  |
 | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | gets account information from, and makes payments using | [Account Management](../../../mybank/core-banking/account-management-system.md) |  |  |
 | [Internet Banking System](../../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | processes customer payments using | [Payment Gateway](../../../mybank/payment/payment-gateway-system.md) |  |  |

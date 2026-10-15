@@ -8,6 +8,10 @@ Tracks and manages expenses.
 
 ## Technology
 Concur
+## Outgoing Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Expense Management](../../mybank/financial-management/expense-management-system.md) | posts to | [General Ledger](../../mybank/financial-management/general-ledger-system.md) |  | Expense bookings |
 
 ## System Context View
 ![Context View of the Financial Management Systems](../../mybank/financial-management/context-view.png)

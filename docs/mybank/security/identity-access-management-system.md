@@ -8,6 +8,10 @@ Manages secure access to systems and data.
 
 ## Technology
 OAuth 2.0, OpenID Connect
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Internet Banking System](../../mybank/digital-banking/internet-banking-system/internet-banking-system.md) | authenticates with | [Identity and Access Management (IAM)](../../mybank/security/identity-access-management-system.md) | OpenID Connect | Credentials, tokens and access rights |
 
 ## System Context View
 ![Context View of the Security Systems](../../mybank/security/context-view.png)

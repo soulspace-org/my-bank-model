@@ -8,6 +8,14 @@ Processes ACH transactions for direct deposits and bill payments.
 
 ## Technology
 Java, Spring Boot, Spring Batch
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | routes to | [ACH System](../../mybank/payment/ach-system.md) |  | Direct debits and bill payments |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [ACH System](../../mybank/payment/ach-system.md) | settles with | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Batch settlement bookings |
 
 ## System Context View
 ![Context View of the Payment Systems](../../mybank/payment/context-view.png)

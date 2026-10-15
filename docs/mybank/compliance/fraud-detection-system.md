@@ -16,6 +16,7 @@ Python, TensorFlow
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | checks with | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) |  | Payment data for fraud scoring |
 | [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | uses | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) |  | generate fraud reports |
 
 ## System Context View

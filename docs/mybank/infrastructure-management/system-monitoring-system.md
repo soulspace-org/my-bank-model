@@ -8,6 +8,11 @@ Monitors system performance and health.
 
 ## Technology
 Nagios, Prometheus
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [IT Infrastructure](../../mybank/infrastructure-management/it-infrastructure-system.md) |  | Health and performance metrics |
+| [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) | REST | Health and performance metrics |
 
 
 ## Navigation

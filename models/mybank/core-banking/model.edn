@@ -28,4 +28,20 @@
           :name "Loan Management"
           :desc "Manages loan products, applications, and repayments."
           :tech "Java, Spring Boot"
-          :ct #{}}}}}
+          :ct #{}}}}
+
+  {:el :send
+   :id :mybank.core-banking/transaction-processing-sends-general-ledger
+   :from :mybank.core-banking/transaction-processing-system
+   :to :mybank.financial-management/general-ledger-system
+   :name "posts to"
+   :desc "Account bookings"
+   :tech "Kafka"}
+
+  {:el :send
+   :id :mybank.core-banking/transaction-processing-sends-data-warehouse
+   :from :mybank.core-banking/transaction-processing-system
+   :to :mybank.data-management/data-warehouse-system
+   :name "feeds"
+   :desc "Transaction events"
+   :tech "Kafka"}}

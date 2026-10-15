@@ -20,6 +20,7 @@ Shows the systems and containers of the domain Payment and their relations.
 | System | Description |
 |---|---|
 | [ACH System](../../mybank/payment/ach-system.md)| Processes ACH transactions for direct deposits and bill payments. |
+| [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md)| Detects and mitigates fraudulent activities. |
 | [Payment Gateway](../../mybank/payment/payment-gateway-system.md)| Facilitates credit/debit card transactions. |
 | [SWIFT/RTGS/NEFT](../../mybank/payment/swift-rtgs-neft-system.md)| Handles interbank transfers and settlements. |
 | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md)| Processes financial transactions in real-time. |
@@ -27,6 +28,11 @@ Shows the systems and containers of the domain Payment and their relations.
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | checks with | [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) |  | Payment data for fraud scoring |
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | routes to | [ACH System](../../mybank/payment/ach-system.md) |  | Direct debits and bill payments |
+| [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | routes to | [SWIFT/RTGS/NEFT](../../mybank/payment/swift-rtgs-neft-system.md) |  | Interbank payment orders |
+| [SWIFT/RTGS/NEFT](../../mybank/payment/swift-rtgs-neft-system.md) | settles with | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Settlement bookings |
+| [ACH System](../../mybank/payment/ach-system.md) | settles with | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Batch settlement bookings |
 | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | validates and processes payments using | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
 
 ## Other Relationships

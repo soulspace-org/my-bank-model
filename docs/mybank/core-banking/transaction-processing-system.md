@@ -15,8 +15,19 @@ Java, Kafka
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
+| [Disaster Recovery](../../mybank/security/disaster-recovery-system.md) | backs up | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transaction data snapshots |
+| [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | calls | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transaction requests and results |
 | [Risk Management System](../../mybank/compliance/risk-management-system.md) | fetches transaction history and customer data from | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
+| [Anti-Money Laundering (AML) System](../../mybank/compliance/aml-system.md) | reads from | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transactions to screen for money laundering |
+| [SWIFT/RTGS/NEFT](../../mybank/payment/swift-rtgs-neft-system.md) | settles with | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Settlement bookings |
+| [ACH System](../../mybank/payment/ach-system.md) | settles with | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Batch settlement bookings |
+| [Branch Systems](../../mybank/customer-channels/branch-systems.md) | uses | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Counter transactions |
 | [Payment Gateway](../../mybank/payment/payment-gateway-system.md) | validates and processes payments using | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  |  |
+## Outgoing Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) | feeds | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | Kafka | Transaction events |
+| [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) | posts to | [General Ledger](../../mybank/financial-management/general-ledger-system.md) | Kafka | Account bookings |
 
 ## System Context View
 ![Context View of the Core Banking Systems](../../mybank/core-banking/context-view.png)

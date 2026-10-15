@@ -8,6 +8,17 @@ Middleware for integrating various banking systems.
 
 ## Technology
 MuleSoft
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [API Gateway](../../mybank/integration-middleware/api-gateway.md) | routes to | [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | REST | API requests of third-party services and fintech apps |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | calls | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transaction requests and results |
+| [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | calls | [Account Management](../../mybank/core-banking/account-management-system.md) | REST | Account queries and updates |
+| [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | calls | [Service-Oriented Architecture (SOA)](../../mybank/integration-middleware/soa.md) | SOAP | Service orchestration requests |
+| [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | calls | [Loan Management](../../mybank/core-banking/loan-management-system.md) | REST | Loan applications and loan status |
 
 
 ## Navigation

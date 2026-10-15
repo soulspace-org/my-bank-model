@@ -7,6 +7,10 @@
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/java>
 !include <logos/kafka>
+!include <awslib14/Storage/Backup>
+!include <tupadr3/font-awesome-5/python>
+!include <awslib14/Analytics/Redshift>
+!include <logos/apache-camel>
 !include <tupadr3/devicons2/cplusplus>
 
 
@@ -22,17 +26,39 @@ Boundary(mybank_coreBanking_contextBoundary, "Core Banking System") {
   System(mybank_coreBanking_loanManagementSystem, "Loan Management", $descr="Manages loan products, applications, and repayments.", $type="Java, Spring Boot", $sprite="java")
   System(mybank_coreBanking_accountManagementSystem, "Account Management", $descr="Handles customer accounts, deposits, and withdrawals.", $type="Java, Spring Boot", $sprite="java")
 }
+System(mybank_integrationMiddleware_esb, "Enterprise Service Bus (ESB)", $descr="Middleware for integrating various banking systems.", $type="MuleSoft")
+System(mybank_customerChannels_contactCenterSystem, "Contact Center", $descr="Telephony and customer support systems for call centers.", $type="Genesys, Avaya")
+System(mybank_security_disasterRecoverySystem, "Disaster Recovery", $descr="Ensures business continuity in case of a disaster.", $type="AWS Backup, DRaaS", $sprite="Backup")
 System(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, "Internet Banking System", $descr="Allows customers to view information about their bank accounts and make payments.")
+System(mybank_financialManagement_generalLedgerSystem, "General Ledger", $descr="Comprehensive financial accounting and reporting system.", $type="Oracle Financials")
+System(mybank_compliance_amlSystem, "Anti-Money Laundering (AML) System", $descr="Monitors and prevents money laundering activities.", $type="Python, Scikit-learn", $sprite="python")
+System(mybank_customerChannels_branchSystems, "Branch Systems", $descr="Software and hardware for in-branch banking services.", $type="Java, Swing", $sprite="java")
+System(mybank_dataManagement_dataWarehouseSystem, "Data Warehouse", $descr="Central repository for storing large volumes of data.", $type="AWS Redshift", $sprite="Redshift")
 System(mybank_payment_paymentGatewaySystem, "Payment Gateway", $descr="Facilitates credit/debit card transactions.", $type="Java, Spring Boot", $sprite="java")
+System(mybank_payment_swiftRtgsNeftSystem, "SWIFT/RTGS/NEFT", $descr="Handles interbank transfers and settlements.", $type="Java, Apache Camel", $sprite="java")
 System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java", $sprite="cplusplus")
 Person(mybank_coreBanking_backofficeStaff, "Backoffice Staff", $descr="Administration and support staff within the bank.")
+System(mybank_payment_achSystem, "ACH System", $descr="Processes ACH transactions for direct deposits and bill payments.", $type="Java, Spring Boot, Spring Batch", $sprite="java")
 Rel(mybank_payment_paymentGatewaySystem, mybank_coreBanking_transactionProcessingSystem, "validates and processes payments using")
+Rel(mybank_customerChannels_contactCenterSystem, mybank_coreBanking_accountManagementSystem, "uses", $descr="Customer account information")
+Rel(mybank_security_disasterRecoverySystem, mybank_coreBanking_transactionProcessingSystem, "backs up", $descr="Transaction data snapshots")
+Rel(mybank_compliance_amlSystem, mybank_coreBanking_transactionProcessingSystem, "reads from", $descr="Transactions to screen for money laundering")
+Rel(mybank_payment_swiftRtgsNeftSystem, mybank_coreBanking_transactionProcessingSystem, "settles with", $descr="Settlement bookings")
+Rel(mybank_customerChannels_branchSystems, mybank_coreBanking_transactionProcessingSystem, "uses", $descr="Counter transactions")
 Rel(mybank_customerChannels_atm, mybank_coreBanking_accountManagementSystem, "retrieves account balance")
 Rel(mybank_coreBanking_loanManagementSystem, mybank_coreBanking_accountManagementSystem, "retrieves customer account information from")
+Rel(mybank_integrationMiddleware_esb, mybank_coreBanking_transactionProcessingSystem, "calls", $descr="Transaction requests and results")
+Rel(mybank_coreBanking_transactionProcessingSystem, mybank_dataManagement_dataWarehouseSystem, "feeds", $descr="Transaction events", $techn="Kafka", $sprite="kafka,scale=0.5")
 Rel(mybank_customerChannels_atm, mybank_coreBanking_transactionProcessingSystem, "validates transaction")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_coreBanking_loanManagementSystem, "fetches loan details and payment status from")
+Rel(mybank_customerChannels_branchSystems, mybank_coreBanking_accountManagementSystem, "uses", $descr="Customer account data and changes")
+Rel(mybank_payment_achSystem, mybank_coreBanking_transactionProcessingSystem, "settles with", $descr="Batch settlement bookings")
+Rel(mybank_security_disasterRecoverySystem, mybank_coreBanking_accountManagementSystem, "backs up", $descr="Account data snapshots")
 Rel(mybank_digitalBanking_internetBankingSystem_internetBankingSystem, mybank_coreBanking_accountManagementSystem, "gets account information from, and makes payments using")
+Rel(mybank_integrationMiddleware_esb, mybank_coreBanking_accountManagementSystem, "calls", $descr="Account queries and updates", $techn="REST")
 Rel(mybank_coreBanking_backofficeStaff, mybank_coreBanking_loanManagementSystem, "processes loan applications and updates loan status using")
 Rel(mybank_compliance_riskManagementSystem, mybank_coreBanking_transactionProcessingSystem, "fetches transaction history and customer data from")
+Rel(mybank_coreBanking_transactionProcessingSystem, mybank_financialManagement_generalLedgerSystem, "posts to", $descr="Account bookings", $techn="Kafka", $sprite="kafka,scale=0.5")
+Rel(mybank_integrationMiddleware_esb, mybank_coreBanking_loanManagementSystem, "calls", $descr="Loan applications and loan status", $techn="REST")
 SHOW_LEGEND()
 @enduml

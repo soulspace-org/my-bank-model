@@ -146,6 +146,28 @@
           :desc "Monitors system performance and health."
           :tech "Nagios, Prometheus"}}}
 
+  {:el :request
+   :id :mybank.infrastructure-management/system-monitoring-requests-it-infrastructure
+   :from :mybank.infrastructure-management/system-monitoring-system
+   :to :mybank.infrastructure-management/it-infrastructure-system
+   :name "monitors"
+   :desc "Health and performance metrics"}
+
+  {:el :request
+   :id :mybank.infrastructure-management/system-monitoring-requests-cloud-services
+   :from :mybank.infrastructure-management/system-monitoring-system
+   :to :mybank.infrastructure-management/cloud-services-system
+   :name "monitors"
+   :desc "Health and performance metrics"
+   :tech "REST"}
+
+  {:el :request
+   :id :mybank.infrastructure-management/cloud-services-requests-it-infrastructure
+   :from :mybank.infrastructure-management/cloud-services-system
+   :to :mybank.infrastructure-management/it-infrastructure-system
+   :name "connects to"
+   :desc "Hybrid connectivity to on-premise resources"}
+
   {:el :link
    :id :mybank.it-management.azure/alz1-vnet1-peered-to-hub-vnet
    :from :mybank.it-management.azure/alz1-vnet-europe

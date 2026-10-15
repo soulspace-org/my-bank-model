@@ -25,5 +25,8 @@ Person(mybank_projectManagement_devopsEngineer, "DevOps Engineer", $descr="Devel
 Person(mybank_projectManagement_incidentManager, "Incident Manager", $descr="Manages incidents")
 Person(mybank_projectManagement_qualityManager, "Quality Manager", $descr="Responsible for quality assurance and compliance to quality standards")
 Person(mybank_projectManagement_agilityMaster, "Agility Master", $descr="Facilitates agile practices")
+Rel(mybank_projectManagement_gitlab, mybank_projectManagement_confluence, "publishes to", $descr="Technical documentation", $techn="REST")
+Rel(mybank_projectManagement_jira, mybank_projectManagement_confluence, "links to", $descr="Project documentation pages", $techn="REST")
+Rel(mybank_projectManagement_gitlab, mybank_projectManagement_jira, "updates", $descr="Issue status from commits and merge requests", $techn="REST")
 SHOW_LEGEND()
 @enduml

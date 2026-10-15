@@ -8,6 +8,14 @@ Platform for documenting projects.
 
 ## Technology
 Confluence
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Project Management Tool](../../mybank/project-management/jira.md) | links to | [Projects Wiki](../../mybank/project-management/confluence.md) | REST | Project documentation pages |
+## Incoming Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Development Platform](../../mybank/project-management/gitlab.md) | publishes to | [Projects Wiki](../../mybank/project-management/confluence.md) | REST | Technical documentation |
 
 ## System Context View
 ![Context View of the Project Management Systems](../../mybank/project-management/context-view.png)

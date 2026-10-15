@@ -8,6 +8,14 @@ Cloud computing resources for scalability and flexibility.
 
 ## Technology
 AWS, Azure
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [System Monitoring](../../mybank/infrastructure-management/system-monitoring-system.md) | monitors | [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) | REST | Health and performance metrics |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Cloud Services](../../mybank/infrastructure-management/cloud-services-system.md) | connects to | [IT Infrastructure](../../mybank/infrastructure-management/it-infrastructure-system.md) |  | Hybrid connectivity to on-premise resources |
 
 
 ## Navigation

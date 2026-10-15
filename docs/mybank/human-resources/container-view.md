@@ -14,8 +14,14 @@ Shows the systems and containers of the domain Human Resources and their relatio
 ## Systems
 | System | Description |
 |---|---|
+| [General Ledger](../../mybank/financial-management/general-ledger-system.md)| Comprehensive financial accounting and reporting system. |
 | [HR Information Systems (HRIS)](../../mybank/human-resources/hris.md)| Manages employee data, payroll, and benefits. |
 | [Talent Management](../../mybank/human-resources/talent-management-system.md)| Tools for recruitment, training, and performance management. |
+
+## Synchronous Requests
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Talent Management](../../mybank/human-resources/talent-management-system.md) | reads from | [HR Information Systems (HRIS)](../../mybank/human-resources/hris.md) |  | Employee master data |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

@@ -22,4 +22,39 @@
           :desc "Processes ACH transactions for direct deposits and bill payments."
           :tech "Java, Spring Boot, Spring Batch"}}}
 
+  {:el :request
+   :id :mybank.payment/payment-gateway-requests-fraud-detection
+   :from :mybank.payment/payment-gateway-system
+   :to :mybank.compliance/fraud-detection-system
+   :name "checks with"
+   :desc "Payment data for fraud scoring"}
+
+  {:el :request
+   :id :mybank.payment/payment-gateway-requests-swift-rtgs-neft
+   :from :mybank.payment/payment-gateway-system
+   :to :mybank.payment/swift-rtgs-neft-system
+   :name "routes to"
+   :desc "Interbank payment orders"}
+
+  {:el :request
+   :id :mybank.payment/payment-gateway-requests-ach
+   :from :mybank.payment/payment-gateway-system
+   :to :mybank.payment/ach-system
+   :name "routes to"
+   :desc "Direct debits and bill payments"}
+
+  {:el :request
+   :id :mybank.payment/swift-rtgs-neft-requests-transaction-processing
+   :from :mybank.payment/swift-rtgs-neft-system
+   :to :mybank.core-banking/transaction-processing-system
+   :name "settles with"
+   :desc "Settlement bookings"}
+
+  {:el :request
+   :id :mybank.payment/ach-requests-transaction-processing
+   :from :mybank.payment/ach-system
+   :to :mybank.core-banking/transaction-processing-system
+   :name "settles with"
+   :desc "Batch settlement bookings"}
+
   }

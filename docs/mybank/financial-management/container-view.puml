@@ -5,6 +5,8 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/java>
+!include <logos/kafka>
 
 
 
@@ -18,5 +20,11 @@ Boundary(mybank_financialManagement_contextBoundary, "Financial Management") {
   System(mybank_financialManagement_expenseManagementSystem, "Expense Management", $descr="Tracks and manages expenses.", $type="Concur")
   System(mybank_financialManagement_generalLedgerSystem, "General Ledger", $descr="Comprehensive financial accounting and reporting system.", $type="Oracle Financials")
 }
+System(mybank_coreBanking_transactionProcessingSystem, "Transaction Processing", $descr="Processes financial transactions in real-time.", $type="Java, Kafka", $sprite="java")
+System(mybank_humanResources_hris, "HR Information Systems (HRIS)", $descr="Manages employee data, payroll, and benefits.", $type="Workday")
+Rel(mybank_financialManagement_treasuryManagementSystem, mybank_financialManagement_generalLedgerSystem, "posts to", $descr="Treasury bookings")
+Rel(mybank_humanResources_hris, mybank_financialManagement_generalLedgerSystem, "posts to", $descr="Payroll bookings")
+Rel(mybank_financialManagement_expenseManagementSystem, mybank_financialManagement_generalLedgerSystem, "posts to", $descr="Expense bookings")
+Rel(mybank_coreBanking_transactionProcessingSystem, mybank_financialManagement_generalLedgerSystem, "posts to", $descr="Account bookings", $techn="Kafka", $sprite="kafka,scale=0.5")
 SHOW_LEGEND()
 @enduml

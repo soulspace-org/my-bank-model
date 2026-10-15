@@ -22,4 +22,25 @@
         :name "Disaster Recovery"
         :desc "Ensures business continuity in case of a disaster."
         :tech "AWS Backup, DRaaS"}}}
+
+{:el :request
+ :id :mybank.security/cybersecurity-requests-api-gateway
+ :from :mybank.security/cybersecurity-system
+ :to :mybank.integration-middleware/api-gateway
+ :name "monitors"
+ :desc "Network traffic and security events"}
+
+{:el :request
+ :id :mybank.security/disaster-recovery-requests-account-management
+ :from :mybank.security/disaster-recovery-system
+ :to :mybank.core-banking/account-management-system
+ :name "backs up"
+ :desc "Account data snapshots"}
+
+{:el :request
+ :id :mybank.security/disaster-recovery-requests-transaction-processing
+ :from :mybank.security/disaster-recovery-system
+ :to :mybank.core-banking/transaction-processing-system
+ :name "backs up"
+ :desc "Transaction data snapshots"}
 }

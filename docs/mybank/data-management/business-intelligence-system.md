@@ -8,6 +8,10 @@ Provides tools for reporting and data analysis.
 
 ## Technology
 Tableau, Python
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Business Intelligence (BI)](../../mybank/data-management/business-intelligence-system.md) | queries | [Data Warehouse](../../mybank/data-management/data-warehouse-system.md) | SQL | Aggregated data for reports and dashboards |
 
 ## System Context View
 ![Context View of the Data Management Systems](../../mybank/data-management/context-view.png)

@@ -8,6 +8,14 @@ Manages employee data, payroll, and benefits.
 
 ## Technology
 Workday
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Talent Management](../../mybank/human-resources/talent-management-system.md) | reads from | [HR Information Systems (HRIS)](../../mybank/human-resources/hris.md) |  | Employee master data |
+## Outgoing Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [HR Information Systems (HRIS)](../../mybank/human-resources/hris.md) | posts to | [General Ledger](../../mybank/financial-management/general-ledger-system.md) |  | Payroll bookings |
 
 ## System Context View
 ![Context View of the Human Resources Systems](../../mybank/human-resources/context-view.png)

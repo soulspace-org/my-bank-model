@@ -24,4 +24,33 @@
           :id :mybank.customer-channels/contact-center-system
           :name "Contact Center"
           :desc "Telephony and customer support systems for call centers."
-          :tech "Genesys, Avaya"}}}}
+          :tech "Genesys, Avaya"}}}
+
+  {:el :request
+   :id :mybank.customer-channels/branch-systems-requests-account-management
+   :from :mybank.customer-channels/branch-systems
+   :to :mybank.core-banking/account-management-system
+   :name "uses"
+   :desc "Customer account data and changes"}
+
+  {:el :request
+   :id :mybank.customer-channels/branch-systems-requests-transaction-processing
+   :from :mybank.customer-channels/branch-systems
+   :to :mybank.core-banking/transaction-processing-system
+   :name "uses"
+   :desc "Counter transactions"}
+
+  {:el :request
+   :id :mybank.customer-channels/contact-center-requests-account-management
+   :from :mybank.customer-channels/contact-center-system
+   :to :mybank.core-banking/account-management-system
+   :name "uses"
+   :desc "Customer account information"}
+
+  {:el :request
+   :id :mybank.customer-channels/customer-service-staff-requests-contact-center
+   :from :mybank.customer-channels/customer-service-staff
+   :to :mybank.customer-channels/contact-center-system
+   :name "uses"
+   :desc "Customer calls and cases"}
+  }

@@ -19,4 +19,21 @@
           :id :mybank.data-management/big-data-analytics-system
           :name "Big Data Analytics"
           :desc "Advanced analytics for predictive modeling."
-          :tech "Java, Hadoop, Spark"}}}}
+          :tech "Java, Hadoop, Spark"}}}
+
+  {:el :request
+   :id :mybank.data-management/business-intelligence-requests-data-warehouse
+   :from :mybank.data-management/business-intelligence-system
+   :to :mybank.data-management/data-warehouse-system
+   :name "queries"
+   :desc "Aggregated data for reports and dashboards"
+   :tech "SQL"}
+
+  {:el :request
+   :id :mybank.data-management/big-data-analytics-requests-data-warehouse
+   :from :mybank.data-management/big-data-analytics-system
+   :to :mybank.data-management/data-warehouse-system
+   :name "queries"
+   :desc "Historical data for predictive models"
+   :tech "SQL"}
+  }

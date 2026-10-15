@@ -8,6 +8,14 @@ Tools for software development, testing, and deployment.
 
 ## Technology
 GitLab
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Development Platform](../../mybank/project-management/gitlab.md) | updates | [Project Management Tool](../../mybank/project-management/jira.md) | REST | Issue status from commits and merge requests |
+## Outgoing Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Development Platform](../../mybank/project-management/gitlab.md) | publishes to | [Projects Wiki](../../mybank/project-management/confluence.md) | REST | Technical documentation |
 
 ## System Context View
 ![Context View of the Project Management Systems](../../mybank/project-management/context-view.png)

@@ -27,6 +27,12 @@ Shows the systems and containers of the domain Project Management and their rela
 | [Project Management Tool](../../mybank/project-management/jira.md)| Platform for planning, executing, and tracking projects. |
 | [Projects Wiki](../../mybank/project-management/confluence.md)| Platform for documenting projects. |
 
+## Synchronous Requests
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Project Management Tool](../../mybank/project-management/jira.md) | links to | [Projects Wiki](../../mybank/project-management/confluence.md) | REST | Project documentation pages |
+| [Development Platform](../../mybank/project-management/gitlab.md) | updates | [Project Management Tool](../../mybank/project-management/jira.md) | REST | Issue status from commits and merge requests |
+
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
 

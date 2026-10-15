@@ -30,4 +30,19 @@
           :id :mybank.human-resources/talent-management-system
           :name "Talent Management"
           :desc "Tools for recruitment, training, and performance management."
-          :tech "SAP SuccessFactors"}}}}
+          :tech "SAP SuccessFactors"}}}
+
+  {:el :send
+   :id :mybank.human-resources/hris-sends-general-ledger
+   :from :mybank.human-resources/hris
+   :to :mybank.financial-management/general-ledger-system
+   :name "posts to"
+   :desc "Payroll bookings"}
+
+  {:el :request
+   :id :mybank.human-resources/talent-management-requests-hris
+   :from :mybank.human-resources/talent-management-system
+   :to :mybank.human-resources/hris
+   :name "reads from"
+   :desc "Employee master data"}
+  }

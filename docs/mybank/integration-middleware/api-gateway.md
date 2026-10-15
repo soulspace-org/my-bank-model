@@ -8,6 +8,14 @@ Manages APIs for third-party services and fintech apps.
 
 ## Technology
 Kong
+## Incoming Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Cybersecurity](../../mybank/security/cybersecurity-system.md) | monitors | [API Gateway](../../mybank/integration-middleware/api-gateway.md) |  | Network traffic and security events |
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [API Gateway](../../mybank/integration-middleware/api-gateway.md) | routes to | [Enterprise Service Bus (ESB)](../../mybank/integration-middleware/esb.md) | REST | API requests of third-party services and fintech apps |
 
 
 ## Navigation

@@ -19,4 +19,19 @@
           :id :mybank.financial-management/expense-management-system
           :name "Expense Management"
           :desc "Tracks and manages expenses."
-          :tech "Concur"}}}}
+          :tech "Concur"}}}
+
+  {:el :send
+   :id :mybank.financial-management/treasury-management-sends-general-ledger
+   :from :mybank.financial-management/treasury-management-system
+   :to :mybank.financial-management/general-ledger-system
+   :name "posts to"
+   :desc "Treasury bookings"}
+
+  {:el :send
+   :id :mybank.financial-management/expense-management-sends-general-ledger
+   :from :mybank.financial-management/expense-management-system
+   :to :mybank.financial-management/general-ledger-system
+   :name "posts to"
+   :desc "Expense bookings"}
+  }

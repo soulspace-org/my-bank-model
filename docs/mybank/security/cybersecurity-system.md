@@ -8,6 +8,10 @@ Protects against cyber threats.
 
 ## Technology
 Snort, Suricata
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Cybersecurity](../../mybank/security/cybersecurity-system.md) | monitors | [API Gateway](../../mybank/integration-middleware/api-gateway.md) |  | Network traffic and security events |
 
 ## System Context View
 ![Context View of the Security Systems](../../mybank/security/context-view.png)

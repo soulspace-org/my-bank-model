@@ -25,9 +25,13 @@ Boundary(mybank_customerChannels_contextBoundary, "Customer Channels") {
   System(mybank_customerChannels_atm, "ATM", $descr="Allows customers to withdraw cash.", $type="C++, Java", $sprite="cplusplus")
   System(mybank_customerChannels_branchSystems, "Branch Systems", $descr="Software and hardware for in-branch banking services.", $type="Java, Swing", $sprite="java")
 }
+Rel(mybank_customerChannels_contactCenterSystem, mybank_coreBanking_accountManagementSystem, "uses", $descr="Customer account information")
+Rel(mybank_customerChannels_branchSystems, mybank_coreBanking_transactionProcessingSystem, "uses", $descr="Counter transactions")
 Rel(mybank_customerChannels_atm, mybank_coreBanking_accountManagementSystem, "retrieves account balance")
 Rel(mybank_customerChannels_atm, mybank_coreBanking_transactionProcessingSystem, "validates transaction")
 Rel(mybank_personalCustomer, mybank_customerChannels_customerServiceStaff, "asks questions to")
+Rel(mybank_customerChannels_branchSystems, mybank_coreBanking_accountManagementSystem, "uses", $descr="Customer account data and changes")
 Rel(mybank_personalCustomer, mybank_customerChannels_atm, "uses atm for balance information and withdrawals")
+Rel(mybank_customerChannels_customerServiceStaff, mybank_customerChannels_contactCenterSystem, "uses", $descr="Customer calls and cases")
 SHOW_LEGEND()
 @enduml

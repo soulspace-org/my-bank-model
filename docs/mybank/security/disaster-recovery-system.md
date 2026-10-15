@@ -8,6 +8,11 @@ Ensures business continuity in case of a disaster.
 
 ## Technology
 AWS Backup, DRaaS
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Disaster Recovery](../../mybank/security/disaster-recovery-system.md) | backs up | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transaction data snapshots |
+| [Disaster Recovery](../../mybank/security/disaster-recovery-system.md) | backs up | [Account Management](../../mybank/core-banking/account-management-system.md) |  | Account data snapshots |
 
 ## System Context View
 ![Context View of the Security Systems](../../mybank/security/context-view.png)

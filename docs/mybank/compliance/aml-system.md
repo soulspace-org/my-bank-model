@@ -8,6 +8,14 @@ Monitors and prevents money laundering activities.
 
 ## Technology
 Python, Scikit-learn
+## Outgoing Synchronous Requests 
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Anti-Money Laundering (AML) System](../../mybank/compliance/aml-system.md) | reads from | [Transaction Processing](../../mybank/core-banking/transaction-processing-system.md) |  | Transactions to screen for money laundering |
+## Outgoing Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Anti-Money Laundering (AML) System](../../mybank/compliance/aml-system.md) | reports to | [Compliance System](../../mybank/compliance/compliance-system.md) |  | Suspicious activity reports |
 
 ## System Context View
 ![Context View of the Compliance and Risk Management Systems](../../mybank/compliance/context-view.png)

@@ -8,6 +8,10 @@ Manages liquidity, investments, and risk in the treasury function.
 
 ## Technology
 Kyriba
+## Outgoing Asynchronous Sends
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Treasury Management](../../mybank/financial-management/treasury-management-system.md) | posts to | [General Ledger](../../mybank/financial-management/general-ledger-system.md) |  | Treasury bookings |
 
 ## System Context View
 ![Context View of the Financial Management Systems](../../mybank/financial-management/context-view.png)
