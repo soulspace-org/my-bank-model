@@ -1,6 +1,6 @@
 # MyBank Model
 This repository serves as an example of an Overarch model for a resonable complex architecture.
-It showcases the capabilities of Overarch.
+The model is in the `models` folder and it showcases the capabilities of Overarch.
 
 ## Overarch Reference
 This repository contains references for the Overarch skills
