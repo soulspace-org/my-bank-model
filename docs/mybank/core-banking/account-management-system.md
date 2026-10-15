@@ -8,6 +8,11 @@ Handles customer accounts, deposits, and withdrawals.
 
 ## Technology
 Java, Spring Boot
+## Actor in Use Cases
+| Use Case | Description |
+|---|---|
+| [transfer money](../../mybank/digital-banking/internet-banking-system/transfer-money.md) | transfer money from one account to another |
+| [view account](../../mybank/digital-banking/internet-banking-system/view-account.md) | view the details of an account |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

@@ -8,6 +8,11 @@ Allows users to reset their passwords.
 
 ## Technology
 Namespace
+
+## Implemented Use Cases
+| Use Case | Description |
+|---|---|
+| [reset password](../../../mybank/digital-banking/internet-banking-system/reset-password.md) | reset a forgotten password |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

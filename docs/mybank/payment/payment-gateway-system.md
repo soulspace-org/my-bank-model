@@ -8,6 +8,10 @@ Facilitates credit/debit card transactions.
 
 ## Technology
 Java, Spring Boot
+## Actor in Use Cases
+| Use Case | Description |
+|---|---|
+| [make payment](../../mybank/digital-banking/internet-banking-system/make-payment.md) | pay a third party from an account |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

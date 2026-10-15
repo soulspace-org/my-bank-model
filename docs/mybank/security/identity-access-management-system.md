@@ -8,6 +8,10 @@ Manages secure access to systems and data.
 
 ## Technology
 OAuth 2.0, OpenID Connect
+## Actor in Use Cases
+| Use Case | Description |
+|---|---|
+| [sign in](../../mybank/digital-banking/internet-banking-system/sign-in.md) | authenticate to the internet banking system |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

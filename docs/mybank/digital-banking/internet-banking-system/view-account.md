@@ -6,6 +6,8 @@ view the details of an account
 ## Actors
 | Actor | Description |
 |---|---|
+| [Account Management](../../../mybank/core-banking/account-management-system.md) | Handles customer accounts, deposits, and withdrawals. |
+| [Corporate Customer](../../../mybank/corporate-customer.md) | Corporate Customer of MyBank. |
 | [Personal Customer](../../../mybank/personal-customer.md) | Personal Customer of MyBank. |
 
 ## Use Case View

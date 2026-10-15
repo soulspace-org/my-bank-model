@@ -8,6 +8,11 @@ Allows users to sign in to the banking system.
 
 ## Technology
 Namespace
+
+## Implemented Use Cases
+| Use Case | Description |
+|---|---|
+| [sign in](../../../mybank/digital-banking/internet-banking-system/sign-in.md) | authenticate to the internet banking system |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

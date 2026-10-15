@@ -9,9 +9,12 @@ Allows customers to view information about their bank accounts and make payments
 ## Implemented Use Cases
 | Use Case | Description |
 |---|---|
-| [place order](../../../mybank/digital-banking/internet-banking-system/place-order.md) | place an order for an account |
+| [make payment](../../../mybank/digital-banking/internet-banking-system/make-payment.md) | pay a third party from an account |
+| [reset password](../../../mybank/digital-banking/internet-banking-system/reset-password.md) | reset a forgotten password |
+| [sign in](../../../mybank/digital-banking/internet-banking-system/sign-in.md) | authenticate to the internet banking system |
 | [transfer money](../../../mybank/digital-banking/internet-banking-system/transfer-money.md) | transfer money from one account to another |
 | [view account](../../../mybank/digital-banking/internet-banking-system/view-account.md) | view the details of an account |
+| [view loan status](../../../mybank/digital-banking/internet-banking-system/view-loan-status.md) | view the details and payment status of a loan |
 ## Containers
 | Container | Description |
 |---|---|

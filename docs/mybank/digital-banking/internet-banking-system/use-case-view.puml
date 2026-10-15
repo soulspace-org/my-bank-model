@@ -1,17 +1,43 @@
 @startuml use-case-view
 
 
-
+left to right direction
 
 
 
 title Use Case View of the Internet Banking System
 
+actor "E-mail System" as mybank_emailSystem
+actor "Loan Management" as mybank_coreBanking_loanManagementSystem
+usecase "sign in" as (mybank_digitalBanking_internetBankingSystem_signIn) #8888DD
 usecase "view account" as (mybank_digitalBanking_internetBankingSystem_viewAccount) #BBBBFF
 actor "Personal Customer" as mybank_personalCustomer
+actor "Account Management" as mybank_coreBanking_accountManagementSystem
 usecase "transfer money" as (mybank_digitalBanking_internetBankingSystem_transferMoney) #BBBBFF
-usecase "place order" as (mybank_digitalBanking_internetBankingSystem_placeOrder) #BBBBFF
-mybank_personalCustomer --> mybank_digitalBanking_internetBankingSystem_placeOrder
+actor "Payment Gateway" as mybank_payment_paymentGatewaySystem
+usecase "reset password" as (mybank_digitalBanking_internetBankingSystem_resetPassword) #BBBBFF
+usecase "view loan status" as (mybank_digitalBanking_internetBankingSystem_viewLoanStatus) #BBBBFF
+usecase "make payment" as (mybank_digitalBanking_internetBankingSystem_makePayment) #BBBBFF
+actor "Corporate Customer" as mybank_corporateCustomer
+actor "Identity and Access Management (IAM)" as mybank_security_identityAccessManagementSystem
+mybank_emailSystem --> mybank_digitalBanking_internetBankingSystem_resetPassword
+mybank_personalCustomer --> mybank_digitalBanking_internetBankingSystem_resetPassword
+mybank_coreBanking_accountManagementSystem --> mybank_digitalBanking_internetBankingSystem_transferMoney
+mybank_personalCustomer --> mybank_digitalBanking_internetBankingSystem_makePayment
+mybank_corporateCustomer --> mybank_digitalBanking_internetBankingSystem_makePayment
+mybank_coreBanking_loanManagementSystem --> mybank_digitalBanking_internetBankingSystem_viewLoanStatus
+mybank_payment_paymentGatewaySystem --> mybank_digitalBanking_internetBankingSystem_makePayment
+mybank_corporateCustomer --> mybank_digitalBanking_internetBankingSystem_resetPassword
+mybank_digitalBanking_internetBankingSystem_viewAccount .down.> mybank_digitalBanking_internetBankingSystem_signIn : include
+mybank_digitalBanking_internetBankingSystem_transferMoney .down.> mybank_digitalBanking_internetBankingSystem_signIn : include
+mybank_corporateCustomer --> mybank_digitalBanking_internetBankingSystem_transferMoney
 mybank_personalCustomer --> mybank_digitalBanking_internetBankingSystem_viewAccount
+mybank_digitalBanking_internetBankingSystem_viewLoanStatus .down.> mybank_digitalBanking_internetBankingSystem_signIn : include
+mybank_corporateCustomer --> mybank_digitalBanking_internetBankingSystem_viewAccount
+mybank_personalCustomer --> mybank_digitalBanking_internetBankingSystem_viewLoanStatus
+mybank_corporateCustomer --> mybank_digitalBanking_internetBankingSystem_viewLoanStatus
 mybank_personalCustomer --> mybank_digitalBanking_internetBankingSystem_transferMoney
+mybank_security_identityAccessManagementSystem --> mybank_digitalBanking_internetBankingSystem_signIn
+mybank_coreBanking_accountManagementSystem --> mybank_digitalBanking_internetBankingSystem_viewAccount
+mybank_digitalBanking_internetBankingSystem_makePayment .down.> mybank_digitalBanking_internetBankingSystem_signIn : include
 @enduml

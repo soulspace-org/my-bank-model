@@ -149,16 +149,32 @@ Shows the complete model graph
 | [Document Project](../mybank/project-management/document-project.md)| Document a project |
 | [Manage Backlog](../mybank/project-management/manage-backlog.md)| Manage the backlog of user stories |
 | [Manage Sprints](../mybank/project-management/manage-sprints.md)| Manage sprints for software development |
-| [place order](../mybank/digital-banking/internet-banking-system/place-order.md)| place an order for an account |
+| [make payment](../mybank/digital-banking/internet-banking-system/make-payment.md)| pay a third party from an account |
+| [reset password](../mybank/digital-banking/internet-banking-system/reset-password.md)| reset a forgotten password |
+| [sign in](../mybank/digital-banking/internet-banking-system/sign-in.md)| authenticate to the internet banking system |
 | [transfer money](../mybank/digital-banking/internet-banking-system/transfer-money.md)| transfer money from one account to another |
 | [view account](../mybank/digital-banking/internet-banking-system/view-account.md)| view the details of an account |
+| [view loan status](../mybank/digital-banking/internet-banking-system/view-loan-status.md)| view the details and payment status of a loan |
 
 ## Uses
 | From | Name | To | Description |
 |---|---|---|---|
+| [E-mail System](../mybank/email-system.md) | supports | [reset password](../mybank/digital-banking/internet-banking-system/reset-password.md) | Delivers the reset e-mail |
+| [Account Management](../mybank/core-banking/account-management-system.md) | supports | [transfer money](../mybank/digital-banking/internet-banking-system/transfer-money.md) | Books the transfer |
+| [Loan Management](../mybank/core-banking/loan-management-system.md) | supports | [view loan status](../mybank/digital-banking/internet-banking-system/view-loan-status.md) | Provides loan details |
+| [Payment Gateway](../mybank/payment/payment-gateway-system.md) | supports | [make payment](../mybank/digital-banking/internet-banking-system/make-payment.md) | Processes the payment |
+| [Identity and Access Management (IAM)](../mybank/security/identity-access-management-system.md) | supports | [sign in](../mybank/digital-banking/internet-banking-system/sign-in.md) | Verifies credentials |
+| [Account Management](../mybank/core-banking/account-management-system.md) | supports | [view account](../mybank/digital-banking/internet-banking-system/view-account.md) | Provides account details |
 | [Agility Master](../mybank/project-management/agility-master.md) | uses | [Manage Sprints](../mybank/project-management/manage-sprints.md) |  |
-| [Personal Customer](../mybank/personal-customer.md) | wants to | [place order](../mybank/digital-banking/internet-banking-system/place-order.md) |  |
+| [Personal Customer](../mybank/personal-customer.md) | wants to | [reset password](../mybank/digital-banking/internet-banking-system/reset-password.md) |  |
+| [Personal Customer](../mybank/personal-customer.md) | wants to | [make payment](../mybank/digital-banking/internet-banking-system/make-payment.md) |  |
+| [Corporate Customer](../mybank/corporate-customer.md) | wants to | [make payment](../mybank/digital-banking/internet-banking-system/make-payment.md) |  |
+| [Corporate Customer](../mybank/corporate-customer.md) | wants to | [reset password](../mybank/digital-banking/internet-banking-system/reset-password.md) |  |
+| [Corporate Customer](../mybank/corporate-customer.md) | wants to | [transfer money](../mybank/digital-banking/internet-banking-system/transfer-money.md) |  |
 | [Personal Customer](../mybank/personal-customer.md) | wants to | [view account](../mybank/digital-banking/internet-banking-system/view-account.md) |  |
+| [Corporate Customer](../mybank/corporate-customer.md) | wants to | [view account](../mybank/digital-banking/internet-banking-system/view-account.md) |  |
+| [Personal Customer](../mybank/personal-customer.md) | wants to | [view loan status](../mybank/digital-banking/internet-banking-system/view-loan-status.md) |  |
+| [Corporate Customer](../mybank/corporate-customer.md) | wants to | [view loan status](../mybank/digital-banking/internet-banking-system/view-loan-status.md) |  |
 | [Personal Customer](../mybank/personal-customer.md) | wants to | [transfer money](../mybank/digital-banking/internet-banking-system/transfer-money.md) |  |
 
 ## Systems

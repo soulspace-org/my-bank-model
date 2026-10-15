@@ -11,20 +11,41 @@
    :name "view account"
    :desc "view the details of an account"}
   {:el :use-case
+   :id :mybank.digital-banking.internet-banking-system/view-loan-status
+   :level :user-goal
+   :name "view loan status"
+   :desc "view the details and payment status of a loan"}
+  {:el :use-case
    :id :mybank.digital-banking.internet-banking-system/transfer-money
    :level :user-goal
    :name "transfer money"
    :desc "transfer money from one account to another"}
   {:el :use-case
-   :id :mybank.digital-banking.internet-banking-system/place-order
+   :id :mybank.digital-banking.internet-banking-system/make-payment
    :level :user-goal
-   :name "place order"
-   :desc "place an order for an account"}
+   :name "make payment"
+   :desc "pay a third party from an account"}
+  {:el :use-case
+   :id :mybank.digital-banking.internet-banking-system/reset-password
+   :level :user-goal
+   :name "reset password"
+   :desc "reset a forgotten password"}
+  {:el :use-case
+   :id :mybank.digital-banking.internet-banking-system/sign-in
+   :level :subfunction
+   :name "sign in"
+   :desc "authenticate to the internet banking system"}
 
+  ;; Customers
   {:el :uses
    :id :mybank/personal-customer-wants-to-view-account
    :from :mybank/personal-customer
    :to :mybank.digital-banking.internet-banking-system/view-account
+   :name "wants to"}
+  {:el :uses
+   :id :mybank/personal-customer-wants-to-view-loan-status
+   :from :mybank/personal-customer
+   :to :mybank.digital-banking.internet-banking-system/view-loan-status
    :name "wants to"}
   {:el :uses
    :id :mybank/personal-customer-wants-to-transfer-money
@@ -32,10 +53,147 @@
    :to :mybank.digital-banking.internet-banking-system/transfer-money
    :name "wants to"}
   {:el :uses
-   :id :mybank/personal-customer-wants-to-place-order
+   :id :mybank/personal-customer-wants-to-make-payment
    :from :mybank/personal-customer
-   :to :mybank.digital-banking.internet-banking-system/place-order
+   :to :mybank.digital-banking.internet-banking-system/make-payment
    :name "wants to"}
+  {:el :uses
+   :id :mybank/personal-customer-wants-to-reset-password
+   :from :mybank/personal-customer
+   :to :mybank.digital-banking.internet-banking-system/reset-password
+   :name "wants to"}
+  {:el :uses
+   :id :mybank/corporate-customer-wants-to-view-account
+   :from :mybank/corporate-customer
+   :to :mybank.digital-banking.internet-banking-system/view-account
+   :name "wants to"}
+  {:el :uses
+   :id :mybank/corporate-customer-wants-to-view-loan-status
+   :from :mybank/corporate-customer
+   :to :mybank.digital-banking.internet-banking-system/view-loan-status
+   :name "wants to"}
+  {:el :uses
+   :id :mybank/corporate-customer-wants-to-transfer-money
+   :from :mybank/corporate-customer
+   :to :mybank.digital-banking.internet-banking-system/transfer-money
+   :name "wants to"}
+  {:el :uses
+   :id :mybank/corporate-customer-wants-to-make-payment
+   :from :mybank/corporate-customer
+   :to :mybank.digital-banking.internet-banking-system/make-payment
+   :name "wants to"}
+  {:el :uses
+   :id :mybank/corporate-customer-wants-to-reset-password
+   :from :mybank/corporate-customer
+   :to :mybank.digital-banking.internet-banking-system/reset-password
+   :name "wants to"}
+
+  ;; Included use cases
+  {:el :include
+   :id :mybank.digital-banking.internet-banking-system/view-account-includes-sign-in
+   :from :mybank.digital-banking.internet-banking-system/view-account
+   :to :mybank.digital-banking.internet-banking-system/sign-in
+   :name "includes"}
+  {:el :include
+   :id :mybank.digital-banking.internet-banking-system/view-loan-status-includes-sign-in
+   :from :mybank.digital-banking.internet-banking-system/view-loan-status
+   :to :mybank.digital-banking.internet-banking-system/sign-in
+   :name "includes"}
+  {:el :include
+   :id :mybank.digital-banking.internet-banking-system/transfer-money-includes-sign-in
+   :from :mybank.digital-banking.internet-banking-system/transfer-money
+   :to :mybank.digital-banking.internet-banking-system/sign-in
+   :name "includes"}
+  {:el :include
+   :id :mybank.digital-banking.internet-banking-system/make-payment-includes-sign-in
+   :from :mybank.digital-banking.internet-banking-system/make-payment
+   :to :mybank.digital-banking.internet-banking-system/sign-in
+   :name "includes"}
+
+  ;; Supporting systems
+  {:el :uses
+   :id :mybank.security/identity-access-management-system-supports-sign-in
+   :from :mybank.security/identity-access-management-system
+   :to :mybank.digital-banking.internet-banking-system/sign-in
+   :name "supports"
+   :desc "Verifies credentials"}
+  {:el :uses
+   :id :mybank/email-system-supports-reset-password
+   :from :mybank/email-system
+   :to :mybank.digital-banking.internet-banking-system/reset-password
+   :name "supports"
+   :desc "Delivers the reset e-mail"}
+  {:el :uses
+   :id :mybank.core-banking/account-management-system-supports-view-account
+   :from :mybank.core-banking/account-management-system
+   :to :mybank.digital-banking.internet-banking-system/view-account
+   :name "supports"
+   :desc "Provides account details"}
+  {:el :uses
+   :id :mybank.core-banking/account-management-system-supports-transfer-money
+   :from :mybank.core-banking/account-management-system
+   :to :mybank.digital-banking.internet-banking-system/transfer-money
+   :name "supports"
+   :desc "Books the transfer"}
+  {:el :uses
+   :id :mybank.core-banking/loan-management-system-supports-view-loan-status
+   :from :mybank.core-banking/loan-management-system
+   :to :mybank.digital-banking.internet-banking-system/view-loan-status
+   :name "supports"
+   :desc "Provides loan details"}
+  {:el :uses
+   :id :mybank.payment/payment-gateway-system-supports-make-payment
+   :from :mybank.payment/payment-gateway-system
+   :to :mybank.digital-banking.internet-banking-system/make-payment
+   :name "supports"
+   :desc "Processes the payment"}
+
+  ;; Implementation
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-view-account
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/view-account
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-view-loan-status
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/view-loan-status
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-transfer-money
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/transfer-money
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-make-payment
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/make-payment
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-reset-password
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/reset-password
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-sign-in
+   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
+   :to :mybank.digital-banking.internet-banking-system/sign-in
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/sign-in-controller-implements-sign-in
+   :from :mybank.digital-banking.internet-banking-system/sign-in-controller
+   :to :mybank.digital-banking.internet-banking-system/sign-in
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/reset-password-controller-implements-reset-password
+   :from :mybank.digital-banking.internet-banking-system/reset-password-controller
+   :to :mybank.digital-banking.internet-banking-system/reset-password
+   :name "implements"}
+  {:el :implements
+   :id :mybank.digital-banking.internet-banking-system/accounts-summary-controller-implements-view-account
+   :from :mybank.digital-banking.internet-banking-system/accounts-summary-controller
+   :to :mybank.digital-banking.internet-banking-system/view-account
+   :name "implements"}
 
   ;;;
   ;;; Architecture
@@ -109,22 +267,6 @@
    :from :mybank.digital-banking.internet-banking-system/internet-banking-system
    :to :mybank.digital-banking/context-boundary
    :name "contained in"}
-
-  {:el :implements
-   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-place-order
-   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
-   :to :mybank.digital-banking.internet-banking-system/place-order
-   :name "implements"}
-  {:el :implements
-   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-transfer-money
-   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
-   :to :mybank.digital-banking.internet-banking-system/transfer-money
-   :name "implements"}
-  {:el :implements
-   :id :mybank.digital-banking.internet-banking-system/internet-banking-system-implements-view-account
-   :from :mybank.digital-banking.internet-banking-system/internet-banking-system
-   :to :mybank.digital-banking.internet-banking-system/view-account
-   :name "implements"}
 
   {:el :request
    :id :mybank.digital-banking.internet-banking-system/internet-banking-system-uses-email-system

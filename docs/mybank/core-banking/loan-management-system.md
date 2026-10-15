@@ -8,6 +8,10 @@ Manages loan products, applications, and repayments.
 
 ## Technology
 Java, Spring Boot
+## Actor in Use Cases
+| Use Case | Description |
+|---|---|
+| [view loan status](../../mybank/digital-banking/internet-banking-system/view-loan-status.md) | view the details and payment status of a loan |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

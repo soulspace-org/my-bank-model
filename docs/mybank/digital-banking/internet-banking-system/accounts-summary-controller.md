@@ -8,6 +8,11 @@ Provides customers with a summary of their bank accounts.
 
 ## Technology
 Namespace
+
+## Implemented Use Cases
+| Use Case | Description |
+|---|---|
+| [view account](../../../mybank/digital-banking/internet-banking-system/view-account.md) | view the details of an account |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

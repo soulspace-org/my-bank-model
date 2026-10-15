@@ -1,5 +1,5 @@
 ;;;;
-;;;; MyBank Internet Banking System Model
+;;;; MyBank Internet Banking System Views
 ;;;;
 #{;
   ;;;
@@ -7,9 +7,10 @@
   ;;;
   {:el :use-case-view
    :id :mybank.digital-banking.internet-banking-system/use-case-view
-   :spec {:selection {:el :use-case-model-relation
-                      :to {:namespace-prefix "mybank.digital-banking.internet-banking-system"}}
-          :include :related}
+   :selection {:el :use-case-model-relation
+               :to {:namespace-prefix "mybank.digital-banking.internet-banking-system"}}
+   :include :related
+   :layout :left-right
    :name "Internet Banking System Use Case View"
    :title "Use Case View of the Internet Banking System"
    :desc "Shows the use cases and actors of the Internet Banking System."}

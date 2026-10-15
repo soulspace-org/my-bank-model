@@ -1,12 +1,12 @@
 
-# place order (Use-case)
+# sign in (Use-case)
 ## Description
-place an order for an account
+authenticate to the internet banking system
 
 ## Actors
 | Actor | Description |
 |---|---|
-| [Personal Customer](../../../mybank/personal-customer.md) | Personal Customer of MyBank. |
+| [Identity and Access Management (IAM)](../../../mybank/security/identity-access-management-system.md) | Manages secure access to systems and data. |
 
 ## Use Case View
 ![Use Case View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/use-case-view.png)
