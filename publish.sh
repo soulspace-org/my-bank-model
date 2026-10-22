@@ -2,7 +2,7 @@
 
 # read model and generate output with overarch
 echo "reading model and generating with overarch"
-java -jar tools/overarch.jar --no-render-format-subdirs -R generated -r plantuml -g templates/gencfg.edn
+java -jar tools/overarch.jar --no-render-format-subdirs -R generated -g templates/gencfg.edn
 
 # generate diagrams with PlantUML
 echo "generating diagrams with PlantUML"
@@ -24,4 +24,4 @@ done
 echo "publishing the documentation"
 rm -rf docs
 mv generated docs
-cp -r docs-in/* docs/
+cp -r docs-src/* docs/

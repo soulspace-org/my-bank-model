@@ -1,14 +1,16 @@
-<?
+<%
 ;;;;
 ;;;; Markdown Arc42 Documentation Template
 ;;;;
 
+; TODO update link generation, when generated file structure is fixed
 ; TODO use protected areas for hand written content?
 
 (require '[lib.text :as t])
 (require '[lib.markdown :as md])
 
-?>#  Architecture Documentation for <?= (:name e) ?>
+%>#  Architecture Documentation for <%= (:name e) %>
+<%= (:desc e) %>
 
 ## Table of Content
 1. [Introduction and Goals](introduction_goals.md)
