@@ -19,6 +19,10 @@
 | [Project Management and Development](../mybank/project-management/context-boundary.md) | Tools for managing projects and software development. |
 | [Risk Management and Compliance](../mybank/compliance/context-boundary.md) | Detects and mitigates risks, ensuring regulatory compliance. |
 | [Security](../mybank/security/context-boundary.md) | Ensures the security of systems and data. |
+## Systems
+| System | Description |
+|---|---|
+| [E-mail System](../mybank/email-system.md) | The internal Microsoft Exchange email system. |
 
 
 ## Navigation

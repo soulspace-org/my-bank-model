@@ -11,6 +11,11 @@ Responsible for the risk management
 |---|---|
 | [Risk Manager](../../mybank/compliance/risk-manager.md) | Responsible for managing the risks. |
 
+## Responsibility for Systems
+| System | Description |
+|---|---|
+| [Risk Management System](../../mybank/compliance/risk-management-system.md) | Detects risks and manages risk mitigation. |
+
 
 ## Organization Structure
 ![Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.png)

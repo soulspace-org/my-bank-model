@@ -5,6 +5,12 @@ Facilitates integration across systems.
 
 ## Parent
 [My Bank](../mybank/mybank-plc.md)
+## Systems
+| System | Description |
+|---|---|
+| [API Gateway](../mybank/integration-middleware/api-gateway.md) | Manages APIs for third-party services and fintech apps. |
+| [Enterprise Service Bus (ESB)](../mybank/integration-middleware/esb.md) | Middleware for integrating various banking systems. |
+| [Service-Oriented Architecture (SOA)](../mybank/integration-middleware/soa.md) | Framework for enabling seamless integration between services. |
 
 
 ## Navigation

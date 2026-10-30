@@ -11,6 +11,11 @@ Responsible for the compliance and regulations
 |---|---|
 | [Compliance Manager](../../mybank/compliance/compliance-manager.md) | Responsible for the compliance of MyBank. |
 
+## Responsibility for Systems
+| System | Description |
+|---|---|
+| [Compliance System](../../mybank/compliance/compliance-system.md) | Ensures operations comply with regulations. |
+
 
 ## Organization Structure
 ![Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.png)

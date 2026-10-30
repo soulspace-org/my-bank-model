@@ -11,6 +11,11 @@ Responsible for the fraud detection and mitigation
 |---|---|
 | [Fraud specialist](../../mybank/compliance/fraud-specialist.md) | Responsible for the fraud detection and mitigation of MyBank. |
 
+## Responsibility for Systems
+| System | Description |
+|---|---|
+| [Fraud Detection System](../../mybank/compliance/fraud-detection-system.md) | Detects and mitigates fraudulent activities. |
+
 
 ## Organization Structure
 ![Org Chart of the Compliance and Risk Management unit](../../mybank/compliance/organization-structure-view.png)

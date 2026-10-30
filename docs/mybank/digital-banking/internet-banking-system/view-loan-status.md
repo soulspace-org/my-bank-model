@@ -9,6 +9,10 @@ view the details and payment status of a loan
 | [Corporate Customer](../../../mybank/corporate-customer.md) | Corporate Customer of MyBank. |
 | [Loan Management](../../../mybank/core-banking/loan-management-system.md) | Manages loan products, applications, and repayments. |
 | [Personal Customer](../../../mybank/personal-customer.md) | Personal Customer of MyBank. |
+## Included Use Cases
+| Use Case | Description |
+|---|---|
+| [sign in](../../../mybank/digital-banking/internet-banking-system/sign-in.md) | authenticate to the internet banking system |
 
 ## Use Case View
 ![Use Case View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/use-case-view.png)

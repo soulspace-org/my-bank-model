@@ -9,6 +9,10 @@ pay a third party from an account
 | [Corporate Customer](../../../mybank/corporate-customer.md) | Corporate Customer of MyBank. |
 | [Payment Gateway](../../../mybank/payment/payment-gateway-system.md) | Facilitates credit/debit card transactions. |
 | [Personal Customer](../../../mybank/personal-customer.md) | Personal Customer of MyBank. |
+## Included Use Cases
+| Use Case | Description |
+|---|---|
+| [sign in](../../../mybank/digital-banking/internet-banking-system/sign-in.md) | authenticate to the internet banking system |
 
 ## Use Case View
 ![Use Case View of the Internet Banking System](../../../mybank/digital-banking/internet-banking-system/use-case-view.png)
